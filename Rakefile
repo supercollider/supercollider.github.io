@@ -36,7 +36,7 @@ module JB
 end #JB
 
 # Usage: rake post title="A Title" [date="2012-02-09"] [tags=[tag1, tag2]]
-desc "Begin a new post in #{CONFIG['posts']}"
+desc "title=\"a title\" : Begin a new post in #{CONFIG['posts']}"
 task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
   title = ENV["title"] || "new-post"
@@ -69,7 +69,7 @@ end # task :post
 # Usage: rake page name="about.html"
 # You can also specify a sub-directory path.
 # If you don't specify a file extention we create an index.html at the path specified
-desc "Create a new page."
+desc "title=\"a title\" : Create a new page"
 task :page do
   name = ENV["name"] || "new-page.md"
   filename = File.join(SOURCE, "#{name}")
