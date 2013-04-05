@@ -13,5 +13,7 @@
         padding: 1em;
     }
 }
-
+.list_heading {
+    list-style: none;
+}
 
