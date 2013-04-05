@@ -1,13 +1,19 @@
 ---
 layout: page
-title: Pages 
+title: Pages
 header: Pages
 group: navigation
 ---
-{% include JB/setup %}
 
-<h2>All Pages</h2>
-<ul>
 {% assign pages_list = site.pages %}
-{% include JB/pages_list %}
-</ul>
+{% assign current_category = '' %}
+{% for node in pages_list %}
+    {% if node.title != null and node.group != "navigation" and node.group != "index" %}
+        {% if current_category != node.category %}
+            <li class="list_heading"><h4>{{ node.category}}</h4></li>
+            {% assign current_category = node.category %}
+        {% endif %}
+        <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+    {% endif %}
+{% endfor %}
+
