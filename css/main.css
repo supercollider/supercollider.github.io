@@ -1,0 +1,17 @@
+
+.jumbotron {
+  margin: 0 60px;
+}
+.container-narrow {
+    width: 60%;
+    margin: 1em auto;
+}
+@media (max-width: 920px) {
+    .container-narrow {
+        width: 100%;
+        margin: 0;
+        padding: 1em;
+    }
+}
+
+
