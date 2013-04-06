@@ -39,17 +39,7 @@ Note: you won't see this formatted correctly using the local Jekyll test server.
 
 Jekyll has built in Pygment support for syntax coloring.
 
-SuperCollider looks kinda like Javascript.  Let's try parsing it as Javascript using this template markup:
-
-	{{ "{% highlight javascript " }}%}
-	s = Server.local;
-	y = Synth("def");
-	{
-	  Saw.ar(440);
-	}.play
-	{{ "{% endhighlight " }}%}
-
-Here's the result:
+SuperCollider looks kinda like Javascript so its possible to get approximate syntax coloring by using `{ %  highlight javascript % }` 
 
 {% highlight javascript %}
 s = Server.local;

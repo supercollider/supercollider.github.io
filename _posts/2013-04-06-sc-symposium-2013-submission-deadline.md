@@ -2,7 +2,7 @@
 layout: post
 title: "SC Symposium 2013 Submission Deadline"
 description: ""
-category:
+category: symposium
 tags: []
 ---
 {% include JB/setup %}

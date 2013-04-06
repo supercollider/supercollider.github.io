@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contributing
+title: Contributing - reporting bugs and pull requests
 category: contributing
 ---
 

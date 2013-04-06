@@ -20,7 +20,7 @@ You can edit and create files directly there on github.
 Visit the repo on github and edit the page using the github interface.  This will submit a pull request to the supercollider orginization.  When we accept the pull request (click the button) it gets merged in and the pages will regenerate on github. No need to mess with jekyll or cloning the repo.
 
 
-see also [Syntax and styling](contributing/syntax-and-styling.html)
+see also [Syntax and styling](syntax-and-styling.html)
 
 
 #### Working with Jekyll and a checked out repo
@@ -45,7 +45,7 @@ A page is a wiki page, simple document.
 A page or post must have this YAML front matter at the top:
 
     ---
-    layout: default
+    layout: page
     title: "Building from source"
     published: true
     category: development
@@ -84,8 +84,13 @@ Linking to other pages.  github only ?   category / post-name
 
 Jekyll seems to kill iframes reducing them to a single `<iframe />` so put a word in the tag: `<iframe ...>invisible words</iframe>` to fool it.
 
+Internal links are relative to the current document and should use the .html form, eg.:
+
+    See [Syntax styling and markdown](syntax-and-styling.html)
+
+
 #### Publishing
 
-Simply push to this [repo](https://github.com/supercollider/supercollider.github.io) repo and github will regenerate the site.
+Simply push to this [repo](https://github.com/supercollider/supercollider.github.io) and github will regenerate the site.
 
 
