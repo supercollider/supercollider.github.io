@@ -16,4 +16,8 @@
 .list_heading {
     list-style: none;
 }
-
+/* overide bootstrap box */
+pre {
+	background-color: inherit;
+	border: 0;
+}
