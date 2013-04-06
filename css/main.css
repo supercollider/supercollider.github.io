@@ -1,4 +1,28 @@
 
+.navbar {
+	font-family: Helvetica;
+	font-weight: bold;
+	text-rendering: optimizelegibility;
+}
+
+.navbar .brand {
+	padding: 6px;
+}
+.navbar .nav > li > a {
+	padding: 0 10px;
+}
+a.brand {
+	text-decoration: none;
+	margin-right: 2em;
+}
+a.brand img {
+	vertical-align: baseline;
+}
+.navbar .badges {
+	float: right;
+	vertical-align: baseline;
+}
+
 .jumbotron {
   margin: 0 60px;
 }
