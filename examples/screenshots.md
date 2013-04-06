@@ -5,4 +5,6 @@ description: ""
 category: "examples"
 ---
 
-{% include "screenshots.md" %}
+{% include screenshots.md %}
+
+Submissions for screenshots welcomed.

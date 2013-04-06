@@ -38,7 +38,7 @@ Note: you won't see this formatted correctly using the local Jekyll test server.
 
 Jekyll has built in Pygment support for syntax coloring.
 
-SuperCollider looks kinda like Javascript so its possible to get approximate syntax coloring by using `{ %  highlight javascript % }` 
+SuperCollider looks kinda like Javascript so its possible to get approximate syntax coloring by using `{ %  highlight javascript % }`
 
 {% highlight javascript %}
 s = Server.local;
