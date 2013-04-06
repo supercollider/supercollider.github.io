@@ -14,5 +14,5 @@
 </div>
 
 <script>
- $('#screenshots').carousel();
+ $('#screenshots').carousel().carousel('pause');
 </script>
