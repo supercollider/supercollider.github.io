@@ -6,20 +6,20 @@
                     <img src="/images/platform_mac_os_x.gif" alt="" />
                     Mac
                 </h2>
-                <ul>
+                <ul class="nodot">
                     <li>
-                        <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.6/SuperCollider-3.6.3-OSX-universal.dmg/download">3.6.3 installer</a>
+                        <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.6/SuperCollider-3.6.3-OSX-universal.dmg/download"><i class="icon-download-alt">.</i> 3.6.3 installer</a>
                     </li>
                     <li>
-                        <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.6/SuperCollider-3.6.3-OSX-universal-no-ide.dmg/download">3.6.3 installer (old Cocoa IDE)</a>
+                        <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.6/SuperCollider-3.6.3-OSX-universal-no-ide.dmg/download"><i class="icon-download-alt">.</i> 3.6.3 installer (old Cocoa IDE)</a>
                     </li>
                 </ul>
                 <p>
                     OS X 10.4, 32-bit universal build:
                 </p>
-                <ul>
+                <ul class="nodot">
                     <li>
-                        <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.4.4/SuperCollider-3.4.4_32_bit.dmg/download">SuperCollider3.4.4-10.4</a>
+                        <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.4.4/SuperCollider-3.4.4_32_bit.dmg/download"><i class="icon-download-alt">.</i> SuperCollider3.4.4-10.4</a>
                     </li>
                 </ul>
             </td>
@@ -47,9 +47,9 @@
                     <img src="/images/platform_windows.gif" alt="" />
                     Windows
                 </h2>
-                <ul>
+                <ul class="nodot">
                     <li>
-                        <a href="http://sourceforge.net/projects/supercollider/files/Windows/3.6/SuperCollider-3.6.3-win32.exe/download">Win 32 3.6.3 installer</a>
+                        <a href="http://sourceforge.net/projects/supercollider/files/Windows/3.6/SuperCollider-3.6.3-win32.exe/download"><i class="icon-download-alt">.</i> Win 32 3.6.3 installer</a>
                     </li>
                 </ul>
             </td>
@@ -57,7 +57,8 @@
     </tbody>
 </table>
 
-#### Building from source
+
+<h4>Building from source</h4>
 
 {% highlight bash %}
 git clone --recursive git@github.com:supercollider/supercollider.git
@@ -67,13 +68,15 @@ git clone --recursive git@github.com:supercollider/supercollider.git
 
 <p><a href="/development/building-from-source.html">Build instructions, tips and trouble shooting</a></p>
 
-#### Release notes
+<h4>Release notes</h4>
 
 <p><a href="http://doc.sccode.org/Guides/News-3_6.html">3.6 Release notes</a></p>
 
 <h4>Plugins and Extensions</h4>
 
-<a href="http://supercollider.sourceforge.net/downloads/#ext">Synthesis Plugins and Extensions</a>
+<ul>
+    <li><a href="http://supercollider.sourceforge.net/downloads/#ext">Synthesis Plugins and Extensions</a></li>
+</ul>
 
 <h4>Quarks</h4>
 
