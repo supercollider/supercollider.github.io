@@ -145,9 +145,9 @@ Pbind(
 
     <h4>Resources</h4>
       <ul>
-        <li><a href="http://sccode.org/">sccode.org</a> — collaborative coding</li>
+        <li><a href="/pages.html">Wiki</a></li>
         <li><a href="http://supercollider.sourceforge.net/wiki/">(old) wiki</a></li>
-        <li><a href="http://swiki.hfbk-hamburg.de/MusicTechnology/6">(really old) wiki</a></li>
+        <li><a href="http://swiki.hfbk-hamburg.de/MusicTechnology/6">(really old) swiki</a></li>
       </ul>
 
   </div>
@@ -173,8 +173,20 @@ Pbind(
 <hr />
 
 <div class="row-fluid">
-  <div class="span-6">
+  <div class="span6">
+    <h4>Online</h4>
+    <ul>
+      <li><a href="http://sccode.org/">sccode.org</a> — collaborative coding</li>
+      <li><a href="/community/blogs-and-sites.html">Blogs and sites</a></li>
+      <li><a href="http://search.twitter.com/search?q=&ands=supercollider+play">SC tweets - tunes under 140 chars</a></li>
+      <li><a href="http://www.facebook.com/group.php?gid=2222754532">Facebook</a></li>
+      <li><a href="http://flickr.com/groups/supercollider/pool/">flickr</a></li>
+      <li><a href="http://www.vimeo.com/tag:supercollider">Vimeo</a></li>
+      <li><a href="http://www.youtube.com/view_play_list?p=B813D0BDF50705D9">YouTube</a></li>
+    </ul>
+  </div>
 
+  <div class="span6">
     <h4>Other scsynth clients</h4>
     <p>SuperCollider language is the reference spec, but there are many other client languages that use the scsynth server.</p>
     <ul>
@@ -183,16 +195,6 @@ Pbind(
     <li>Ruby</li>
     <li>haskell</li>
     <li>supercollider.js</li>
-    </ul>
-
-    <h4>Online</h4>
-    <ul>
-    <li><a href="/community/blogs-and-sites.html">Blogs and sites</a></li>
-    <li><a href="http://search.twitter.com/search?q=&ands=supercollider+play">SC tweets - tunes under 140 chars</a></li>
-    <li><a href="http://www.facebook.com/group.php?gid=2222754532">Facebook</a></li>
-    <li><a href="http://flickr.com/groups/supercollider/pool/">flickr</a></li>
-    <li><a href="http://www.vimeo.com/tag:supercollider">Vimeo</a></li>
-    <li><a href="http://www.youtube.com/view_play_list?p=B813D0BDF50705D9">YouTube</a></li>
     </ul>
   </div>
 </div>
