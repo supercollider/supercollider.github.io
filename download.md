@@ -4,7 +4,7 @@ title: Download
 group: navigation
 ---
 
-{% include download.md %}
+<div id="download">{% include download.md %}</div>
 
 For some alternate builds see [sourceforge downloads](http://supercollider.sourceforge.net/downloads/).
 
