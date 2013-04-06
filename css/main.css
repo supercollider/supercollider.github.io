@@ -26,6 +26,16 @@ a.brand img {
 .jumbotron {
   margin: 0 60px;
 }
+.jumbotron h1 {
+	margin: 2em 0 1em 0;
+	font-size: 4em;
+}
+.jumbotron p {
+	font-size: 1.1em;
+	line-height: 1.5em;
+	margin-bottom: 2em;
+}
+
 .container-narrow {
     width: 60%;
     margin: 1em auto;
@@ -44,4 +54,19 @@ a.brand img {
 pre {
 	background-color: inherit;
 	border: 0;
+}
+.book img {
+	margin: 10px;
+}
+.book blockquote {
+	margin: 1em 10px;
+	font-size: 0.9em;
+	border: 0;
+}
+#features ul {
+	font-size: 0.9em;
+}
+/* sub-sections on front page */
+h4 {
+	margin-top: 2em;
 }
