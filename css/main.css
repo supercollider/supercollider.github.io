@@ -5,10 +5,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 a {
 	font-weight: bold;
-    color: #327311;
+    color: #38530f;
+	text-shadow: 0px 0px 1px rgba(200, 200, 200, 0.1);
+	font-size: 1.05em;
 }
-a:visited {
-	color: #314e16;
+a:hover {
+    color: #62831f;
 }
 /*ul {
 	list-style-image:url('../images/dot.png');
@@ -20,24 +22,27 @@ ul.nodot, li.nodot {
 }
 /* default page structure */
 .navbar {
-	font-family: Helvetica;
-	font-weight: bold;
+	font-family: Roboto;
 	text-rendering: optimizelegibility;
 }
 .navbar .brand {
 	padding: 6px;
 }
 .navbar .nav > li > a {
-	color: #000;
+	color: #666;
 }
 .navbar-inner {
 	background-color: #FFFFFE;
+	background-image: none;
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
-a.brand {
+.navbar a.brand {
 	text-decoration: none;
-	margin-right: 2em;
+	margin-right: 13px;
+	color: #666;
+	font-size: 26px;
+	font-weight: bold;
 }
 a.brand img {
 	vertical-align: baseline;
