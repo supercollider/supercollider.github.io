@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: catpage
 title: Contributing - reporting bugs and pull requests
 category: contributing
 ---

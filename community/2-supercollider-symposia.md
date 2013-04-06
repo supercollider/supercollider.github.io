@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: catpage
 title: "Symposia"
 description: ""
 category: "community"

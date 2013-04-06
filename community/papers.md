@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: catpage
 title: "Academic Papers"
 description: ""
 category: "community"

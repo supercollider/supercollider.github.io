@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: catpage
 title: "Code examples"
 description: ""
 category: "examples"

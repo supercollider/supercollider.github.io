@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: catpage
 title: "Screen shots"
 description: ""
 category: "examples"

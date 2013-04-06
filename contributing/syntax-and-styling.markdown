@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: catpage
 title: "Syntax coloring for SuperCollider"
-description: ""
-category: "contributing"
+category: contributing
 ---
 
 ## Markdown syntax

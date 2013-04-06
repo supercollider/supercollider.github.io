@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: catpage
 title: "blogs and sites"
 description: ""
 category: "community"

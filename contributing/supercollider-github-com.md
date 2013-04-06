@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: catpage
 title: "supercollider.github.io [this site]"
-description: ""
-category: "contributing"
+category: contributing
 ---
 
 
