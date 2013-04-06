@@ -42,25 +42,26 @@ a.brand {
 a.brand img {
 	vertical-align: baseline;
 }
-.navbar .badges {
-	float: right;
+.navbar .badges iframe {
+	padding: 20px 0 0 0;
 	vertical-align: baseline;
 }
 
 .content {
 	min-height: 500px;
 }
+
+/*  inset center area */
 .container-narrow {
     width: 60%;
+    margin: 0 auto;
+}
+/* content area has margin */
+.main.container-narrow {
     margin: 1em auto;
 }
-@media (max-width: 920px) {
-    .container-narrow {
-        width: 100%;
-        margin: 0;
-        padding: 1em;
-    }
-}
+
+
 .nav-tabs>li>a {
 	line-height: inherit;
 }
@@ -149,4 +150,37 @@ code span.nx {
 code span.comment {
 	color: #c83917;
 	font-style: normal;
+}
+
+/* responsive */
+@media (max-width: 1150px) {
+	.navbar .container-narrow {
+		width: 80%;
+	}
+}
+@media (max-width: 920px) {
+	body {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+    .container-narrow {
+        width: 100%;
+        margin: 0;
+    }
+    .main.container-narrow {
+        padding: 1em;
+    }
+	.navbar-inner .container-narrow {
+		padding: 0;
+	}
+	.navbar .nav > li > a {
+		padding: 5px 10px;
+	}
+	.navbar .badges iframe {
+		padding: 5px 0;
+	}
+    .jumbotron h1 {
+    	font-size: 2.5em;
+    	margin: 0 0 20px 0;
+    }
 }
