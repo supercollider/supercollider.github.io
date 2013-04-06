@@ -28,7 +28,7 @@
                     <img src="/images/platform_linux.gif" alt="" />
                     Linux
                 </h2>
-                 PPA and package distributions
+                 PPA and package distributions:
                 <ul>
                     <li>
                         <a href="http://launchpad.net/~supercollider/+archive/ppa"><strong>Ubuntu</strong> </a>
@@ -66,7 +66,7 @@ git clone --recursive git@github.com:supercollider/supercollider.git
 
 <iframe src="http://ghbtns.com/github-btn.html?user=supercollider&amp;repo=supercollider&amp;type=fork&amp;count=true&amp;size=small" allowtransparency="true" frameborder="0" scrolling="0" width="156px" height="30px">fork</iframe>
 
-<p><a href="/development/building-from-source.html">Build instructions, tips and trouble shooting</a></p>
+<p><a href="/development/building-from-source.html"><i class="icon-hand-right">.</i> <strong>Build instructions, tips and trouble shooting</strong></a></p>
 
 <h4>Release notes</h4>
 
