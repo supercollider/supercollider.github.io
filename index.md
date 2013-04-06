@@ -116,12 +116,15 @@ Pbind(
   </span>
 </div>
 
-{% include download.md %}
+<div id="download">{% include download.md %}</div>
 
-<hr />
 
 <div class="row-fluid">
   <div class="span6">
+
+    <h4>Mailing list</h4>
+    <p>The community is very active and helpful, the center of activity.  Please do drop by.</p>
+    <p><a href="http://www.birmingham.ac.uk/facilities/BEAST/research/supercollider/mailinglist.aspx">mailing list info</a></p>
 
     <h4><a href="/contributing/">Contributing</a></h4>
     <ul>
@@ -129,9 +132,9 @@ Pbind(
       <li><a href="/contribution/">Contribution guidelines</a></li>
     </ul>
 
-    <h4>Developers</h4>
+    <h4><a href="/development/">Developers</a></h4>
     <ul>
-      <a href="http://supercollider.sourceforge.net/developers/">http://supercollider.sourceforge.net/developers/</a>
+      <li><a href="/development/">Resources for SuperCollider development</a></li>
     </ul>
 
     <h4>Tutorials</h4>
@@ -139,6 +142,13 @@ Pbind(
       <li><a href="http://doc.sccode.org/Tutorials/Getting-Started/00-Getting-Started-With-SC.html">Getting started</a></li>
       <li><a href="/tutorials/">Tutorials list</a></li>
     </ul>
+
+    <h4>Resources</h4>
+      <ul>
+        <li><a href="http://sccode.org/">sccode.org</a> — collaborative coding</li>
+        <li><a href="http://supercollider.sourceforge.net/wiki/">(old) wiki</a></li>
+        <li><a href="http://swiki.hfbk-hamburg.de/MusicTechnology/6">(really old) wiki</a></li>
+      </ul>
 
   </div>
 
@@ -150,10 +160,6 @@ Pbind(
          {% endfor %}
         <a href="/archive.html">more...</a></p>
 
-
-    <h4>Mailing list</h4>
-    <p>The community is very active and helpful, the center of activity.  Please do drop by.</p>
-    <p><a href="http://www.birmingham.ac.uk/facilities/BEAST/research/supercollider/mailinglist.aspx">mailing list info</a></p>
 
     <div class="book">
     <h4>The SuperCollider book on MIT Press</h4>
@@ -168,12 +174,6 @@ Pbind(
 
 <div class="row-fluid">
   <div class="span-6">
-    <h4>Resources</h4>
-    <ul>
-      <li><a href="http://sccode.org/">sccode.org</a> — collaborative coding</li>
-      <li><a href="http://supercollider.sourceforge.net/wiki/">(old) wiki</a></li>
-      <li><a href="http://swiki.hfbk-hamburg.de/MusicTechnology/6">(really old) wiki</a></li>
-    </ul>
 
     <h4>Other scsynth clients</h4>
     <p>SuperCollider language is the reference spec, but there are many other client languages that use the scsynth server.</p>
