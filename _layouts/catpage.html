@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="page-header">
+  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+</div>
+
+<div class="row-fluid">
+  <div class="span3">
+    <ul class="nav nav-tabs nav-stacked">
+      {% assign category = page.category %}
+      {% assign pages_list = site.pages %}
+      {% include category_pages_list %}
+    </ul>
+  </div>
+  <div class="span9">
+    {{ content }}
+  </div>
+</div>
