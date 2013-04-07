@@ -47,7 +47,7 @@ Class and struct members are usually prefixed with m followed by an upper case c
     double m_prevInput;
 
 
-Conventions particular to sclang
+### Conventions particular to sclang
 
 Structures in sclang are often prefixed with Pyr:
 
