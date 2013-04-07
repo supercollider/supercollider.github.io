@@ -58,7 +58,7 @@ a.brand img {
 
 /*  inset center area */
 .container-narrow {
-    width: 60%;
+    width: 960px;
     margin: 0 auto;
 }
 /* content area has margin */
@@ -95,7 +95,7 @@ footer a.edit-link {
   margin: 0 60px;
 }
 .jumbotron h1 {
-	margin: 2em 0 1em 0;
+	margin: 1em 0;
 	font-size: 4em;
 }
 .jumbotron p {
