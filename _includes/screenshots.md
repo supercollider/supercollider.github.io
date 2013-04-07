@@ -3,7 +3,7 @@
 <div class="carousel-inner">
 
 <!-- add screenshots here -->
-<div class="item active"><img src="/examples/screenshots/ixiQuarks.jpg" /></div>
+<div class="item active"><img src="/examples/screenshots/IxiQuarks.jpg" /></div>
 <div class="item"><img src="/examples/screenshots/mastereq-qt.png" /></div>
 <div class="item"><img src="/examples/screenshots/sc_ide_overview.png" /></div>
 <div class="item"><img src="/examples/screenshots/sc-newscreen.jpg" /></div>
