@@ -1,6 +1,6 @@
 ---
 layout: front
-title: Super Collider
+title: SuperCollider
 tagline: Real time algorithmic music composition environment.
 group: index
 ---
