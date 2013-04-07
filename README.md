@@ -1,6 +1,4 @@
+supercollider.github.io
+=======================
 
-
-Super Collider github pages
-===========================
-
-
+Front pages for supercollider
