@@ -7,10 +7,10 @@ auto: true
 pygments: true
 
 #
-title: Super Collider
+title: SuperCollider
 tagline: An environment and programming language for real time audio synthesis and algorithmic composition
 author :
-  name: Super Collider
+  name: SuperCollider
   email: supercollider@bham.co.uk
   github: supercollider
   twitter:
