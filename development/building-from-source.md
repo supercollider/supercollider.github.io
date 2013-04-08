@@ -16,7 +16,7 @@ Update with:
 
 Many reported build problems are due to not updating submodules.  These are git repositories that SC depends on:
 
-	git://supercollider.git.sourceforge.net/gitroot/supercollider/nova-simd
+	git://github.com/timblechmann/nova-simd.git
     git://supercollider.git.sourceforge.net/gitroot/supercollider/nova-tt
     git://supercollider.git.sourceforge.net/gitroot/supercollider/boost-lockfree
 
