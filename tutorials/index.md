@@ -20,6 +20,7 @@ category: tutorials
 <li><a href="http://www.cirma.unito.it/andrea/sc.html"><strong>Italian</strong>-language tutorial by Andrea Valle</a></li>
 <li><a href="http://www.dmu.uem.br/lappso/manual/index.php/Tutorial_SuperCollider"><strong>Portuguese</strong> (Brazil) language tutorial</a> by Universidade Estadual de Maringá</li>
 <li><a href="http://supercollider.jp/modules/bwiki/index.php?SC%20study%20group%20%40%20iamas"><strong>Japanese</strong>-language</a> study group at IAMAS with jp/en tutorials&nbsp;(also forum, faq, wiki)</li>
+<li><a href="http://learn.travelchinawith.me"><strong>Chinese</strong>-language tutorial translations</a> by <a href="http://about.me/ww1way">Way Wang</a></li>
 <li><a href="http://www.berkeleynoise.com/celesteh/podcast/?page_id=65">Les Hutchins’ SC tutorials</a></li>
 <li><a href="http://www.ixi-audio.net/content/download/tutorials/supercollider_tutorial.tar">ixi’s basic audio programming tutorial in SC (download)</a></li>
 <li><a href="http://en.wikibooks.org/wiki/Designing_Sound_in_SuperCollider">Designing Sound in SuperCollider</a> (how to create sound effects)</li>
