@@ -6,7 +6,7 @@ title: "Audio examples"
 
 ## [SoundCloud supercollider group](http://soundcloud.com/groups/supercollider)
 
-<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fgroups%2F3574&show_artwork=true">soundcloud</iframe>
+<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fgroups%2F3574">soundcloud</iframe>
 
 <hr />
 

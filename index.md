@@ -178,7 +178,7 @@ Pbind(
     <ul>
       <li><a href="http://sccode.org/">sccode.org</a> — collaborative coding</li>
       <li><a href="/community/blogs-and-sites.html">Blogs and sites</a></li>
-      <li><a href="http://search.twitter.com/search?q=&ands=supercollider+play">SC tweets - tunes under 140 chars</a></li>
+      <li><a href="https://twitter.com/search?q=supercollider+play">SC tweets - tunes under 140 chars</a></li>
       <li><a href="http://www.facebook.com/group.php?gid=2222754532">Facebook</a></li>
       <li><a href="http://flickr.com/groups/supercollider/pool/">flickr</a></li>
       <li><a href="http://www.vimeo.com/tag:supercollider">Vimeo</a></li>
