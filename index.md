@@ -190,11 +190,11 @@ Pbind(
     <h4>Other scsynth clients</h4>
     <p>SuperCollider language is the reference spec, but there are many other client languages that use the scsynth server.</p>
     <ul>
-    <li>Overtone</li>
-    <li>Scalacollider</li>
-    <li>Ruby</li>
-    <li>haskell</li>
-    <li>supercollider.js</li>
+    <li><a href="http://overtone.github.io/">Overtone</a> (Clojure)</li>
+    <li><a href="http://www.sciss.de/scalaCollider/">Scalacollider</a> (Scala)</li>
+    <li><a href="https://github.com/maca/scruby">scruby</a> (Ruby)</li>
+    <li><a href="http://hackage.haskell.org/package/hsc3">hsc3</a>,<a href="https://github.com/kaoskorobase/hsc3-server">hsc3-server</a> (Haskell)</li>
+    <li><a href="https://github.com/crucialfelix/supercolliderjs">supercollider.js</a> (JavaScript)</li>
     </ul>
   </div>
 </div>
