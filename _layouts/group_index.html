@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="page-header">
+  <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+</div>
+
+<div class="row-fluid">
+  <div class="span3">
+    <ul class="nav nav-tabs nav-stacked">
+        {% for group_item in page.group %}
+            {% assign url = group_item | append:'.html' %}
+            {% for other_page in site.pages %}
+                {% if other_page.url == url %}
+                    <li>
+                        <a href="{{BASE_PATH}}{{other_page.url}}">{{ other_page.title }}</a>
+                        {% if url == {{page.url}} %}
+                            <ul>
+                            {% for anchor in page.anchors %}
+                                <li><a href="{{BASE_PATH}}{{page.url}}#{{anchor[0]}}">{{anchor[1]}}</a></li>
+                            {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </li>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </ul>
+  </div>
+  <div class="span9">
+    {{ content }}
+  </div>
+</div>
+

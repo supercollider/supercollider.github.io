@@ -1,11 +1,12 @@
 ---
-layout: catpage
-title: Development roadmap
-category: development
+layout: development
+title: Development Roadmap
 ---
 
-
-Release: 3.6.4
-=============
+### Version 3.6.4
 
 Target date: 18 April
+
+### Version 3.7
+
+Target date: early summer

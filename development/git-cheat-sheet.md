@@ -1,34 +1,65 @@
 ---
-layout: catpage
-title: "Developer cheat sheet for git"
-category: development
+layout: development
+title: Cheat Sheet for Git
 ---
 
-## Starting: getting the latest source ##
-First you need to create your own local clone of the SourceForge repository. There are two options:
+## Get the latest sources ##
 
-(a) If you are going to push changes back to the SF repository (using your SF username) do:
+First you need to create your own local clone of the online *repository*. There are two options:
 
-    git clone --recursive ssh://yourusername@supercollider.git.sourceforge.net/gitroot/supercollider/supercollider
+* If you are going to push changes back to the GitHub repository do:
 
-(b) If you don’t have an account in SourceForge or you don’t want to push changes (so will instead be contributing via patches or pull-requests), then use anonymous access:
+    ``git clone --recursive git@github.com:supercollider/supercollider.git``
 
-    git clone --recursive git://supercollider.git.sourceforge.net/gitroot/supercollider/supercollider
+* If you don’t have a GitHub account or you don’t intend to push changes (so will instead be contributing via patches or pull-requests), then use read-only access:
 
-(`--recursive` is needed to get all submodules, which make it easier to maintain parts of a repository)
+    ``git clone --recursive git://github.com/supercollider/supercollider.git``
 
-## Pull: How to get new changes from the main repository ##
+The `--recursive` flag is required to also download all the *submodules* used by the repositoryd
 
-Normally, you will pull only from the sourceforge repository ("origin"). That is simple.
+## Update local repository ##
 
-    git pull --rebase
+Considering that you have not been changing your local repository by yourself, you can update it with:
+
+    git pull
     git submodule update
 
-(If you are not doing development work, you can omit `--rebase`)
+Many reported build problems are due to out-of-date submodules, so make sure to not skip the last step.
 
-`--rebase` keeps your repository in sync with the order of committed changes in the origin. This is _required_ before pushing your changes back to origin.
+If you are going to do any development work, keep reading for more details...
 
-`git submodule update` is needed because `git pull` does not update shared library code contained in the submodules. If you forget to do this, you will probably get build errors related to boost. Most of the time, `git submodule update` is sufficient to fix those errors.
+### Updating and rebasing
+
+The `git pull` command downloads *commits* from the online to the local repository. If you are doing any development work, it is best to always use it with the `--rebase` flag:
+
+    git pull --rebase
+
+The `--rebase` flag tells git to first put your new commits off the commit stack, and then stack them up on top of the just-downloaded commits. If the downloaded commits were stacked on top of yours, the history of your repository would not be a linear continuation of the history of the online repository anymore, which would prevent you from being able to push your commits online.
+
+You could define a git command *alias* to help you with this - a short custom command that will substitute the longer command:
+
+    git config alias.up pull --rebase
+
+This will make `git up` equivalent to `git pull --rebase`.
+
+### Updating submodules
+
+Submodules are git repositories within other git repositories; the main SuperCollider repository uses several submodules. Submodules are not automatically updated within your local copy when you `git pull`, so now and then you need to update them manually using:
+
+    git submodule update
+
+How to know precisely when submodules need to be updated? Your local copy of submodules is out of sync when:
+* the `git status` command shows directories that correspond to submodules as modified
+* the `git diff` command will show changes related to these directories, in the form:
+    `Subproject commit <commit ID>`
+
+When you see any of these signs, it's time to update submodules. This may happen even whenever changing [branches](#branches), as different branches may use different versions of submodules.
+
+Submodules are referenced in their hosting module by their URL. At some point the URL itself may be changed, and you will have to update it with:
+
+    git submodule sync
+
+### Pulling from different sources
 
 With git, it's also possible to pull changes from different clones of the same repository. For instance, you might have two or three computers that you use at different times. You can synchronize those clones over a local network without touching sourceforge!
 

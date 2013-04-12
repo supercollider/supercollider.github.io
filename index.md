@@ -132,9 +132,9 @@ Pbind(
       <li><a href="/contribution/">Contribution guidelines</a></li>
     </ul>
 
-    <h4><a href="/development/">Developers</a></h4>
+    <h4><a href="/development/repository.html">Developers</a></h4>
     <ul>
-      <li><a href="/development/">Resources for SuperCollider development</a></li>
+      <li><a href="/development/repository.html">Resources for SuperCollider development</a></li>
     </ul>
 
     <h4>Tutorials</h4>

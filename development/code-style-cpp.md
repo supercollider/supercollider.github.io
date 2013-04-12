@@ -1,7 +1,6 @@
 ---
-layout: catpage
-title: Coding Style for c++ contributions
-category: development
+layout: development
+title: C++ Code Style
 ---
 
 
@@ -9,8 +8,11 @@ Some quick notes about what to consider when contributing to SuperCollider's cod
 
 ### Indentation
 
-Use tabs for indentation
-Tab width is 4 spaces
+* Older code uses tabs for indentaion.
+* Newer code often uses 4 spaces (sometimes only 2 spaces).
+
+When modifying existing code, always make sure you use the same indentation style as the rest of the file.
+
 
 ### Identifiers
 
