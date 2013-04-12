@@ -9,20 +9,23 @@ layout: default
 <div class="row-fluid">
   <div class="span3">
     <ul class="nav nav-tabs nav-stacked">
-        {% for group_item in page.group %}
-            {% assign url = group_item | append:'.html' %}
-            {% for other_page in site.pages %}
-                {% if other_page.url == url %}
-                    <li>
-                        <a href="{{BASE_PATH}}{{other_page.url}}">{{ other_page.title }}</a>
-                        {% if url == {{page.url}} %}
-                            <ul>
-                            {% for anchor in page.anchors %}
-                                <li><a href="{{BASE_PATH}}{{page.url}}#{{anchor[0]}}">{{anchor[1]}}</a></li>
-                            {% endfor %}
-                            </ul>
-                        {% endif %}
-                    </li>
+        {% for title in site.groups[{{page.group}}] %}
+            {% assign filename = title | append: '.html' %}
+            {% for a_page in site.pages %}
+                {% assign a_filename = a_page.url | split:'/' | last %}
+                {% if a_page.group == {{page.group}} and a_filename == {{filename}} %}
+                    {% if a_page.url == {{page.url}} %}
+                        <li class="active">
+                                <a href="{{BASE_PATH}}{{page.url}}">{{ page.title }}</a>
+                                <ul>
+                                {% for anchor in page.anchors %}
+                                    <li><a href="{{BASE_PATH}}{{page.url}}#{{anchor[0]}}">{{anchor[1]}}</a></li>
+                                {% endfor %}
+                                </ul>
+                        </li>
+                    {% else %}
+                        <li><a href="{{BASE_PATH}}{{a_page.url}}">{{ a_page.title }}</a></li>
+                    {% endif %}
                 {% endif %}
             {% endfor %}
         {% endfor %}

@@ -1,5 +1,6 @@
 ---
-layout: development
+layout: group_index
+group: development
 title: Cheat Sheet for Git
 ---
 

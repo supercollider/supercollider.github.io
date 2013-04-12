@@ -16,6 +16,22 @@ author :
   twitter:
   feedburner:
 
+# The following mapping specifies order of pages within groups, so that
+# an ordered index may be produced by the group_index layout.
+# The page names have to match their filenames, without extensions,
+# and the pages must contain "group: <group name>" in their YAML front matter
+# corresponding to the group they are listed under here:
+groups:
+    development:
+        - repository
+        - building
+        - git-cheat-sheet
+        - commit-message
+        - code-style-cpp
+        - plugins
+        - scsynth-source-guide
+        - roadmap
+
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
 # Most places will/should use BASE_PATH to make the urls
