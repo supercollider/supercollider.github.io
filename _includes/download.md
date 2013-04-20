@@ -8,10 +8,10 @@
                 </h2>
                 <ul class="nodot">
                     <li>
-                        <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.6/SuperCollider-3.6.3-OSX-universal.dmg/download"><i class="icon-download-alt">.</i> 3.6.3 installer</a>
+                        <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.6/SuperCollider-3.6.4-OSX-universal.dmg/download"><i class="icon-download-alt">.</i> 3.6.4 installer</a>
                     </li>
                     <li>
-                        <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.6/SuperCollider-3.6.3-OSX-universal-no-ide.dmg/download"><i class="icon-download-alt">.</i> 3.6.3 installer (old Cocoa IDE)</a>
+                        <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.6/SuperCollider-3.6.4-OSX-universal-no-ide.dmg/download"><i class="icon-download-alt">.</i> 3.6.4 installer (old Cocoa IDE)</a>
                     </li>
                 </ul>
                 <p>
@@ -49,7 +49,7 @@
                 </h2>
                 <ul class="nodot">
                     <li>
-                        <a href="http://sourceforge.net/projects/supercollider/files/Windows/3.6/SuperCollider-3.6.3-win32.exe/download"><i class="icon-download-alt">.</i> Win 32 3.6.3 installer</a>
+                        <a href="http://sourceforge.net/projects/supercollider/files/Windows/3.6/SuperCollider-3.6.4-win32.exe/download"><i class="icon-download-alt">.</i> Win 32 3.6.4 installer</a>
                     </li>
                 </ul>
             </td>
