@@ -16,6 +16,8 @@ author :
   twitter:
   feedburner:
 
+# for use in index pages etc
+ordered_categories: ["examples", "tutorials", "community", "contributing", "development"]
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
