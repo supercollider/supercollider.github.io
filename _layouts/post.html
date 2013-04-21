@@ -21,7 +21,7 @@ layout: default
       {% assign categories_list = page.categories %}
       {% include JB/categories_list %}
     </ul>
-  {% endunless %}  
+  {% endunless %}
 
   {% unless page.tags == empty %}
     <ul class="tag_box inline">
@@ -29,7 +29,7 @@ layout: default
       {% assign tags_list = page.tags %}
       {% include JB/tags_list %}
     </ul>
-  {% endunless %}  
+  {% endunless %}
 
     <hr>
     <div class="pagination">
@@ -45,6 +45,7 @@ layout: default
       {% else %}
         <li class="next disabled"><a>Next &rarr;</a>
       {% endif %}
+        <li><a href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">RSS/Atom</a></li>
       </ul>
     </div>
     <hr>
