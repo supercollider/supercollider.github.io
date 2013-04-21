@@ -34,9 +34,9 @@ Tutor: [Stefan Kersten](http://space.k-hornz.de/)
 Stefan Kersten works as a researcher and sound artist in Barcelona, where he is pursuing a Phd at Pompeu Fabra University’s Music Technology Group. His main research interests are the synthesis and analysis of sound textures and the computational modeling of soundscapes. As a member of the col·lectives Zysk and [Dissonoisex](http://dissonoisex.org/), Kersten is interested in the study of human communication strategies and also in the perceptual limits of interactive media. He is the author of the original port of SuperCollider to Linux.
 
 Dates:
-	Friday 05.10.2012, 18:00-22.00h
-	Saturday 06.10.2012, 11:00–14:00h, 16:00-19:00h
-	Sunday 07.10.2012, 11:00–14:00h, 16:00-19:00h
+- Friday 05.10.2012, 18:00-22.00h
+- Saturday 06.10.2012, 11:00–14:00h, 16:00-19:00h
+- Sunday 07.10.2012, 11:00–14:00h, 16:00-19:00h
 
 Location: Fabra i Coats – Fàbrica de Creació. Sant Adrià, 20. Barcelona. Metro Sant Andreu.
 
