@@ -1,7 +1,8 @@
 ---
-layout: group_index
-group: development
+layout: catpage
+category: development
 title: Building From Source
+sort_order: 2
 ---
 
 For help on getting the latest sources using Git, see [Cheat Sheet for Git](git-cheat-sheet.html)

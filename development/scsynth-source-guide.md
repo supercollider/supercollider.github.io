@@ -1,7 +1,8 @@
 ---
-layout: group_index
-group: development
+layout: catpage
+category: development
 title: scsynth
+sort_order: 7
 ---
 
 This is a guide to the source code of the *scsynth* implementation of the SuperCollider audio server. Note that there is a newer implementation called *supernova*, which shares little source code with *scsynth* (only as far as the plugin and OSC interfaces are concerned).

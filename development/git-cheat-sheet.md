@@ -1,7 +1,8 @@
 ---
-layout: group_index
-group: development
+layout: catpage
+category: development
 title: Cheat Sheet for Git
+sort_order: 3
 ---
 
 ## Get the latest sources ##

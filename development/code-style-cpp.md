@@ -1,7 +1,8 @@
 ---
-layout: group_index
-group: development
+layout: catpage
+category: development
 title: C++ Code Style
+sort_order: 5
 ---
 
 

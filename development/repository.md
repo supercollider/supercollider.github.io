@@ -1,7 +1,8 @@
 ---
-layout: group_index
-group: development
+layout: catpage
+category: development
 title: Source Code Repository
+sort_order: 1
 ---
 
 SuperCollider source code is under [Git][git] source control management, and [hosted on GitHub][sc-github]

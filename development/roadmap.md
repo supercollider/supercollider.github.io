@@ -1,7 +1,8 @@
 ---
-layout: group_index
-group: development
+layout: catpage
+category: development
 title: Development Roadmap
+sort_order: 8
 ---
 
 ### Version 3.6.4

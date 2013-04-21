@@ -1,7 +1,8 @@
 ---
-layout: group_index
-group: development
+layout: catpage
+category: development
 title: Commit Message Format
+sort_order: 4
 ---
 
 Git commit messages should consists of a one-line title, followed by an empty line, followed by the message body:
