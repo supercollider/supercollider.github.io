@@ -15,7 +15,7 @@ This repo is at [https://github.com/supercollider/supercollider.github.io](https
 
 #### Fixing a typo or something small
 
-You can edit and create files directly there on github.
+You can edit and create files directly there on github.  Look for an edit link at the bottom of each page.
 
 Visit the repo on github and edit the page using the github interface.  This will submit a pull request to the supercollider orginization.  When we accept the pull request (click the button) it gets merged in and the pages will regenerate on github. No need to mess with jekyll or cloning the repo.
 
@@ -26,7 +26,7 @@ see also [Syntax and styling](syntax-and-styling.html)
 #### Working with Jekyll and a checked out repo
 
 
-Jekyll can render to html `_sites` but this content is not checked into git and github does not need it to be rendered.
+Jekyll can render to html `_sites` but this content is not checked into git and github does not need it to be rendered.  They will render using their own Jekyll anytime you push to the repo.
 
 - [Jekyll](http://jekyllrb.com/)
 - [Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
@@ -49,6 +49,7 @@ A page or post must have this YAML front matter at the top:
     title: "Building from source"
     published: true
     category: development
+    sort_order: 3
     ---
 
 Pages go in `category-name/page-name.md` and should always have the category set in the header variables to be the same as the folder it is in.  Otherwise it doesn't show up in the page index.
