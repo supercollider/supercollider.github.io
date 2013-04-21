@@ -2,32 +2,29 @@
 layout: page
 title: Categories
 header: Posts By Category
-group: navigation
-published: false
+group: misc
+published: true
 ---
+
 {% comment %}
-Categories only works for posts, not for pages
-{% endcomment %}
+for adding post/news category index pages
 <ul>
 {% for category in site.categories %}
 <li><a href="/categories/{{ category[0] }}.html">{{ category[0] }}</a></li>
 {% endfor %}
 </ul>
+{% endcomment %}
 
-
-{% for category in site.categories %} 
-
+{% for category in site.categories %}
   <h2 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h2>
-  one
   <ul>
-    {% assign pages_list = category[1] %}  
+    {% assign pages_list = category[1] %}
     {% include JB/pages_list %}
   </ul>
-{% endfor %}
+	{% endfor %}
 <hr />
 
 
-posts only
 {% include JB/setup %}
 
 <ul class="tag_box inline">
