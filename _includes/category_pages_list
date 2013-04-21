@@ -1,40 +1,47 @@
 {% comment %}<!--
-The pages_list include is a listing helper.
+
+The category_pages_list include renders a sorted list of pages or posts within a category for use in navbars and indexes
 
 Usage:
 
-  1) assign the 'pages_list' variable to a valid array of pages or posts.
-  2) include JB/pages_list
+  List pages in category
 
-  example:
     <ul>
       {% assign category = 'development' %}
   	  {% assign pages_list = site.pages %}
-  	  {% include JB/pages_list %}
+  	  {% include category_pages_list %}
   	</ul>
 
-  Category:
+  List posts in category
 
-  	assign the 'category' variable to constrain the list to only pages/posts
-  	in the given category. Note you must define the category manually in the page/post
-  	meta-data to use this feature.
+    <ul>
+      {% assign category = 'development' %}
+      {% assign pages_list = site.posts %}
+      {% include category_pages_list %}
+    </ul>
+
+  category:
+
+    Note you must define the category manually in the page meta-data to use this feature.  Posts should set their category by which sub-folder they are in.
+
+  sort_order:
+
+    Define this in the page meta-data.
 
 -->{% endcomment %}
 
-{% if site.JB.pages_list.provider == "custom" %}
-  {% include custom/pages_list %}
-{% else %}
-  {% for node in pages_list %}
-    {% if node.title != null %}
-      {% if category == null or category == node.category %}
-      	{% if page.url == node.url %}
-      	<li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
-      	{% else %}
-      	<li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
-      	{% endif %}
-      {% endif %}
+{% for sort_order in (1..20) %}
+  {% for node in site.pages %}
+    {% if node.title != null and node.category != null and category == node.category and node.sort_order == sort_order %}
+      <li><a {% if node.url == page.url %}class="active"{% endif %} href="{{ BASE_PATH }}{{ node.url }}">{{ node.title }}</a></li>
     {% endif %}
   {% endfor %}
-{% endif %}
+{% endfor %}
+<!-- unordered pages -->
+{% for node in site.pages %}
+  {% if node.title != null and node.category != null and category == node.category and node.sort_order == null %}
+    <li><a {% if node.url == page.url %}class="active"{% endif %} href="{{ BASE_PATH }}{{ node.url }}">{{ node.title }}</a> sort{{node.sort_order}}</li>
+  {% endif %}
+{% endfor %}
 {% assign pages_list = nil %}
-{% assign group = nil %}
+{% assign category = nil %}
