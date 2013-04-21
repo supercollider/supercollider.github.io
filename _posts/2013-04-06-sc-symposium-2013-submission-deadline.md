@@ -13,5 +13,4 @@ Dec. 31st 2012
 
 for details and more information…
 
-<a href="http://supercollider2013.com/">http://supercollider2013.com/</a>
-
+[http://supercollider2013.com/](http://supercollider2013.com/)
