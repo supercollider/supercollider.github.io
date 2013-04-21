@@ -2,6 +2,7 @@
 layout: catpage
 title: Mailing Lists
 category: community
+sort_order: 1
 ---
 
 [Mailing list info at www.birmingham.ac.uk/facilities/BEAST/research/supercollider/mailinglist.aspx](http://www.birmingham.ac.uk/facilities/BEAST/research/supercollider/mailinglist.aspx)

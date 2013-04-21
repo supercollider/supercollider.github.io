@@ -2,6 +2,7 @@
 layout: catpage
 title: Contributing - reporting bugs and pull requests
 category: contributing
+sort_order: 1
 ---
 
 ## Bugs and Features

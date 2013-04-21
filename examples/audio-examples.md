@@ -2,6 +2,7 @@
 layout: catpage
 category: examples
 title: "Audio examples"
+sort_order: 3
 ---
 
 ## [SoundCloud supercollider group](http://soundcloud.com/groups/supercollider)

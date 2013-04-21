@@ -2,6 +2,7 @@
 layout: catpage
 title: "Syntax coloring for SuperCollider"
 category: contributing
+sort_order: 3
 ---
 
 ## Markdown syntax

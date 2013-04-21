@@ -2,6 +2,7 @@
 layout: catpage
 title: "supercollider.github.io [this site]"
 category: contributing
+sort_order: 2
 ---
 
 
