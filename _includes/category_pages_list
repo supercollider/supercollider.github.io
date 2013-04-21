@@ -40,7 +40,7 @@ Usage:
 <!-- unordered pages -->
 {% for node in site.pages %}
   {% if node.title != null and node.category != null and category == node.category and node.sort_order == null %}
-    <li><a {% if node.url == page.url %}class="active"{% endif %} href="{{ BASE_PATH }}{{ node.url }}">{{ node.title }}</a> sort{{node.sort_order}}</li>
+    <li><a {% if node.url == page.url %}class="active"{% endif %} href="{{ BASE_PATH }}{{ node.url }}">{{ node.title }}</a></li>
   {% endif %}
 {% endfor %}
 {% assign pages_list = nil %}
