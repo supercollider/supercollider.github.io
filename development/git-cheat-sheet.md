@@ -61,6 +61,11 @@ Submodules are referenced in their hosting module by their URL. At some point th
 
     git submodule sync
 
+In case you get a submodule stuck in a state you don't understand, it's handy to know that you can always delete the submodules and re-fetch them, for example:
+
+    rm -rf external_libraries/nova-tt
+    git submodule update
+
 ### Pulling from different sources
 
 With git, it's also possible to pull changes from different clones of the same repository. For instance, you might have two or three computers that you use at different times. You can synchronize those clones over a local network without touching sourceforge!
