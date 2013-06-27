@@ -6,13 +6,10 @@ group: index
 ---
 
 <div class="jumbotron">
-    <h1>{{ page.title }}</h1>
+    <p><strong>SuperCollider is a programming language for real time audio synthesis and algorithmic composition.</strong></p>
 
-    <p>SuperCollider is a programming language for real time audio synthesis and algorithmic composition.</p>
-
-    <p>The language interpreter runs in a cross platform IDE (OS X/Linux/Windows) and communicates via Open Sound Control using TCP or UDP with one or more synthesis servers.</p>
-
-    <p>The SuperCollider synthesis server runs in a separate process or even on a separate machine so it is ideal for realtime networked music.</p>
+    <p>The language interpreter runs in a cross platform IDE (OS X/Linux/Windows) and communicates via Open Sound Control with one or more synthesis servers.
+    The SuperCollider synthesis server runs in a separate process or even on a separate machine so it is ideal for realtime networked music.</p>
 
     <p>SuperCollider was developed by James McCartney and originally released in 1996.  He released it under the terms of the GNU General Public License in 2002 when he joined the Apple Core Audio team.  It is now maintained and developed by an active and enthusiastic community. It is used by musicians, scientists, and artists working with sound.</p>
 </div>
