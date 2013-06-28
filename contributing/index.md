@@ -36,6 +36,6 @@ Admitting your clone of `supercollider/supercollider` repository is `~/dev/sc`:
 
 ## Coding guidelines
 
-- Coding guidelines
-- Commit message format
+- [Coding guidelines](/development/code-style-cpp.html)
+- [Commit message format](/development/commit-message.html)
 
