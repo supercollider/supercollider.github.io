@@ -1,6 +1,6 @@
 ---
 layout: catpage
-category: development
+category: contributing
 title: Setting up the IDE for easy contribution of sc-help and class library changes.
 sort_order: 2
 ---
