@@ -3,7 +3,6 @@
 permalink: /:categories/:year/:month/:day/:title
 
 exclude: ["README.md", "Rakefile"]
-auto: true
 pygments: true
 
 #
