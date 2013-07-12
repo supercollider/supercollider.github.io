@@ -9,7 +9,7 @@ In order to simplify changing class files or help files and then contributing ba
 
 In the IDE go to edit, preferences, interpreter then set the following options:
 
-## OSX:
+### OSX:
 
 include paths:
 * /Users/yourusername/...fill in your dev directory.../supercollider/SCClassLibrary
@@ -17,7 +17,7 @@ include paths:
 exclude paths:
 * /Users/yourusername/...fill in your dev directory.../supercollider/build/Install/SuperCollider/SuperCollider.app/Contents/Resources/SCClassLibrary
 
-## Linux:
+### Linux:
 
 include paths:
 * /home/yourusername/...fill in your dev directory.../supercollider/SCClassLibrary
