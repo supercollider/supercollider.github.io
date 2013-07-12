@@ -11,16 +11,18 @@ In the IDE go to edit, preferences, interpreter then set the following options:
 
 ## OSX:
 
-* includePaths:
-	+ /Users/yourusername/...fill in your dev directory.../supercollider/SCClassLibrary
-* excludePaths:
-	+ /Users/yourusername/...fill in your dev directory.../supercollider/build/Install/SuperCollider/SuperCollider.app/Contents/Resources/SCClassLibrary
+include paths:
+* /Users/yourusername/...fill in your dev directory.../supercollider/SCClassLibrary
+
+exclude paths:
+* /Users/yourusername/...fill in your dev directory.../supercollider/build/Install/SuperCollider/SuperCollider.app/Contents/Resources/SCClassLibrary
 
 ## Linux:
 
-* includePaths:
-	+ /home/yourusername/...fill in your dev directory.../supercollider/SCClassLibrary/
-* excludePaths:
-	+ /usr/local/share/SuperCollider/SCClassLibrary/
+include paths:
+* /home/yourusername/...fill in your dev directory.../supercollider/SCClassLibrary
+
+exclude paths:
+* /usr/local/share/SuperCollider/SCClassLibrary/
 
 
