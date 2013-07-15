@@ -23,7 +23,7 @@ Message titles should have the following form:
 
 Great titles are short (**70 characters** or less), so as to fit in one line in most constrained circumstances.
 
-The description of changes should be written in [**imperative mood**][wkp-imperative], e.g. `fix bug` instead of `fixed bug`.
+The short description of changes should clearly and concisely state what the commit [**does**][wkp-imperative], rather than describing the previous state or new functionality, e.g. `fix bug in X` instead of `there is a bug in X`, and `add X to settings dialog` instead of `settings dialog can do X`.
 
 A good example of a title is:
 
