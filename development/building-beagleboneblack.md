@@ -35,6 +35,13 @@ step3 (bbb: install newest jack2 from github)
 4. `./waf build`
 5. `sudo ./waf install`
 6. `sudo ldconfig`
+7. `sudo adduser debian audio`
+8. `sudo pico /etc/security/limits.conf`
+9. add the following lines and do ctrl+o, ctrl+x so save and exit.
+10. `@audio - memlock 256000`
+11. `@audio - rtprio 99`
+12. `@audio - nice -19`
+13. `sudo reboot`
 
 step4 (bbb: install newest sc from github)
 --
@@ -49,7 +56,7 @@ step4 (bbb: install newest sc from github)
 
 step5 (bbb: start jack & sclang)
 --
-1. `jackd -P70 -p16 -t2000 -dalsa -dhw:0,0 -p128 -n3 -r44100 -s &`     #use -dhw:1,0 if you have a usb soundcard connected
+1. `jackd -P70 -p16 -t2000 -dalsa -dhw:1,0 -p128 -n3 -r44100 -s &`     #the -dhw:1,0 means usb soundcard
 2. `export SC_JACK_DEFAULT_INPUTS="system"`
 3. `export SC_JACK_DEFAULT_OUTPUTS="system"`
 4. `sclang`

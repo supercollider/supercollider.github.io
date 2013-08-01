@@ -75,3 +75,6 @@ you can also compile natively on the rpi itself without using distcc. just follo
 3. `sudo swapon /swapfile`
 
 And last in step4 line 5 change to `CC="gcc" CXX="g++"`
+
+more info...
+<http://jeremy-nicola.info/portfolio-item/cross-compilation-distributed-compilation-for-the-raspberry-pi/>
