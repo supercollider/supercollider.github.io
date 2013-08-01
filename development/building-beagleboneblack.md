@@ -2,7 +2,7 @@
 layout: catpage
 category: development
 title: Building From Source on BeagleBone Black
-sort_order: 2
+sort_order: 3
 ---
 
 Compiling SC3.7 on Beaglebone Black Debian using OSX, a cross-compiler & DISTCC
