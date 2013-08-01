@@ -2,7 +2,7 @@
 layout: catpage
 category: development
 title: Building From Source on Raspberry Pi
-sort_order: 2
+sort_order: 3
 ---
 
 Note
