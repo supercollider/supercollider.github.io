@@ -2,7 +2,7 @@
 layout: catpage
 category: development
 title: Cheat Sheet for Git
-sort_order: 3
+sort_order: 4
 ---
 
 ## Get the latest sources ##
