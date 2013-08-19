@@ -26,6 +26,7 @@ List all here. Feel free to edit on github and add yourself.
 * [http://www.rockhoppertech.com/blog/category/computer-music/supercollider/](http://www.rockhoppertech.com/blog/category/computer-music/supercollider/)
 * [http://jeremah.co.uk/blog/](http://jeremah.co.uk/blog/)
 * [http://kingeve.com/wordpress/?cat=91](http://kingeve.com/wordpress/?cat=91)
+* <http://backtrace.blogspot.de/search/label/supercollider>
 
 //--video tutorials
 * [http://www.youtube.com/playlist?list=PLPYzvS8A_rTaNDweXe6PX4CXSGq4iEWYC](http://www.youtube.com/playlist?list=PLPYzvS8A_rTaNDweXe6PX4CXSGq4iEWYC)
