@@ -47,12 +47,14 @@ step4 (bbb: install newest sc from github)
 --
 1. `git clone --recursive git://github.com/supercollider/supercollider.git supercollider`
 2. `cd supercollider`
-3. `mkdir build && cd build`
-4. `export DISTCC_HOSTS='192.168.1.55'`            #edit to match your osx computer ip
-5. `CC="distcc arm-linux-gcc" CXX="distcc arm-linux-g++" cmake -L -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_QT=OFF -DSC_WII=OFF -DSC_ED=OFF -DSC_IDE=OFF -DSC_EL=ON -DCMAKE_C_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon" ..`
-6. check the output and make sure it says: Check for working C compiler: /usr/bin/distcc -- works
-7. `make -j4`
-8. `sudo make install`
+3. `git checkout ddd8c8d75dd00263acf593b062ecbb06686a4574`
+4. `git submodule init && git submodule update`
+5. `mkdir build && cd build`
+6. `export DISTCC_HOSTS='192.168.1.55'`            #edit to match your osx computer ip
+7. `CC="distcc arm-linux-gcc" CXX="distcc arm-linux-g++" cmake -L -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_QT=OFF -DSC_WII=OFF -DSC_ED=OFF -DSC_IDE=OFF -DSC_EL=ON -DCMAKE_C_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon" ..`
+8. check the output and make sure it says: Check for working C compiler: /usr/bin/distcc -- works
+9. `make -j4`
+10. `sudo make install`
 
 step5 (bbb: start jack & sclang)
 --
@@ -72,10 +74,10 @@ step6 (sc bbb: boot server & test sound)
 
 Compiling SC3.7 natively on Beaglebone Black Debian
 ==
-you can also compile natively on the bbb itself without using distcc.  just follow the instructions above but skip the distcc part (step1, step2 lines 4-5, step4 line 4) and before compiling set up a swapfile...
+you can also compile natively on the bbb itself without using distcc.  just follow the instructions above but skip the distcc part (step1, step2 lines 4-5, step4 line 6) and before compiling set up a swapfile...
 1. `sudo dd if=/dev/zero of=/swapfile bs=1MB count=512`
 2. `sudo mkswap /swapfile`
 3. `sudo swapon /swapfile`
 
-And last in step4 line 5 change to `CC="gcc" CXX="g++"`
+And last in step4 line 7 change to `CC="gcc" CXX="g++"`
 
