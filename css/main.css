@@ -191,4 +191,5 @@ code span.comment {
 
 ul.callstoaction li {
 	display: inline-block;
+	margin-left: 30px;
 }
