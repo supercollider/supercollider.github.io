@@ -14,8 +14,8 @@ group: index
     <p>SuperCollider was developed by James McCartney and originally released in 1996.  He released it under the terms of the GNU General Public License in 2002 when he joined the Apple Core Audio team.  It is now maintained and developed by an active and enthusiastic community. It is used by musicians, scientists, and artists working with sound.</p>
     
     <ul class="callstoaction">
-        <li><a href="/download.html">Download it now</li>
-        <li><a href="/examples/audio-examples.html">Listen to some sounds</li>
+        <li><a href="/download.html">Download it now</a></li>
+        <li><a href="/examples/audio-examples.html">Listen to some sounds</a></li>
     </ul>
 </div>
 
