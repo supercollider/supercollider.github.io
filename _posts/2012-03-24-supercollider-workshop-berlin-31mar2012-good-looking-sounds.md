@@ -7,7 +7,7 @@ author: redfrik
 tags: []
 ---
 
-					<p>Saturday, 31.03.2012, 11.00 - 19.00 (with break) @ LEAP<br />
+<p>Saturday, 31.03.2012, 11.00 - 19.00 (with break) @ LEAP<br />
 <br />
 A one day workshop by Fredrik Olofsson about generating strange graphics in the audio programming language SuperCollider. The idea is to not care much about how the code we write actually sounds or works, but rather that it looks cool graphically. We will deliberately perform odd math operations to mess up the audio signals and explore and abuse the scope, plot and post windows as well as draw custom waveforms and spectrograms.<br />
 <br />

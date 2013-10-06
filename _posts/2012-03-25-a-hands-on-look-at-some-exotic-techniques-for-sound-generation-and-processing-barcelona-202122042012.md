@@ -7,7 +7,7 @@ author: redfrik
 tags: []
 ---
 
-					<p>part of <a href="http://lullcec.org/en/2012/tallers/seminaris-sonors-primavera-2012/">sonic seminars - spring 2012</a></p>
+<p>part of <a href="http://lullcec.org/en/2012/tallers/seminaris-sonors-primavera-2012/">sonic seminars - spring 2012</a></p>
 <p>20/21/22.04.2012 – <strong>A hands-on look at some exotic techniques for sound generation and processing</strong>, by <em>Chris Jeffs</em>.</p>
 <p>This seminar will present a wide spectrum of lesser known and somehow exotic sound generation and processing techniques. A short presentation and explanation will be provided for each technique, along with sample patches provided for each participant to hack as they choose. These are some of the techniques we will see: physical modeling, distortion, altered harmonic distributions, analogue emulation, phase distortion, dynamic waveshaping, algorithmic waveform generation, and spectral processing techniques using the Fast Fourier Transform.</p>
 <div><strong>Time schedule:</strong></div>

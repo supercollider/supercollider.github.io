@@ -7,7 +7,7 @@ author: redfrik
 tags: []
 ---
 				
-					<p>part of <a href="http://lullcec.org/en/2012/tallers/seminaris-sonors-primavera-2012/">sonic seminars - spring 2012</a></p>
+<p>part of <a href="http://lullcec.org/en/2012/tallers/seminaris-sonors-primavera-2012/">sonic seminars - spring 2012</a></p>
 <p>18/19/20.05.2012 - <strong>Audiovisual programming: Mapping and visualization</strong>, by Fredrik Olofsson</p>
 <p>This seminar will investigate the built-in graphical features of SuperCollider and how to use these artistically in combination with the sound synthesis server. We will use simple sounds and simple graphics to explore the endless possibilities of audiovisual mapping and sound visualization. The aim is to combine shapes, colours, paths and pixels with oscillators, control signals, wavetables and spectrums. At the end of the course we will have programmed a few unique audiovisual instruments and connected sound generating code to drawing routines. We will also play with drawing time and frequency domain representations of audio and looked at generating static images by plotting waveforms in non-realtime. We will code sounds that look good as well as code graphics that sound well.</p>
 <p><strong>Level</strong>: intermediate (presumes some basic SuperCollider knowledge)</p>

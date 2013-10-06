@@ -6,8 +6,7 @@ category: releases
 author: dan
 tags: []
 ---
-
-					<p>SuperCollider 3.4.5 is now out. This is a bugfix release, fixing a handful of small issues in 3.4.4.</p>
+<p>SuperCollider 3.4.5 is now out. This is a bugfix release, fixing a handful of small issues in 3.4.4.</p>
 <p>Source code only at first:<br />
 <a href="https://sourceforge.net/projects/supercollider/files/Source/3.4.5/">https://sourceforge.net/projects/supercollider/files/Source/3.4.5/</a></p>
 <p>Someone might upload pre-compiled packages later.</p>

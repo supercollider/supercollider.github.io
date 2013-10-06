@@ -6,7 +6,7 @@ category: workshops
 author: redfrik
 tags: []
 ---
-	<p><a href="http://lullcec.org/en/2012/workshops/espacialitzacio-del-so-amb-wave-field-synthesis/">http://lullcec.org/en/2012/workshops/espacialitzacio-del-so-amb-wave-field-synthesis/</a></p>
+<p><a href="http://lullcec.org/en/2012/workshops/espacialitzacio-del-so-amb-wave-field-synthesis/">http://lullcec.org/en/2012/workshops/espacialitzacio-del-so-amb-wave-field-synthesis/</a></p>
 <p>Two of the core members of The Game of Life’s Foundation team will impart a 3-day seminar on realtime sound spatialization with <a title="Wave Field Synthesis at Holophony.net" href="http://www.holophony.net/Wavefieldsynthesis.htm">wave field synthesis</a>. The seminar will deal with both compositional and technical issues surrounding spatial music and, focusing on electroacustic composition for wave field synthesis systems. <a title="The Game of Life Foundation" href="http://gameoflife.nl/">The Game Of Life Foundation</a>‘s mobile wave field synthesis system (composed of 192 speakers and 12 subwoofers) will be available on-site for participants to learn to operate the system and gain hands-on familiarity with space as a compositional parameter.</p>
 <p>Wave field synthesis is a technique for sound spatialisation.  It produces “artificial” wave fronts synthesized by a large number of individually driven speakers. Such wave fronts seem to originate from a virtual starting point. Contrary to traditional spatialization techniques such as stereo, the localization of virtual sources in WFS does not depend on or change with the listener’s position. As opposed to most multichannel systems, WFS has no sweet spot and allows for a wider optimal listening area.</p>
 <p><strong>Structure:</strong></p>

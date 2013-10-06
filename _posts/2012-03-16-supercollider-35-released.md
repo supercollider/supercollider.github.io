@@ -7,7 +7,7 @@ author: dan
 tags: []
 ---
 
-					<p>SuperCollider is a programming language and environment for real-time audio synthesis and processing.</p>
+<p>SuperCollider is a programming language and environment for real-time audio synthesis and processing.</p>
 <p>Our next major release, <strong>SuperCollider version 3.5 is now out!</strong> It contains many new features and bugfixes - major highlights are new help system, a new cross-platform gui and a new multiprocessor-aware audio-synthesis server. for details, please consult the `News in 3.5&#8242; section of the new help system, which can be found online at: <a href="http://doc.sccode.org/Guides/News-3_5.html" target="_blank">http://doc.sccode.org/Guides/News-3_5.html</a></p>
 <p>source tarballs:<br />
 <a href="https://sourceforge.net/projects/supercollider/files/Source/3.5.0/SuperCollider-3.5.0-Source.tar.bz2">https://sourceforge.net/projects/supercollider/files/Source/3.5.0/SuperCollider-3.5.0-Source.tar.bz2</a></p>

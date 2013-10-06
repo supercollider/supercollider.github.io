@@ -6,7 +6,7 @@ category: workshops
 author: redfrik
 tags: []
 ---
-					<p>part of <a href="http://lullcec.org/en/2012/tallers/seminaris-sonors-primavera-2012/">sonic seminars - spring 2012</a></p>
+<p>part of <a href="http://lullcec.org/en/2012/tallers/seminaris-sonors-primavera-2012/">sonic seminars - spring 2012</a></p>
 <p>8/9/10.06.2012 - <strong>Seminar: Listening and Learning Systems for Composition and Live Performance</strong>, by Nick Collins</p>
 <p>This seminar will explore practical machine listening and machine learning methods within the SuperCollider environment, alongside associated technical and musical issues. Applications for such techniques range from autonomous concert systems, through novel musical controllers, to sound analysis projects outside of realtime informing musical composition. We will investigate built-in and third party UGens and classes for listening and learning, including the SCMIR library for music information retrieval in SuperCollider.</p>
 <p><strong>Level</strong>: intermediate</p>

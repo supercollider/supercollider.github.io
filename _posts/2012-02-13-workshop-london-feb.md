@@ -7,7 +7,7 @@ author: dan
 tags: []
 ---
 
-					<p>A 2-day  intensive intermediate/advanced workshop for the SuperCollider  programming environment. Participants already familiar with the basics  of supercollider will be guided into a hands-on exploration of more  advanced concepts like designing GUIs and virtual instruments, writing  classes, networking via OSC, interacting with arduino and analogue  sensors, live-coding, NRT composition, generative music techniques.</p>
+<p>A 2-day  intensive intermediate/advanced workshop for the SuperCollider  programming environment. Participants already familiar with the basics  of supercollider will be guided into a hands-on exploration of more  advanced concepts like designing GUIs and virtual instruments, writing  classes, networking via OSC, interacting with arduino and analogue  sensors, live-coding, NRT composition, generative music techniques.</p>
 <p><strong>Saturday 18th - Sunday 19th Feb 2012</strong></p>
 <p>11am-5pm daily</p>
 <p>nnnnn, Unit 73a, Regent Studios</p>

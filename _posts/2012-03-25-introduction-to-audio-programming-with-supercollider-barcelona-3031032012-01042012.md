@@ -7,7 +7,7 @@ author: redfrik
 tags: []
 ---
 
-					<p>part of <a href="http://lullcec.org/en/2012/tallers/seminaris-sonors-primavera-2012/">sonic seminars - spring 2012</a></p>
+<p>part of <a href="http://lullcec.org/en/2012/tallers/seminaris-sonors-primavera-2012/">sonic seminars - spring 2012</a></p>
 <p>30/31.03.2012 &amp; 01.04.2012 –<strong> Introduction to Audio Programming with SuperCollider</strong>, by <em>Miguel Negrão</em>.</p>
 <p><span>This introductory seminar will allow anyone with no previous experience in audio programming to start developing his/her own interactive sound synthesis programs using the SuperCollider programming environment. After a general introduction to the SuperCollider language and architecture, participants will learn to implement fundamental audio synthesis and processing techniques, as well as scheduling events in time and interfacing to the real world using MIDI, OpenSoundControl or the HID protocol.</span></p>
 <div><strong>Time schedule:</strong></div>
