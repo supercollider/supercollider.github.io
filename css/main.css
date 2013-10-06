@@ -193,3 +193,7 @@ ul.callstoaction li {
 	display: inline-block;
 	margin-left: 30px;
 }
+
+ul.callstoaction li:before {
+	content: "• ";
+}
