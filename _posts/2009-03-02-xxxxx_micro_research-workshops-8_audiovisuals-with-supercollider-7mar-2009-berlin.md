@@ -47,7 +47,6 @@ http://www.musicalfieldsforever.com
 
 Please email m at 1010.co.uk to reserve a place (strictly limited)
 
-_______
 
 Background:
 
