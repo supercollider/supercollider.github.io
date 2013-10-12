@@ -6,7 +6,7 @@ category: courses
 author: redfrik
 tags: []
 ---
-**March 7th 2PM 2009: Audiovisuals with SuperCollider [with Fredrik Olofsson]**
+**March 7th 2PM 2009: Audiovisuals with SuperCollider (with Fredrik Olofsson)**
 
 syn-er-gy | noun | the interaction or cooperation of two or more organizations, substances, or other agents to produce a combined effect greater than the sum of their separate effects.
 
@@ -32,7 +32,7 @@ What to bring:
 
 3) Headphones
 
-4) 10 Euros participation fee [including food]
+4) 10 Euros participation fee (including food)
 
 About the Teacher:
 
