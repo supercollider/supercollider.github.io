@@ -21,17 +21,9 @@ Github supports an additional style of code block.  If support for SuperCollider
 
 The markup would look like this:
 
-	```supercollider
-	s = Server.local;
-	y = Synth("def");
-	```
 
 The result looks like this:
 
-```supercollider
-s = Server.local;
-y = Synth("def");
-```
 
 Note: you won't see this formatted correctly using the local Jekyll test server.
 

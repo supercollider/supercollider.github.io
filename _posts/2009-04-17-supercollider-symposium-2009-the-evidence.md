@@ -6,7 +6,7 @@ category: symposium
 author: dan
 tags: []
 ---
-<div>The SuperCollider Symposium 2009 at <a href="http://supercollider.wesleyan.edu/">Wesleyan University</a> (Connecticut, USA) went down a treat.</div>
+<p>The SuperCollider Symposium 2009 at <a href="http://supercollider.wesleyan.edu/">Wesleyan University</a> (Connecticut, USA) went down a treat.</p>
 
 Here are links to footage of some of the events:
 
