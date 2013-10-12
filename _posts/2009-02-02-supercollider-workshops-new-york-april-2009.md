@@ -6,7 +6,7 @@ category: courses
 author: dan
 tags: []
 ---
-SUPERCOLLIDER WORKSHOPS APRIL 2009
+<p>SUPERCOLLIDER WORKSHOPS APRIL 2009</p>
 
 All details and sign-up at: http://tinyurl.com/harvestcollider
 
