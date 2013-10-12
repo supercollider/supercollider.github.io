@@ -16,7 +16,7 @@ http://jp.youtube.com/watch?v=Kg_umbdSImo
 
 **Location:** Elsenstr. 52, 2HH, Berlin - first building on left once you enter past the iron gates.
 
-Don’t forget to bring my phone nrs. 03030133320, 017620626386.
+Don't forget to bring my phone nrs. 03030133320, 017620626386.
 
 [Original announcement](http://www.listarc.bham.ac.uk/lists/sc-users/msg48613.html)
 
