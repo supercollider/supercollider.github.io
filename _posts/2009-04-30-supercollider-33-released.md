@@ -6,11 +6,11 @@ category: releases
 author: dan
 tags: []
 ---
-<p>We are pleased to announce that <strong>SuperCollider 3.3</strong> is now released.</p>
+We are pleased to announce that **SuperCollider 3.3** is now released.
 
-<p>Visit <a href="http://supercollider.sourceforge.net/downloads">the SuperCollider downloads page</a> to get binary or source-code downloads for your platform.</p>
+Visit [the SuperCollider downloads page](http://supercollider.sourceforge.net/downloads) to get binary or source-code downloads for your platform.
 
-<p>There are many changes since 3.2 (see <a title="SuperCollider 3.3 changelog" href="http://supercollider.svn.sourceforge.net/viewvc/supercollider/tags/3.3/build/ChangeLog">the changelog</a> for full detail) but here are some headlines:</p>
+There are many changes since 3.2 (see [the changelog](http://supercollider.svn.sourceforge.net/viewvc/supercollider/tags/3.3/build/ChangeLog) for full detail) but here are some headlines:
 
 <ul>
 <li><strong>GUI system updates</strong>: easier syntax, plus a major update of GUI documentation, as well as extra features such as modal sheets, SCLevelIndicator, and menu item manipulation</li>

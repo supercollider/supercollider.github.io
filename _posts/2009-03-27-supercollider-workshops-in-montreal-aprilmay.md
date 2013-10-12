@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SuperCollider workshops in Montreal, April/May"
+title: "SuperCollider workshops in Montreal, April-May"
 description: ""
 category: workshops
 author: dan

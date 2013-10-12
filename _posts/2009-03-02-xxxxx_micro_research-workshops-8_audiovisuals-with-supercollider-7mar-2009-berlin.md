@@ -8,7 +8,7 @@ tags: []
 ---
 **March 7th 2PM 2009: Audiovisuals with SuperCollider (with Fredrik Olofsson)**
 
-syn-er-gy | noun | the interaction or cooperation of two or more organizations, substances, or other agents to produce a combined effect greater than the sum of their separate effects.
+syn-er-gy : noun : the interaction or cooperation of two or more organizations, substances, or other agents to produce a combined effect greater than the sum of their separate effects.
 
 (OED)
 
@@ -28,7 +28,7 @@ What to bring:
 
 1) Laptop running Linux, OS X or Windows
 
-2) SuperCollider 3 installed (version 3.2 or later): <a href="http://supercollider.sourceforge.net/">http://supercollider.sourceforge.net/</a>
+2) SuperCollider 3 installed (version 3.2 or later): http://supercollider.sourceforge.net/
 
 3) Headphones
 

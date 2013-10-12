@@ -10,6 +10,9 @@ tags: []
 
 Renate Wieser, Till Bovermann und Julian Rohrhuber geben einen Überblick über verschiedene Aspekte der Klangsynthese und -programmierung.
 
-<p>Donnerstag, 12. Februar 2008, 16.00 Uhr<br />
-Seminarraum Disco 2.0, 1. Etage, Universität Paderborn<br />
-Fürstenallee 11, 33102 Paderborn.</p>
+Donnerstag, 12. Februar 2008, 16.00 Uhr
+
+Seminarraum Disco 2.0, 1. Etage, Universität Paderborn
+
+Fürstenallee 11, 33102 Paderborn.
+

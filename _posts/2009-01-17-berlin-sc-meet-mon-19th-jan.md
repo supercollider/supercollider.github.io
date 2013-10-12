@@ -8,9 +8,10 @@ tags: []
 ---
 This coming **Monday the 19th of Jan** starting at 7pm Takeko Akamatsu will be presenting her work in SuperCollider.
 
-
 **Takeko Akamatsu / Craftwife**
+
 http://www.tn8.jp/craftwife
+
 http://jp.youtube.com/watch?v=Kg_umbdSImo
 
 **Location:** Elsenstr. 52, 2HH, Berlin - first building on left once you enter past the iron gates.
