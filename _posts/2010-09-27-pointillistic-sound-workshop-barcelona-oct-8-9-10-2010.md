@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Pointillistic Sound Workshop - Barcelona - Oct 8, 9 &#038; 10 / 2010"
+title: "Pointillistic Sound Workshop - Barcelona - Oct 8, 9: 10 / 2010"
 description: ""
 category: workshops
 author: redfrik
 tags: []
 ---
-08/09/10, October, 2010<br />
+08/09/10, October, 2010
+
 Hangar, Barcelona, Spain:
 
 a 3 day practical seminar in granular sound synthesis.
