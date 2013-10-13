@@ -18,6 +18,8 @@ The **SuperCollider Symposium** is an international gathering of SuperCollider u
 
 [http://supercollider2013.com/](http://supercollider2013.com/)
 
+<div><a href="http://www.flickr.com/photos/cu_atlas/8805171047/" title="Chris Brown discusses the interface of his interactive polyrhythmic sequencer Ritmos by CU ATLAS, on Flickr"><img src="/images/sc2013/8805171047_8094ae622c_m.jpg" width="240" height="158" alt="Chris Brown discusses the interface of his interactive polyrhythmic sequencer Ritmos"></a><a href="http://www.flickr.com/photos/cu_atlas/8804763313/" title="Charles Céleste Hutchins performs &quot;Cloud Drawings&quot; in the ATLAS Black Box theater by CU ATLAS, on Flickr"><img src="/images/sc2013/8804763313_10a96e9ed5_m.jpg" width="110" height="158" alt="Charles Céleste Hutchins performs &quot;Cloud Drawings&quot; in the ATLAS Black Box theater"></a><a href="http://www.flickr.com/photos/cu_atlas/8806000891/" title="Performer/Presenters of the SuperCollider Symposium 2013 by CU ATLAS, on Flickr"><img src="/images/sc2013/8806000891_bb57f54d93_t.jpg" width="115" height="158" alt="Performer/Presenters of the SuperCollider Symposium 2013"></a><a href="http://www.flickr.com/photos/cu_atlas/8815004812/" title="Chris Brown performs piece for solo piano and polyrhythmic software in ATLAS Black Box theater by CU ATLAS, on Flickr"><img src="/images/sc2013/8815004812_185a98fc24_q.jpg" width="158" height="158" alt="Chris Brown performs piece for solo piano and polyrhythmic software in ATLAS Black Box theater"></a></div>
+
 ### London (UK) 2012
 
 <div><a href="http://www.sc2012.org.uk/">http://www.sc2012.org.uk/</a></div>
