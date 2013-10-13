@@ -1,6 +1,6 @@
 ---
 layout: catpage
-title: "Symposia"
+title: "Symposium"
 description: ""
 category: "community"
 sort_order: 2
