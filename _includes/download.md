@@ -86,3 +86,26 @@ git clone --recursive git@github.com:supercollider/supercollider.git
     <li><a href="http://quarks.sourceforge.net/">Quarks repository</a></li>
     <li><a href="http://doc.sccode.org/Guides/UsingQuarks.html">Quarks help file</a></li>
 </ul>
+<div><strong>Note:</strong> If you have installed SuperCollider from the binary downloads on Sourceforge you will have to execute the following steps to make updating quarks via SVN work again:
+    <ol>
+        <li>In a terminal navigate to your userAppSupportDir resp. the directory containing the sources of your quarks.
+        On a mac:
+        {% highlight bash %}
+        $ cd ~/Library/Application\ Support/SuperCollider/quarks 
+        {% endhighlight %}
+        On Linux:
+        {% highlight bash %}
+        $ cd ~/.local/share/SuperCollider/quarks
+        {% endhighlight %}
+        </li>
+        <li>
+        Issue the switch statement. It has to be done in one line or \ has to be set before a line-brake: 
+        {% highlight bash %}
+        $ svn switch --relocate \
+            https://quarks.svn.sourceforge.net/svnroot/quarks/ \
+            https://svn.code.sf.net/p/quarks/code 
+        {% endhighlight %}
+        </li>
+    </ol>
+</div>
+
