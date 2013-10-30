@@ -86,3 +86,5 @@ git clone --recursive git@github.com:supercollider/supercollider.git
     <li><a href="http://quarks.sourceforge.net/">Quarks repository</a></li>
     <li><a href="http://doc.sccode.org/Guides/UsingQuarks.html">Quarks help file</a></li>
 </ul>
+
+<strong>Note: SourceForge moved the URL of the Quarks repo.</strong> If your install is broken please follow <a href="/development/quarks-repository-moved.html">these instructions</a>.
