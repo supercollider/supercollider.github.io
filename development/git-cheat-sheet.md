@@ -68,7 +68,7 @@ In case you get a submodule stuck in a state you don't understand, it's handy to
 
 ### Pulling from different sources
 
-With git, it's also possible to pull changes from different clones of the same repository. For instance, you might have two or three computers that you use at different times. You can synchronize those clones over a local network without touching sourceforge!
+With git, it's also possible to pull changes from different clones of the same repository. For instance, you might have two or three computers that you use at different times. You can synchronize those clones over a local network without touching github!
 
 The easy way:
 
@@ -76,7 +76,7 @@ The easy way:
 
 check that everything is okay
 
-    git pull --rebase 	#update master from SourceForge
+    git pull --rebase 	#update master from github
     git push
 
 The hard way:
@@ -84,11 +84,11 @@ The hard way:
     git checkout -b merge-johnnys-changes
     git pull https://johnny.com/repo.git johnnys-branchname    #get his changes
 
-check that everything is okay, then push changes back to SourceForge.
+check that everything is okay, then push changes back to github.
 
     git checkout master
-    git pull --rebase 	#update master from SourceForge
-    git rebase master  merge-johnnys-changes #put johny’s changes on top of latest changes from SourceForge
+    git pull --rebase 	#update master from github
+    git rebase master  merge-johnnys-changes #put johny’s changes on top of latest changes from github
     git checkout master
     git merge merge-johnnys-changes
     git push
@@ -201,7 +201,7 @@ This will merge the additional commits of your feature branch into the master an
 
 ##Common git commands##
 
-upstream - the SourceForge git repository.
+upstream - the github repository.
 
 fetch and merge changes from upstream:
 
