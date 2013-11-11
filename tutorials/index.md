@@ -7,7 +7,7 @@ category: tutorials
 ## Recommended introductory tutorials:
 
 <ul>
-<li><a href="http://supercollider.svn.sourceforge.net/viewvc/supercollider/trunk/common/build/Help/Tutorials/Getting-Started/Getting%20Started%20With%20SC.html">Scott Wilson’s SC tutorial</a> - comes bundled with the SC download, as do some&nbsp;<a href="http://supercollider.svn.sourceforge.net/viewvc/supercollider/trunk/common/build/Help/Tutorials/">more tutorials</a><br>
+<li><a href="http://doc.sccode.org/Tutorials/Getting-Started/00-Getting-Started-With-SC.html">Getting started tutorial</a> - comes bundled within SC help, and here are some older <a href="http://supercollider.svn.sourceforge.net/viewvc/supercollider/trunk/common/build/Help/Tutorials/">more tutorials</a><br>
 <em>(…plus here’s a <a href="http://jahya.net/blog/?2012-06-quickref-for-supercollider">quick reference based on Scott’s tutorial</a> by Andrew McWilliams)</em></li>
 <li><a href="http://www.sussex.ac.uk/Users/nc81/modules/cm1/workshop.html">Nick Collins’ &nbsp;SuperCollider tutorial</a> has a 12 week course of tutorial files as browseable HTML, and is also available in a downloadable zip</li>
 <li><a href="http://www.mat.ucsb.edu/275/CottleSC3.pdf">David Cottle’s SC tutorial</a></li>
@@ -30,4 +30,3 @@ category: tutorials
 <li><a href="http://www.dewdrop-world.net/sc3/tutorials/index.php">dewdrop_world’s SC tutorials</a> - making good use of the dewdrop extensions.</li>
 <li><a href="http://plus1plus1plus.org/Resources/SC/SC3PluginTutorial.php">Compiling SC and SC plugins</a> - a tutorial on getting your hands dirty with the source code</li>
 </ul>
-
