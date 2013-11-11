@@ -31,10 +31,13 @@ Jekyll can render to html `_sites` but this content is not checked into git and 
 - [Jekyll](http://jekyllrb.com/)
 - [Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
 
-Check out this repository, install gem and jekyll (plenty of help online) and start up the server to view changes in preview mode.
+Check out this repository, install gem and jekyll (plenty of help online) and start up the server to view changes in preview mode:
+
+    jekyll serve --watch
+
+Alternatively, for older jekyll version (< 1.0):
 
     jekyll --server --auto
-
 
 #### Adding news posts and pages
 
