@@ -272,6 +272,27 @@ show latest log in upstream:
 see status of changes:
 
     git status
+    
+## Problems with submodule state update ##
+
+When switching branches and doing a submodule update (in SC: nova-simd and nova-tt"), git sometimes messes up the submodule status without you having touched it. 
+
+It will post something like:
+
+    On branch master
+    Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git checkout -- <file>..." to discard changes in working directory)
+      (commit or discard the untracked or modified content in submodules)
+    modified:   external_libraries/nova-tt (untracked content)
+
+
+This can be remedied by deleting the file and updatind the submodules again (given you haven't consciously made any changes, of course, which you'd lose!):
+    
+    rm -r external_libraries/nova-tt
+    git submodule init
+    git submodule update
+    
 
 ## Testing mailing list patches ##
 
