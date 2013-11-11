@@ -68,27 +68,27 @@ In case you get a submodule stuck in a state you don't understand, it's handy to
 
 ### Pulling from different sources
 
-With git, it's also possible to pull changes from different clones of the same repository. For instance, you might have two or three computers that you use at different times. You can synchronize those clones over a local network without touching sourceforge!
+With git, it's also possible to pull changes from different clones of the same repository. For instance, you might have two or three computers that you use at different times. You can synchronize those clones over a local network without touching github!
 
 The easy way:
 
-    git pull https://johnny.com/repo.git johnnys-branchname    #get his changes
+    git pull https://johnny.com/repo.git johnnys-branchname # get his changes
 
 check that everything is okay
 
-    git pull --rebase 	#update master from SourceForge
+    git pull --rebase # update master from github
     git push
 
 The hard way:
 
     git checkout -b merge-johnnys-changes
-    git pull https://johnny.com/repo.git johnnys-branchname    #get his changes
+    git pull https://johnny.com/repo.git johnnys-branchname # get his changes
 
-check that everything is okay, then push changes back to SourceForge.
+check that everything is okay, then push changes back to github.
 
     git checkout master
-    git pull --rebase 	#update master from SourceForge
-    git rebase master  merge-johnnys-changes #put johny’s changes on top of latest changes from SourceForge
+    git pull --rebase # update master from github
+    git rebase master  merge-johnnys-changes # put johny’s changes on top of latest changes from github
     git checkout master
     git merge merge-johnnys-changes
     git push
@@ -119,18 +119,18 @@ With a local-only branch, the worst case (completely messing up the branch) is t
 
 The "-b" option to `git checkout` creates a new branch from an existing one.
 
-    git checkout master -b my_master    #now you have your own disconnected branch of master
+    git checkout master -b my_master # now you have your own disconnected branch of master
 
 ... work work work, commit stuff, blah blah...
 
-    git log   #take note of the commit IDs, which are 32 digit hexadecimal strings
+    git log # take note of the commit IDs, which are 32 digit hexadecimal strings
 
-    git checkout master   #switch back to the real master branch
-    git cherry-pick [ID]   #repeat for each ID
-    git cherry -v   #doublecheck what will actually be pushed
+    git checkout master # switch back to the real master branch
+    git cherry-pick [ID] # repeat for each ID
+    git cherry -v # doublecheck what will actually be pushed
     git push origin master
 
-    git checkout my_master   #safe again
+    git checkout my_master # safe again
 
 `git cherry-pick` is a bit inconvenient for large numbers of commits. In that case, it would be better to use a "topic branch." See below, "Using a separate branch for work on a feature."
 
@@ -201,7 +201,7 @@ This will merge the additional commits of your feature branch into the master an
 
 ##Common git commands##
 
-upstream - the SourceForge git repository.
+upstream - the github repository.
 
 fetch and merge changes from upstream:
 
