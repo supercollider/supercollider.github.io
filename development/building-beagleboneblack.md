@@ -15,8 +15,8 @@ NOTE: in step5 it is assumed there is an usb soundcard/adapter connected. It mig
 step1 (startup)
 --
 1. download and transfer [debian-wheezy-7.2-armhf-3.8.13-bone30.img](http://www.armhf.com/index.php/download/) to a sdcard.
-2. put the sdcard in the bbb (on osx try PiFiller), connect an ethernet cable and 5v power.
-3. figure out the IP of the bbb (on osx try LanScan) and log in with `ssh debian@x.x.x.x`. the default password is `debian`.
+2. put the sdcard in the bbb (on osx try [PiFiller](http://ivanx.com/raspberrypi/)), connect an ethernet cable and 5v power.
+3. figure out the IP of the bbb (on osx try [LanScan](https://itunes.apple.com/app/lanscan/id472226235)) and log in with `ssh debian@x.x.x.x`. the default password is `debian`.
 
 step2 (preparation)
 --
@@ -75,8 +75,8 @@ step6 (low latency with realtime privileges)
 4.    `@audio - rtprio 99`
 5.    `@audio - nice -19`
 6. save and exit with ctrl+o, ctrl+x
-7. `sudo reboot` # after reboot start sc again like in previous step
-
+7. `sudo reboot`
+8. done. after reboot start jack+sc again like in previous step
 
 
 
