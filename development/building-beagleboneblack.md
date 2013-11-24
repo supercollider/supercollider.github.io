@@ -112,13 +112,15 @@ step4 (install sc3.7alpha0 from github and build with distcc)
 8. `git submodule init && git submodule update`
 9. `mkdir build && cd build`
 10. `export DISTCC_HOSTS='192.168.1.51'` # edit to match your osx computer ip
-11. `CC="distcc arm-linux-gcc" CXX="distcc arm-linux-g++" cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_QT=OFF -DSC_WII=OFF -DSC_ED=OFF -DSC_IDE=OFF -DSC_EL=OFF -DCMAKE_C_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon" ..` # should add '-ffast-math -O3' here but then gcc4.6.3 crashes
-12. check the output and make sure it says: Check for working C compiler: /usr/bin/distcc -- works
-13. `make -j4`
-14. `sudo make install`
-15. `cd ../..`
-16. `sudo rm -r supercollider`
-17. `sudo ldconfig`
-18. `sudo reboot`
+11. `export DISTCC_IO_TIMEOUT=3000`
+12. `export DISTCC_SKIP_LOCAL_RETRY=1`
+13. `CC="distcc arm-linux-gcc" CXX="distcc arm-linux-g++" cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_QT=OFF -DSC_WII=OFF -DSC_ED=OFF -DSC_IDE=OFF -DSC_EL=OFF -DCMAKE_C_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon" ..` # should add '-ffast-math -O3' here but then gcc4.6.3 crashes
+14. check the output and make sure it says: Check for working C compiler: /usr/bin/distcc -- works
+15. `make -j4`
+16. `sudo make install`
+17. `cd ../..`
+18. `sudo rm -r supercollider`
+19. `sudo ldconfig`
+20. `sudo reboot`
 
 now do step5 and step6 above.
