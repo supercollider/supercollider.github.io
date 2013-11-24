@@ -90,7 +90,7 @@ optional: step6 (low latency with realtime privileges and an usb soundcard)
 9. `dwc_otg.speed=1` # add the following to beginning of /boot/cmdline.txt (see <http://wiki.linuxaudio.org/wiki/raspberrypi> under force usb1.1 mode)
 10. eject the sd card and put it back in the rpi, make sure usb soundcard is connected and power on again.
 11. log in with ssh and now you can start jack with a lower blocksize...
-12. `jackd -p32 -dalsa -dhw:1,0 -p128 -n3 -s &` # uses an usb sound card and lower blocksize
+12. `jackd -p32 -dalsa -dhw:1,0 -p256 -n3 -s &` # uses an usb sound card and lower blocksize
 13. continue like in step5.2 above
 
 links:
