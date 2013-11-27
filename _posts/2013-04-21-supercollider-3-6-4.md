@@ -20,13 +20,6 @@ functionality, and improvements of documentation.
 
 Enjoy SuperCollider 3.6.4!
 
-{% include download.md %}
-
-{% comment %}
-when later versions come out then these historical links might be useful.
-for now just show current downloads
-
-
 ### Downloads ###
 
 # Mac OS X (Universal Build):
@@ -43,8 +36,6 @@ http://sourceforge.net/projects/supercollider/files/Windows/3.6/SuperCollider-3.
 
 http://sourceforge.net/projects/supercollider/files/Source/3.6/SuperCollider-3.6.4-Source.tar.bz2/download
 http://sourceforge.net/projects/supercollider/files/Source/3.6/SuperCollider-3.6.4-Source-linux.tar.bz2/download
-
-{% endcomment %}
 
 
 ### Changes since 3.6.3 ###

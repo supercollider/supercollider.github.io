@@ -8,7 +8,7 @@
                 </h2>
                 <ul class="nodot">
                     <li>
-                        <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.6/SuperCollider-3.6.5-OSX-universal.dmg/download"><i class="icon-download-alt">.</i> 3.6.5 installer</a>
+                        <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.6/SuperCollider-3.6.6-OSX.dmg/download"><i class="icon-download-alt">.</i> 3.6.6 installer</a>
                     </li>
                     <li>
                         <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.6/SuperCollider-3.6.5-OSX-universal-no-ide.dmg/download"><i class="icon-download-alt">.</i> 3.6.5 installer (old Cocoa IDE)</a>
@@ -60,11 +60,9 @@
 
 <h4>Building from source</h4>
 
-{% highlight bash %}
-git clone --recursive git@github.com:supercollider/supercollider.git
-{% endhighlight %}
-
-<iframe src="http://ghbtns.com/github-btn.html?user=supercollider&amp;repo=supercollider&amp;type=fork&amp;count=true&amp;size=small" allowtransparency="true" frameborder="0" scrolling="0" width="156px" height="30px">fork</iframe>
+<ul class="nodot">
+ <li><a href="http://sourceforge.net/projects/supercollider/files/Source/3.6/SuperCollider-3.6.6-Source.tar.bz2/download"><i class="icon-download-alt">.</i>SuperCollider 3.6.6 source code download</a></li>
+</ul>
 
 <p><a href="/development/building.html"><i class="icon-hand-right">.</i> <strong>Build instructions, tips and trouble shooting</strong></a></p>
 
