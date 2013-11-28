@@ -57,7 +57,7 @@ step4 (install sc3.7alpha0 from github and build with gcc)
 
 step5 (start jack & sclang & test sound)
 --
-1. `jackd -dalsa -dhw:1,0 -p128 -n3 -s &`
+1. `jackd -dalsa -dhw:1,0 -p128 -n3 -s &` # if distorting try with larger blocksize e.g. -p1024
 2. `sclang` # ignore the error "ERROR: No GUI scheme active" - it is harmless.
 3. `s.boot;`
 4. `a= {SinOsc.ar([400, 404], 0, 0.1)}.play;`
