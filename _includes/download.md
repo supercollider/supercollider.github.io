@@ -49,7 +49,7 @@
                 </h2>
                 <ul class="nodot">
                     <li>
-                        <a href="http://sourceforge.net/projects/supercollider/files/Windows/3.6/SuperCollider-3.6.6-win32.exe/download"><i class="icon-download-alt">.</i> Win 32 3.6.5 installer</a>
+                        <a href="http://sourceforge.net/projects/supercollider/files/Windows/3.6/SuperCollider-3.6.6-win32.exe/download"><i class="icon-download-alt">.</i> Win 32 3.6.6 installer</a>
                     </li>
                 </ul>
             </td>
