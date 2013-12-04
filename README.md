@@ -27,8 +27,12 @@ which will use the Gemfile found in that directory and will install an isolated 
 
 Now run `jekyll`:
 
-    jekyll server --watch
+    jekyll serve --watch
 
+or:
+
+    jekyll help
+    
 Then, in your browser:
 
     http://localhost:4000
