@@ -19,7 +19,7 @@ Gratefully accepted at [github/supercollider](https://github.com/supercollider/s
 Please don't put un-related commits in a single pull request.  Separate by functionality or issue.  Try not to change spacing or needlessly rearrange things if they don't have anything to do with the issue you are fixing.  Save rearrangement for a separate commit.
 
 ### Pull Request suggested workflow:
-Admitting your clone of `supercollider/supercollider` repository is `~/dev/sc`:
+Assuming your clone of `supercollider/supercollider` repository is at `~/dev/sc`:
 
     # - fork `supercollider` repository on Github
     # - let your local clone know about your fork:
