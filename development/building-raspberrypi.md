@@ -18,7 +18,7 @@ NOTE: the whole process takes many hours.
 
 step1 (startup)
 --
-1. download and transfer [2013-09-25-wheezy-raspbian.img](http://www.raspberrypi.org/downloads) to a sdcard.
+1. download and transfer the latest Raspbian (as of writing [2013-12-20-wheezy-raspbian.zip](http://www.raspberrypi.org/downloads)) to a sdcard.
 2. put the sdcard in the rpi (on osx try [PiFiller](http://ivanx.com/raspberrypi/)), connect an ethernet cable and 5v power.
 3. figure out the IP of the rpi (on osx try [LanScan](https://itunes.apple.com/app/lanscan/id472226235)) and log in with `ssh pi@x.x.x.x`. the default password is `raspberry`.
 
@@ -26,7 +26,7 @@ step2 (preparation)
 --
 1. log in and type `sudo raspi-config`, select expand file system, set timezone, finish and reboot
 2. `sudo apt-get update`
-3. `sudo apt-get upgrade` # this takes a while
+3. `sudo apt-get upgrade` # this might take a while
 4. `sudo apt-get remove jackd` # remove old jack and old supercollider
 5. `sudo apt-get autoremove`
 6. `sudo apt-get install cmake libasound2-dev libsamplerate0-dev libsndfile1-dev libavahi-client-dev libicu-dev libreadline-dev libfftw3-dev libxt-dev`
@@ -59,11 +59,12 @@ step4 (install sc3.7alpha0 from github and build with gcc)
 11. `sudo make install`
 12. `cd ../..`
 13. `sudo rm -r supercollider`
-14. `sudo rm /swapfile`
-15. `sudo ldconfig`
-16. `echo "export SC_JACK_DEFAULT_INPUTS=\"system\"" >> ~/.bashrc`
-17. `echo "export SC_JACK_DEFAULT_OUTPUTS=\"system\"" >> ~/.bashrc`
-18. `sudo reboot`
+14. `sudo swapoff /swapfile`
+15. `sudo rm /swapfile`
+16. `sudo ldconfig`
+17. `echo "export SC_JACK_DEFAULT_INPUTS=\"system\"" >> ~/.bashrc`
+18. `echo "export SC_JACK_DEFAULT_OUTPUTS=\"system\"" >> ~/.bashrc`
+19. `sudo reboot`
 
 step5 (start jack & sclang & test sound)
 --
