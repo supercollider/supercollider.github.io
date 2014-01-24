@@ -93,7 +93,7 @@ end # task :page
 
 desc "Run local preview server"
 task :local do
-  system "jekyll --auto --server"
+  system "jekyll serve -w"
 end # task :preview
 
 
