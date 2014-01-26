@@ -9,6 +9,8 @@ Quarks is the name of the SuperCollider package management system. It is impleme
 
 Its easy to fix:
 
+If you are a new user or have never installed quarks on your current system see below. Otherwise, if you've been using quarks and they've stopped working:
+
 <div><strong>Note:</strong> If you have installed SuperCollider from the binary downloads on Sourceforge you will have to execute the following steps to make updating quarks via SVN work again:
     <ol>
         <li>In a terminal navigate to your userAppSupportDir resp. the directory containing the sources of your quarks.
@@ -21,7 +23,14 @@ Its easy to fix:
         $ cd ~/.local/share/SuperCollider/quarks
         {% endhighlight %}
         On Windows:
-        ( path and explanation needed here )
+        <ol>
+        <li>Find your path by by executing the following command in SuperCollider:
+        
+            Platform.userAppSupportDir;
+        
+        <li>Then cd to that directory, followed by \quarks
+        </li>
+        </ol>
         </li>
         <li>
         Issue the switch statement. It has to be done in one line or \ has to be set before a line-brake: 
@@ -33,3 +42,50 @@ Its easy to fix:
         </li>
     </ol>
 </div>
+<div>If quarks are new to your system:
+   <ol>
+        <li>In a terminal navigate to your userAppSupportDir resp. If you find the directory does not exist, you will need to create it.
+        On a mac:
+        <ol>
+        <li>{% highlight bash %}
+        $ cd ~/Library/Application\ Support/SuperCollider/quarks 
+        {% endhighlight %}
+        <li>If it says No such File or Directory, then:
+        <li>{% highlight bash %}
+        $ mkdir ~/Library/Application\ Support/SuperCollider/quarks
+        {% endhighlight %}</li></ol>
+        On Linux:
+        <ol>
+        <li>{% highlight bash %}
+        $ cd ~/.local/share/SuperCollider/quarks
+        {% endhighlight %}
+        <li>If it says No such File or Directory, then:
+        <li>{% highlight bash %}
+        $ mkdir ~/.local/share/SuperCollider/quarks
+        {% endhighlight %}</li></ol>
+        On Windows:
+        <ol>
+        <li>Find your path by by executing the following command in SuperCollider:
+        <li>{% highlight code %}
+        Platform.userAppSupportDir
+        {% endhighlight %}
+        <li>Then cd to that directory.
+        <li>Then
+        {% highlight bash %}
+        $ cd quarks
+        {% endhighlight %}
+        <li>If the directory is not found, then:
+        <li>{% highlight bash %}
+        $ mkdir quarks
+        {% endhighlight %}</li></ol>
+       
+        </li>
+        <li>
+        Do an initial Quark checkout:
+        {% highlight bash $}
+        $ svn checkout svn://svn.code.sf.net/p/quarks/code/ quarks
+        {% endhilight %}
+         </li>
+    </ol>
+</div>
+       
