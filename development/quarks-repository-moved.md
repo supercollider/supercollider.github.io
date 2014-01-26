@@ -84,7 +84,7 @@ If you are a new user or have never installed quarks on your current system see 
         Do an initial Quark checkout:
         {% highlight bash $}
         $ svn checkout svn://svn.code.sf.net/p/quarks/code/ quarks
-        {% endhilight %}
+        {% endhighlight %}
          </li>
     </ol>
 </div>
