@@ -15,61 +15,76 @@ If you are a new user or have never installed quarks on your current system see 
     <ol>
         <li>In a terminal navigate to your userAppSupportDir resp. the directory containing the sources of your quarks.
         On a mac:
-        `cd ~/Library/Application\ Support/SuperCollider/quarks`
+        {% highlight bash %}
+        $ cd ~/Library/Application\ Support/SuperCollider/quarks 
+        {% endhighlight %}
         On Linux:
-        `cd ~/.local/share/SuperCollider/quarks`
+        {% highlight bash %}
+        $ cd ~/.local/share/SuperCollider/quarks
+        {% endhighlight %}
         On Windows:
         <ol>
         <li>Find your path by by executing the following command in SuperCollider:
         
-            `Platform.userAppSupportDir;`
+            Platform.userAppSupportDir;
         
         <li>Then cd to that directory, followed by \quarks
         </li>
         </ol>
         </li>
         <li>
-        Issue the switch statement. It has to be done in one line: 
-        `svn switch --relocate https://quarks.svn.sourceforge.net/svnroot/quarks/  https://svn.code.sf.net/p/quarks/code`
+        Issue the switch statement. It has to be done in one line or \ has to be set before a line-brake: 
+        {% highlight bash %}
+        $ svn switch --relocate \
+            https://quarks.svn.sourceforge.net/svnroot/quarks/ \
+            https://svn.code.sf.net/p/quarks/code 
+        {% endhighlight %}
         </li>
     </ol>
 </div>
 <div>If quarks are new to your system:
    <ol>
-        <li>In a terminal navigate to your `Platform.userAppSupportDir;`. If you find the directory does not exist, you will need to create it.
+        <li>In a terminal navigate to your userAppSupportDir resp. If you find the directory does not exist, you will need to create it.
         On a mac:
         <ol>
-        <li>
-        `cd ~/Library/Application\ Support/SuperCollider/quarks`
+        <li>{% highlight bash %}
+        $ cd ~/Library/Application\ Support/SuperCollider/quarks 
+        {% endhighlight %}
         <li>If it says No such File or Directory, then:
-        <li>
-        ` mkdir ~/Library/Application\ Support/SuperCollider/quarks`
-        </li></ol>
+        <li>{% highlight bash %}
+        $ mkdir ~/Library/Application\ Support/SuperCollider/quarks
+        {% endhighlight %}</li></ol>
         On Linux:
         <ol>
-        <li>
-        `cd ~/.local/share/SuperCollider/quarks`
+        <li>{% highlight bash %}
+        $ cd ~/.local/share/SuperCollider/quarks
+        {% endhighlight %}
         <li>If it says No such File or Directory, then:
-        <li>
-        `mkdir ~/.local/share/SuperCollider/quarks`
-        </li></ol>
+        <li>{% highlight bash %}
+        $ mkdir ~/.local/share/SuperCollider/quarks
+        {% endhighlight %}</li></ol>
         On Windows:
         <ol>
         <li>Find your path by by executing the following command in SuperCollider:
-        <li>
-        `Platform.userAppSupportDir`
+        <li>{% highlight code %}
+        Platform.userAppSupportDir
+        {% endhighlight %}
         <li>Then cd to that directory.
         <li>Then
-        `cd quarks`
+        {% highlight bash %}
+        $ cd quarks
+        {% endhighlight %}
         <li>If the directory is not found, then:
-        <li>
-        `mkdir quarks`
-        </li></ol>
+        <li>{% highlight bash %}
+        $ mkdir quarks
+        {% endhighlight %}</li></ol>
        
         </li>
         <li>
         Do an initial Quark checkout:
-        `svn checkout svn://svn.code.sf.net/p/quarks/code/ quarks`
+        {% highlight bash $}
+        $ svn checkout svn://svn.code.sf.net/p/quarks/code/ quarks
+        {% endhilight %}
          </li>
     </ol>
 </div>
