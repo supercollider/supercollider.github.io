@@ -1,6 +1,6 @@
 ---
 layout: catpage
-title: "Examples of SuperCollider with acoustic instruments"
+title: "Pieces with live acoustic instruments"
 description: ""
 category: "examples"
 sort_order: 2
