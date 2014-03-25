@@ -17,7 +17,7 @@ This repo is at [https://github.com/supercollider/supercollider.github.io](https
 
 You can edit and create files directly there on github.  Look for an edit link at the bottom of each page.
 
-Visit the repo on github and edit the page using the github interface.  This will submit a pull request to the supercollider orginization.  When we accept the pull request (click the button) it gets merged in and the pages will regenerate on github. No need to mess with jekyll or cloning the repo.
+Visit the repo on github and edit the page using the github interface.  This will submit a pull request to the supercollider organization.  When we accept the pull request (click the button) it gets merged in and the pages will regenerate on github. No need to mess with jekyll or cloning the repo.
 
 
 see also [Syntax and styling](syntax-and-styling.html)
