@@ -96,6 +96,23 @@ Performance of Fractus III (flute):
 
 
 
+####Stelios Manousakis
+
+**What is the current that makes machinery** (2013), female voice and ambisonic live electronics (text by Gertrude Stein)
+
+[http://www.modularbrains.net/whatisthecurrent.html] (http://www.modularbrains.net/whatisthecurrent.html)
+
+**Palpebla Resonoj #1** (2013), feedback-augmented alto clarinet and real-time computer processing
+
+[http://www.modularbrains.net/palpeblaresonoj.html] (http://www.modularbrains.net/palpeblaresonoj.html)
+
+**Center no Distractor**, duo for taiko & live electronics
+
+[http://modularbrains.net/centernodistractor.html] (http://modularbrains.net/centernodistractor.html)
+
+
+
+
 ####Daniel Mayer
 Several pieces for solo instrument and tape made with SuperCollider: [http://daniel-mayer.at/werkliste_en.htm] (http://daniel-mayer.at/werkliste_en.htm)
 
@@ -104,12 +121,15 @@ Several pieces for solo instrument and tape made with SuperCollider: [http://dan
 
 ####Ted Moore
 **Eclipse** (2014), improvising instrumentalist and electronics (audiovisual)
+
 [http://www.tedmooremusic.com/eclipse/] (http://www.tedmooremusic.com/eclipse/)
 
 **is himself no more** (2013), tenor sax and electronics
+
 [http://www.tedmooremusic.com/is-himself-no-more/] (http://www.tedmooremusic.com/is-himself-no-more/)
 
 **fiery walls** (2012), Bb trumpet and electronics
+
 [http://www.tedmooremusic.com/fiery-walls/] (http://www.tedmooremusic.com/fiery-walls/)
 
 
@@ -134,6 +154,7 @@ Several pieces for solo instrument and tape made with SuperCollider: [http://dan
 
 ####Joo Won Park
 **Toccata** (2009), for found objects and computer
+
 [www.joowonpark.net/Toccata.pdf] (www.joowonpark.net/Toccata.pdf)
 [http://vimeo.com/13886896] (http://vimeo.com/13886896)
 
