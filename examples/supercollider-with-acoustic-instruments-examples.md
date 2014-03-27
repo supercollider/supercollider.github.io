@@ -94,6 +94,15 @@ Performance of Fractus III (flute):
 [http://www.dewdrop-world.net/audio/index.php] (http://www.dewdrop-world.net/audio/index.php)
 
 
+####Elliot Kermit-Canfield
+**Koan for Cello and Live Electronics** (2013), solo cello and live SuperCollider processing
+
+[https://www.youtube.com/watch?v=Ye-zLa1vmJo#t=25m45s] (https://www.youtube.com/watch?v=Ye-zLa1vmJo#t=25m45s)
+
+**Post-Praeludium per Donau, by Luigi Nono**, (1987), SuperCollider implementation by Elliot Kermit-Canfield (2013), solo tuba and live SuperCollider processing
+
+[https://soundcloud.com/elforr/nono] (https://soundcloud.com/elforr/nono)
+
 
 
 ####Stelios Manousakis
