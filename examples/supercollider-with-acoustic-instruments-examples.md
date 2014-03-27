@@ -1,14 +1,14 @@
 ---
 layout: catpage
-title: "Pieces with live acoustic instruments"
+title: "Pieces with live instruments or voice"
 description: ""
 category: "examples"
 sort_order: 2
 ---
 
-This page lists compositions for solo acoustic instrument with electronics (real-time or fixed-media) made with SuperCollider. This list was initially compiled in March of 2014 after an open call made through the SuperCollider Users mailing list (you can see the original thread [here] (http://new-supercollider-mailing-lists-forums-use-these.2681727.n2.nabble.com/Pieces-for-solo-instrument-SuperCollider-td7609151.html)).
+This page lists compositions for solo acoustic instrument (or voice) with electronics made with SuperCollider (real-time or fixed-media). The list was initially compiled in March of 2014 after an open call made through the SuperCollider Users mailing list (you can see the original thread [here] (http://new-supercollider-mailing-lists-forums-use-these.2681727.n2.nabble.com/Pieces-for-solo-instrument-SuperCollider-td7609151.html)). Most pieces were submitted by the composers themselves. A few were included based on references found on the web.
 
-Feel free to edit the list to add new pieces to it (you will need a github account). Please include links to scores and recordings, when available.
+Feel free to edit this page to add new pieces to it (you will need a github account). Please include links to scores and recordings, when available.
 
 Composers are listed alphabetically by last name.
 
@@ -119,6 +119,14 @@ Several pieces for solo instrument and tape made with SuperCollider: [http://dan
 
 
 
+####Fabrice Mogini
+**Choices** (1999), flute and live-electronics (with SuperCollider 2)
+
+[http://fabricemogini.com/Choices.html] (http://fabricemogini.com/Choices.html)
+
+
+
+
 ####Ted Moore
 **Eclipse** (2014), improvising instrumentalist and electronics (audiovisual)
 
@@ -173,6 +181,36 @@ Several pieces for solo instrument and tape made with SuperCollider: [http://dan
 **Concerto (II. Accelerando)** (2006), double bass and computer realized sound
 
 More info on these and other pieces here: [http://www.realizedsound.net/josh/Music.html] (http://www.realizedsound.net/josh/Music.html)
+
+
+
+
+####Egor Sanin
+
+**Processed Poetry**, voice and SuperCollider
+
+[http://integer0.users.sourceforge.net/pages/processed-poetry.html] (http://integer0.users.sourceforge.net/pages/processed-poetry.html)
+
+
+
+####Wouter Snoei
+
+**The Game** (2011), for Yamaha Disklavier and computer (interactive piece, midi only)
+
+**IJsvogel** (2011), for contrabass clarinet and live electronics (title translation: Kingfisher, or alternatively Ice bird)
+
+[http://www.youtube.com/watch?v=7Vf6r9EzYRg] (http://www.youtube.com/watch?v=7Vf6r9EzYRg)
+
+**Organism** (2012), for organ and live electronics
+
+[https://soundcloud.com/woutersnoei/organism] (https://soundcloud.com/woutersnoei/organism)
+
+**Trio** (2014), for electric harp and live electronics
+
+**Canto Ostinato Audio Visual**, adaptation of Canto Ostinato by Simeon Ten Holt, for harp and live electronics. Live video adaptation by Arnout Hulskamp.
+
+[https://www.facebook.com/cantoostinatoav] (https://www.facebook.com/cantoostinatoav)
+
 
 
 
