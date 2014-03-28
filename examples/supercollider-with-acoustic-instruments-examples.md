@@ -8,7 +8,7 @@ sort_order: 2
 
 This page lists compositions for solo acoustic instrument (or voice) with electronics made with SuperCollider (real-time or fixed-media). The list was initially compiled in March of 2014 after an open call made through the SuperCollider Users mailing list (you can see the original thread [here] (http://new-supercollider-mailing-lists-forums-use-these.2681727.n2.nabble.com/Pieces-for-solo-instrument-SuperCollider-td7609151.html)). Most pieces were submitted by the composers themselves. A few were included based on references found on the web.
 
-Feel free to edit this page to add new pieces to it (you will need a github account). Please include links to scores and recordings, when available.
+Feel free to edit this page to add new pieces to it (instructions at the very bottom of this page). Please include links to scores and recordings, when available.
 
 Composers are listed alphabetically by last name.
 
@@ -33,6 +33,29 @@ Composers are listed alphabetically by last name.
 **A Sigh Felt Across The Earth** (2014), alto saxophone and electronics
 
 [https://soundcloud.com/jeremyvanb/a-sigh-felt-across-the-earth] (https://soundcloud.com/jeremyvanb/a-sigh-felt-across-the-earth)
+
+
+
+
+####Nick Collins
+
+**Onto Panic** Core (2009-2013), piano and computer concerto
+
+**Chip Chip** (2010), piano and computer
+
+**Kinesics** (2009), piano and computer
+
+**Suite with Interruptions** (2009), harpsichord and computer
+
+**LL (ListeningLearning)** (2009), drum kit and computer
+
+**Sat at Sitar** (2005), Sitar and computer
+
+**Drum Track** (2005), drum kit and computer
+
+**Free Improvisation Simulation** (2005), acoustic guitar and computer
+
+Info on the above and more here: [http://community.dur.ac.uk/nick.collins/music.html] (http://community.dur.ac.uk/nick.collins/music.html)
 
 
 
@@ -74,6 +97,29 @@ Performance of Fractus III (flute):
 **Nocturne**, piano and electronics
 
 [https://soundcloud.com/studio-m1/nokturn-cd-master] (https://soundcloud.com/studio-m1/nokturn-cd-master)
+
+
+
+
+####Kosmas Giannoutakis
+
+**Metabionta** (2012), acoustic guitar and tape
+
+
+
+####Rael Gimenes
+
+**Mutazione** (2008) for Acoustic Guitar and Live-Electronics
+
+score: [http://www.dmu.uem.br/lappso/index.php?title=Toffolo%28composicoes%29#Mutazione_.282008.29] (http://www.dmu.uem.br/lappso/index.php?title=Toffolo%28composicoes%29#Mutazione_.282008.29)
+
+live recording: [https://soundcloud.com/rael-gimenes-toffolo/mutazione-2008] (https://soundcloud.com/rael-gimenes-toffolo/mutazione-2008)
+
+**O resto no copo** (2010) for Double-Bass and Live-Electronics
+CD store: [http://www.lojaclassicos.com.br/detalhe.asp?isbn=7899004785357&cat=01] (http://www.lojaclassicos.com.br/detalhe.asp?isbn=7899004785357&cat=01)
+
+**Traverser le réseau** (2014) for Violoncelo and Live-Electronics
+recording: [https://soundcloud.com/rael-gimenes-toffolo/traverser-la-r-seau] (https://soundcloud.com/rael-gimenes-toffolo/traverser-la-r-seau)
 
 
 
@@ -220,6 +266,12 @@ More info on these and other pieces here: [http://www.realizedsound.net/josh/Mus
 
 [http://iris.carltesta.net/] (http://iris.carltesta.net/)
 
+**4 Miniatures for Automated Organ**, computer controlled organ
+
+[http://music.carltesta.net/album/4-miniatures-for-automated-organ] (http://music.carltesta.net/album/4-miniatures-for-automated-organ)
+
+
+
 
 
 
@@ -270,8 +322,35 @@ More info on these and other pieces here: [http://www.realizedsound.net/josh/Mus
 
 ---
 
+### How to edit this page
 
-*To add a piece to this list, send the info to bruviaro at scu dot edu or feel free to edit the page yourself.*
+To add a piece to this list, feel free to edit the page yourself. Here's how:
+
+**Step 0:** Create a github account if you don't have one (github.com)
+
+**Step 1:** From this page, click on the little link at the very bottom, "edit this page" (scroll down to see it)
+
+**Step 2:** Sign in with your github account (name and password)
+
+**Step 3:** You'll see the contents of the file in an editable window. Simply add the new info following these conventions:
+
+* If adding a new composer, insert it in alphabetical order by last name.
+
+* Leave a blank line between your lines of text.
+
+* Include `####` just before the name of the composer: this will format it correctly when the page is rendered. For example, `####Giuseppe Verdi`
+
+* Enclose the name of the piece with `**` (before and after): this will make it bold face. For example, `**La Traviata** (1853), singers and SuperCollider`
+
+* Include the direct link to score and/or recording in the next line. Copy the link twice: first between brackets [], then between parentheses ().
+
+* If in doubt, just look at existing entries and you will see how to do it.
+
+**Step 4:** Click "Preview" at the top of the editing window to see how your proposed changes will look like. If anything doesn't look right, click on "Code" again and fix the errors.
+
+**Step 5:** When you are ready, scroll down to the bottom of the page and propose the file change (green button). You may add an optional description if you like.
+
+*If you are having trouble with editing the page, you can alternatively send the info to bruviaro at scu dot edu and I'll add it to the page when I have time.*
 
 
 
