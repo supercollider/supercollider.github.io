@@ -13,14 +13,25 @@ The content, being simple markdown, is portable and can be moved to whatever tre
 This repo is at [https://github.com/supercollider/supercollider.github.io](https://github.com/supercollider/supercollider.github.io)
 
 
-#### Fixing a typo or something small
+#### Fixing a typo or editing something small
 
-You can edit and create files directly there on github.  Look for an edit link at the bottom of each page.
+You can edit and create files directly on github. Here's how to quickly edit a page:
 
-Visit the repo on github and edit the page using the github interface.  This will submit a pull request to the supercollider orginization.  When we accept the pull request (click the button) it gets merged in and the pages will regenerate on github. No need to mess with jekyll or cloning the repo.
+**Step 0:** Create a github account if you don't have one (github.com)
 
+**Step 1:** From the page you want to edit, click on the edit link at the very bottom, "edit this page" (scroll down to see it; it is small)
 
-see also [Syntax and styling](syntax-and-styling.html)
+**Step 2:** Sign in with your github account (name and password)
+
+**Step 3:** You'll see the contents of the page in an editable window. Do your editing there.
+
+**Step 4:** Click "Preview" at the top of the editing window to see how your proposed changes will look like. If anything doesn't look right, click on "Code" again and fix the errors.
+
+**Step 5:** When you are ready, scroll down to the bottom of the page and propose the file change (green button). You may add an optional description if you like.
+
+For this kind of small edits, there is no need to mess with jekyll or clone the repository.
+
+See also [Syntax and styling](syntax-and-styling.html)
 
 
 #### Working with Jekyll and a checked out repo
