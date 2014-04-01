@@ -38,7 +38,7 @@ Composers are listed alphabetically by last name.
 ####Nick Collins
 
 Typically  musical AIs, dating back to my doctoral pieces and continuing to the present day. Some here amongst other works (if it says acoustic instrument + electronics or acoustic instrument + computer it's bound to involve SC):
-[http://community.dur.ac.uk/nick.collins/music.html]
+[http://community.dur.ac.uk/nick.collins/music.html] (http://community.dur.ac.uk/nick.collins/music.html)
 the main ones probably
 **Onto Panic Core** (2009-2013), **Chip Chip**, **Snap** (2010), **Kinesics**, **Suite with Interruptions**, **LL** (2009), **Ornamaton**, **Substituet** (2006), **Sat at Sitar**, **Drum Track**, **Free Improv Simulation** (2005)
 
