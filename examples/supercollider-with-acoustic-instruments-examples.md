@@ -35,6 +35,13 @@ Composers are listed alphabetically by last name.
 [https://soundcloud.com/jeremyvanb/a-sigh-felt-across-the-earth] (https://soundcloud.com/jeremyvanb/a-sigh-felt-across-the-earth)
 
 
+####Nick Collins
+
+Typically  musical AIs, dating back to my doctoral pieces and continuing to the present day. Some here amongst other works (if it says acoustic instrument + electronics or acoustic instrument + computer it's bound to involve SC):
+[http://community.dur.ac.uk/nick.collins/music.html]
+the main ones probably
+**Onto Panic Core** (2009-2013), **Chip Chip**, **Snap** (2010), **Kinesics**, **Suite with Interruptions**, **LL** (2009), **Ornamaton**, **Substituet** (2006), **Sat at Sitar**, **Drum Track**, **Free Improv Simulation** (2005)
+
 
 
 ####John Drumheller
@@ -79,7 +86,7 @@ Performance of Fractus III (flute):
 
 
 ####David Stephen Grant
-**Bånsull (lullaby)** (2014), viola and electronics
+**Bånsull (lullaby)** (2014), viola and electronics
 
 [http://www.davidgrant.no] (http://www.davidgrant.no)
 
