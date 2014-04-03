@@ -116,7 +116,7 @@ In a terminal navigate to your userAppSupportDir resp. If you find the directory
 Do an initial Quark checkout:
 
 {% highlight bash %}
-$ svn checkout svn://svn.code.sf.net/p/quarks/code/ quarks
+$ svn checkout https://svn.code.sf.net/p/quarks/code/ quarks
 {% endhighlight %}
 </li>
 </ol>
