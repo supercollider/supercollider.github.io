@@ -30,9 +30,23 @@ Composers are listed alphabetically by last name.
 
 
 ####Jeremy Van Buskirk
+
 **A Sigh Felt Across The Earth** (2014), alto saxophone and electronics
 
 [https://soundcloud.com/jeremyvanb/a-sigh-felt-across-the-earth] (https://soundcloud.com/jeremyvanb/a-sigh-felt-across-the-earth)
+
+
+
+
+####Marko Ciciliani
+
+**Time Machine** (2013), for sensor-equipped bass-clarinet (SABRe), live-electronics and live-video
+
+**Refract-Reflux** (2005), for flute and live-electronics.
+
+**Lid of face, metallic soot, to oscillate me, daffodil I** (2002), for harpsichord and live electronics.
+
+[http://www.ciciliani.com/] (http://www.ciciliani.com/)
 
 
 
@@ -213,6 +227,9 @@ Several pieces for solo instrument and tape made with SuperCollider: [http://dan
 [http://vimeo.com/13886896] (http://vimeo.com/13886896)
 
 
+**100 Strange Sounds**, live-electronic music with everyday objects and acoustic instruments.
+
+[http://www.100strangesounds.com/] (http://www.100strangesounds.com/)
 
 
 ####Joshua Parmenter
@@ -322,17 +339,11 @@ More info on these and other pieces here: [http://www.realizedsound.net/josh/Mus
 
 ---
 
-### How to edit this page
+### How to add your piece to this list
 
-To add a piece to this list, feel free to edit the page yourself. Here's how:
+Feel free to edit the page yourself. See the instructions for simple edits [here] (https://supercollider.github.io/contributing/supercollider-github-com.html).
 
-**Step 0:** Create a github account if you don't have one (github.com)
-
-**Step 1:** From this page, click on the little link at the very bottom, "edit this page" (scroll down to see it)
-
-**Step 2:** Sign in with your github account (name and password)
-
-**Step 3:** You'll see the contents of the file in an editable window. Simply add the new info following these conventions:
+Once you get to the step where you see the contents of the file in an editable window, simply add the new pieces following these conventions:
 
 * If adding a new composer, insert it in alphabetical order by last name.
 
@@ -346,9 +357,7 @@ To add a piece to this list, feel free to edit the page yourself. Here's how:
 
 * If in doubt, just look at existing entries and you will see how to do it.
 
-**Step 4:** Click "Preview" at the top of the editing window to see how your proposed changes will look like. If anything doesn't look right, click on "Code" again and fix the errors.
-
-**Step 5:** When you are ready, scroll down to the bottom of the page and propose the file change (green button). You may add an optional description if you like.
+Clicking "Preview" at the top of the editing window will let you see how your proposed changes will look like. If anything doesn't look right, click on "Code" again and fix the errors. When you are ready, scroll down to the bottom of the page and click the green button.
 
 *If you are having trouble with editing the page, you can alternatively send the info to bruviaro at scu dot edu and I'll add it to the page when I have time.*
 
