@@ -51,6 +51,16 @@ https://svn.code.sf.net/p/quarks/code
 
 If quarks are new to your system:
 
+Within SuperCollider do:
+
+{% highlight c %}
+~newQuarksSourceForge = Quarks.new( "https://svn.code.sf.net/p/quarks/code/", Platform.userAppSupportDir +/+ "quarks" );
+~newQuarksSourceForge.updateDirectory;
+~newQuarksSourceForge.gui;
+{% endhighlight %}
+
+Or work with the terminal:
+
 <ol>
 <li>
 In a terminal navigate to your userAppSupportDir resp. If you find the directory does not exist, you will need to create it.
