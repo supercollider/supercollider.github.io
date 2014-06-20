@@ -110,6 +110,9 @@ Performance of Fractus III (flute):
 
 [https://soundcloud.com/elforr/nono] (https://soundcloud.com/elforr/nono)
 
+####Derek Kwan
+**shoebox memories** (2014), kalimba and SuperCollider
+[http://youtu.be/vKdRV97tpkc] (http://youtu.be/vKdRV97tpkc)
 
 
 ####Stelios Manousakis
