@@ -18,9 +18,10 @@ NOTE: the whole process takes many hours.
 
 step1 (startup)
 --
-1. download and transfer the latest Raspbian (as of writing [2013-12-20-wheezy-raspbian.zip](http://www.raspberrypi.org/downloads)) to a sdcard.
+1. download and transfer the latest Raspbian (as of writing [2014-06-20-wheezy-raspbian.zip](http://www.raspberrypi.org/downloads)) to a sdcard.
 2. put the sdcard in the rpi (on osx try [PiFiller](http://ivanx.com/raspberrypi/)), connect an ethernet cable and 5v power.
-3. figure out the IP of the rpi (on osx try [LanScan](https://itunes.apple.com/app/lanscan/id472226235)) and log in with `ssh pi@x.x.x.x`. the default password is `raspberry`.
+3. double check that the rpi have access to internet via the ethernet cable (connect it directly to a LAN or to laptop with internet sharing enabled).
+3. log in to the raspberry pi with `ssh pi@raspberrypi.box`. the default password is `raspberry`. alternatively figure out the IP of the rpi (on osx try [LanScan](https://itunes.apple.com/app/lanscan/id472226235)) and log in with `ssh pi@x.x.x.x`.
 
 step2 (preparation)
 --
@@ -32,7 +33,15 @@ step2 (preparation)
 6. `sudo apt-get install cmake libasound2-dev libsamplerate0-dev libsndfile1-dev libavahi-client-dev libicu-dev libreadline-dev libfftw3-dev libxt-dev`
 7. `sudo ldconfig`
 
-step3 (install jack2 from github)
+optional: step3 (install gcc 4.7)
+--
+1. `sudo apt-get install gcc-4.7 g++-4.7`
+2. `sudo apt-get remove --auto-remove gcc-4.6`
+3. `sudo ln -s /usr/bin/gcc-4.7 /usr/bin/gcc`
+4. `sudo ln -s /usr/bin/g++-4.7 /usr/bin/g++`
+5. `sudo apt-get clean`
+
+step4 (install jack2 from github)
 --
 1. `git clone git://github.com/jackaudio/jack2.git`
 2. `cd jack2`
@@ -44,7 +53,7 @@ step3 (install jack2 from github)
 8. `sudo ldconfig`
 9. `sudo reboot`
 
-step4 (install sc3.7alpha0 from github and build with gcc)
+step5 (install sc3.7alpha0 from github)
 --
 1. `git clone --recursive git://github.com/supercollider/supercollider.git supercollider`
 2. `cd supercollider`
@@ -54,7 +63,7 @@ step4 (install sc3.7alpha0 from github and build with gcc)
 6. `sudo dd if=/dev/zero of=/swapfile bs=1MB count=512` # create a temporary swap file
 7. `sudo mkswap /swapfile`
 8. `sudo swapon /swapfile`
-9. `CC="gcc" CXX="g++" cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_QT=OFF -DSC_WII=OFF -DSC_ED=OFF -DSC_IDE=OFF -DSC_EL=OFF -DCMAKE_C_FLAGS="-march=armv6 -mtune=arm1176jzf-s -mfloat-abi=hard -mfpu=vfp" -DCMAKE_CXX_FLAGS="-march=armv6 -mtune=arm1176jzf-s -mfloat-abi=hard -mfpu=vfp" ..` # should add '-ffast-math -O3' here but then gcc4.6.3 fails
+9. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_QT=OFF -DSC_WII=OFF -DSC_ED=OFF -DSC_IDE=OFF -DSC_EL=OFF -DCMAKE_C_FLAGS="-march=armv6 -mtune=arm1176jzf-s -mfloat-abi=hard -mfpu=vfp" -DCMAKE_CXX_FLAGS="-march=armv6 -mtune=arm1176jzf-s -mfloat-abi=hard -mfpu=vfp" ..`
 10. `make` # this takes a while
 11. `sudo make install`
 12. `cd ../..`
@@ -66,7 +75,7 @@ step4 (install sc3.7alpha0 from github and build with gcc)
 18. `echo "export SC_JACK_DEFAULT_OUTPUTS=\"system\"" >> ~/.bashrc`
 19. `sudo reboot`
 
-step5 (start jack & sclang & test sound)
+step6 (start jack & sclang & test sound)
 --
 1. `jackd -p32 -dalsa -dhw:0,0 -p1024 -n3 -s &` # built-in sound. change to -dhw:1,0 for usb sound card (see more below)
 2. `scsynth -u 57110 &`
@@ -78,21 +87,20 @@ step5 (start jack & sclang & test sound)
 8. `0.exit;`
 9. `pkill jackd`
 
-optional: step6 (low latency with realtime privileges and an usb soundcard)
+optional: step7 (low latency with realtime privileges and an usb soundcard)
 --
 1. `sudo pico /etc/security/limits.conf`
 2. and add the following lines somewhere before it says end of file.
 3.    `@audio - memlock 256000`
 4.    `@audio - rtprio 99`
-5.    `@audio - nice -19`
-6. save and exit with ctrl+o, ctrl+x
-7. `sudo halt`
-8. power off the rpi and insert the sd card in your laptop.
-9. `dwc_otg.speed=1` # add the following to beginning of /boot/cmdline.txt (see <http://wiki.linuxaudio.org/wiki/raspberrypi> under force usb1.1 mode)
-10. eject the sd card and put it back in the rpi, make sure usb soundcard is connected and power on again.
-11. log in with ssh and now you can start jack with a lower blocksize...
-12. `jackd -p32 -dalsa -dhw:1,0 -p256 -n3 -s &` # uses an usb sound card and lower blocksize
-13. continue like in step5.2 above
+7. save and exit with ctrl+o, ctrl+x
+8. `sudo halt`
+9. power off the rpi and insert the sd card in your laptop.
+10. `dwc_otg.speed=1` # add the following to beginning of /boot/cmdline.txt (see <http://wiki.linuxaudio.org/wiki/raspberrypi> under force usb1.1 mode)
+11. eject the sd card and put it back in the rpi, make sure usb soundcard is connected and power on again.
+12. log in with ssh and now you can start jack with a lower blocksize...
+13. `jackd -p32 -dalsa -dhw:1,0 -p256 -n3 -s &` # uses an usb sound card and lower blocksize
+14. continue like in step6.2 above
 
 links:
 --
