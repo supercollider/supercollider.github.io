@@ -24,6 +24,7 @@ category: tutorials
 <li><a href="http://www.berkeleynoise.com/celesteh/podcast/?page_id=65">Les Hutchins’ SC tutorials</a></li>
 <li><a href="http://www.ixi-audio.net/content/download/tutorials/supercollider_tutorial.tar">ixi’s basic audio programming tutorial in SC (download)</a></li>
 <li><a href="http://en.wikibooks.org/wiki/Designing_Sound_in_SuperCollider">Designing Sound in SuperCollider</a> (how to create sound effects)</li>
+<li><a href="https://github.com/acarabott/roundhouse-synth-design-course-2014">Seven part tutorial, aimed at first time programmers</a> by Arthur Carabott</li>
 </ul>
 <p>Tutorials covering more advanced techniques and/or third-party libraries:</p>
 <ul>
