@@ -8,7 +8,8 @@ sort_order: 3
 
 List all here. Feel free to edit on github and add yourself.
 
-//--blogs
+## blogs
+
 * <http://schemawound.com>
 * <http://musicnumbers.wordpress.com/tag/supercollider>
 * <http://supercollider.jp/blog>
@@ -28,11 +29,13 @@ List all here. Feel free to edit on github and add yourself.
 * <http://kingeve.com/wordpress/?cat=91>
 * <http://backtrace.blogspot.de/search/label/supercollider>
 
-//--video tutorials
+## video tutorials
+
 * <http://www.youtube.com/playlist?list=PLPYzvS8A_rTaNDweXe6PX4CXSGq4iEWYC>
 * <http://www.funprogramming.org>
 
-//--other resources
+## other resources
+
 * <http://sccode.org>
 * <http://sctweets.tumblr.com>
 * <http://supercollider.tsd.net.au>
