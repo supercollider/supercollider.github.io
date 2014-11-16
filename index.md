@@ -128,10 +128,10 @@ Pbind(
     <p>The community is very active and helpful, the center of activity.  Please do drop by.</p>
     <p><a href="http://www.birmingham.ac.uk/facilities/BEAST/research/supercollider/mailinglist.aspx">mailing list info</a></p>
 
-    <h4><a href="/contributing/">Contributing</a></h4>
+    <h4><a href="/contributing/index.html">Contributing</a></h4>
     <ul>
       <li><a href="https://github.com/supercollider/supercollider/issues">Github issue tracker</a></li>
-      <li><a href="/contribution/">Contribution guidelines</a></li>
+      <li><a href="/contributing/index.html">Contribution guidelines</a>
     </ul>
 
     <h4><a href="/development/repository.html">Developers</a></h4>
