@@ -14,6 +14,12 @@
                         <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.6/SuperCollider-3.6.5-OSX-universal-no-ide.dmg/download"><i class="icon-download-alt">.</i> 3.6.5 installer (old Cocoa IDE)</a>
                     </li>
                 </ul>
+                <ul class="nodot">
+                    <li>
+                        <a href="http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/osx/master-latest.html"><i class="icon-download-alt">.</i> 3.7 latest build</a><br />
+                        This is the latest cutting edge build of the 3.7 development branch.
+                    </li>
+                </ul>
                 <p>
                     OS X 10.4, 32-bit universal build:
                 </p>
