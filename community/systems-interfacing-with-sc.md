@@ -84,15 +84,18 @@ Clients Using SC Server
   [Clojure]: http://clojure.org/
 
 
-
 Editors
 -------
 
--   [scvim][] vim scripts for supercollider
--   [sced][] a gedit plugin
--   [scate][] a Kate plugin
--   [scfront][] a Tcl/Tk frontend
--   [supercollider-tmbundle][] Rob Watson's TextMate bundle
+-   [scvim][] VIM scripts for supercollider
+-   Emacs - sc.el is included with the standard SuperCollider distribution
+-   [Supercollider Atom](https://atom.io/packages/supercollider) Super Collider IDE for Atom
+-   [Sublime Text](https://github.com/geoffroymontel/supercollider-package-for-sublime-text) Sublime Text
+-   [supercollider-tmbundle](http://github.com/rfwatson/supercollider-tmbundle) TextMate
+-   [sced](http://artfwo.googlepages.com/sced) a gedit plugin
+-   [scate](http://github.com/jleben/Scate) a Kate plugin
+-   [scfront](http://aug.ment.org/scfront) a Tcl/Tk frontend   
+
 
 GUI
 ---
