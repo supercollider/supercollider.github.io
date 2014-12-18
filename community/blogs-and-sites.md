@@ -28,6 +28,7 @@ List all here. Feel free to edit on github and add yourself.
 * <http://jeremah.co.uk/blog>
 * <http://kingeve.com/wordpress/?cat=91>
 * <http://backtrace.blogspot.de/search/label/supercollider>
+* <http://subnaught.org/supercollider>
 
 ## video tutorials
 
