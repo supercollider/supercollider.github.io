@@ -73,7 +73,7 @@ SynthDef Issues
 
 #### Using “If” Statements inside a SynthDef
 
-This is covered on the page [If statements in a SynthDef][]
+This is covered on the page [If statements in a SynthDef](If-statements-in-a-SynthDef.html)
 
 #### ERROR: SynthDef not found
 
