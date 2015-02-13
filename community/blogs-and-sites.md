@@ -29,6 +29,7 @@ List all here. Feel free to edit on github and add yourself.
 * <http://kingeve.com/wordpress/?cat=91>
 * <http://backtrace.blogspot.de/search/label/supercollider>
 * <http://subnaught.org/supercollider>
+* <http://eyeballsun.blogspot.de>
 
 ## video tutorials
 
