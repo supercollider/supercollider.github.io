@@ -198,6 +198,7 @@ Pbind(
     <li><a href="https://github.com/maca/scruby">scruby</a> (Ruby)</li>
     <li><a href="http://hackage.haskell.org/package/hsc3">hsc3</a>,<a href="https://github.com/kaoskorobase/hsc3-server">hsc3-server</a> (Haskell)</li>
     <li><a href="https://github.com/crucialfelix/supercolliderjs">supercollider.js</a> (JavaScript)</li>
+    <li><a href="https://github.com/sonoro1234/Lua2SC">Lua2SC</a> (lua)</li>
     </ul>
   </div>
 </div>
