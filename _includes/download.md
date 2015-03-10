@@ -20,12 +20,10 @@
                         This is the latest cutting edge build of the 3.7 development branch.
                     </li>
                 </ul>
-                <p>
-                    OS X 10.4, 32-bit universal build:
-                </p>
                 <ul class="nodot">
                     <li>
-                        <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.4.4/SuperCollider-3.4.4_32_bit.dmg/download"><i class="icon-download-alt">.</i> SuperCollider3.4.4-10.4</a>
+                        <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.4.4/SuperCollider-3.4.4_32_bit.dmg/download"><i class="icon-download-alt">.</i> SuperCollider3.4.4-10.4</a><br />
+                        OS X 10.4, 32-bit universal build
                     </li>
                 </ul>
             </td>
