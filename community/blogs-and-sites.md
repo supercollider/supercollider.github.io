@@ -13,7 +13,7 @@ List all here. Feel free to edit on github and add yourself.
 * <http://schemawound.com>
 * <http://musicnumbers.wordpress.com/tag/supercollider>
 * <http://supercollider.jp/blog>
-* <http://davehofmann.de/blog/?cat=10>
+* <http://www.davehofmann.de/?cat=10>
 * <http://www.fredrikolofsson.com/f0blog/?q=supercollider>
 * <http://chrisjeffs.com/blog/?tag=supercollider>
 * <http://www.kimri.org/blog/?cat=2>
