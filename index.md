@@ -123,36 +123,30 @@ Pbind(
 
 <div class="row-fluid">
   <div class="span6">
-
     <h4>Mailing list</h4>
     <p>The community is very active and helpful, the center of activity.  Please do drop by.</p>
     <p><a href="http://www.birmingham.ac.uk/facilities/BEAST/research/supercollider/mailinglist.aspx">mailing list info</a></p>
     <p><a href="https://gitter.im/supercollider/supercollider?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" /></a></p>
-
     <h4><a href="/contributing/index.html">Contributing</a></h4>
     <ul>
       <li><a href="https://github.com/supercollider/supercollider/issues">Github issue tracker</a></li>
-      <li><a href="/contributing/index.html">Contribution guidelines</a>
+      <li><a href="/contributing/index.html">Contribution guidelines</a></li>
     </ul>
-
     <h4><a href="/development/repository.html">Developers</a></h4>
     <ul>
       <li><a href="/development/repository.html">Resources for SuperCollider development</a></li>
     </ul>
-
     <h4>Tutorials</h4>
     <ul>
       <li><a href="http://doc.sccode.org/Tutorials/Getting-Started/00-Getting-Started-With-SC.html">Getting started</a></li>
       <li><a href="/tutorials/">Tutorials list</a></li>
     </ul>
-
     <h4>Resources</h4>
       <ul>
         <li><a href="/pages.html">Wiki</a></li>
         <li><a href="http://supercollider.sourceforge.net/wiki/">(old) wiki</a></li>
         <li><a href="http://swiki.hfbk-hamburg.de/MusicTechnology/6">(really old) swiki</a></li>
       </ul>
-
   </div>
 
   <div class="span6">
