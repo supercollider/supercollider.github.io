@@ -5,7 +5,7 @@ title: Quarks Repository has moved
 sort_order: 9
 ---
 
-This error message pertains only to SuperCollider versions 3.6 or earlier.
+If you are using an older version of SuperCollider (3.5 or earlier) then you might see an error message saying that it cannot find the svn repository.
 
 Quarks is the name of the SuperCollider package management system.  If you are using SuperCollider version 3.6 or earlier and your Quarks installation is many years old and you might have gotten this error message.
 
