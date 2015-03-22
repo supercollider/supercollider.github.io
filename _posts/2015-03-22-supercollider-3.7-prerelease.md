@@ -19,7 +19,7 @@ This release has been in continuous use during it's development, so it is consid
 
 - [alpha0](#alpha0)
 
-
+---
 
 ## How can I help?
 
@@ -78,4 +78,4 @@ SuperCollider's documentation is always a work in progress. Classes in need of d
 
 **Fixes**
 
-The a non-definitive list of issues fixed in 3.7 is available [here](https://github.com/supercollider/supercollider/issues?page=4&q=is%3Aissue+is%3Aclosed+label%3Abug+closed%3A%3E2013-11-27)
+A non-definitive list of issues fixed in 3.7 is available [here](https://github.com/supercollider/supercollider/issues?page=4&q=is%3Aissue+is%3Aclosed+label%3Abug+closed%3A%3E2013-11-27)
