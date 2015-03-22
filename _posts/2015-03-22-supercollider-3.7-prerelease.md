@@ -9,7 +9,7 @@ tags: []
 
 # SuperCollider 3.7
 
-SuperCollider 3.7.0 prerelease builds are now available. These will be released regularly until the application is considered stabilized and a release candidate is declared.
+SuperCollider 3.7.0 prerelease builds are now available. These will be released regularly until the application is considered stable and a release candidate is declared.
 
 This release has been in continuous use during it's development, so it is considered stable enough for day-to-day use. It should be backwards compatibly with any code from 3.6.6. 
 
@@ -35,7 +35,7 @@ Please run existing SC projects and report any significant failures or unexpecte
 
 If you have access to uncommon hardware setups, or OS distributions, your testing is especially important! Please take a moment to smoke-test with your specialized linux distro or custom HID-based device and report back! 
 
-### Help traige bugs 
+### Help triage bugs 
 SuperCollider currently has **345 open issues**, many of which are years old - as we beta test 3.7, we expect that number to increase. We need help dealing with new bugs, and sorting through old bugs and features (many of which may already be fixed). This is also a good chance to advocate for getting your (least) favorite bugs fixed.  Please read the **[bug triage guidelines](/development/bugs.html#triaging-a-bug)** and **ask on sc-users or sc-dev** if you would like to contribute to this process.
 
 ### Fix an easy bug
@@ -66,7 +66,7 @@ SuperCollider's documentation is always a work in progress. Classes in need of d
 **Features**
 
 * Cross-platform HID support using HIDAPI
-* Quarks has been refactors for flexibility, and switch from SVN to self-maintained Git-based packages.
+* A new Quarks package management system which supports installing packages from Git or from local folders.
 * JITlib has seen significant refactoring and new functionality (see the "JITLib Changes in 3.7" help file)
 * IDE editor themes can now be saved/loaded.
 * Many enhancements to IDE autocomplete, introspection, and workflow improvements.
