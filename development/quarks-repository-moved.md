@@ -5,11 +5,13 @@ title: Quarks Repository has moved
 sort_order: 9
 ---
 
-Quarks is the name of the SuperCollider package management system. It is implemented using SVN and they are hosted on SourceForge.  SourceForge recently changed the URLs of their SVN repositories which unfortunately broke older versions of SuperCollider.
+This error message pertains only to SuperCollider versions 3.6 or earlier.
+
+Quarks is the name of the SuperCollider package management system.  If you are using SuperCollider version 3.6 or earlier and your Quarks installation is many years old and you might have gotten this error message.
+
+The SVN repository was hosted on SourceForge.  SourceForge changed the URLs of their SVN repositories which unfortunately broke older versions of SuperCollider.
 
 Its easy to fix:
-
-If you are a new user or have never installed quarks on your current system see below. Otherwise, if you've been using quarks and they've stopped working:
 
 **Note:** If you have installed SuperCollider from the binary downloads on Sourceforge you will have to execute the following steps to make updating quarks via SVN work again:
 
