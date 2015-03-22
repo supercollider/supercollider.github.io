@@ -53,7 +53,7 @@ Untriaged bugs can be found with this query: [is:issue is:open -label:triaged](h
 
 1. **Check the issue database for duplicates**. If you see one:
      1. **Make a note** in the existing bug, linking to the new one.
-     2. **Close** the new bug, and label it ["duplicate"](https://github.com/supercollider/supercollider/labels/traiged).
+     2. **Close** the new bug, and label it ["duplicate"](https://github.com/supercollider/supercollider/labels/duplicate).
 1. **Make sure there's enough information.** If a bug doesn't have enough information, ask the submitter for more - but *don't* mark it triaged.
 2. **Reproduce the bug** if it's reasonable to do so. 
     1. **If you *can* repro**, add any additional information you gather in the process. In particular, try to narrow down the scope of the bug (i.e. turn "it crashes when I run this SynthDef" into "it crashes when I run this UGen").
