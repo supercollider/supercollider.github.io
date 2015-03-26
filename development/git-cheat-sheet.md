@@ -314,6 +314,41 @@ After testing it the branch can be erased (be careful any change will be lost)
 
 Note: this workflow is useful just to try a patch and discard changes for other solutions check the Resources.
 
+
+## Testing pull-requests ##
+
+Using Github pull-requests to contribute to sc is strongly encouraged. A single line addition to the git configuration in your local SuperCollider repo will allow you to treat pull-requests just like any other remote branch. To add this line, change to the source folder of your local sc-repository and edit the file:
+
+    .git/config
+
+The entry describing access to the Github repository will likely look like this (you might have to adjust the remote name):
+
+```
+[remote "origin"]
+	url = https://github.com/supercollider/supercollider.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+```
+
+Add this line:
+
+    	fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
+
+To get:
+
+```
+[remote "origin"]
+	url = https://github.com/supercollider/supercollider.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
+```
+
+Assuming your `git pull` or `git fetch` pulls from the Github repo by default, your next pull will bring in all the references to pull requests from the SuperCollider Github repo (and keep updating them with each pull/fetch). From now on the pull requests behave like the other remote branches from the SC repo. In order to merge one, you just need to know it's number and preceed that with `origin/pr/` (replace `origin` with your remote-name), like so:
+
+    git merge origin/pr/1372
+
+Just remember that merged branches will not be updated by pulling any more. So if after a pull you notice the pull request you are testing has been modified, you need to repeat the merge to get the latest changes.
+
+
 ## Resources ##
 
 - [Git Book](http://book.git-scm.com/)
