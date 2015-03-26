@@ -52,7 +52,7 @@ SuperCollider's documentation is always a work in progress. Classes in need of d
 
 ### Downloads
 
-[**Mac OS X (64-bit)**](https://github.com/supercollider/supercollider/releases/download/Version-3.7.0-alpha0/SC-a1caf77d4969bf40e95afeee0aa15d7e242173c4.zip)
+[**Mac OS X (64-bit)**](https://github.com/supercollider/supercollider/releases/download/Version-3.7.0-alpha0/SuperCollider-Mac.zip)
 
 **Windows (64 bit)** (not available yet) 
 
