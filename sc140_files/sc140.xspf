@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><playlist version="1" xmlns="http://xspf.org/ns/0/">
+   <title>sc140</title>
+   <info>http://supercollider.sourceforge.net/sc140</info>
+   <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+   <trackList>
+        <track>
+          <title>{LocalOut.ar(a=CombN.ar(BPF.ar(LocalIn.ar(2)*7.5+Saw.ar([32,33],0.2),2**LFNoise0.kr(4/3,4)*300,0.1).distort,2,2,40));a}.play//#supercollider</title>
+          <location>/sc140_files/01_nathanielvirgo.mp3</location>
+          <creator>Nathaniel Virgo</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>{Splay.ar(Ringz.ar(Impulse.ar([2, 1, 4], [0.1, 0.11, 0.12]), [0.1, 0.1, 0.5])) * EnvGen.kr(Env([1, 1, 0], [120, 10]), doneAction: 2)}.play</title>
+          <location>/sc140_files/02_lfsaw.mp3</location>
+          <creator>LFSaw</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>play{({|k|({|i|y=SinOsc;y.ar(i*k*k,y.ar(i*k**i/[4,5])*Decay.kr(Dust.kr(1/4**i),y.ar(0.1)+1*k+i,k*999))}!8).product}!16).sum}//#supercollider</title>
+          <location>/sc140_files/03_timwalters.mp3</location>
+          <creator>Tim Walters</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>b=Buffer.read(s,"sounds/a11wlk01.wav");play{t=Impulse.kr(5);PlayBuf.ar(1,b,1,t,Demand.kr(t,0,Dseq(1e3*[103,41,162,15,141,52,124,190],4)))!2}</title>
+          <location>/sc140_files/04_nathanielvirgo.mp3</location>
+          <creator>Nathaniel Virgo</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>play{f=LocalIn.ar(2).tanh;k=Latch.kr(f[0].abs,Impulse.kr(1/4));LocalOut.ar(f+CombC.ar(Blip.ar([4,6],100*k+50,0.9),1,k*0.3,50*f));f}//44.1kHz</title>
+          <location>/sc140_files/05_batuhanbozkurt.mp3</location>
+          <creator>Batuhan Bozkurt</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>f={|t|Pbind(\note,Pseq([-1,1,6,8,9,1,-1,8,6,1,9,8]+5,319),\dur,t)};Ptpar([0,f.(1/6),12,f.(0.1672)],1).play//#supercollider reich RT @earslap</title>
+          <location>/sc140_files/06_batuhanbozkurt_celesteh.mp3</location>
+          <creator>Batuhan Bozkurt (refactored by Charles Celeste Hutchins)</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>play{x=SinOsc;y=LFNoise0;a=y.ar(8);(x.ar(Pulse.ar(1)*24)+x.ar(90+(a*90))+MoogFF.ar(Saw.ar(y.ar(4,333,666)),a*XLine.ar(1,39,99,99,0,2)))!2/3}</title>
+          <location>/sc140_files/07_thormagnusson.mp3</location>
+          <creator>Thor Magnusson</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>Ptpar(({|i|[i*8,Pbind(\scale,[0,2,4,7,9],\degree,Pseq(32.fib.fold(0,10),4)+(2*i+i)-10,\dur,1+2**i%2/6)]}!4).flat).play // #supercollider</title>
+          <location>/sc140_files/08_charliehoistman.mp3</location>
+          <creator>Charlie Hoistman</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>{LocalOut.ar(a=DynKlank.ar(`[LocalIn.ar.clip2(LFPulse.kr([1,2,1/8]).sum/2)**100*100],Impulse.ar(10)));HPF.ar(a).clip2}.play//</title>
+          <location>/sc140_files/09_mcld.mp3</location>
+          <creator>MCLD</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>/*eclecticity*/ Ndef(\x, { SinOsc.ar(BrownNoise.ar(30!2, 200), Ndef(\x).ar * LFNoise1.kr(1!2,1,1)) }).play;</title>
+          <location>/sc140_files/10_julianrohrhuber.mp3</location>
+          <creator>Julian Rohrhuber</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>play{VarSaw.ar((Hasher.ar(Latch.ar(SinOsc.ar((1..4)!2),Impulse.ar([5/2,5])))*300+300).round(60),0,LFNoise2.ar(2,1/3,1/2))/5}//#supercollider</title>
+          <location>/sc140_files/11_micromoog.mp3</location>
+          <creator>Micromoog</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>play{x=165;b=SinOsc;p=Trig.ar(Saw.ar(x),1);y=b.ar(p*x);z=b.ar(p);(GVerb.ar(GrainIn.ar(2,y,y/2,z,p*z,-1),9))/9}//basso gettato #SuperCollider</title>
+          <location>/sc140_files/12_josepadovani.mp3</location>
+          <creator>Jose Padovani</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>play{LeakDC.ar(BRF.ar(Saw.ar(8,Decay2.kr(x=Duty.kr(1/8,0,Drand([0,Drand((0.4,0.5..1))],inf)),0.01,0.3))**1.5,x*20+[45.1,45],0.1)).tanh}//#sc</title>
+          <location>/sc140_files/13_batuhanbozkurt.mp3</location>
+          <creator>Batuhan Bozkurt</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>Ndef('x',{x=Ndef('x').ar+0.01;a=BPF.ar(x,6**Latch.ar(x,Dust.ar(x))*200,0.1).sin;9.do{a=AllpassN.ar(a,0.2,{0.2.rand}!2,9)};a+a.mean}).play;</title>
+          <location>/sc140_files/14_nathanielvirgo.mp3</location>
+          <creator>Nathaniel Virgo</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>{x=Array.fill(5,{[0.00001,0.03].asSpec.map(LFNoise2.kr(3))});Splay.ar(Friction.ar(LFTri.ar(50),friction:x,mass:x*30000))}.play</title>
+          <location>/sc140_files/15_jasondixon.mp3</location>
+          <creator>Jason Dixon</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>play{AllpassC.ar(SinOsc.ar(55).tanh,0.4,TExpRand.ar(2e-4, 0.4,Impulse.ar(8)).round([2e-3,4e-3]),2)};// #supercollider with bass please...</title>
+          <location>/sc140_files/16_batuhanbozurt.mp3</location>
+          <creator>Batuhan Bozkurt</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>{RHPF.ar(GbmanN.ar([2300,1150]),LFSaw.ar(Pulse.ar(4,[1,2]/8,1,LFPulse.ar(1/8)/5+1))+2)}.play //punk (loud!)</title>
+          <location>/sc140_files/17_redfrik.mp3</location>
+          <creator>redFrik</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>play{p=PinkNoise.ar(1!2);BRF.ar(p+Blip.ar(p+2,400),150,2,0.1)+LPF.ar(FreeVerb2.ar(*LPF.ar(p+0.2*Dust.ar(0.1),60)++[1,1,0.2,1e4]).tanh,2000)}</title>
+          <location>/sc140_files/18_nathanielvirgo.mp3</location>
+          <creator>Nathaniel Virgo</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>{a=[0.02,0.1,1,2,3,4]; k=LFPar.kr(a+0.5).sum; f=Latch.kr(k,Impulse.kr(a)); Splay.ar(SinOsc.ar(f*100+300)/5)}.play // #supercollider</title>
+          <location>/sc140_files/19_mcld.mp3</location>
+          <creator>MCLD</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>play{2.collect{RecordBuf.ar(Limiter.ar(HPF.ar(Convolution2.ar(k=Crackle.ar(l=Line.kr(1,2,90)),b=LocalBuf(2048),Dust.kr(4)),8)+k)*(2-l),b)}}</title>
+          <location>/sc140_files/20_sciss.mp3</location>
+          <creator>Sciss</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>{13.do{|i|k="SuperCollider"[i].ascii;20.do{|u|{MoogFF.ar(Saw.ar((k/4).midicps)*EnvGen.ar(Env.perc),u+k*9,k/30)}.play;(k*0.001).wait}}}.fork</title>
+          <location>/sc140_files/21_andreavalle.mp3</location>
+          <creator>Andrea Valle</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+        <track>
+          <title>play{a=Duty.kr(0.1,0,Dseq(fib(32).wrap(20,55).midicps,inf));HPF.ar(LeakDC.ar(Splay.ar(LFCub.ar([-1,a,a/3,-2])))*9).clip2/9};//#supercollider</title>
+          <location>/sc140_files/22_mcld.mp3</location>
+          <creator>MCLD</creator>
+          <meta rel="http://creativecommons.org/licenses/by-nc-sa/3.0/">http://creativecommons.org/licenses/by-nc-sa/3.0/</meta>
+          <image>http://supercollider.sourceforge.net/sc140_files/radar_crop_130.jpg</image>
+        </track>
+    </trackList>
+</playlist>
