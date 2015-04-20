@@ -65,10 +65,10 @@
 <h4>Building from source</h4>
 
 <ul class="nodot">
- <li><a href="https://github.com/supercollider/supercollider/releases"><i class="icon-download-alt">.</i>SuperCollider source code download</a></li>
+ <li><a href="https://github.com/supercollider/supercollider/releases"><i class="icon-download-alt">&middot;</i>Source Code [various releases]</a></li>
 </ul>
 
-<p><a href="/development/building.html"><i class="icon-hand-right">.</i> <strong>Build instructions, tips and trouble shooting</strong></a></p>
+<p><a href="/development/building.html"><i class="icon-hand-right">&middot;</i> <strong>Build instructions, tips and trouble shooting</strong></a></p>
 
 <h4>Plugins and Extensions</h4>
 
