@@ -65,19 +65,15 @@
 <h4>Building from source</h4>
 
 <ul class="nodot">
- <li><a href="http://sourceforge.net/projects/supercollider/files/Source/3.6/SuperCollider-3.6.6-Source.tar.bz2/download"><i class="icon-download-alt">.</i>SuperCollider 3.6.6 source code download</a></li>
+ <li><a href="https://github.com/supercollider/supercollider/releases"><i class="icon-download-alt">.</i>SuperCollider source code download</a></li>
 </ul>
 
 <p><a href="/development/building.html"><i class="icon-hand-right">.</i> <strong>Build instructions, tips and trouble shooting</strong></a></p>
 
-<h4>Release notes</h4>
-
-<p><a href="http://doc.sccode.org/Guides/News-3_6.html">3.6 Release notes</a></p>
-
 <h4>Plugins and Extensions</h4>
 
 <ul>
-    <li><a href="http://supercollider.sourceforge.net/downloads/#ext">Synthesis Plugins and Extensions</a></li>
+    <li><a href="http://sourceforge.net/projects/sc3-plugins/">Synthesis Plugins and Extensions</a></li>
 </ul>
 
 <h4>Quarks</h4>
