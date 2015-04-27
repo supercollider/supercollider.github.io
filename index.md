@@ -190,7 +190,7 @@ Pbind(
     <li><a href="http://overtone.github.io/">Overtone</a> (Clojure)</li>
     <li><a href="http://www.sciss.de/scalaCollider/">Scalacollider</a> (Scala)</li>
     <li><a href="https://github.com/maca/scruby">scruby</a> (Ruby)</li>
-    <li><a href="http://hackage.haskell.org/package/hsc3">hsc3</a>,<a href="https://github.com/kaoskorobase/hsc3-server">hsc3-server</a> (Haskell)</li>
+    <li><a href="http://hackage.haskell.org/package/hsc3">hsc3</a>,<a href="https://github.com/kaoskorobase/hsc3-server">hsc3-server</a>,<a href="https://hackage.haskell.org/package/vivid">vivid</a> (Haskell)</li>
     <li><a href="https://github.com/crucialfelix/supercolliderjs">supercollider.js</a> (JavaScript)</li>
     <li><a href="https://github.com/sonoro1234/Lua2SC">Lua2SC</a> (lua)</li>
     </ul>
