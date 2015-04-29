@@ -176,6 +176,9 @@ Several pieces for solo instrument and tape made with SuperCollider: [http://dan
 
 [http://www.fredrikolofsson.com/pages/music.html#redeem] (http://www.fredrikolofsson.com/pages/music.html#redeem)
 
+**redO**, violin, flute, cello, piano and SuperCollider (plus graphics in Processing), commissioned by The peärls before swïne experience.
+
+[http://www.fredrikolofsson.com/pages/music.html#redO] (http://www.fredrikolofsson.com/pages/music.html#redO)
 
 
 
