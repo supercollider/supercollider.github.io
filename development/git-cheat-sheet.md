@@ -325,18 +325,18 @@ The entry describing access to the Github repository will likely look like this 
 
     [remote "origin"]  
         url = https://github.com/supercollider/supercollider.git  
-	fetch = +refs/heads/*:refs/remotes/origin/*
+        fetch = +refs/heads/*:refs/remotes/origin/*
 
 Add this line:
 
-    	fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
+    fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
 
 To get:
 
     [remote "origin"]
-	url = https://github.com/supercollider/supercollider.git  
-	fetch = +refs/heads/*:refs/remotes/origin/*  
-	fetch = +refs/pull/*/head:refs/remotes/origin/pr/*  
+        url = https://github.com/supercollider/supercollider.git  
+        fetch = +refs/heads/*:refs/remotes/origin/*  
+        fetch = +refs/pull/*/head:refs/remotes/origin/pr/*  
 
 Assuming your `git pull` or `git fetch` pulls from the Github repo by default, your next pull will bring in all the references to pull requests from the SuperCollider Github repo (and keep updating them with each pull/fetch). From now on the pull requests behave like the other remote branches from the SC repo. In order to merge one, you just need to know it's number and preceed that with `origin/pr/` (replace `origin` with your remote-name), like so:
 
