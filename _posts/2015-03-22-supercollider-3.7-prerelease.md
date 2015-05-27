@@ -17,6 +17,7 @@ This release has been in continuous use during it's development, so it is consid
 
 **Builds available:**
 
+- [alpha1](#alpha1)
 - [alpha0](#alpha0)
 
 ---
@@ -46,6 +47,50 @@ Simple-to-fix bugs and documentation / string issues are marked with the **[low 
 SuperCollider's documentation is always a work in progress. Classes in need of documentation can be found in the Help docklet, via Browse > Undocumented Classes). Or, walk through your own code, look up help on the Classes and Methods you're using, and document the ones that don't currently have documentation. 
 
 ---
+## alpha1
+*Windows builds are still in progress. Much progress has been made, but a few core issues have to be fixed before a working alpha build can be made available.*
+
+### Downloads
+
+[**Mac OS X (64-bit)**](https://github.com/supercollider/supercollider/releases/download/Version-3.7.0-alpha1/SuperCollider-Mac.zip)
+
+**Windows (64 bit)** (not available yet) 
+
+[**Source.zip**](https://github.com/supercollider/supercollider/archive/Version-3.7.0-alpha1.zip)
+
+[**Source.tar.gz**](https://github.com/supercollider/supercollider/archive/Version-3.7.0-alpha1.tar.gz)
+
+### Fixes since alpha0
+- WebView closes after displaying scrollbar [1489](https://github.com/supercollider/supercollider/issues/1489)
+- Plugin unload fixes [1473](https://github.com/supercollider/supercollider/issues/1473)
+- Quarks windows path error bug [1451](https://github.com/supercollider/supercollider/issues/1451)
+- Quarks conflicts with case insensitive file systems [1429](https://github.com/supercollider/supercollider/issues/1429)
+- LanguageConfig.current problems (incorrect return value) [1369](https://github.com/supercollider/supercollider/issues/1369)
+- installing local quark does not install it's dependencies [1378](https://github.com/supercollider/supercollider/issues/1378)
+- quarks always go into default lang config file [1400](https://github.com/supercollider/supercollider/issues/1400)
+- dependencies specified with git url and refspec not working [1377](https://github.com/supercollider/supercollider/issues/1377)
+- canceling git checkout [1376](https://github.com/supercollider/supercollider/issues/1376)
+- if sclang_config.yaml doesn't exist prior to install of Quark, include-path is not written [1362](https://github.com/supercollider/supercollider/issues/1362)
+- Quarks install on Windows fails in parseQuarkName [1346](https://github.com/supercollider/supercollider/issues/1346)
+- Error on interpreter startup [1448](https://github.com/supercollider/supercollider/issues/1448)
+- Switching a session causes the IDE to segfault [1430](https://github.com/supercollider/supercollider/issues/1430)
+- findRegexp does not compile escaped character sequences correctly [1411](https://github.com/supercollider/supercollider/issues/1411)
+- Preferences/Editor/Fonts&Colors/Color:Current Line: sample text display doesn't update to the color selected in Text [1403](https://github.com/supercollider/supercollider/issues/1403)
+- Remove cURL dependency in Quarks [1389](https://github.com/supercollider/supercollider/issues/1389)
+- Add a way to update quarks (git pull or delete folder and clone again) [1386](https://github.com/supercollider/supercollider/issues/1386)
+- GridLayout spanning bug [1383](https://github.com/supercollider/supercollider/issues/1383)
+- fix DiskOut (last sample block not written) [1382](https://github.com/supercollider/supercollider/pull/1382)
+- Server Gui volume bug [1370](https://github.com/supercollider/supercollider/issues/1370)
+- default key for "trigger autocomplete" cmd-space conflicts with spotlight  [1365](https://github.com/supercollider/supercollider/issues/1365)
+- addition of SimpleController::removeAt [1328](https://github.com/supercollider/supercollider/issues/1328)
+- IDE passes wrong Document modifiers to mouseDownAction [952](https://github.com/supercollider/supercollider/issues/952)
+- Wrongly reported external document changes [758](https://github.com/supercollider/supercollider/issues/758)
+- Editing plotter with domainSpec bug [264](https://github.com/supercollider/supercollider/issues/264)
+- MIDIFunc.noteOn does not work with floats [325](https://github.com/supercollider/supercollider/issues/325)
+- sclang / scserver: print version with -V [1458(https://github.com/supercollider/supercollider/pull/1458)
+- CoreMIDI crash fix [1147](https://github.com/supercollider/supercollider/pull/1147)
+
+In addition, [crucialfelix](https://github.com/crucialfelix) committed numerous smaller cleanups and fixes for the new Quarks system.
 
 ## alpha0
 *There are still build issues being sorted on Windows - these should be available in future prerelease iterations.*
