@@ -47,6 +47,7 @@ Simple-to-fix bugs and documentation / string issues are marked with the **[low 
 SuperCollider's documentation is always a work in progress. Classes in need of documentation can be found in the Help docklet, via Browse > Undocumented Classes). Or, walk through your own code, look up help on the Classes and Methods you're using, and document the ones that don't currently have documentation. 
 
 ---
+
 ## alpha1
 *Windows builds are still in progress. Much progress has been made, but a few core issues have to be fixed before a working alpha build can be made available.*
 
