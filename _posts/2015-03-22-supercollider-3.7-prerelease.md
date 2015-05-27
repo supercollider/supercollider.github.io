@@ -52,19 +52,25 @@ SuperCollider's documentation is always a work in progress. Classes in need of d
 *Windows builds are still in progress. Much progress has been made, but a few core issues have to be fixed before a working alpha build can be made available.*
 
 ### Downloads
-| **sclang & IDE** |
-|------------------|
-| [**Mac OS X (64-bit)**](https://github.com/supercollider/supercollider/releases/download/Version-3.7.0-alpha1/SuperCollider-Mac.zip) |
-| **Windows (64 bit)** (not available yet) |
-| [**Source.zip**](https://github.com/supercollider/supercollider/archive/Version-3.7.0-alpha1.zip) |
-| [**Source.tar.gz**](https://github.com/supercollider/supercollider/archive/Version-3.7.0-alpha1.tar.gz) |
 
-| **Plugins** |
-|----|
-| [**Mac OS X (64-bit)**](https://github.com/supercollider/sc3-plugins/releases/download/Version-3.7.0-alpha1/Plugins-Mac-Version-3.7.0-alpha1.zip) |
-| **Windows (64 bit)** (not available yet) |
-| [**Source.zip**](https://github.com/supercollider/sc3-plugins/archive/Version-3.7.0-alpha1.zip) |
-| [**Source.tar.gz**](https://github.com/supercollider/sc3-plugins/archive/Version-3.7.0-alpha1.tar.gz) |
+[**Mac OS X (64-bit)**](https://github.com/supercollider/supercollider/releases/download/Version-3.7.0-alpha1/SuperCollider-Mac.zip)
+
+**Windows (64 bit)** (not available yet)
+
+[**Source.zip**](https://github.com/supercollider/supercollider/archive/Version-3.7.0-alpha1.zip)
+
+[**Source.tar.gz**](https://github.com/supercollider/supercollider/archive/Version-3.7.0-alpha1.tar.gz)
+
+
+### Plugins
+[**Mac OS X (64-bit)**](https://github.com/supercollider/sc3-plugins/releases/download/Version-3.7.0-alpha1/Plugins-Mac-Version-3.7.0-alpha1.zip)
+
+**Windows (64 bit)** (not available yet)
+
+[**Source.zip**](https://github.com/supercollider/sc3-plugins/archive/Version-3.7.0-alpha1.zip)
+
+[**Source.tar.gz**](https://github.com/supercollider/sc3-plugins/archive/Version-3.7.0-alpha1.tar.gz)
+
 
 ### Fixes since alpha0
 - WebView closes after displaying scrollbar [1489](https://github.com/supercollider/supercollider/issues/1489)
