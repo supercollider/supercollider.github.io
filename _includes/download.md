@@ -73,7 +73,7 @@
 <h4>Plugins and Extensions</h4>
 
 <ul>
-    <li><a href="http://sourceforge.net/projects/sc3-plugins/">Synthesis Plugins and Extensions</a></li>
+    <li><a href="https://github.com/supercollider/sc3-plugins">Synthesis Plugins and Extensions</a></li>
 </ul>
 
 <h4>Quarks</h4>
