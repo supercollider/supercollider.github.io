@@ -43,3 +43,4 @@ List all here. Feel free to edit on github and add yourself.
 * <http://sctweets.tumblr.com>
 * <http://supercollider.tsd.net.au>
 * <http://electro-music.com/forum/forum-139.html>
+* <http://scplanet.tuxfamily.org/>
