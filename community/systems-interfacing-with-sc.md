@@ -137,6 +137,7 @@ Hardware Connections
 -   iPod Touch and iPhone OSC clients: [mrmr][] (open source,
     multi-user, server configured), [oscemote][] (auto-connect, UI
     customizable via html/css)
+-   Chimaera documentation: direct conection via UDP/TCP to SuperCollider server [chimaera][]
 
   [scvim]: http://www.x37v.info/scvim/
   [sced]: http://artfwo.googlepages.com/sced
@@ -159,3 +160,4 @@ Hardware Connections
   [lemur-tutorial for supercollider]: http://www.jazzmutant.com/workshop_tutorialslist.php?id=supercollider
   [mrmr]: http://poly.share.dj/projects/#mrmr
   [oscemote]: http://lux.vu/blog/oscemote/
+  [chimaera]: http://open-music-kontrollers.ch/chimaera/usage/#supercollider
