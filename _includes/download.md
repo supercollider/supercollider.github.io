@@ -7,6 +7,7 @@
                     Mac
                 </h2>
                 <ul class="nodot">
+                    <li><a href="https://github.com/supercollider/supercollider/releases">Latest 3.7 pre-releases</a></li>
                     <li>
                         <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.6/SuperCollider-3.6.6-OSX.dmg/download"><i class="icon-download-alt">.</i> 3.6.6 installer</a>
                     </li>
