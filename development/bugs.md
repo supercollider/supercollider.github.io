@@ -26,6 +26,11 @@ The best thing to make sure bugs get attention, get fixed appropriately, and get
 
 **(new bug) → (triage) → (fix → pull request → merge) → (verify and close)**
 
++ All issues labeled "bug" can be found with this query: [is:issue is:open label:bug](https://github.com/supercollider/supercollider/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
++ Untriaged bugs can be found with this query: [is:issue is:open label:bug  -label:triaged](https://github.com/supercollider/supercollider/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Abug+-label%3Atriaged)
++ Triaged bugs can be found with this query: [is:issue is:open label:bug label:triaged](https://github.com/supercollider/supercollider/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Abug+label%3Atriaged)
+
+
 ## Submitting a bug
 
 New bugs can be created on the [SuperCollider issues page](https://github.com/supercollider/supercollider/issues). Here's what to do:
@@ -48,8 +53,6 @@ Depending on your GitHub settings, you should get an email if there's any action
 
 ## Triaging a bug
 Triaging a bug means checking for duplicates, labeling a new bug appropriately, and assigning / moving to a milestone if appropriate. Triaged bugs should be confirmed, and are ready for a developer to start working on. Generally, core SC developers will triage bugs - however, help is welcome! We ask that you read this page carefully, and ask for approval on the  sc-dev first, before moving bugs around.
-
-Untriaged bugs can be found with this query: [is:issue is:open -label:triaged](https://github.com/supercollider/supercollider/issues?q=is%3Aissue+is%3Aopen+-label%3Atriaged)
 
 1. **Check the issue database for duplicates**. If you see one:
      1. **Make a note** in the existing bug, linking to the new one.
