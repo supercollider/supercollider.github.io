@@ -22,15 +22,15 @@ Composers are listed alphabetically by last name.
 
 
 ####Bo is burning
-**Music theatre based on contemporary clock dancing, live electronics, and live coding**
+**Electronic Music-Theatre Duo**
 
-A duo by [Sarah Jeffery](http://www.sarahjeffery.com) and [Felipe Ignacio Noriega](http://felipeignacio.info). Evolved from their roots in traditional English folk culture, the clogs not only become a percussive instrument, but a means for creating music-theatre and movement. Coupled with innovative wireless technology hidden on the performer's bodies, the electronics fully integrate with movement.
+A duo by [Sarah Jeffery](http://www.sarahjeffery.com) and [Felipe Ignacio Noriega](http://felipeignacio.info).
 
-**The Mill Song** (2012): Music theatre work with percussive clogs and wireless electronics (Choreography by Cinthya Oyervides).
+**The Mill Song** (2012): percussive clogs and wireless electronics with SC (Choreography by Cinthya Oyervides).
 
-**Bo is Burning** (2013):  Combining turn-of-the-century Surrealism with both lilting folk songs and contemporary technology (Choreography by Cinthya Oyervides).
+**Bo is Burning** (2013): Lifting folk songs and contemporary technology (Choreography by Cinthya Oyervides).
 
-**FolkClash** (2013): FolkClash is an exploration of homemade technology, clog dance, and improvisation: a battle of improvisation between computer and clogs!
+**FolkClash** (2013): Exploration of homemade technology, clog dance, and improvisation
 
 A short video with teasers from The Mill Song and Bo is Burning is available on [youtube](https://youtu.be/sMTc49iqgUM).
 
