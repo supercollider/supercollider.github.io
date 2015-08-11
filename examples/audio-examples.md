@@ -11,9 +11,9 @@ sort_order: 3
 
 <hr />
 
-## <a href="http://www.youtube.com/view_play_list?p=B813D0BDF50705D9">YouTube playlist</a>
+## <a href="http://www.youtube.com/view_play_list?p=LLsgPbw0K4-2B1oTIT6emjCA">SuperCollider on YouTube</a>
 
-<iframe width="100%" height="720" src="http://www.youtube.com/embed/videoseries?list=PLB813D0BDF50705D9" frameborder="0" allowfullscreen="yes">youtube</iframe>
+<iframe width="100%" height="720" src="http://www.youtube.com/embed/videoseries?list=LLsgPbw0K4-2B1oTIT6emjCA" frameborder="0" allowfullscreen="yes">youtube</iframe>
 
 <hr />
 
