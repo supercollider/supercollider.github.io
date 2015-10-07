@@ -10,6 +10,7 @@ List all here. Feel free to edit on github and add yourself.
 
 ## blogs
 
+* <https://mycelialcordsblog.wordpress.com/>
 * <http://schemawound.com>
 * <http://musicnumbers.wordpress.com/tag/supercollider>
 * <http://supercollider.jp/blog>
