@@ -61,7 +61,8 @@ Clients Using SC Server
 -   Clojure
     -   [Overtone][] is a [Clojure][] based musical generation and
         manipulation system for live-coding and more.
-
+-   Lua
+    - [Lua2SC][] is a Lua client with ide, debugging...
   [sendOSC]: http://archive.cnmat.berkeley.edu/OpenSoundControl/clients/sendOSC.html
   [rsc3]: http://slavepianos.org/rd/?t=rsc3
   [r6rs scheme]: http://www.r6rs.org/
@@ -82,6 +83,7 @@ Clients Using SC Server
   [Standard ML]: http://standardml.org/
   [Overtone]: http://github.com/overtone/overtone
   [Clojure]: http://clojure.org/
+  [Lua2SC]: https://github.com/sonoro1234/Lua2SC
 
 
 Editors
