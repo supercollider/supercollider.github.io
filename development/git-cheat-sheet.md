@@ -5,20 +5,71 @@ title: Cheat Sheet for Git
 sort_order: 4
 ---
 
-## Get the latest sources ##
+# Understanding git and GitHub#
 
-First you need to create your own local clone of the online *repository*. There are two options:
+You are here, because you wish to contribute. Welcome!
 
-* If you are going to push changes back to the GitHub repository do:
+However, you may be wondering how so many people can smoothly collaborate on such a complex project such as SuperCollider (SC) and how contributions can get properly synced among the many participating contributors. Tools are needed, which allow version control and support collaboration.
+
+This is where git comes in handy. There are [two basic approaches](https://help.github.com/articles/types-of-collaborative-development-models/) for using git. With SuperCollider we use the "Fork & pull" model. This means for you working typically with a copy of the master project files, a so-called [fork](https://help.github.com/articles/about-forks/), which may confuse or irritate you, notably when coming from svn. 
+
+In general understanding for any tool how things work in principle means having a clear user model. It does not mean to understand every technical detail and should not require you to become a guru before being able to use a tool. A good user model allows to deduce tool behavior merely by logic and should be fully consistent throughout. Unfortunately, this is not necessarily the case with git. Therefore following may be helpful to you.
+
+## The user model ##
+
+Git uses its own terminology. A few key terms and concepts need to be understood always.
+
+First there are typically three so-called repositories (*repository* or short *repo*), data storing places:
+
+- **upstream repository** is the remote master project *repository*, reachable via URL [https://github.com/supercollider/supercollider](https://github.com/supercollider/supercollider), maintained by the community. It contains all project files. The *upstream repo* is hosted by [GitHub](http://GitHub.com).
+
+- **origin** is also a *repository* and is your personal remote copy of the project, a so-called [fork](https://help.github.com/articles/about-forks/) at GitHub, reachable via URL https://github.com/*YOURGitHubUSERID*/supercollider. It is made once by clicking button ’fork’ at the *upstream repo* while you are logged in as GitHub user *YOURGitHubUSERID*. Note this can be done only using a browser, neither the command line tool '[git](http://gitref.org)' nor the application ‘[GitHub Desktop](https://desktop.github.com)’ can fork. Your fork has many advantages. E.g. it keeps all your contributions separate from the *upstream repo* and allows you to make freely changes without disturbing anyone. Your fork is not private, it is visible to everyone logged in to GitHub and may contain specific discussions. Note, despite being separate, the fork can be easily updated/synced to the latest development state. Again the *origin repo* is hosted by [GitHub](http://GitHub.com).
+
+- **local** is the local git *repository* stored anywhere on your machine, a directory, e.g. ../*MYGitHubProjects*/supercollider, containing all project files plus the hidden directory ‘.git’ and other auxiliary files needed therein for git to work. This local copy must be created by cloning once the remote origin, i.e. your personal fork *origin*, not the *upstream*, to the local machine. All files here can be freely edited with tools of your choice, git will take care of the rest, i.e. detect changes by watching all files residing in your *local* repo on your machine.
+
+In addition there are **branches** within above 3 repos. Each repo contains at least one branch, the **default branch**, called **Master**. Branches serve separate development from the main branch, e.g. to try new things out first before they are released (deployed) to others. Whether to create or not to create a branch depends on the given circumstances. Generally you make first a branch before you start editing. Only in case of a very small change, e.g. fix a typo, may be no need to create a branch and you would then make such a change directly within the master branch of the local repo. In most cases, for sure for any substantive change, e.g. an entire subproject such as a complex new feature, you should first create a branch (locally).
+
+Then it is important that local edits need to be committed locally to become effective, then pushed to the origin, not the upstream (!), and then be announced and proposed to the community by pull requests. The core team of the project will then revise the pull requests and eventually merge the edits from your fork origin (remember it is public) into the upstream. Once that is done and you have synced your local repo (fetched and merged all latest edits) you can then update your local files to the latest development and sync back to your fork origin. As a result all three repositories should then contain identical project files.
+
+All version control actions (except forking) can be done either by using the command line tool (CLT) 'git' (see next section) or application ‘GitHub Desktop’ (if available for your platform). In addition you need a browser to access the remote repos.
+
+We do not recommend to follow the GitHub tutorials (!), they are misleading and are rarely helpful unless you are already very familiar with git concepts. For the CLT based 'git' command technique gain a quick overview with «[git - the simple guide - no deep shit!](http://rogerdudler.github.io/git-guide/)». Otherwise read on. For using ‘GitHub Desktop’ use this tutorial «[GitHub Desktop User Guides](https://help.github.com/desktop/guides/)». As of this writing we do not recommend to follow the help prominently offered by ‘GitHub Desktop’, i.e. the popup window, since it points only to GitHub Flow and from there on to CLT based techniques. The ‘GitHub Desktop’ tutorial is also available from the application itself, but only if you avoid using menu command "Help -> Tutorial" and use "Help -> GitHub Desktop Help" instead.
+
+That's all folks!
+
+
+# Working hints #
+
+## Setup things ##
+
+First, you need to setup things. There are two cases: You use a personal GitHub account or you don't.
+
+#### Contributor with a personal GitHub account ####
+
+For most cases it is recommended you work with the **origin repository**. To this end you need your personal GitHub account, which will give you a unique user ID, i.e. *YOURGitHubUSERID*. Once you have that sign in at [GitHub](http://GitHub.com) with your GitHub user ID, i.e. *YOURGitHubUSERID*. Then go to the *upstream repository* at GitHub, i.e. visit [https://github.com/supercollider/supercollider](https://github.com/supercollider/supercollider). There create your fork at GitHub by pressing button 'Fork' (near the top right corner). As a result the *origin repository* will be created at a new site with following URL **https://github.com/*YOURGitHubUSERID*/supercollider**.
+
+In a 2nd step, again to be done only once, clone the *origin repository* to your local machine. This gets you the latest sources. This will also allow you to push changes back to the GitHub repository. There are three ways to accomplish that. CLT based means use 'git' and do:
 
     ``git clone --recursive git@github.com:supercollider/supercollider.git``
 
-* If you don’t have a GitHub account or you don’t intend to push changes (so will instead be contributing via patches or pull-requests), then use read-only access:
+The `--recursive` flag is required to also download all the *submodules* as needed by SC.
+
+Alternatively use application ‘GitHub Desktop’ assuming you are correctly logged in to your GitHub account with this application. Click on the + on the top left corner and select tab 'clone' and choose then the wanted repository. Having previously forked the *upstream repository* to your personal *origin repository* allows you to select "supercollider" (also assumed you have never done that before). The third technique is to use the browser. While visiting your *origin repository* click the 'clone' button (left of 'Download ZIP'). 
+
+Whichever technique you use, you should get an exact copy of all project files on your local machine, i.e. your *local repository* properly inited, in which you can now start editing at your heart's content. There is no need to create first explicitly the *local repository* e.g. by calling ``git init`` (as suggested by some tutorials).
+
+Subsequent working hints focus on the CLT based technique using command '[git](http://gitref.org)'.
+
+#### Contributor without a personal GitHub account ####
+
+If you don’t have a GitHub account, e.g. because you don’t intend to push changes (so will instead be contributing via patches or pull-requests), then use read-only access:
 
     ``git clone --recursive git://github.com/supercollider/supercollider.git``
 
-The `--recursive` flag is required to also download all the *submodules* used by the repositoryd
+The `--recursive` flag is required to also download all the *submodules* as needed by SC.
 
+Subsequent working hints focus on the CLT based technique using command '[git](http://gitref.org)'.
+ 
 ## Update local repository ##
 
 Considering that you have not been changing your local repository by yourself, you can update it with:
@@ -347,6 +398,7 @@ Just remember that merged branches will not be updated by pulling any more. So i
 
 ## Resources ##
 
+- [Git Reference](http://gitref.org)
 - [Git Book](http://book.git-scm.com/)
 - [Pro Git Book](http://progit.org/book/)
 - [Visual Git Tutorial](http://www.ralfebert.de/blog/tools/visual_git_tutorial_1/)
@@ -354,4 +406,4 @@ Just remember that merged branches will not be updated by pulling any more. So i
 - [My Git Workflow](http://osteele.com/archives/2008/05/my-git-workflow)
 
 
-contributed by:  Miguel Negrão, Jakob Leben, Jonatan Liljedahl, James Harkins
+contributed by:  Miguel Negrão, Jakob Leben, Jonatan Liljedahl, James Harkins, Andreas Fischlin
