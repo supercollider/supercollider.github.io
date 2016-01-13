@@ -406,4 +406,4 @@ Just remember that merged branches will not be updated by pulling any more. So i
 - [My Git Workflow](http://osteele.com/archives/2008/05/my-git-workflow)
 
 
-contributed by:  Miguel Negrão, Jakob Leben, Jonatan Liljedahl, James Harkins
+contributed by:  Miguel Negrão, Jakob Leben, Jonatan Liljedahl, James Harkins, Andreas Fischlin
