@@ -63,27 +63,17 @@
 </table>
 
 
-#### Building from source
+<h4 id="building-from-source">Building from source</h4>
+<ul class="nodot"><br> <li><a href="https://github.com/supercollider/supercollider/releases"><i class="icon-download-alt">&middot;</i>Source Code [various releases]</a></li><br></ul>
 
-<ul class="nodot">
- <li><a href="https://github.com/supercollider/supercollider/releases"><i class="icon-download-alt">&middot;</i>Source Code [various releases]</a></li>
-</ul>
-
-Build instructions are included with the source code. For more tips and trouble shooting check [this page](/development/building.html).
-
+<p>Build instructions are included with the source code. For more tips and trouble shooting check <a href="/development/building.html">this page</a>.</p>
 <h4>Plugins and Extensions</h4>
 
-<ul>
-    <li><a href="https://github.com/supercollider/sc3-plugins">Synthesis Plugins and Extensions</a></li>
-</ul>
+<ul><br>    <li><a href="https://github.com/supercollider/sc3-plugins">Synthesis Plugins and Extensions</a></li><br></ul>
 
 <h4>Quarks</h4>
 
-Quarks is the package system and extends SuperCollider with lots of interesting things for math, graphics, machine learning, networking, interface and compositional frameworks.
-
-SuperCollider 3.7 comes with a new implementation that lets you install Quarks using a gui, from github URLs or by installing any packages that you have downloaded. [Read more...](https://github.com/supercollider-quarks/quarks)
-
-##### SuperCollider 3.6 and earlier
-
-See the old [SVN Quarks repository](http://sourceforge.net/p/quarks/code/HEAD/tree/) and consult the help file that came with your 3.6 SuperCollider.
-
+<p>Quarks is the package system and extends SuperCollider with lots of interesting things for math, graphics, machine learning, networking, interface and compositional frameworks.</p>
+<p>SuperCollider 3.7 comes with a new implementation that lets you install Quarks using a gui, from github URLs or by installing any packages that you have downloaded. <a href="https://github.com/supercollider-quarks/quarks">Read more...</a></p>
+<h5 id="supercollider-3-6-and-earlier">SuperCollider 3.6 and earlier</h5>
+<p>See the old <a href="http://sourceforge.net/p/quarks/code/HEAD/tree/">SVN Quarks repository</a> and consult the help file that came with your 3.6 SuperCollider.</p>
