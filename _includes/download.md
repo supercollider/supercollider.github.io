@@ -63,13 +63,13 @@
 </table>
 
 
-<h4>Building from source</h4>
+#### Building from source
 
 <ul class="nodot">
  <li><a href="https://github.com/supercollider/supercollider/releases"><i class="icon-download-alt">&middot;</i>Source Code [various releases]</a></li>
 </ul>
 
-<p><a href="/development/building.html"><i class="icon-hand-right">&middot;</i> <strong>Build instructions, tips and trouble shooting</strong></a></p>
+Build instructions are included with the source code. For more tips and trouble shooting check [this page](/development/building.html).
 
 <h4>Plugins and Extensions</h4>
 
@@ -79,16 +79,11 @@
 
 <h4>Quarks</h4>
 
-<p>Quarks is the package system and extends SuperCollider with lots of interesting things for math, graphics, machine learning, networking, interface and compositional frameworks.</p>
+Quarks is the package system and extends SuperCollider with lots of interesting things for math, graphics, machine learning, networking, interface and compositional frameworks.
 
-SuperCollider 3.7 comes with a new implementation that lets you install quarks from a provided interface, from github URLs or by installing packages that you have downloaded.
+SuperCollider 3.7 comes with a new implementation that lets you install Quarks using a gui, from github URLs or by installing any packages that you have downloaded. [Read more...](https://github.com/supercollider-quarks/quarks)
 
-Some more information is here: https://github.com/supercollider-quarks/quarks
+##### SuperCollider 3.6 and earlier
 
-<h5>SuperCollider 3.6 and earlier Quarks</h5>
-<ul>
-    <li><a href="http://quarks.sourceforge.net/">Quarks repository</a></li>
-    <li><a href="http://doc.sccode.org/Guides/UsingQuarks.html">Quarks help file</a></li>
-</ul>
+See the old [SVN Quarks repository](http://sourceforge.net/p/quarks/code/HEAD/tree/) and consult the help file that came with your 3.6 SuperCollider.
 
-<p><strong>Note: SourceForge changed the URL of the Quarks repo several years ago.</strong>  Very old versions of SuperCollider are configured to point to the old URL, but this is easily fixed. If your install is broken please follow <a href="/development/quarks-repository-moved.html">these instructions</a>.</p>
