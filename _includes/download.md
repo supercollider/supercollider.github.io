@@ -7,7 +7,7 @@
                     Mac
                 </h2>
                 <ul class="nodot">
-                    <li><a href="https://github.com/supercollider/supercollider/releases">Latest 3.7 pre-releases</a></li>
+                    <li><a href="https://github.com/supercollider/supercollider/releases">3.7 beta</a></li>
                     <li>
                         <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.6/SuperCollider-3.6.6-OSX.dmg/download"><i class="icon-download-alt">.</i> 3.6.6 installer</a>
                     </li>
@@ -17,8 +17,8 @@
                 </ul>
                 <ul class="nodot">
                     <li>
-                        <a href="http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/osx/master-latest.html"><i class="icon-download-alt">.</i> 3.7 latest build</a><br />
-                        This is the latest cutting edge build of the 3.7 development branch.
+                        <a href="http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/osx/master-latest.html"><i class="icon-download-alt">.</i> Latest build</a><br />
+                        This is the latest build of the cutting edge development branch.
                     </li>
                 </ul>
                 <ul class="nodot">
