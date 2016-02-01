@@ -5,124 +5,106 @@ title: Building From Source on BeagleBone Black
 sort_order: 3
 ---
 
-Compiling SC3.7alpha0 natively on Beaglebone Black Debian
+Compiling SC master natively on Beaglebone Black Debian Jessie
 ==
 
 NOTE: the whole process takes about 1.5h.
 
-NOTE: in step5 it is assumed there is an usb soundcard/adapter connected. It might work with hdmi audio also but this is untested.
-
-step1 (startup)
+requirements
 --
-1. download and transfer [debian-wheezy-7.2-armhf-3.8.13-bone30.img](http://www.armhf.com/index.php/download/) to a sdcard. NOTE: For the moment, do not use a debian version newer than 7.4.
-2. put the sdcard in the bbb (on osx try [PiFiller](http://ivanx.com/raspberrypi/)), connect an ethernet cable and 5v power.
-3. figure out the IP of the bbb (on osx try [LanScan](https://itunes.apple.com/app/lanscan/id472226235)) and log in with `ssh debian@x.x.x.x`. the default password is `debian`.
+* beaglebone black
+* sd card with [bone-debian-8.3-console-armhf-2016-01-24-2gb.img](http://elinux.org/Beagleboard:BeagleBoneBlack_Debian) or newer jessie
+* router with ethernet internet connection for the bbb
+* laptop connected to same network as the bbb
+* optional: usb soundcard with headphones or speakers connected
 
-step2 (preparation)
+step1 (hardware setup)
 --
-1. `sudo dpkg-reconfigure tzdata` # set timezone
-2. `sudo ntpdate pool.ntp.org` # set time
-3. `sudo apt-get update`
-4. `sudo apt-get upgrade`
-5. `sudo apt-get install build-essential git cmake alsa-base libasound2-dev libsamplerate0-dev libsndfile1-dev libavahi-client-dev libicu-dev libreadline-dev libfftw3-dev libxt-dev` # this takes a while
-6. `sudo depmod` # for alsa
-7. `sudo adduser debian audio`
+1. connect an ethernet cable from the network router to the bbb
+2. insert the sd card and usb soundcard
+3. last connect usb power from a 5V@1A power supply
 
-step3 (install jack2 from github)
+step2 (login, setup and update the system)
+--
+1. `ssh debian@beaglebone.box`  #from your laptop, default password is temppwd
+2. `sudo passwd debian`  #change password
+3. `sudo /opt/scripts/tools/grow_partition.sh`  #expand file system
+4. `sudo reboot`  #and log in again with ssh
+
+step3 (install required libraries and compilers)
+--
+1. `sudo apt-get update`
+2. `sudo apt-get upgrade`
+3. `sudo apt-get install python-dev alsa-base libicu-dev libasound2-dev libsamplerate0-dev libsndfile1-dev libreadline-dev libxt-dev libudev-dev libavahi-client-dev libfftw3-dev cmake git gcc-4.8 g++-4.8`
+
+step4 (compile & install jackd without d-bus)
 --
 1. `git clone git://github.com/jackaudio/jack2.git`
 2. `cd jack2`
-3. `./waf configure --alsa`
-4. `./waf build` # this takes a while
-5. `sudo ./waf install`
-6. `cd ..`
-7. `sudo rm -r jack2`
+3. `export CC=/usr/bin/gcc-4.8`
+4. `export CXX=/usr/bin/g++-4.8`
+5. `./waf configure --alsa`
+6. `./waf build`
+7. `sudo ./waf install`
 8. `sudo ldconfig`
-9. `sudo reboot`
+9. `cd ..`
+10. `rm -rf jack2`
+11. `sudo nano /etc/security/limits.conf`  #and add the following two lines at the end
+  * `@audio - memlock 256000`
+  * `@audio - rtprio 95`
+12. `sudo nano /etc/ssh/sshd_config`  #at the bottom change to UsePAM yes
+13. `sudo reboot`  #and log in again to make the limits and sshd settings work
 
-step4 (install sc3.7alpha0 from github and build with gcc)
+step5 (compile & install sc master)
 --
 1. `git clone --recursive git://github.com/supercollider/supercollider.git supercollider`
 2. `cd supercollider`
-3. `git checkout ddd8c8d75dd00263acf593b062ecbb06686a4574` # need an older version from july2013 that still can use gcc
-4. `git submodule init && git submodule update`
-5. `mkdir build && cd build`
-6. `CC="gcc" CXX="g++" cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_QT=OFF -DSC_WII=OFF -DSC_ED=OFF -DSC_IDE=OFF -DSC_EL=OFF -DCMAKE_C_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon" ..` # should add '-ffast-math -O3' here but then gcc4.6.3 crashes
-7. `make` # this takes a while
-8. `sudo make install`
-9. `cd ../..`
-10. `sudo rm -r supercollider`
-11. `sudo ldconfig`
-12. `sudo reboot`
+3. `git submodule init && git submodule update`
+4. `mkdir build && cd build`
+5. `export CC=/usr/bin/gcc-4.8`
+6. `export CXX=/usr/bin/g++-4.8`
+7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF ..`
+8. `make`
+9. `sudo make install`
+10. `sudo ldconfig`
+11. `cd ../..`
+12. `rm -r supercollider`
+13. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/GUI`
+14. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/JITLib/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/JITLibGUI`
 
-step5 (start jack & sclang & test sound)
+step6 (start jack & sclang & test)
 --
-1. `jackd -dalsa -dhw:1,0 -p128 -n3 -s &` # if distorting try with larger blocksize e.g. -p1024
-2. `sclang` # ignore the error "ERROR: No GUI scheme active" - it is harmless.
-3. `s.boot;`
-4. `a= {SinOsc.ar([400, 404], 0, 0.1)}.play;`
-5. `s.dump;`
-6. `a.free;`
-7. `s.quit;`
-8. `0.exit;`
-9. `pkill jackd`
+1. `jackd -P95 -dalsa -dhw:1 -p1024 -n3 -s -r 44100 &`  #edit -dhw:1 to match your soundcard. usually it is 1 for usb
+2. `sclang`  #should start sc and compile the class library with only 3 harmless class overwrites warnings
+  * `s.boot`  #should boot the server
+  * `a= {SinOsc.ar([400, 404])}.play`  #should play sound in both channels
+  * `a.free`
+  * `{1000000.do{2.5.sqrt}}.bench`  #benchmark: ~0.68 for bbb
+  * `a= {Mix(50.collect{RLPF.ar(SinOsc.ar)});DC.ar(0)}.play`  #benchmark
+  * `s.dump`  #avgCPU should show ~56.9%
+  * `a.free`
+  * `0.exit`  #quit sclang
+4. `pkill jackd`  #quit jackd
 
-step6 (low latency with realtime privileges)
+notes
 --
-1. `sudo pico /etc/security/limits.conf`
-2. and add the following lines somewhere before it says end of file.
-3.    `@audio - memlock 256000`
-4.    `@audio - rtprio 99`
-5.    `@audio - nice -19`
-6. save and exit with ctrl+o, ctrl+x
-7. `sudo pico /etc/ssh/sshd_config`
-8. and at the bottom change to `UsePAM yes`
-9. `sudo reboot`
-10. done. after reboot start jack+sc again like in previous step
+* if you get `WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!` when trying to ssh, type `ssh-keygen -R beaglebone.box` to reset
+* if you get `perl: warning: Setting locale failed`. either ignore it or run the commands: `sudo apt-get install locales` and `sudo dpkg-reconfigure locales` and set en_US.UTF-8 UTF-8 twice
+* we need to use gcc 4.8.4 instead of the default 4.9.2. something with gcc-4.9 triggers sc to generate the dreaded atIdentityHash error at startup.
+* for lower latency, try with lower blocksizes when you start jackd.try for example `-p512` and `-p128`. tune downwards until you get dropouts and xruns (also watch cpu%)
+* soundcards i’ve tried include a cheap blue 3D sound (C-Media Electronics, Inc. Audio Adapter (Planet UP-100, Genius G-Talk)) and the aureon dual usb (TerraTec Electronic GmbH Aureon Dual USB).
+* lock/writeprotect the sd card if you plan to pull out the power without properly shutting down the system first. a better way is to add a shutdown command script to a gpio pin - search online for how to do that.
+* to automatically load a file and start the sc server at system boot do the following...
 
-
-
-
-
-
-
-Compiling SC3.7alpha0 on Beaglebone Black Debian using OSX, a cross-compiler & DISTCC
-==
-NOTE: this is mainly useful for speeding up compiling. It's probably better to compile natively like above.
-
-This assumes OSX10.8.4, homebrew and a fresh debian-wheezy-7.2-armhf-3.8.13-bone30.img on a sdcard,
-but should also work on linux and windows if you install the cross-compiler and distcc.
-
-step0 (osx: install compiler, distcc & start server)
+autostart
 --
-1. install the arm-linux-gnueabihf cross-compiler. it is easiest from [www.cety.de/ctbot/arm-linux-gnueabihf.pkg](http://www.cety.de/ctbot/arm-linux-gnueabihf.pkg).
-2. `export PATH=$PATH:/usr/local/arm-linux/bin`
-3. `brew install distcc`
-4. `distccd --daemon --allow 192.168.1.0/24 --no-detach` # edit to match root of your ip domain
-
-then follow step1, step2 and step3 above.
-
-step4 (install sc3.7alpha0 from github and build with distcc)
---
-1. `sudo apt-get install distcc`
-2. `sudo ln -s /usr/bin/gcc /usr/local/bin/arm-linux-gcc` # this to make sure the bbb cc is called the same as the osx cc
-3. `sudo ln -s /usr/bin/g++ /usr/local/bin/arm-linux-g++` # this to make sure the bbb cxx is called the same as the osx cxx
-4. `sudo ldconfig`
-5. `git clone --recursive git://github.com/supercollider/supercollider.git supercollider`
-6. `cd supercollider`
-7. `git checkout ddd8c8d75dd00263acf593b062ecbb06686a4574` # need an older version from july2013 that still can use gcc
-8. `git submodule init && git submodule update`
-9. `mkdir build && cd build`
-10. `export DISTCC_HOSTS='192.168.1.51'` # edit to match your osx computer ip
-11. `export DISTCC_IO_TIMEOUT=3000`
-12. `export DISTCC_SKIP_LOCAL_RETRY=1`
-13. `CC="distcc arm-linux-gcc" CXX="distcc arm-linux-g++" cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_QT=OFF -DSC_WII=OFF -DSC_ED=OFF -DSC_IDE=OFF -DSC_EL=OFF -DCMAKE_C_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon" ..` # should add '-ffast-math -O3' here but then gcc4.6.3 crashes
-14. check the output and make sure it says: Check for working C compiler: /usr/bin/distcc -- works
-15. `make -j4`
-16. `sudo make install`
-17. `cd ../..`
-18. `sudo rm -r supercollider`
-19. `sudo ldconfig`
-20. `sudo reboot`
-
-now do step5 and step6 above.
+1. `nano ~/autostart.sh`  #and add the following three lines...
+  * `#!/bin/bash`
+  * `/usr/local/bin/jackd -P95 -dalsa -dhw:1 -p1024 -n3 -s -r 44100 &`
+  * `su root -c "sclang -D /home/debian/mycode.scd"`
+2. `chmod +x ~/autostart.sh`
+3. `sudo crontab -e`  #and add the following line to the end...
+  * `@reboot /bin/bash /home/debian/autostart.sh`
+4. `nano ~/mycode.scd`  #and add your code inside a s.waitForBoot. for example...
+  * `s.waitForBoot{{SinOsc.ar([400, 404], 0, 0.5)}.play}`
+5. `sudo reboot`  #and the sound should start after a few seconds - log in with ssh and `sudo pkill jackd && sudo pkill sclang` to stop it.
