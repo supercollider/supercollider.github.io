@@ -108,6 +108,15 @@ autostart (run sc at system boot)
   * `s.waitForBoot{ {SinOsc.ar([400, 404], 0, 0.5)}.play }`
 5. `sudo reboot`  #and the sound should start after a few seconds. log in with ssh and `sudo pkill jackd && sudo pkill sclang` to stop it.
 
+sc3.7 (stable)
+—
+if you want to use the sc3.7 branch instead of sc master (unstable), the process is the same except for the following additions:
+* in step5, after #2
+  * `git checkout 3.7`
+* in step5, after #12
+  * `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI/Base/Model.sc /usr/local/share/SuperCollider/SCClassLibrary/Common/Core/`
+
+
 wheezy (older system)
 --
 
