@@ -13,7 +13,7 @@ NOTE: the whole process takes about 1.5h.
 requirements
 --
 * beaglebone black
-* sd card with [bone-debian-8.3-console-armhf-2016-01-24-2gb.img](http://elinux.org/Beagleboard:BeagleBoneBlack_Debian) or newer jessie
+* sd card with [bone-debian-8.3-console-armhf-2016-01-31-2gb.img](http://elinux.org/Beagleboard:BeagleBoneBlack_Debian) or newer jessie
 * router with ethernet internet connection for the bbb
 * laptop connected to same network as the bbb
 * optional: usb soundcard with headphones or speakers connected
@@ -110,6 +110,47 @@ autostart (run sc at system boot)
 5. `sudo reboot`  #and the sound should start after a few seconds. log in with ssh and `sudo pkill jackd && sudo pkill sclang` to stop it.
 
 wheezy (older system)
---
+==
 
-todo
+here we use [bone-debian-7.9-console-armhf-2015-11-03-2gb.img](http://elinux.org/Beagleboard:BeagleBoneBlack_Debian)
+
+for older debian wheezy the process is similar except you will need to install gcc-4.7, cmake 2.8.12 and build the 3.7 branch instead of master.
+
+so for wheezy step3 and step5 are different and there are minor changes in step4. the rest is the same as for jessie above.
+
+step3 (update the system, install required libraries & compilers for wheezy)
+--
+1. `sudo apt-get update`
+2. `sudo apt-get upgrade`
+3. `sudo apt-get install python-dev alsa-base libicu-dev libasound2-dev libsamplerate0-dev libsndfile1-dev libreadline-dev libxt-dev libudev-dev libavahi-client-dev libfftw3-dev cmake git gcc-4.7 g++-4.7 build-essential`
+4. `wget http://www.cmake.org/files/v2.8/cmake-2.8.12.1.tar.gz`
+5. `tar xvf cmake-2.8.12.1.tar.gz`
+6. `cd cmake-2.8.12.1`
+7. `export CC=/usr/bin/gcc-4.7`
+8. `export CXX=/usr/bin/g++-4.7`
+9. `cmake . && make`
+10. `sudo make install`
+11. `sudo reboot`
+
+then in step4, #3 and #4 should read...
+3. `export CC=/usr/bin/gcc-4.7`
+4. `export CXX=/usr/bin/g++-4.7`
+
+step5 (compile & install sc 3.7)
+--
+1. `git clone --recursive git://github.com/supercollider/supercollider.git supercollider`
+2. `cd supercollider`
+3. `git checkout 3.7`
+4. `git submodule init && git submodule update`
+5. `mkdir build && cd build`
+6. `export CC=/usr/bin/gcc-4.7`
+7. `export CXX=/usr/bin/g++-4.7`
+8. `~/cmake-2.8.12.1/bin/cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon" ..`
+9. `make`
+10. `sudo make install`
+11. `sudo ldconfig`
+12. `cd ../..`
+13. `rm -r supercollider`
+14. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI/Base/Model.sc /usr/local/share/SuperCollider/SCClassLibrary/Common/Core/`
+15. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/GUI`
+16. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/JITLib/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/JITLibGUI`
