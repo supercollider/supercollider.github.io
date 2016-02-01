@@ -94,6 +94,7 @@ notes
 * for lower latency, try with lower blocksizes when you start jackd.try for example `-p512` and `-p128`. tune downwards until you get dropouts and xruns (also watch cpu%)
 * soundcards i’ve tried include a cheap blue 3D sound (C-Media Electronics, Inc. Audio Adapter (Planet UP-100, Genius G-Talk)) and the aureon dual usb (TerraTec Electronic GmbH Aureon Dual USB).
 * lock/writeprotect the sd card if you plan to pull out the power without properly shutting down the system first. a better way is to add a shutdown command script to a gpio pin - search online for how to do that.
+* if you want to use the sc3.7 branch instead of sc master (unstable), the process is the same except for the following additions: in step5, after #2 `git checkout 3.7`, in step5, after #12 `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI/Base/Model.sc /usr/local/share/SuperCollider/SCClassLibrary/Common/Core/`
 
 autostart (run sc at system boot)
 --
@@ -107,15 +108,6 @@ autostart (run sc at system boot)
 4. `nano ~/mycode.scd`  #and add your code inside a s.waitForBoot. for example...
   * `s.waitForBoot{ {SinOsc.ar([400, 404], 0, 0.5)}.play }`
 5. `sudo reboot`  #and the sound should start after a few seconds. log in with ssh and `sudo pkill jackd && sudo pkill sclang` to stop it.
-
-sc3.7 (stable)
-—
-if you want to use the sc3.7 branch instead of sc master (unstable), the process is the same except for the following additions:
-* in step5, after #2
-  * `git checkout 3.7`
-* in step5, after #12
-  * `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI/Base/Model.sc /usr/local/share/SuperCollider/SCClassLibrary/Common/Core/`
-
 
 wheezy (older system)
 --
