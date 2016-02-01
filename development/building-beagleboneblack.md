@@ -106,5 +106,5 @@ autostart
 3. `sudo crontab -e`  #and add the following line to the end...
   * `@reboot /bin/bash /home/debian/autostart.sh`
 4. `nano ~/mycode.scd`  #and add your code inside a s.waitForBoot. for example...
-  * `s.waitForBoot{{SinOsc.ar([400, 404], 0, 0.5)}.play}`
+  * `s.waitForBoot{ {SinOsc.ar([400, 404], 0, 0.5)}.play }`
 5. `sudo reboot`  #and the sound should start after a few seconds - log in with ssh and `sudo pkill jackd && sudo pkill sclang` to stop it.
