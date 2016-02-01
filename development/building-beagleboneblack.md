@@ -24,20 +24,20 @@ step1 (hardware setup)
 2. insert the sd card and usb soundcard
 3. last connect usb power from a 5V@1A power supply
 
-step2 (login, setup and update the system)
+step2 (login, setup & update the system)
 --
 1. `ssh debian@beaglebone.box`  #from your laptop, default password is temppwd
 2. `sudo passwd debian`  #change password
 3. `sudo /opt/scripts/tools/grow_partition.sh`  #expand file system
 4. `sudo reboot`  #and log in again with ssh
 
-step3 (install required libraries and compilers)
+step3 (install required libraries & compilers)
 --
 1. `sudo apt-get update`
 2. `sudo apt-get upgrade`
 3. `sudo apt-get install python-dev alsa-base libicu-dev libasound2-dev libsamplerate0-dev libsndfile1-dev libreadline-dev libxt-dev libudev-dev libavahi-client-dev libfftw3-dev cmake git gcc-4.8 g++-4.8`
 
-step4 (compile & install jackd without d-bus)
+step4 (compile & install jackd (no d-bus) )
 --
 1. `git clone git://github.com/jackaudio/jack2.git`
 2. `cd jack2`
@@ -94,9 +94,8 @@ notes
 * for lower latency, try with lower blocksizes when you start jackd.try for example `-p512` and `-p128`. tune downwards until you get dropouts and xruns (also watch cpu%)
 * soundcards i’ve tried include a cheap blue 3D sound (C-Media Electronics, Inc. Audio Adapter (Planet UP-100, Genius G-Talk)) and the aureon dual usb (TerraTec Electronic GmbH Aureon Dual USB).
 * lock/writeprotect the sd card if you plan to pull out the power without properly shutting down the system first. a better way is to add a shutdown command script to a gpio pin - search online for how to do that.
-* to automatically load a file and start the sc server at system boot do the following...
 
-autostart
+autostart (run sc at system boot)
 --
 1. `nano ~/autostart.sh`  #and add the following three lines...
   * `#!/bin/bash`
@@ -108,3 +107,8 @@ autostart
 4. `nano ~/mycode.scd`  #and add your code inside a s.waitForBoot. for example...
   * `s.waitForBoot{ {SinOsc.ar([400, 404], 0, 0.5)}.play }`
 5. `sudo reboot`  #and the sound should start after a few seconds - log in with ssh and `sudo pkill jackd && sudo pkill sclang` to stop it.
+
+wheezy (older system)
+--
+
+todo
