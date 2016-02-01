@@ -63,7 +63,7 @@ step5 (compile & install sc master)
 4. `mkdir build && cd build`
 5. `export CC=/usr/bin/gcc-4.8`
 6. `export CXX=/usr/bin/g++-4.8`
-7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF ..`
+7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon" ..`
 8. `make`
 9. `sudo make install`
 10. `sudo ldconfig`
@@ -81,7 +81,7 @@ step6 (start jack & sclang & test)
   * `a.free`
   * `{1000000.do{2.5.sqrt}}.bench`  #benchmark: ~0.68 for bbb
   * `a= {Mix(50.collect{RLPF.ar(SinOsc.ar)});DC.ar(0)}.play`  #benchmark
-  * `s.dump`  #avgCPU should show ~56.9%
+  * `s.dump`  #avgCPU should show ~44%
   * `a.free`
   * `0.exit`  #quit sclang
 4. `pkill jackd`  #quit jackd
