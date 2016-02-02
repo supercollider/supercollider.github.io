@@ -133,10 +133,9 @@ step3 (update the system, install required libraries & compilers for wheezy)
 7. `export CC=/usr/bin/gcc-4.7`
 8. `export CXX=/usr/bin/g++-4.7`
 9. `cmake . && make`
-10. `sudo make install`
-11. `sudo reboot`
 
 then in step4, #3 and #4 should read...
+
 * `export CC=/usr/bin/gcc-4.7`
 * `export CXX=/usr/bin/g++-4.7`
 
