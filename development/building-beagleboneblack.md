@@ -39,7 +39,7 @@ step3 (update the system, install required libraries & compilers)
 
 step4 (compile & install jackd (no d-bus) )
 --
-1. `git clone git://github.com/jackaudio/jack2.git`
+1. `git clone git://github.com/jackaudio/jack2.git --depth 1`
 2. `cd jack2`
 3. `export CC=/usr/bin/gcc-4.8`
 4. `export CXX=/usr/bin/g++-4.8`
