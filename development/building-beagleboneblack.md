@@ -51,7 +51,7 @@ step4 (compile & install jackd (no d-bus) )
 10. `rm -rf jack2`
 11. `sudo nano /etc/security/limits.conf`  #and add the following two lines at the end
   * `@audio - memlock 256000`
-  * `@audio - rtprio 95`
+  * `@audio - rtprio 75`
 12. `sudo nano /etc/ssh/sshd_config`  #at the bottom change to UsePAM yes
 13. `sudo reboot`  #and log in again to make the limits and sshd settings work
 
@@ -74,7 +74,7 @@ step5 (compile & install sc master)
 
 step6 (start jack & sclang & test)
 --
-1. `jackd -P95 -dalsa -dhw:1 -p1024 -n3 -s -r 44100 &`  #edit -dhw:1 to match your soundcard. usually it is 1 for usb
+1. `jackd -P75 -dalsa -dhw:1 -p1024 -n3 -s -r44100 &`  #edit -dhw:1 to match your soundcard. usually it is 1 for usb
 2. `sclang`  #should start sc and compile the class library with only 3 harmless class overwrites warnings
   * `s.boot`  #should boot the server
   * `a= {SinOsc.ar([400, 404])}.play`  #should play sound in both channels
@@ -100,7 +100,7 @@ autostart (run sc at system boot)
 --
 1. `nano ~/autostart.sh`  #and add the following three lines...
   * `#!/bin/bash`
-  * `/usr/local/bin/jackd -P95 -dalsa -dhw:1 -p1024 -n3 -s -r 44100 &`
+  * `/usr/local/bin/jackd -P75 -dalsa -dhw:1 -p1024 -n3 -s -r44100 &`
   * `su root -c "sclang -D /home/debian/mycode.scd"`
 2. `chmod +x ~/autostart.sh`
 3. `sudo crontab -e`  #and add the following line to the end...
