@@ -109,6 +109,10 @@ autostart (run sc at system boot)
   * `s.waitForBoot{ {SinOsc.ar([400, 404], 0, 0.5)}.play }`
 5. `sudo reboot`  #and the sound should start after a few seconds. log in with ssh and `sudo pkill jackd && sudo pkill sclang` to stop it.
 
+
+
+- - -
+
 wheezy (older system)
 ==
 
@@ -133,8 +137,8 @@ step3 (update the system, install required libraries & compilers for wheezy)
 11. `sudo reboot`
 
 then in step4, #3 and #4 should read...
-3. `export CC=/usr/bin/gcc-4.7`
-4. `export CXX=/usr/bin/g++-4.7`
+* `export CC=/usr/bin/gcc-4.7`
+* `export CXX=/usr/bin/g++-4.7`
 
 step5 (compile & install sc 3.7)
 --
