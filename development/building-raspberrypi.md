@@ -5,152 +5,110 @@ title: Building From Source on Raspberry Pi
 sort_order: 3
 ---
 
-Note
---
-If you just quickly want to install and run an older version of sc, you can follow the instructions here... [sam.aaron.name/2012/11/02/supercollider-on-pi.html](http://sam.aaron.name/2012/11/02/supercollider-on-pi.html).
-
-Compiling SC3.7alpha0 natively on Raspberry Pi Raspbian
+Compiling SC master natively on Raspberry Pi Raspbian Jessie
 ==
 
-The latest raspbian versions come with sc3.4.5 pre installed, but this supercollider version is old, slow and lack readline support. The 3.7 you build below will work better in many respects - it just takes time to do it.
+note: this is jessie-lite. see below for building scide on standard jessie.
 
-NOTE: the whole process takes many hours.
-
-step1 (startup)
+requirements
 --
-1. download and transfer the latest Raspbian (as of writing [2014-06-20-wheezy-raspbian.zip](http://www.raspberrypi.org/downloads)) to a sdcard.
-2. put the sdcard in the rpi (on osx try [PiFiller](http://ivanx.com/raspberrypi/)), connect an ethernet cable and 5v power.
-3. double check that the rpi have access to internet via the ethernet cable (connect it directly to a LAN or to laptop with internet sharing enabled).
-3. log in to the raspberry pi with `ssh pi@raspberrypi.box`. the default password is `raspberry`. alternatively figure out the IP of the rpi (on osx try [LanScan](https://itunes.apple.com/app/lanscan/id472226235)) and log in with `ssh pi@x.x.x.x`.
+* raspberry pi 2 model b (see notes for rpi1)
+* sd card with [2015-11-21-raspbian-jessie-lite.img](https://www.raspberrypi.org/downloads/) or newer raspbian jessie
+* router with ethernet internet connection for the rpi
+* laptop connected to same network as the rpi
+* optional: usb soundcard with headphones or speakers connected
 
-step2 (preparation)
+step1 (hardware setup)
 --
-1. log in and type `sudo raspi-config`, select expand file system, set timezone, finish and reboot
-2. `sudo apt-get update`
-3. `sudo apt-get upgrade` # this might take a while
-4. `sudo apt-get remove jackd` # remove old jack and old supercollider
-5. `sudo apt-get autoremove`
-6. `sudo apt-get install cmake libasound2-dev libsamplerate0-dev libsndfile1-dev libavahi-client-dev libicu-dev libreadline-dev libfftw3-dev libxt-dev`
-7. `sudo ldconfig`
+1. connect an ethernet cable from the network router to the rpi
+2. insert the sd card and usb soundcard
+3. last connect usb power from a 5V@1A power supply
 
-optional: step3 (install gcc 4.7)
+step2 (login & preparations)
 --
-1. `sudo apt-get install gcc-4.7 g++-4.7`
-2. `sudo apt-get remove --auto-remove gcc-4.6`
-3. `sudo ln -s /usr/bin/gcc-4.7 /usr/bin/gcc`
-4. `sudo ln -s /usr/bin/g++-4.7 /usr/bin/g++`
-5. `sudo apt-get clean`
+1. `ssh pi@raspberrypi.box`  #from your laptop, default password is raspberry
+2. `sudo raspi-config`  #change password, expand file system, reboot and log in again with ssh
 
-step4 (install jack2 from github)
+step3 (update the system, install required libraries & compilers)
 --
-1. `git clone git://github.com/jackaudio/jack2.git`
+1. `sudo apt-get update`
+2. `sudo apt-get upgrade`
+3. `sudo apt-get install alsa-base libicu-dev libasound2-dev libsamplerate0-dev libsndfile1-dev libreadline-dev libxt-dev libudev-dev libavahi-client-dev libfftw3-dev cmake git gcc-4.8 g++-4.8`
+
+step4 (compile & install jackd (no d-bus) )
+--
+1. `git clone git://github.com/jackaudio/jack2.git --depth 1`
 2. `cd jack2`
-3. `./waf configure --alsa`
-4. `./waf build` # this takes a while
+3. `./waf configure --alsa`  #here use the default gcc-4.9
+4. `./waf build`
 5. `sudo ./waf install`
-6. `cd ..`
-7. `sudo rm -r jack2`
-8. `sudo ldconfig`
-9. `sudo reboot`
+6. `sudo ldconfig`
+7. `cd ..`
+8. `rm -rf jack2`
+9. `sudo nano /etc/security/limits.conf`  #and add the following two lines at the end
+  * `@audio - memlock 256000`
+  * `@audio - rtprio 75`
+10. `exit`  #and log in again to make the limits.conf settings work
 
-step5 (install sc3.7alpha0 from github)
+step5 (compile & install sc master)
 --
 1. `git clone --recursive git://github.com/supercollider/supercollider.git supercollider`
 2. `cd supercollider`
-3. `git checkout ddd8c8d75dd00263acf593b062ecbb06686a4574` # need an older version from july2013 that still can use gcc
-4. `git submodule init && git submodule update`
-5. `mkdir build && cd build`
-6. `sudo dd if=/dev/zero of=/swapfile bs=1MB count=512` # create a temporary swap file
-7. `sudo mkswap /swapfile`
-8. `sudo swapon /swapfile`
-9. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_QT=OFF -DSC_WII=OFF -DSC_ED=OFF -DSC_IDE=OFF -DSC_EL=OFF -DCMAKE_C_FLAGS="-march=armv6 -mtune=arm1176jzf-s -mfloat-abi=hard -mfpu=vfp" -DCMAKE_CXX_FLAGS="-march=armv6 -mtune=arm1176jzf-s -mfloat-abi=hard -mfpu=vfp" ..`
-10. `make` # this takes a while
-11. `sudo make install`
-12. `cd ../..`
-13. `sudo rm -r supercollider`
-14. `sudo swapoff /swapfile`
-15. `sudo rm /swapfile`
-16. `sudo ldconfig`
-17. `echo "export SC_JACK_DEFAULT_INPUTS=\"system\"" >> ~/.bashrc`
-18. `echo "export SC_JACK_DEFAULT_OUTPUTS=\"system\"" >> ~/.bashrc`
-19. `sudo reboot`
+3. `git submodule init && git submodule update`
+4. `mkdir build && cd build`
+5. `export CC=/usr/bin/gcc-4.8`  #here temporarily use the older gcc-4.8
+6. `export CXX=/usr/bin/g++-4.8`
+7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DCMAKE_C_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon -funsafe-math-optimizations" -DCMAKE_CXX_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon -funsafe-math-optimizations" ..`
+8. `make -j4`  #leave out flag j4 on single core rpi models
+9. `sudo make install`
+10. `sudo ldconfig`
+11. `cd ../..`
+12. `rm -r supercollider`
+13. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/GUI`
+14. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/JITLib/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/JITLibGUI`
 
-step6 (start jack & sclang & test sound)
+step6 (start jack & sclang & test)
 --
-1. `jackd -p32 -dalsa -dhw:0,0 -p1024 -n3 -s &` # built-in sound. change to -dhw:1,0 for usb sound card (see more below)
-2. `scsynth -u 57110 &`
-3. `sclang` # ignore the error “ERROR: No GUI scheme active” - it is harmless.
-4. `s.boot;`
-5. `a= {SinOsc.ar([400, 404], 0, 0.1)}.play;`
-6. `s.dump;`
-7. `a.free;`
-8. `0.exit;`
-9. `pkill jackd`
+1. `jackd -P75 -dalsa -dhw:1 -p1024 -n3 -s -r44100 &`  #edit -dhw:1 to match your soundcard. usually it is 1 for usb
+2. `sclang`  #should start sc and compile the class library with only 3 harmless class overwrites warnings
+  * `s.boot`  #should boot the server
+  * `a= {SinOsc.ar([400, 404])}.play`  #should play sound in both channels
+  * `a.free`
+  * `{1000000.do{2.5.sqrt}}.bench`  #benchmark: ~0.89 for rpi2, ~3.1 for rpi1
+  * `a= {Mix(50.collect{RLPF.ar(SinOsc.ar)});DC.ar(0)}.play`  #benchmark
+  * `s.dump`  #avgCPU should show ~19% for rpi2 and ~73% for rpi1
+  * `a.free`
+  * `0.exit`  #quit sclang
+3. `pkill jackd`  #quit jackd
 
-optional: step7 (low latency with realtime privileges and an usb soundcard)
+notes
 --
-1. `sudo pico /etc/security/limits.conf`
-2. and add the following lines somewhere before it says end of file.
-3.    `@audio - memlock 256000`
-4.    `@audio - rtprio 99`
-7. save and exit with ctrl+o, ctrl+x
-8. `sudo halt`
-9. power off the rpi and insert the sd card in your laptop.
-10. `dwc_otg.speed=1` # add the following to beginning of /boot/cmdline.txt (see <http://wiki.linuxaudio.org/wiki/raspberrypi> under force usb1.1 mode)
-11. eject the sd card and put it back in the rpi, make sure usb soundcard is connected and power on again.
-12. log in with ssh and now you can start jack with a lower blocksize...
-13. `jackd -p32 -dalsa -dhw:1,0 -p256 -n3 -s &` # uses an usb sound card and lower blocksize
-14. continue like in step6.2 above
+* this also works on the original raspberry pi 1 model b but then change compiler flags to `"-mfpu=vfp -mfloat-abi=hard -march=armv6 -mtune=arm1176jzf-s"` (in two places). also create a swap file if you run out of memory and crash during compilation
+* if you get `WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!` when trying to ssh, type `ssh-keygen -R raspberrypi.box` to reset
+* we need to use gcc 4.8.4 instead of the raspbian default 4.9.2. something with gcc 4.9 triggers sc to generate the dreaded atIdentityHash error at startup.
+* for lower latency, try with lower blocksizes when you start jackd.  try for example `-p512` and `-p128`.  tune downwards until you get dropouts and xruns (also watch cpu%).
+* soundcards i’ve tried include a cheap blue 3D sound (C-Media Electronics, Inc. Audio Adapter (Planet UP-100, Genius G-Talk)) and the aureon dual usb (TerraTec Electronic GmbH Aureon Dual USB).
+* lock/writeprotect the sd card if you plan to pull out the power without properly shutting down the system first. a better way is to add a shutdown command script to a gpio pin - search online for how to do that.
+* if you want to use the sc3.7 branch instead of sc master (unstable), the process is the same except for the following additions: in step5, after #2 `git checkout 3.7`, in step5, after #12 `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI/Base/Model.sc /usr/local/share/SuperCollider/SCClassLibrary/Common/Core/`
 
-links:
+autostart (run sc at system boot)
 --
-* <http://wiki.linuxaudio.org/wiki/raspberrypi>
+1. `nano ~/autostart.sh`  #and add the following three lines…
+  * `#!/bin/bash`
+  * `/usr/local/bin/jackd -P75 -dalsa -dhw:1 -p1024 -n3 -s -r44100 &`
+  * `su root -c "sclang -D /home/pi/mycode.scd"`
+2. `chmod +x ~/autostart.sh`
+3. `sudo crontab -e`  #and add the following line to the end…
+  * `@reboot /bin/bash /home/pi/autostart.sh`
+4. `nano ~/mycode.scd`  #and add your code inside a s.waitForBoot. for example…
+  * `s.waitForBoot{ {SinOsc.ar([400, 404], 0, 0.5)}.play }`
+5. `sudo reboot`  #and the sound should start after a few seconds. log in with ssh and `sudo pkill jackd && sudo pkill sclang` to stop it.
 
+- - -
 
-
-Compiling SC3.7alpha0 on Raspberry Pi Raspbian using OSX, a cross-compiler & DISTCC
+jessie (scide)
 ==
-NOTE: this is mainly useful for speeding up compiling. It's probably better to compile natively like above.
 
-This assumes OSX10.8.4, homebrew and a fresh 2013-09-25-wheezy-raspbian.img on a sdcard,
-but should also work on linux and windows if you install the cross-compiler and distcc.
+[2015-11-21-raspbian-jessie.img](https://www.raspberrypi.org/downloads/) or newer raspbian jessie
 
-step0 (osx: install compiler, distcc & start server)
---
-1. install the arm-linux-gnueabihf cross-compiler. it is easiest from [www.cety.de/ctbot/arm-linux-gnueabihf.pkg](http://www.cety.de/ctbot/arm-linux-gnueabihf.pkg).
-2. `export PATH=$PATH:/usr/local/arm-linux/bin`
-3. `brew install distcc`
-4. `distccd --daemon --allow 192.168.1.0/24 --no-detach` # edit to match root of your ip domain
-
-then follow step1, step2 and step3 above.
-
-step4 (install sc3.7alpha0 from github and build with distcc)
---
-1. `sudo apt-get install distcc`
-2. `sudo ln -s /usr/bin/gcc /usr/local/bin/arm-linux-gcc` # this to make sure the bbb cc is called the same as the osx cc
-3. `sudo ln -s /usr/bin/g++ /usr/local/bin/arm-linux-g++` # this to make sure the bbb cxx is called the same as the osx cxx
-4. `sudo ldconfig`
-5. `git clone --recursive git://github.com/supercollider/supercollider.git supercollider`
-6. `cd supercollider`
-7. `git checkout ddd8c8d75dd00263acf593b062ecbb06686a4574` # need an older version from july2013 that still can use gcc
-8. `git submodule init && git submodule update`
-9. `mkdir build && cd build`
-10. `export DISTCC_HOSTS='192.168.1.51'` # edit to match your osx computer ip
-11. `export DISTCC_IO_TIMEOUT=3000`
-12. `export DISTCC_SKIP_LOCAL_RETRY=1`
-13. `CC="distcc arm-linux-gcc" CXX="distcc arm-linux-g++" cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_QT=OFF -DSC_WII=OFF -DSC_ED=OFF -DSC_IDE=OFF -DSC_EL=OFF -DCMAKE_C_FLAGS="-march=armv6 -mtune=arm1176jzf-s -mfloat-abi=hard -mfpu=vfp" -DCMAKE_CXX_FLAGS="-march=armv6 -mtune=arm1176jzf-s -mfloat-abi=hard -mfpu=vfp" ..` # should add '-ffast-math -O3' here but then gcc4.6.3 fails
-14. check the output and make sure it says: Check for working C compiler: /usr/bin/distcc -- works
-15. `make -j4`
-16. `sudo make install`
-17. `cd ../..`
-18. `sudo rm -r supercollider`
-19. `sudo ldconfig`
-20. `echo "export SC_JACK_DEFAULT_INPUTS=\"system\"" >> ~/.bashrc`
-21. `echo "export SC_JACK_DEFAULT_OUTPUTS=\"system\"" >> ~/.bashrc`
-22. `sudo reboot`
-
-now do step5 and step6 above.
-
-links:
---
-* <http://jeremy-nicola.info/portfolio-item/cross-compilation-distributed-compilation-for-the-raspberry-pi/>
+todo
