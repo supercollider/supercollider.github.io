@@ -26,7 +26,7 @@ step1 (hardware setup)
 
 step2 (login & preparations)
 --
-1. `ssh pi@raspberrypi.box`  #from your laptop, default password is raspberry
+1. `ssh pi@raspberrypi.local`  #from your laptop, default password is raspberry
 2. `sudo raspi-config`  #change password, expand file system, reboot and log in again with ssh
 
 step3 (update the system, install required libraries & compilers)
@@ -39,7 +39,7 @@ step4 (compile & install jackd (no d-bus) )
 --
 1. `git clone git://github.com/jackaudio/jack2.git --depth 1`
 2. `cd jack2`
-3. `./waf configure --alsa`  #here use the default gcc-4.9
+3. `./waf configure --alsa`  #note: here we use the default gcc-4.9
 4. `./waf build`
 5. `sudo ./waf install`
 6. `sudo ldconfig`
@@ -58,7 +58,7 @@ step5 (compile & install sc master)
 4. `mkdir build && cd build`
 5. `export CC=/usr/bin/gcc-4.8`  #here temporarily use the older gcc-4.8
 6. `export CXX=/usr/bin/g++-4.8`
-7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DCMAKE_C_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon -funsafe-math-optimizations" -DCMAKE_CXX_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon -funsafe-math-optimizations" ..`
+7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon -funsafe-math-optimizations" -DCMAKE_CXX_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon -funsafe-math-optimizations" ..`
 8. `make -j4`  #leave out flag j4 on single core rpi models
 9. `sudo make install`
 10. `sudo ldconfig`
@@ -84,12 +84,14 @@ step6 (start jack & sclang & test)
 notes
 --
 * this also works on the original raspberry pi 1 model b but then change compiler flags to `"-mfpu=vfp -mfloat-abi=hard -march=armv6 -mtune=arm1176jzf-s"` (in two places). also create a swap file if you run out of memory and crash during compilation
-* if you get `WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!` when trying to ssh, type `ssh-keygen -R raspberrypi.box` to reset
+* if you get `WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!` when trying to ssh, type `ssh-keygen -R raspberrypi.local` to reset
 * we need to use gcc 4.8.4 instead of the raspbian default 4.9.2. something with gcc 4.9 triggers sc to generate the dreaded atIdentityHash error at startup.
 * for lower latency, try with lower blocksizes when you start jackd.  try for example `-p512` and `-p128`.  tune downwards until you get dropouts and xruns (also watch cpu%).
 * soundcards i’ve tried include a cheap blue 3D sound (C-Media Electronics, Inc. Audio Adapter (Planet UP-100, Genius G-Talk)) and the aureon dual usb (TerraTec Electronic GmbH Aureon Dual USB).
 * lock/writeprotect the sd card if you plan to pull out the power without properly shutting down the system first. a better way is to add a shutdown command script to a gpio pin - search online for how to do that.
-* if you want to use the sc3.7 branch instead of sc master (unstable), the process is the same except for the following additions: in step5, after #2 `git checkout 3.7`, in step5, after #12 `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI/Base/Model.sc /usr/local/share/SuperCollider/SCClassLibrary/Common/Core/`
+* if you want to use the sc3.7 branch instead of sc master (unstable), the process is the same except for the following additions:
+  * in step5, after #2 `git checkout 3.7`
+  * in step5, after #12 `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI/Base/Model.sc /usr/local/share/SuperCollider/SCClassLibrary/Common/Core/`
 
 autostart (run sc at system boot)
 --
