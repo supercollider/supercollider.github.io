@@ -111,7 +111,7 @@ autostart (run sc at system boot)
 Compiling SCIDE master natively on Raspberry Pi Raspbian Jessie
 ==
 
-note: this is for building scide on standard jessie (gui).
+note: this is for building scide on standard jessie (raspbian desktop).
 
 requirements
 --
