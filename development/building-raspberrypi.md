@@ -111,6 +111,55 @@ autostart (run sc at system boot)
 jessie (scide)
 ==
 
-[2015-11-21-raspbian-jessie.img](https://www.raspberrypi.org/downloads/) or newer raspbian jessie
+requirements
+--
+* raspberry pi 2 model b
+* sd card with [2015-11-21-raspbian-jessie.img](https://www.raspberrypi.org/downloads/) or newer raspbian jessie (note: not jessie-lite)
+* router with ethernet internet connection for the rpi
+* screen, mouse and keyboard (although you can also do it all via ssh)
+* optional: usb soundcard with headphones or speakers connected
 
-todo
+step1 (hardware setup)
+--
+1. connect an ethernet cable from the network router to the rpi
+2. insert the sd card and usb soundcard + screen, mouse and keyboard
+3. last connect usb power from a 5V@1A power supply
+
+step2 (update the system, install required libraries & compilers)
+--
+
+when you see the rpi desktop open the terminal and type:
+
+1. `sudo raspi-config`  #change password, expand file system, reboot and start terminal again
+2. `sudo apt-get remove --auto-remove supercollider`  #note: this will also remove sonicpi (we'll keep jackd though)
+3. `sudo apt-get update`
+4. `sudo apt-get upgrade`
+5. `sudo apt-get install libboost-dev libjack-jackd2-dev libcwiid-dev libicu-dev libasound2-dev libsamplerate0-dev libsndfile1-dev libreadline-dev libxt-dev libudev-dev libavahi-client-dev libfftw3-dev cmake gcc-4.8 g++-4.8 qt5-default qt5-qmake qttools5-dev qttools5-dev-tools qtdeclarative5-dev libqt5webkit5-dev qtpositioning5-dev libqt5sensors5-dev`
+
+step3 (compile and install supercollider)
+--
+1. `git clone --recursive git://github.com/supercollider/supercollider.git supercollider --depth 1`
+2. `cd supercollider`
+3. `git submodule init && git submodule update`
+4. `mkdir build && cd build`
+5. `export CC=/usr/bin/gcc-4.8`  #here temporarily use the older gcc-4.8
+6. `export CXX=/usr/bin/g++-4.8`
+7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=ON -DSC_IDE=ON -DSC_QT=ON -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon -funsafe-math-optimizations" -DCMAKE_CXX_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon -funsafe-math-optimizations" ..`
+8. `make -j4`
+9. `sudo make install`
+10. `sudo ldconfig`
+11. `cd ../..`
+12. `rm -r supercollider`
+
+step4 (start jack & sclang & test)
+--
+
+from raspbian desktop open a terminal and type:
+
+  * `qjackctl`  #and select the usb soundcard under setup/interface.  click ok and start
+  * `scide`  #in another terminal window to launch the supercollider ide
+
+notes
+--
+* if you want to ssh in and run this sc version as headless, run the command `export DISPLAY=:0.0` before starting jackd.
+* the cpu benchmarks for this scide version is: ~1.01 and ~25%
