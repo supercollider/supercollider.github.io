@@ -8,7 +8,7 @@ sort_order: 3
 Compiling SC master natively on Raspberry Pi Raspbian Jessie
 ==
 
-note: this is jessie-lite. see below for building scide on standard jessie.
+note: this is for running headless under **jessie-lite**. see below for building scide on standard jessie.
 
 requirements
 --
@@ -108,8 +108,10 @@ autostart (run sc at system boot)
 
 - - -
 
-jessie (scide)
+Compiling SCIDE master natively on Raspberry Pi Raspbian Jessie
 ==
+
+note: this is for building scide on standard jessie (gui).
 
 requirements
 --
