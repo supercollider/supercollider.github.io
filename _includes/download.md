@@ -7,7 +7,7 @@
                     Mac
                 </h2>
                 <ul class="nodot">
-                    <li><a href="https://github.com/supercollider/supercollider/releases">3.7 beta</a></li>
+                    <li><a href="https://github.com/supercollider/supercollider/releases/download/Version-3.7.0/SuperCollider-3.7.0-OSX.zip">3.7</a></li>
                     <li>
                         <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.6/SuperCollider-3.6.6-OSX.dmg/download"><i class="icon-download-alt">.</i> 3.6.6 installer</a>
                     </li>
@@ -33,6 +33,11 @@
                     <img src="/images/platform_linux.gif" alt="" />
                     Linux
                 </h2>
+                <ul class="nodot">
+                    <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.7.0/SuperCollider-3.7.0-Source-linux.tar.bz2">Linux complete source code</a>
+                        </li>
+                </ul>
                  PPA and package distributions:
                 <ul>
                     <li>
