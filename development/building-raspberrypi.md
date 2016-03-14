@@ -37,7 +37,7 @@ step3 (update the system, install required libraries & compilers)
 
 step4 (compile & install jackd (no d-bus) )
 --
-1. `git clone git://github.com/jackaudio/jack2.git --depth 1`
+1. `git clone git://github.com/jackaudio/jack2 --depth 1`
 2. `cd jack2`
 3. `./waf configure --alsa`  #note: here we use the default gcc-4.9
 4. `./waf build`
@@ -52,18 +52,18 @@ step4 (compile & install jackd (no d-bus) )
 
 step5 (compile & install sc master)
 --
-1. `git clone --recursive git://github.com/supercollider/supercollider.git supercollider`
+1. `git clone --recursive git://github.com/supercollider/supercollider`  #optionally add --depth 1 here if you only need master
 2. `cd supercollider`
 3. `git submodule init && git submodule update`
 4. `mkdir build && cd build`
 5. `export CC=/usr/bin/gcc-4.8`  #here temporarily use the older gcc-4.8
 6. `export CXX=/usr/bin/g++-4.8`
 7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon -funsafe-math-optimizations" -DCMAKE_CXX_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon -funsafe-math-optimizations" ..`
-8. `make -j4`  #leave out flag j4 on single core rpi models
+8. `make -j 4`  #leave out flag j4 on single core rpi models
 9. `sudo make install`
 10. `sudo ldconfig`
 11. `cd ../..`
-12. `rm -r supercollider`
+12. `rm -rf supercollider`
 13. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/GUI`
 14. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/JITLib/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/JITLibGUI`
 
@@ -140,18 +140,18 @@ when you see the rpi desktop open the terminal and type:
 
 step3 (compile and install supercollider)
 --
-1. `git clone --recursive git://github.com/supercollider/supercollider.git supercollider --depth 1`
+1. `git clone --recursive git://github.com/supercollider/supercollider --depth 1`
 2. `cd supercollider`
 3. `git submodule init && git submodule update`
 4. `mkdir build && cd build`
 5. `export CC=/usr/bin/gcc-4.8`  #here temporarily use the older gcc-4.8
 6. `export CXX=/usr/bin/g++-4.8`
 7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=ON -DSC_IDE=ON -DSC_QT=ON -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon -funsafe-math-optimizations" -DCMAKE_CXX_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon -funsafe-math-optimizations" ..`
-8. `make -j4`
+8. `make -j 4`
 9. `sudo make install`
 10. `sudo ldconfig`
 11. `cd ../..`
-12. `rm -r supercollider`
+12. `rm -rf supercollider`
 
 step4 (start jack & sclang & test)
 --
