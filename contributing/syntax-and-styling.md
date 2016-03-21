@@ -5,45 +5,32 @@ category: contributing
 sort_order: 3
 ---
 
-## Markdown syntax
-
-- [Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
-
 
 ## SuperCollider Code Blocks
 
-In Markdown indenting creates a code block:
+In [Markdown](https://help.github.com/articles/github-flavored-markdown) indenting creates a code block:
 
     s = Server.local;
     y = Synth("def");
 
-Github supports an additional style of code block.  If support for SuperCollider is ever added to Pygments then it can display code blocks correctly.
+Github supports an additional style of code block where you can specify the language to colorize.  
 
-The markup would look like this:
+The markup looks like this:
 
-
+	```supercollider
+ 	s = Server.local;
+ 	y = Synth("def");
+ 	```
+  
 The result looks like this:
+  
+ ```supercollider
+ s = Server.local;
+ y = Synth("def");
+ ```
 
-
-Note: you won't see this formatted correctly using the local Jekyll test server.
-
-## Adding SuperCollider syntax coloring support
-
-Jekyll has built in Pygment support for syntax coloring.
-
-SuperCollider looks kinda like Javascript so its possible to get approximate syntax coloring by using `{ %  highlight javascript % }`
-
-{% highlight javascript %}
-s = Server.local;
-y = Synth("def");
-{
-  Saw.ar(440);
-}.play
-{% endhighlight %}
-
-It would be possible to implement Pygments support and submit that to github.
-
-It would also be possible to add SuperCollider support to Highlight.js and then include that js on the page and use it for syntax highlighting.
+Note: you won't see this formatted correctly when using the local Jekyll test server.
+But you can see it in the preview when editing a markdown file on github.
 
 
 ## Adding HTML using submodules
@@ -64,9 +51,6 @@ The layout is a simple bootstrap html wrapper and the css is (currently) a boots
 
 [Jekyll Bootstrap](http://jekyllbootstrap.com/)
 
-A few things are currently left in from Jekyll Bootstrap like the disqus comment include, the category and page iterators.  They are not essential and they are frankly a bit confusing.
+A few things are currently left in from Jekyll Bootstrap like the disqus comment include, the category and page iterators. They are not essential and they are frankly a bit confusing.
 
 The includes for comments, analytics etc. are forked from Jekyll Bootstrap as they are the most useful and resuable part of that project. Configuration for disqus, facebook, bitly and other trendy things is in `_config.yml`
-
-
-
