@@ -177,7 +177,10 @@ Pbind(
       <li><a href="/community/blogs-and-sites.html">Blogs and sites</a></li>
       <li><a href="https://twitter.com/search?q=supercollider+play">SC tweets - tunes under 140 chars</a></li>
       <li><a href="https://soundcloud.com/groups/supercollider">Soundcloud</a></li>
-      <li><a href="http://www.facebook.com/group.php?gid=2222754532">Facebook</a></li>
+      <li><a href="https://www.facebook.com/groups/supercollider/">English Facebook group</a></li>
+      <li><a href="https://www.facebook.com/groups/770853403048489/">SuperCollider Italia Facebook group</a></li>
+      <li><a href="https://www.facebook.com/groups/109527502188/">SuperColliderMX Facebook group</a></li>
+      <li><a href="https://www.facebook.com/groups/653670444775977/">SC Women Facebook group</a></li>
       <li><a href="http://flickr.com/groups/supercollider/pool/">flickr</a></li>
       <li><a href="http://www.vimeo.com/tag:supercollider">Vimeo</a></li>
       <li><a href="http://www.youtube.com/view_play_list?p=B813D0BDF50705D9">YouTube</a></li>
