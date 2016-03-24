@@ -184,6 +184,7 @@ Pbind(
           <li><a href="https://www.facebook.com/groups/770853403048489/">SuperCollider Italia</a></li>
           <li><a href="https://www.facebook.com/groups/109527502188/">SuperColliderMX</a></li>
           <li><a href="https://www.facebook.com/groups/630981953617449/">SuperColliderBR</a></li>
+          <li><a href="https://www.facebook.com/groups/336468226443169/">SuperCollider Slovenija</a></li>
         </ul>
       </li>
       <li><a href="http://flickr.com/groups/supercollider/pool/">flickr</a></li>
