@@ -7,8 +7,7 @@
                     Mac
                 </h2>
                 <ul class="nodot">
-                    <li><a href="https://github.com/supercollider/supercollider/releases/download/Version-3.7.0/SuperCollider-3.7.0-OSX.zip"><i class="icon-download-alt">.</i> 3.7</a></li>
-                    <li>
+                    <li><a href="https://github.com/supercollider/supercollider/releases/download/Version-3.7.1/SuperCollider-OSX-3.7.1.zip"><i class="icon-download-alt">.</i> 3.7</a></li>
                         <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.6/SuperCollider-3.6.6-OSX.dmg/download"><i class="icon-download-alt">.</i> 3.6.6 installer</a>
                     </li>
                     <li>
@@ -58,6 +57,16 @@
                     Windows
                 </h2>
                 <ul class="nodot">
+                    <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.7.1/SuperCollider-3.7.1_Release-x86-MinGW-f578552.exe"><i class="icon-download-alt">.</i> 3.7 32-bit installer</a><br />
+                        Includes SuperNova. Note: if you depend on MIDI you should stick with 3.6.6 for now. Check the Readme for more details on known issues. Stay tuned!<br />
+                        <a href="https://github.com/supercollider/sc3-plugins/releases/download/Version-3.7.1/sc3-plugins_3.7.1_win32_41a6d.zip"><i class="icon-download-alt">.</i>sc3-plugins</a> are available as well.
+                    </li>
+                    <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.7.1/SuperCollider-3.7.1_Release-x64-VS-f578552.exe"><i class="icon-download-alt">.</i> 3.7 64-bit installer</a><br />
+                        SuperNova not available<br />
+                        <a href="https://github.com/supercollider/sc3-plugins/releases/download/Version-3.7.1/sc3-plugins_3.7.1_win64_41a6d.zip"><i class="icon-download-alt">.</i>sc3-plugins</a> for 64-bit are made available, but should be considered experimental, as they are compiled with MinGW rather than Visual Studio. Check the Readme for installation details.
+                    </li>
                     <li>
                         <a href="http://sourceforge.net/projects/supercollider/files/Windows/3.6/SuperCollider-3.6.6-win32.exe/download"><i class="icon-download-alt">.</i> Win 32 3.6.6 installer</a>
                     </li>
