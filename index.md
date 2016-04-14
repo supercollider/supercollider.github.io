@@ -190,6 +190,7 @@ Pbind(
       <li><a href="http://flickr.com/groups/supercollider/pool/">flickr</a></li>
       <li><a href="http://www.vimeo.com/tag:supercollider">Vimeo</a></li>
       <li><a href="http://www.youtube.com/view_play_list?p=B813D0BDF50705D9">YouTube</a></li>
+      <li><a href="https://lists.skylined.org/mailman/listinfo/supercollider">SuperCollider Slovenija mailing list</a></li>
     </ul>
   </div>
 
