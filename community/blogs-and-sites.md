@@ -32,6 +32,7 @@ List all here. Feel free to edit on github and add yourself.
 * <http://backtrace.blogspot.de/search/label/supercollider>
 * <http://subnaught.org/supercollider>
 * <http://eyeballsun.blogspot.de>
+* <http://nova.deviator.si/tag/supercollider>
 
 ## video tutorials
 
