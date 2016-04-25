@@ -12,8 +12,8 @@ note: this is for running headless under **jessie-lite**. see below for building
 
 requirements
 --
-* raspberry pi 2 model b (see notes for rpi1)
-* sd card with [2015-11-21-raspbian-jessie-lite.img](https://www.raspberrypi.org/downloads/) or newer raspbian jessie
+* raspberry pi 2 or 3 (see notes for rpi 1)
+* sd card with [2016-03-18-raspbian-jessie-lite.img](https://www.raspberrypi.org/downloads/) or newer raspbian jessie
 * router with ethernet internet connection for the rpi
 * laptop connected to same network as the rpi
 * optional: usb soundcard with headphones or speakers connected
@@ -74,9 +74,9 @@ step6 (start jack & sclang & test)
   * `s.boot`  #should boot the server
   * `a= {SinOsc.ar([400, 404])}.play`  #should play sound in both channels
   * `a.free`
-  * `{1000000.do{2.5.sqrt}}.bench`  #benchmark: ~0.89 for rpi2, ~3.1 for rpi1
+  * `{1000000.do{2.5.sqrt}}.bench`  #benchmark: ~0.58 for rpi3, ~0.89 for rpi2, ~3.1 for rpi1
   * `a= {Mix(50.collect{RLPF.ar(SinOsc.ar)});DC.ar(0)}.play`  #benchmark
-  * `s.dump`  #avgCPU should show ~19% for rpi2 and ~73% for rpi1
+  * `s.dump`  #avgCPU should show ~12.8% for rpi3, ~19% for rpi2 and ~73% for rpi1
   * `a.free`
   * `0.exit`  #quit sclang
 3. `pkill jackd`  #quit jackd
@@ -115,8 +115,8 @@ note: this is for building scide on standard jessie (raspbian desktop).
 
 requirements
 --
-* raspberry pi 2 model b
-* sd card with [2015-11-21-raspbian-jessie.img](https://www.raspberrypi.org/downloads/) or newer raspbian jessie (note: not jessie-lite)
+* raspberry pi 2 or 3
+* sd card with [2016-03-18-raspbian-jessie.img](https://www.raspberrypi.org/downloads/) or newer raspbian jessie (note: not jessie-lite)
 * router with ethernet internet connection for the rpi
 * screen, mouse and keyboard (although you can also do it all via ssh)
 * optional: usb soundcard with headphones or speakers connected
@@ -164,4 +164,5 @@ from raspbian desktop open a terminal and type:
 notes
 --
 * if you want to ssh in and run this sc version as headless, run the command `export DISPLAY=:0.0` before starting jackd.
-* the cpu benchmarks for this scide version is: ~1.01 and ~25%
+* if the `make -j 4` build step returns an error you might just have run out of memory. try running the same command again or decrease the gpu memory in raspi-config advanced.
+* the cpu benchmarks for this scide version is: ~0.68 and ~22% for rpi3, ~1.01 and ~25% for rpi2
