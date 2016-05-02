@@ -24,7 +24,7 @@ group: index
 
   <h4>Examples</h4>
 
-{% highlight supercollider %}
+{% highlight javascript %}
 // modulate a sine frequency and a noise amplitude with another sine
 // whose frequency depends on the horizontal mouse pointer position
 {
