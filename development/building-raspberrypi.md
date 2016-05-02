@@ -136,7 +136,7 @@ when you see the rpi desktop open the terminal and type:
 2. `sudo apt-get remove --auto-remove supercollider`  #note: this will also remove sonicpi (we'll keep jackd though)
 3. `sudo apt-get update`
 4. `sudo apt-get upgrade`
-5. `sudo apt-get install libboost-dev libjack-jackd2-dev libcwiid-dev libicu-dev libasound2-dev libsamplerate0-dev libsndfile1-dev libreadline-dev libxt-dev libudev-dev libavahi-client-dev libfftw3-dev cmake gcc-4.8 g++-4.8 qt5-default qt5-qmake qttools5-dev qttools5-dev-tools qtdeclarative5-dev libqt5webkit5-dev qtpositioning5-dev libqt5sensors5-dev`
+5. `sudo apt-get install libjack-jackd2-dev libcwiid-dev libicu-dev libasound2-dev libsamplerate0-dev libsndfile1-dev libreadline-dev libxt-dev libudev-dev libavahi-client-dev libfftw3-dev cmake gcc-4.8 g++-4.8 qt5-default qt5-qmake qttools5-dev qttools5-dev-tools qtdeclarative5-dev libqt5webkit5-dev qtpositioning5-dev libqt5sensors5-dev`
 
 step3 (compile and install supercollider)
 --
