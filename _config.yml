@@ -3,7 +3,7 @@
 permalink: /:categories/:year/:month/:day/:title
 
 exclude: ["README.md", "Rakefile"]
-highlighter: pygments
+highlighter: rouge
 
 #
 title: SuperCollider
