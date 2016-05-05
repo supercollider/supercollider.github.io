@@ -131,6 +131,7 @@ Pbind(
     <ul>
       <li><a href="https://github.com/supercollider/supercollider/issues">Github issue tracker</a></li>
       <li><a href="/contributing/index.html">Contribution guidelines</a></li>
+      <li><a href="/community/code-of-conduct.html">Code of Conduct</a></li>    
     </ul>
     <h4><a href="/development/repository.html">Developers</a></h4>
     <ul>
