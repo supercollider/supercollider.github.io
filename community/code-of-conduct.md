@@ -1,3 +1,10 @@
+---
+layout: catpage
+title: Code of conduct
+category: community
+sort_order: 7
+---
+
 ## Purpose
 
 A primary goal of our community, our user groups and mailing lists, symposia and other events is to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible. As such, we are committed to providing a friendly, safe and welcoming environment for all.
@@ -23,19 +30,19 @@ If you see someone who is making an extra effort to ensure our community is welc
 
 ### The SuperCollider community strives to be:
 
-* Friendly and patient. 
-* Welcoming: We strive to be a community that welcomes and supports people of all backgrounds and identities. 
-* Considerate: Your work will be used by other people, and you in turn will depend on the work of others. Any decision you take will affect users and colleagues, and you should take those consequences into account when making decisions. Remember that we’re a world-wide community, so you might not be communicating in someone else’s primary language. 
-* Respectful: Not all of us will agree all the time, but disagreement is no excuse for poor behavior and poor manners. We might all experience some frustration now and then, but we cannot allow that frustration to turn into a personal attack. It’s important to remember that a community where people feel uncomfortable or threatened is not a productive one. 
-* Understanding of differences of opinion: Disagreements, both social and technical, happen all the time. It is important that we resolve disagreements and differing views constructively. Remember that we’re different. The strength of our community comes from its diversity, people from a wide range of backgrounds. Different people have different perspectives on issues. Being unable to understand why someone holds a viewpoint doesn’t mean that they’re wrong. Don’t forget that it is human to err and blaming each other doesn’t get us anywhere. Instead, focus on helping to resolve issues and learning from mistakes. 
+* Friendly and patient.
+* Welcoming: We strive to be a community that welcomes and supports people of all backgrounds and identities.
+* Considerate: Your work will be used by other people, and you in turn will depend on the work of others. Any decision you take will affect users and colleagues, and you should take those consequences into account when making decisions. Remember that we’re a world-wide community, so you might not be communicating in someone else’s primary language.
+* Respectful: Not all of us will agree all the time, but disagreement is no excuse for poor behavior and poor manners. We might all experience some frustration now and then, but we cannot allow that frustration to turn into a personal attack. It’s important to remember that a community where people feel uncomfortable or threatened is not a productive one.
+* Understanding of differences of opinion: Disagreements, both social and technical, happen all the time. It is important that we resolve disagreements and differing views constructively. Remember that we’re different. The strength of our community comes from its diversity, people from a wide range of backgrounds. Different people have different perspectives on issues. Being unable to understand why someone holds a viewpoint doesn’t mean that they’re wrong. Don’t forget that it is human to err and blaming each other doesn’t get us anywhere. Instead, focus on helping to resolve issues and learning from mistakes.
 
 ## Expected Behavior
 
-* Participate in an authentic and active way. In doing so, you contribute to the health and longevity of this community. 
-* Exercise consideration and respect in your speech and actions. 
-* Attempt collaboration before conflict. 
-* Refrain from demeaning, discriminatory, or harassing behavior and speech. 
-* Be mindful of your surroundings and of your fellow participants. Alert community leaders if you notice a dangerous situation, someone in distress, or violations of this Code of Conduct, even if they seem inconsequential. 
+* Participate in an authentic and active way. In doing so, you contribute to the health and longevity of this community.
+* Exercise consideration and respect in your speech and actions.
+* Attempt collaboration before conflict.
+* Refrain from demeaning, discriminatory, or harassing behavior and speech.
+* Be mindful of your surroundings and of your fellow participants. Alert community leaders if you notice a dangerous situation, someone in distress, or violations of this Code of Conduct, even if they seem inconsequential.
 
 ### Self-Promotion
 
@@ -50,27 +57,27 @@ Unacceptable behaviors include: intimidating, harassing, abusive, culturally app
 
 Harassment includes, but is not limited to:
 
-* Offensive comments related to gender, gender identity and expression, sexual orientation, disability, mental illness, neuro(a)typicality, physical appearance, body size, race, ethnicity, age, regional discrimination, political or religious affiliation 
-* Unwelcome comments regarding a person’s lifestyle choices and practices, including those related to food, health, parenting, drugs, and employment 
-* Deliberate misgendering. This includes deadnaming or persistently using a pronoun that does not correctly reflect a person’s gender identity. You must address people by the name they give you when not addressing them by their username or handle 
-* Physical contact and simulated physical contact (eg, textual descriptions like “backrub”) without consent or after a request to stop 
-* Threats of violence, both physical and psychological 
-* Incitement of violence towards any individual, including encouraging a person to commit suicide or to engage in self-harm 
-* Deliberate intimidation 
-* Stalking or following 
-* Harassing photography or recording, including logging online activity for harassment purposes 
-* Sustained disruption of discussion 
-* Unwelcome sexual attention, including gratuitous or off-topic sexual images or behaviour 
-* Pattern of inappropriate social contact, such as requesting/assuming inappropriate levels of intimacy with others 
-* Continued one-on-one communication after requests to cease 
-* Deliberate “outing” of any aspect of a person’s identity without their consent except as necessary to protect others from intentional abuse 
-* Publication of non-harassing private communication 
+* Offensive comments related to gender, gender identity and expression, sexual orientation, disability, mental illness, neuro(a)typicality, physical appearance, body size, race, ethnicity, age, regional discrimination, political or religious affiliation
+* Unwelcome comments regarding a person’s lifestyle choices and practices, including those related to food, health, parenting, drugs, and employment
+* Deliberate misgendering. This includes deadnaming or persistently using a pronoun that does not correctly reflect a person’s gender identity. You must address people by the name they give you when not addressing them by their username or handle
+* Physical contact and simulated physical contact (eg, textual descriptions like “backrub”) without consent or after a request to stop
+* Threats of violence, both physical and psychological
+* Incitement of violence towards any individual, including encouraging a person to commit suicide or to engage in self-harm
+* Deliberate intimidation
+* Stalking or following
+* Harassing photography or recording, including logging online activity for harassment purposes
+* Sustained disruption of discussion
+* Unwelcome sexual attention, including gratuitous or off-topic sexual images or behaviour
+* Pattern of inappropriate social contact, such as requesting/assuming inappropriate levels of intimacy with others
+* Continued one-on-one communication after requests to cease
+* Deliberate “outing” of any aspect of a person’s identity without their consent except as necessary to protect others from intentional abuse
+* Publication of non-harassing private communication
 
 The SuperCollider community prioritizes marginalized people’s safety over privileged people’s comfort. We will not act on complaints regarding:
-* ‘Reverse’ -isms, including ‘reverse racism,’ ‘reverse sexism,’ and ‘cisphobia’ 
-* Reasonable communication of boundaries, such as “leave me alone,” “go away,” or “I’m not discussing this with you” 
-* Refusal to explain or debate social justice concepts 
-* Criticizing racist, sexist, cissexist, or otherwise oppressive behavior or assumptions 
+* ‘Reverse’ -isms, including ‘reverse racism,’ ‘reverse sexism,’ and ‘cisphobia’
+* Reasonable communication of boundaries, such as “leave me alone,” “go away,” or “I’m not discussing this with you”
+* Refusal to explain or debate social justice concepts
+* Criticizing racist, sexist, cissexist, or otherwise oppressive behavior or assumptions
 
 ## Consequences of Unacceptable Behavior
 
