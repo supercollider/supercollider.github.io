@@ -76,7 +76,7 @@ step6 (start jack & sclang & test)
   * `a.free`
   * `{1000000.do{2.5.sqrt}}.bench`  #benchmark: ~0.58 for rpi3, ~0.89 for rpi2, ~3.1 for rpi1
   * `a= {Mix(50.collect{RLPF.ar(SinOsc.ar)});DC.ar(0)}.play`  #benchmark
-  * `s.dump`  #avgCPU should show ~12.8% for rpi3, ~19% for rpi2 and ~73% for rpi1
+  * `s.avgCPU`  #should show ~12.8% for rpi3, ~19% for rpi2 and ~73% for rpi1
   * `a.free`
   * `0.exit`  #quit sclang
 3. `pkill jackd`  #quit jackd
