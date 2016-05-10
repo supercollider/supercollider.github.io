@@ -81,7 +81,7 @@ step6 (start jack & sclang & test)
   * `a.free`
   * `{1000000.do{2.5.sqrt}}.bench`  #benchmark: ~0.68 for bbb
   * `a= {Mix(50.collect{RLPF.ar(SinOsc.ar)});DC.ar(0)}.play`  #benchmark
-  * `s.dump`  #avgCPU should show ~44%
+  * `s.avgCPU`  #should show ~44%
   * `a.free`
   * `0.exit`  #quit sclang
 4. `pkill jackd`  #quit jackd
