@@ -58,7 +58,7 @@ step5 (compile & install sc master)
 4. `mkdir build && cd build`
 5. `export CC=/usr/bin/gcc-4.8`  #here temporarily use the older gcc-4.8
 6. `export CXX=/usr/bin/g++-4.8`
-7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon -funsafe-math-optimizations" -DCMAKE_CXX_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon -funsafe-math-optimizations" ..`
+7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon" ..`
 8. `make -j 4`  #leave out flag j4 on single core rpi models
 9. `sudo make install`
 10. `sudo ldconfig`
@@ -146,7 +146,7 @@ step3 (compile and install supercollider)
 4. `mkdir build && cd build`
 5. `export CC=/usr/bin/gcc-4.8`  #here temporarily use the older gcc-4.8
 6. `export CXX=/usr/bin/g++-4.8`
-7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=ON -DSC_IDE=ON -DSC_QT=ON -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon -funsafe-math-optimizations" -DCMAKE_CXX_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon -funsafe-math-optimizations" ..`
+7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=ON -DSC_IDE=ON -DSC_QT=ON -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon" ..`
 8. `make -j 4`
 9. `sudo make install`
 10. `sudo ldconfig`
