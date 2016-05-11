@@ -26,7 +26,7 @@ step1 (hardware setup)
 
 step2 (login & preparations)
 --
-1. `ssh pi@raspberrypi.local`  #from your laptop, default password is raspberry
+1. `ssh pi@raspberrypi`  #from your laptop, default password is raspberry
 2. `sudo raspi-config`  #change password, expand file system, reboot and log in again with ssh
 
 step3 (update the system, install required libraries & compilers)
@@ -58,7 +58,7 @@ step5 (compile & install sc master)
 4. `mkdir build && cd build`
 5. `export CC=/usr/bin/gcc-4.8`  #here temporarily use the older gcc-4.8
 6. `export CXX=/usr/bin/g++-4.8`
-7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon" ..`
+7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-mfloat-abi=hard -mfpu=neon" ..`
 8. `make -j 4`  #leave out flag j4 on single core rpi models
 9. `sudo make install`
 10. `sudo ldconfig`
@@ -76,15 +76,16 @@ step6 (start jack & sclang & test)
   * `a.free`
   * `{1000000.do{2.5.sqrt}}.bench`  #benchmark: ~0.58 for rpi3, ~0.89 for rpi2, ~3.1 for rpi1
   * `a= {Mix(50.collect{RLPF.ar(SinOsc.ar)});DC.ar(0)}.play`  #benchmark
-  * `s.avgCPU`  #should show ~12.8% for rpi3, ~19% for rpi2 and ~73% for rpi1
+  * `s.avgCPU`  #should show ~12% for rpi3, ~19% for rpi2 and ~73% for rpi1
   * `a.free`
   * `0.exit`  #quit sclang
 3. `pkill jackd`  #quit jackd
 
 notes
 --
-* this also works on the original raspberry pi 1 model b but then change compiler flags to `"-mfpu=vfp -mfloat-abi=hard -march=armv6 -mtune=arm1176jzf-s"` (in two places). also create a swap file if you run out of memory and crash during compilation
-* if you get `WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!` when trying to ssh, type `ssh-keygen -R raspberrypi.local` to reset
+* this also works on the original raspberry pi 1 model b but then change compiler flags to `"-mfpu=vfp -mfloat-abi=hard -march=armv6 -mtune=arm1176jzf-s"` (in two places).
+* if compilation fails with errors it might just have run out of memory. just try running `make` again removing the `-j 4` flag or set up a swap file (more or less required for rpi1)
+* if you get `WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!` when trying to ssh, type `ssh-keygen -R raspberrypi` to reset.
 * we need to use gcc 4.8.4 instead of the raspbian default 4.9.2. something with gcc 4.9 triggers sc to generate the dreaded atIdentityHash error at startup.
 * for lower latency, try with lower blocksizes when you start jackd.  try for example `-p512` and `-p128`.  tune downwards until you get dropouts and xruns (also watch cpu%).
 * soundcards i’ve tried include a cheap blue 3D sound (C-Media Electronics, Inc. Audio Adapter (Planet UP-100, Genius G-Talk)) and the aureon dual usb (TerraTec Electronic GmbH Aureon Dual USB).
@@ -146,7 +147,7 @@ step3 (compile and install supercollider)
 4. `mkdir build && cd build`
 5. `export CC=/usr/bin/gcc-4.8`  #here temporarily use the older gcc-4.8
 6. `export CXX=/usr/bin/g++-4.8`
-7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=ON -DSC_IDE=ON -DSC_QT=ON -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-mtune=cortex-a7 -mfloat-abi=hard -mfpu=neon" ..`
+7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=ON -DSC_IDE=ON -DSC_QT=ON -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-mfloat-abi=hard -mfpu=neon" ..`
 8. `make -j 4`
 9. `sudo make install`
 10. `sudo ldconfig`
@@ -164,5 +165,5 @@ from raspbian desktop open a terminal and type:
 notes
 --
 * if you want to ssh in and run this sc version as headless, run the command `export DISPLAY=:0.0` before starting jackd.
-* if the `make -j 4` build step returns an error you might just have run out of memory. try running the same command again or decrease the gpu memory in raspi-config advanced.
+* if the `make -j 4` build step returns an error it might just have run out of memory. try running the make command again without `-j 4` or decrease the gpu memory in raspi-config advanced.
 * the cpu benchmarks for this scide version is: ~0.68 and ~22% for rpi3, ~1.01 and ~25% for rpi2
