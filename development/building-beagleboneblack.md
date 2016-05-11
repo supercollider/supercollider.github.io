@@ -13,7 +13,7 @@ NOTE: the whole process takes about 1.5h.
 requirements
 --
 * beaglebone black
-* sd card with [bone-debian-8.3-console-armhf-2016-01-31-2gb.img](http://elinux.org/Beagleboard:BeagleBoneBlack_Debian) or newer jessie
+* sd card with [bone-debian-8.4-console-armhf-2016-05-01-2gb.img](http://elinux.org/Beagleboard:BeagleBoneBlack_Debian) or newer jessie
 * router with ethernet internet connection for the bbb
 * laptop connected to same network as the bbb
 * optional: usb soundcard with headphones or speakers connected
@@ -26,7 +26,7 @@ step1 (hardware setup)
 
 step2 (login & preparations)
 --
-1. `ssh debian@beaglebone.box`  #from your laptop, default password is temppwd
+1. `ssh debian@beaglebone`  #from your laptop, default password is temppwd
 2. `sudo passwd debian`  #change password
 3. `sudo /opt/scripts/tools/grow_partition.sh`  #expand file system
 4. `sudo reboot`  #and log in again with ssh
@@ -35,7 +35,7 @@ step3 (update the system, install required libraries & compilers)
 --
 1. `sudo apt-get update`
 2. `sudo apt-get upgrade`
-3. `sudo apt-get install python-dev alsa-base libicu-dev libasound2-dev libsamplerate0-dev libsndfile1-dev libreadline-dev libxt-dev libudev-dev libavahi-client-dev libfftw3-dev cmake git gcc-4.8 g++-4.8`
+3. `sudo apt-get install python-dev alsa-base alsa-utils libicu-dev libasound2-dev libsamplerate0-dev libsndfile1-dev libreadline-dev libxt-dev libudev-dev libavahi-client-dev libfftw3-dev cmake git gcc-4.8 g++-4.8`
 
 step4 (compile & install jackd (no d-bus) )
 --
@@ -63,7 +63,7 @@ step5 (compile & install sc master)
 4. `mkdir build && cd build`
 5. `export CC=/usr/bin/gcc-4.8`
 6. `export CXX=/usr/bin/g++-4.8`
-7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon" ..`
+7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-mfloat-abi=hard -mfpu=neon" ..`
 8. `make`
 9. `sudo make install`
 10. `sudo ldconfig`
@@ -79,22 +79,24 @@ step6 (start jack & sclang & test)
   * `s.boot`  #should boot the server
   * `a= {SinOsc.ar([400, 404])}.play`  #should play sound in both channels
   * `a.free`
-  * `{1000000.do{2.5.sqrt}}.bench`  #benchmark: ~0.68 for bbb
+  * `{1000000.do{2.5.sqrt}}.bench`  #benchmark: ~0.55 for bbb
   * `a= {Mix(50.collect{RLPF.ar(SinOsc.ar)});DC.ar(0)}.play`  #benchmark
-  * `s.avgCPU`  #should show ~44%
+  * `s.avgCPU`  #should show ~46%
   * `a.free`
   * `0.exit`  #quit sclang
 4. `pkill jackd`  #quit jackd
 
 notes
 --
-* if you get `WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!` when trying to ssh, type `ssh-keygen -R beaglebone.box` to reset
+* if you get `WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!` when trying to ssh, type `ssh-keygen -R beaglebone` to reset
 * if you get `perl: warning: Setting locale failed`. either ignore it or run the commands: `sudo apt-get install locales` and `sudo dpkg-reconfigure locales` and set en_US.UTF-8 UTF-8 twice
 * we need to use gcc 4.8.4 instead of the default 4.9.2. something with gcc-4.9 triggers sc to generate the dreaded atIdentityHash error at startup.
 * for lower latency, try with lower blocksizes when you start jackd.try for example `-p512` and `-p128`. tune downwards until you get dropouts and xruns (also watch cpu%)
 * soundcards i’ve tried include a cheap blue 3D sound (C-Media Electronics, Inc. Audio Adapter (Planet UP-100, Genius G-Talk)) and the aureon dual usb (TerraTec Electronic GmbH Aureon Dual USB).
-* lock/writeprotect the sd card if you plan to pull out the power without properly shutting down the system first. a better way is to add a shutdown command script to a gpio pin - search online for how to do that.
-* if you want to use the sc3.7 branch instead of sc master (unstable), the process is the same except for the following additions: in step5, after #2 `git checkout 3.7`, in step5, after #12 `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI/Base/Model.sc /usr/local/share/SuperCollider/SCClassLibrary/Common/Core/`
+* if sound is loud and distorts you may need to turn down the alsa volume. here we turn it down to 60% for the usb device.
+  * `amixer -c 1 controls`  #look for name='Speaker Playback Volume' and copy the numid - here it was 6. -c is device
+  * `amixer -c 1 cset numid=6 60%`  #edit numid to match what you got from the previous command
+* if you want to use the sc3.7 branch instead of sc master, the process is the same except for the following additions: in step5, after #2 `git checkout 3.7`, in step5, after #12 `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI/Base/Model.sc /usr/local/share/SuperCollider/SCClassLibrary/Common/Core/`
 
 autostart (run sc at system boot)
 --
