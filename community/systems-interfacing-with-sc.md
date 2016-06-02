@@ -20,6 +20,8 @@ Clients Using SC Server
     -   [rsc3][] is an [r6rs scheme][] supercollider client.
 -   Haskell
     -   [hsc3][] is a [haskell][] supercollider client.
+    -   [Vivid][] is a haskell supercollider client.
+    -   [Tidal][] is a pattern live coding language built on Haskell, frequently paired with SC as the audio backend.
 -   SmallTalk
     -   A squeak OSC-Client by Marcus Gälli, which works with SC:
         [OSC-Client][]
@@ -33,6 +35,7 @@ Clients Using SC Server
         [<http://www.patrickkidd.com/>][]
     -   SC 0.2, python client for SuperCollider
         [<http://pypi.python.org/pypi/SC>][]
+    -   [Supriya][]
 -   Q
     -   Albert Graef lets his Q functional programming language for
         multimedia applications talk specially to SC3 through OSC:
@@ -63,6 +66,8 @@ Clients Using SC Server
         manipulation system for live-coding and more.
 -   Lua
     - [Lua2SC][] is a Lua client with ide, debugging...
+-   Ruby
+    - [Sonic Pi][] is a very popular live coding synth with SuperCollider as a server.
   [sendOSC]: http://archive.cnmat.berkeley.edu/OpenSoundControl/clients/sendOSC.html
   [rsc3]: http://slavepianos.org/rd/?t=rsc3
   [r6rs scheme]: http://www.r6rs.org/
@@ -84,7 +89,10 @@ Clients Using SC Server
   [Overtone]: http://github.com/overtone/overtone
   [Clojure]: http://clojure.org/
   [Lua2SC]: https://github.com/sonoro1234/Lua2SC
-
+  [Vivid]: http://www.vivid-synth.com/
+  [Tidal]: http://tidalcycles.org/
+  [Sonic Pi]: http://sonic-pi.net/
+  [Supriya]: https://github.com/josiah-wolf-oberholtzer/supriya
 
 Editors
 -------
