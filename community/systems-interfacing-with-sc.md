@@ -111,7 +111,8 @@ GUI
 ---
 
 -   [SwingOSC][] is an OpenSoundControl (OSC) server intended for
-    scripting Java
+    scripting Java. It was written before SC had cross-platform unification
+    of GUI, and is now no longer maintained.
 -   [SCUM][] is an OpenSoundControl (OSC) GUI server based on FLTK.
 
 Other Systems
@@ -127,7 +128,7 @@ Other Systems
     package [GNU Octave][] (GNU clone of MATLAB).
 -   [vst2osc][]: sending osc messages from any VST-compatible
     application
--   [SuperColliderAU][]: AudioUnits wrapper for scsynth
+-   [SuperColliderAU][]: AudioUnits wrapper for scsynth, now part of SuperCollider.
 -   [javaosc][] a library for talking the Open Sound Control (OSC)
     protocol in Java.
 -   communication from Cocoa with sc
