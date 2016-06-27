@@ -25,25 +25,33 @@ If you aren't familiar with Git, GitHub has [tutorials](https://guides.github.co
 
 ## Pull requests
 
-Gratefully accepted at [github/supercollider](https://github.com/supercollider/supercollider).
+You can submit changes in the form of pull requests, gratefully accepted at [our GitHub repository](https://github.com/supercollider/supercollider).
 
-Please don't put un-related commits in a single pull request.  Separate by functionality or issue.  Try not to change spacing or needlessly rearrange things if they don't have anything to do with the issue you are fixing.  Save rearrangement for a separate commit.
+The first step to filing a PR is to get your git environment working. First, fork supercollider/supercollider on GitHub. By convention, `origin` should point to your fork, and `upstream` to the main repository:
 
-### Pull Request suggested workflow:
-Assuming your clone of `supercollider/supercollider` repository is at `~/dev/sc`:
+    git remote add origin git@github.com:YOUR_GITHUB_USERNAME/supercollider
+    git remote add upstream https://github.com/supercollider/supercollider
 
-    # - fork `supercollider` repository on Github
-    # - let your local clone know about your fork:
-    (~/dev/sc) % git remote add REMOTE_NAME git@github.com:GITHUB_USER/supercollider
-    # - be sure that your local clone `master` branch is up-to-date:
-    (~/dev/sc) % git pull origin master
-    # - create a new branch for your changes:
-    (~/dev/sc) % git checkout -b SOME_GREAT_IMPROVEMENT
-    # - write some code...
-    # - commit and push your changes to your fork's new branch:
-    (~/dev/sc) % git commit -a
-    (~/dev/sc) % git push REMOTE_NAME SOME_GREAT_IMPROVEMENT
-    # - go on your github fork page and submit a PR from that branch
+For each pull request, you should first update your fork to match upstream (not needed, but it helps guard against conflicts):
+
+    git checkout master # switch to master branch
+    git pull upstream master # download the latest and the greatest
+    git push origin master # update your fork on GitHub
+
+To start a new branch:
+
+    git checkout master # make sure your new branch is based off master, not something else!
+    git checkout -b my-great-improvement
+    # add and commit your changes
+    git push origin my-great-improvement
+
+Your changes are at the "my-great-improvement" branch on your fork of SuperCollider. Now point your browser to your SuperCollider fork and file a PR.
+
+Here are some important guidelines for making pull requests:
+
+- Don't put unrelated changes in the same pull request. Separate by functionality or issue.
+- Try not to change whitespace or needlessly rearrange things if they don't have anything to do with the issue you are fixing. Save rearrangement for a separate commit.
+- Be patient! It might take a few days for your changes to get reviewed and merged. Smaller PRs get merged faster, which is another good reason to break down your contributions into bite-sized pieces.
 
 ## Coding guidelines
 
