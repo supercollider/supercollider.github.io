@@ -15,11 +15,7 @@ Thank you for your interest in helping to develop SuperCollider! There are many 
 
 ## Bugs and Features
 
-For bug-reports and feature requests should be filed in the [Github issue tracker](https://github.com/supercollider/supercollider/issues) Bugs should have the **"bug"** label - feature requests should have the **"enhancement"** label.
-
-[How to submit a bug](/development/bugs.html#filing-a-bug)
-
-We always need more help [triaging](/development/bugs.html#triaging-a-bug) and testing bugs and feature requests. If you're interested, please read about our [bug workflow](/development/bugs.html) and ask on the sc-dev list.
+Bug reports and feature requests should be filed in the [GitHub issue tracker](https://github.com/supercollider/supercollider/issues). See "[Submitting, triaging, and fixing bugs](/development/bugs.html)" for info on the full workflow for bug reports.
 
 ## New developer?
 
