@@ -15,7 +15,7 @@ This is old news by now, but please bear with us -- we forgot to update this web
 
 Head to the [Downloads](/download) page to get 3.7.2.
 
-3.7 is special since it marks our first release in a few years (not counting some prereleases in 2015). It's also significant since from here on, we'll be picking up the speed of 3.x releases. 3.8 is only a month or so away as of this writing.
+3.7 is special since it marks our first release in a few years (not counting some prereleases in 2015). It's also significant since from here on, we'll be picking up the speed of 3.x versions. 3.8 is only a month or so away as of this writing.
 
 3.7 can coexist with 3.6.6 and other SC versions. We recommend you backup your `sc_ide_conf.yaml` - settings from 3.6.6 should be forwards compatible, but using a 3.7 settings file in 3.6.6 may experience problems. This can be found in the user support folder (File > 'Open user support directory').
 
