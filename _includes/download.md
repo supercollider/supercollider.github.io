@@ -61,12 +61,12 @@
                     <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.7.2/SuperCollider-3.7.2_Release-win32-MinGW-abfba5b.exe"><i class="icon-download-alt">.</i> 3.7.2 32-bit</a><br />
                         Includes SuperNova.<br />
-                        <a href="https://github.com/supercollider/sc3-plugins/releases/download/Version-3.7.2/sc3-plugins-3.7.2_Release-win32-MinGW-cf00d.zip"><i class="icon-download-alt">.</i>sc3-plugins</a>
+                        <a href="https://github.com/supercollider/sc3-plugins/releases/download/Version-3.7.2/sc3-plugins-3.7.2_Release-win32-MinGW-cf00d.zip"><i class="icon-download-alt">.</i> sc3-plugins</a>
                     </li>
                     <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.7.2/SuperCollider-3.7.2_Release-win64-VS-abfba5b.exe"><i class="icon-download-alt">.</i> 3.7.2 64-bit</a><br />
                         SuperNova not available<br />
-                        <a href="https://github.com/supercollider/sc3-plugins/releases/download/Version-3.7.2/sc3-plugins-3.7.2_Release-win64-VS-cf00d.zip">.</i>sc3-plugins</a> for 64-bit
+                        <a href="https://github.com/supercollider/sc3-plugins/releases/download/Version-3.7.2/sc3-plugins-3.7.2_Release-win64-VS-cf00d.zip"><i class="icon-download-alt">.</i> sc3-plugins</a> for 64-bit
                     </li>
                     <li>
                         <a href="http://sourceforge.net/projects/supercollider/files/Windows/3.6/SuperCollider-3.6.6-win32.exe/download"><i class="icon-download-alt">.</i> Win 32 3.6.6</a>
