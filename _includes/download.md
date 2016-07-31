@@ -7,18 +7,19 @@
                     Mac
                 </h2>
                 <ul class="nodot">
-                    <li><a href="https://github.com/supercollider/supercollider/releases/download/Version-3.7.2/SuperCollider-OSX-3.7.2.zip"><i class="icon-download-alt">.</i> 3.7.2</a></li>
+                    <li>
+                        <a href="http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/osx/master-latest.html"><i class="icon-download-alt">.</i> Latest build</a><br />
+                        This is the latest build of the cutting edge development branch.
+                    </li>
+                </ul>
+                <ul class="nodot">
+                    <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.7.2/SuperCollider-OSX-3.7.2.zip"><i class="icon-download-alt">.</i> 3.7.2</a></li>
                     <li>
                         <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.6/SuperCollider-3.6.6-OSX.dmg/download"><i class="icon-download-alt">.</i> 3.6.6</a>
                     </li>
                     <li>
                         <a href="http://sourceforge.net/projects/supercollider/files/Mac%20OS%20X/3.6/SuperCollider-3.6.5-OSX-universal-no-ide.dmg/download"><i class="icon-download-alt">.</i> 3.6.5 (old Cocoa IDE)</a>
-                    </li>
-                </ul>
-                <ul class="nodot">
-                    <li>
-                        <a href="http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/osx/master-latest.html"><i class="icon-download-alt">.</i> Latest build</a><br />
-                        This is the latest build of the cutting edge development branch.
                     </li>
                 </ul>
                 <ul class="nodot">
@@ -57,17 +58,22 @@
                     <img src="/images/platform_windows.gif" alt="" />
                     Windows
                 </h2>
+                <h4>64-bit</h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.7.2/SuperCollider-3.7.2_Release-win32-MinGW-abfba5b.exe"><i class="icon-download-alt">.</i> 3.7.2 32-bit</a><br />
-                        Includes SuperNova.<br />
-                        <a href="https://github.com/supercollider/sc3-plugins/releases/download/Version-3.7.2/sc3-plugins-3.7.2_Release-win32-MinGW-cf00d.zip"><i class="icon-download-alt">.</i>sc3-plugins</a>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.7.2/SuperCollider-3.7.2_Release-win64-VS-abfba5b.exe"><i class="icon-download-alt">.</i> 3.7.2</a> (without SuperNova)<br />
+                        <a href="https://github.com/supercollider/sc3-plugins/releases/download/Version-3.7.2/sc3-plugins-3.7.2_Release-win64-VS-cf00d.zip"><i class="icon-download-alt">.</i> sc3-plugins</a>
                     </li>
+                </ul>
+                <h4>32-bit</h4>
+                <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.7.2/SuperCollider-3.7.2_Release-win64-VS-abfba5b.exe"><i class="icon-download-alt">.</i> 3.7.2 64-bit</a><br />
-                        SuperNova not available<br />
-                        <a href="https://github.com/supercollider/sc3-plugins/releases/download/Version-3.7.2/sc3-plugins-3.7.2_Release-win64-VS-cf00d.zip">.</i>sc3-plugins</a> for 64-bit
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.7.2/SuperCollider-3.7.2_Release-win32-MinGW-abfba5b.exe"><i class="icon-download-alt">.</i> 3.7.2</a> (with SuperNova)<br />
+                        <a href="https://github.com/supercollider/sc3-plugins/releases/download/Version-3.7.2/sc3-plugins-3.7.2_Release-win32-MinGW-cf00d.zip"><i class="icon-download-alt">.</i> sc3-plugins</a>
                     </li>
+                </ul>
+                <br />
+                <ul class="nodot">
                     <li>
                         <a href="http://sourceforge.net/projects/supercollider/files/Windows/3.6/SuperCollider-3.6.6-win32.exe/download"><i class="icon-download-alt">.</i> Win 32 3.6.6</a>
                     </li>
