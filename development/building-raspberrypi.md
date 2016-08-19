@@ -54,18 +54,17 @@ step5 (compile & install sc master)
 --
 1. `git clone --recursive git://github.com/supercollider/supercollider`  #optionally add --depth 1 here if you only need master
 2. `cd supercollider`
-3. `git submodule init && git submodule update`
-4. `mkdir build && cd build`
-5. `export CC=/usr/bin/gcc-4.8`  #here temporarily use the older gcc-4.8
-6. `export CXX=/usr/bin/g++-4.8`
-7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-mfloat-abi=hard -mfpu=neon" ..`
-8. `make -j 4`  #leave out flag j4 on single core rpi models
-9. `sudo make install`
-10. `sudo ldconfig`
-11. `cd ../..`
-12. `rm -rf supercollider`
-13. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/GUI`
-14. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/JITLib/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/JITLibGUI`
+3. `mkdir build && cd build`
+4. `export CC=/usr/bin/gcc-4.8`  #here temporarily use the older gcc-4.8
+5. `export CXX=/usr/bin/g++-4.8`
+6. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-mfloat-abi=hard -mfpu=neon" ..`
+7. `make -j 4`  #leave out flag j4 on single core rpi models
+8. `sudo make install`
+9. `sudo ldconfig`
+10. `cd ../..`
+11. `rm -rf supercollider`
+12. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/GUI`
+13. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/JITLib/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/JITLibGUI`
 
 step6 (start jack & sclang & test)
 --
