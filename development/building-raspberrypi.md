@@ -57,7 +57,7 @@ step5 (compile & install sc master)
 3. `mkdir build && cd build`
 4. `export CC=/usr/bin/gcc-4.8`  #here temporarily use the older gcc-4.8
 5. `export CXX=/usr/bin/g++-4.8`
-6. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF ..`
+6. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF ..`
 7. `make -j 4`  #leave out flag j4 on single core rpi models
 8. `sudo make install`
 9. `sudo ldconfig`
@@ -92,9 +92,9 @@ notes
 * if you want to use the sc3.7 branch instead of sc master (unstable), the process is the same except for the following additions:
   * in step5, after #2 `git checkout 3.7`
   * in step5, for rpi-2|3 replace #6 by:
-  `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-mfloat-abi=hard -mfpu=neon" ..`
+  `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-mfloat-abi=hard -mfpu=neon" ..`
   * in step5, for rpi-1 model b replace #6 by:
-  `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mfpu=vfp -mfloat-abi=hard -march=armv6 -mtune=arm1176jzf-s" -DCMAKE_CXX_FLAGS="-mfpu=vfp -mfloat-abi=hard -march=armv6 -mtune=arm1176jzf-s" ..`
+  `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mfpu=vfp -mfloat-abi=hard -march=armv6 -mtune=arm1176jzf-s" -DCMAKE_CXX_FLAGS="-mfpu=vfp -mfloat-abi=hard -march=armv6 -mtune=arm1176jzf-s" ..`
   * in step5, after #12 `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI/Base/Model.sc /usr/local/share/SuperCollider/SCClassLibrary/Common/Core/`
 
 autostart (run sc at system boot)
@@ -150,7 +150,7 @@ step3 (compile and install supercollider)
 4. `mkdir build && cd build`
 5. `export CC=/usr/bin/gcc-4.8`  #here temporarily use the older gcc-4.8
 6. `export CXX=/usr/bin/g++-4.8`
-7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=ON -DSC_IDE=ON -DSC_QT=ON -DSC_EL=OFF -DSC_VIM=OFF ..`
+7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=ON -DSC_IDE=ON -DSC_QT=ON -DSC_EL=OFF -DSC_VIM=OFF ..`
 8. `make -j 4`
 9. `sudo make install`
 10. `sudo ldconfig`
