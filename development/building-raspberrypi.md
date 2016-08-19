@@ -90,7 +90,7 @@ notes
 * soundcards i’ve tried include a cheap blue 3D sound (C-Media Electronics, Inc. Audio Adapter (Planet UP-100, Genius G-Talk)) and the aureon dual usb (TerraTec Electronic GmbH Aureon Dual USB).
 * lock/writeprotect the sd card if you plan to pull out the power without properly shutting down the system first. a better way is to add a shutdown command script to a gpio pin - search online for how to do that.
 * if you want to use the sc3.7 branch instead of sc master (unstable), the process is the same except for the following additions:
-  * in step5, after #2 `git checkout 3.7`
+  * in step5, after #2 `rm -r editors/scvim`, then `git checkout 3.7` and then `git submodule update`
   * in step5, for rpi-2|3 replace #6 by:
   `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSSE=OFF -DSSE2=OFF -DSUPERNOVA=OFF -DNATIVE=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_ED=OFF -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-mfloat-abi=hard -mfpu=neon" ..`
   * in step5, for rpi-1 model b replace #6 by:
