@@ -82,7 +82,6 @@ step6 (start jack & sclang & test)
 
 notes
 --
-* this also works on the original raspberry pi 1 model b but then change compiler flags to `"-mfpu=vfp -mfloat-abi=hard -march=armv6 -mtune=arm1176jzf-s"` (in two places).
 * if compilation fails with errors it might just have run out of memory. just try running `make` again removing the `-j 4` flag or set up a swap file (more or less required for rpi1)
 * if you get `WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!` when trying to ssh, type `ssh-keygen -R raspberrypi` to reset.
 * we need to use gcc 4.8.4 instead of the raspbian default 4.9.2. something with gcc 4.9 triggers sc to generate the dreaded atIdentityHash error at startup.
