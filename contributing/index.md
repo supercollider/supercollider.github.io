@@ -43,11 +43,11 @@ For each pull request, you should first update your fork to match upstream (not 
 To start a new branch:
 
     git checkout master # make sure your new branch is based off master, not something else!
-    git checkout -b my-great-improvement
+    git checkout -b topic/my-great-improvement
     # add and commit your changes
-    git push origin my-great-improvement
+    git push origin topic/my-great-improvement
 
-Your changes are at the "my-great-improvement" branch on your fork of SuperCollider. Now point your browser to your SuperCollider fork and file a PR.
+Your changes are at the "topic/my-great-improvement" branch on your fork of SuperCollider. Now point your browser to your SuperCollider fork and file a PR. (The "topic/" prefix is a Git convention used to mark a "topic branch," which is a branch created for short-term development use. It helps organize the list of branches in your fork, but it's also fine to leave it out.)
 
 Here are some important guidelines for making pull requests:
 
