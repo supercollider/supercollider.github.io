@@ -6,13 +6,19 @@ group: index
 ---
 
 <div class="jumbotron">
-    <p><strong>SuperCollider is an audio server, programming language, and IDE for sound synthesis and algorithmic composition.</strong></p>
 
-    <p>The language interpreter runs in a cross platform IDE (OS X/Linux/Windows) and communicates via Open Sound Control with one or more synthesis servers.
-    The SuperCollider synthesis server runs in a separate process or even on a separate machine so it is ideal for realtime networked music.</p>
+    <p>SuperCollider is a platform for audio synthesis and algorithmic composition, used by musicians, artists, and researchers working with sound. It is free and open source software available for Windows, Mac OS X, and Linux.</p>
 
-    <p>SuperCollider was developed by James McCartney and originally released in 1996.  He released it under the terms of the GNU General Public License in 2002 when he joined the Apple Core Audio team.  It is now maintained and developed by an active and enthusiastic community. It is used by musicians, scientists, and artists working with sound.</p>
-    
+    <p>SuperCollider features three major components:
+      <ul>
+        <li>scsynth, a real-time audio server, forms the core of the platform. It features 666 unit generators ("UGens") for analysis, synthesis, and processing. Some of the audio techniques it supports include additive synthesis, subtractive, FM, granular, FFT, and physical modelling. You can write your own UGens in C++, and users have already contributed over 666 to the sc3-plugins repository.</li>
+        <li>sclang, an interpreted programming language, controls scsynth via Open Sound Control. You can use sclang for algorithmic sequencing, connecting your app to external hardware including MIDI controllers, or writing GUIs and visual displays. sclang has a stock of user-contributed extensions called Quarks.</li>
+        <li>scide is an editor for sclang with an integrated help system.</li>
+      </ul>
+    </p>
+
+    <p>SuperCollider was developed by James McCartney and originally released in 1996. In 2002, he generously released it as free software under the GNU General Public License. It is now maintained and developed by an active and enthusiastic community.</p>
+
     <ul class="callstoaction">
         <li><a href="/download.html">Download it now</a></li>
         <li><a href="/examples/audio-examples.html">Listen to some sounds</a></li>
@@ -131,7 +137,7 @@ Pbind(
     <ul>
       <li><a href="https://github.com/supercollider/supercollider/issues">Github issue tracker</a></li>
       <li><a href="/contributing/index.html">Contribution guidelines</a></li>
-      <li><a href="/community/code-of-conduct.html">Code of Conduct</a></li>    
+      <li><a href="/community/code-of-conduct.html">Code of Conduct</a></li>
     </ul>
     <h4><a href="/development/repository.html">Developers</a></h4>
     <ul>
