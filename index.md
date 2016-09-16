@@ -11,7 +11,7 @@ group: index
 
     <p>SuperCollider features three major components:
       <ul>
-        <li>scsynth, a real-time audio server, forms the core of the platform. It features 666 unit generators ("UGens") for analysis, synthesis, and processing. Some of the audio techniques it supports include additive synthesis, subtractive, FM, granular, FFT, and physical modelling. You can write your own UGens in C++, and users have already contributed over 666 to the sc3-plugins repository.</li>
+        <li>scsynth, a real-time audio server, forms the core of the platform. It features 400+ unit generators ("UGens") for analysis, synthesis, and processing. Some of the audio techniques it supports include additive synthesis, subtractive, FM, granular, FFT, and physical modelling. You can write your own UGens in C++, and users have already contributed several hundred more to the sc3-plugins repository.</li>
         <li>sclang, an interpreted programming language, controls scsynth via Open Sound Control. You can use sclang for algorithmic sequencing, connecting your app to external hardware including MIDI controllers, or writing GUIs and visual displays. sclang has a stock of user-contributed extensions called Quarks.</li>
         <li>scide is an editor for sclang with an integrated help system.</li>
       </ul>
