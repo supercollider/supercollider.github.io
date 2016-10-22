@@ -163,7 +163,7 @@ from raspbian desktop open a terminal and type:
 
   * `qjackctl`  #and select the usb soundcard under setup/interface.  click ok and start
   * `scide`  #in another terminal window to launch the supercollider ide
-  * `scide -style=gtkrc` #if the tooltips(popup hints) are illegible in the ide(white text on yellow background)
+  * `scide -style=gtkrc` #if the tooltips (popup hints) are illegible in the ide (white text on yellow background). workaround for issue [#1704](https://github.com/supercollider/supercollider/issues/1704)
   
 
 notes
