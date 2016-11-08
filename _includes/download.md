@@ -9,7 +9,7 @@
                 <h4>Current Version</h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.8.0/SuperCollider-3.8.0-OSX.zip"><i class="icon-download-alt">.</i> 3.8.0</a></li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.8.0/SuperCollider-3.8.0-OSX.zip"><i class="icon-download-alt">.</i> 3.8.0</a>
                     </li>
                 </ul>
                 <h4>Previous Releases</h4>
