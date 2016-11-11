@@ -6,6 +6,5 @@ category: "community"
 sort_order: 4
 ---
 
-Please add any academic papers relating to SuperCollider here.
-
+There have been many academic papers and book chapters published that discuss SuperCollider as a whole, or systems implemented in SuperCollider. This page is a stub – please add any academic papers relating to SuperCollider here.
 
