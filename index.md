@@ -11,8 +11,8 @@ group: index
 
     <p>SuperCollider features three major components:
       <ul>
-        <li>scsynth, a real-time audio server, forms the core of the platform. It features 400+ unit generators ("UGens") for analysis, synthesis, and processing. Some of the audio techniques it supports include additive synthesis, subtractive, FM, granular, FFT, and physical modelling. You can write your own UGens in C++, and users have already contributed several hundred more to the sc3-plugins repository.</li>
-        <li>sclang, an interpreted programming language, controls scsynth via Open Sound Control. You can use sclang for algorithmic sequencing, connecting your app to external hardware including MIDI controllers, or writing GUIs and visual displays. sclang has a stock of user-contributed extensions called Quarks.</li>
+        <li>scsynth, a real-time audio server, forms the core of the platform. It features 400+ unit generators ("UGens") for analysis, synthesis, and processing. Its granularity allows the fluid combination of many known and unknown audio techniques, moving between additive and subtractive synthesis, FM, granular synthesis, FFT, and physical modelling. You can write your own UGens in C++, and users have already contributed several hundred more to the sc3-plugins repository.</li>
+        <li>sclang, an interpreted programming language. It is focused on sound, but not limited to any specific domain. sclang controls scsynth via Open Sound Control. You can use it for algorithmic composition and sequencing, finding new sound synthesis methods, connecting your app to external hardware including MIDI controllers, network music, writing GUIs and visual displays, or for your daily programming experiments. It has a stock of user-contributed extensions called Quarks.</li>
         <li>scide is an editor for sclang with an integrated help system.</li>
       </ul>
     </p>
@@ -96,7 +96,9 @@ Pbind(
         <li>Partial application (explicit currying)</li>
         <li>Tail call optimization</li>
         <li>Class extensions</li>
+        <li>Embedded subsystems for composing patterns and signal graphs</li>
         <li>Quarks package manager for code sharing</li>
+        <li>Interactive programming and Live Coding</li>
     </ul>
   </span>
   <span class="span4">
@@ -119,6 +121,7 @@ Pbind(
       <h6>IDE / Application</h6>
       <ul>
         <li>Qt based cross platform Integrated Development Environment</li>
+        <li>REPL for "select and call" interactive programming</li>
         <li>Qt powered GUI framework for building rich interfaces</li>
       </ul>
   </span>
