@@ -42,7 +42,7 @@
                 </h2>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.7.2/SuperCollider-3.7.2-Source-linux.tar.bz2">Linux complete source code</a>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.8.0/SuperCollider-3.8.0-Source-linux.tar.bz2">Linux complete source code</a>
                         </li>
                 </ul>
                  PPA and package distributions:
