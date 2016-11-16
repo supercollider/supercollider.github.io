@@ -187,6 +187,7 @@ Pbind(
       <li><a href="/community/blogs-and-sites.html">Blogs and sites</a></li>
       <li><a href="https://twitter.com/search?q=supercollider+play">SC tweets - tunes under 140 chars</a></li>
       <li><a href="https://soundcloud.com/groups/supercollider">Soundcloud</a></li>
+      <li><a href="http://rosettacode.org/wiki/Category:SuperCollider">Rosetta Code</a></li>
       <li> Facebook Groups
         <ul>
           <li><a href="https://www.facebook.com/groups/supercollider/">SuperCollider (english-spoken)</a></li>
