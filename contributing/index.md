@@ -25,6 +25,10 @@ SuperCollider uses [Git](https://git-scm.com/) for source code control. Git know
 
 If you aren't familiar with Git, GitHub has [tutorials](https://guides.github.com/activities/hello-world/) for you to get started. If you encounter problems using Git, feel free to ask for help on the [sc-dev](http://new-supercollider-mailing-lists-forums-use-these.2681727.n2.nabble.com/SuperCollider-Developers-New-Use-this-f2681767.html) list.
 
+## Release cycle
+
+SuperCollider uses an unstable master branch. Stable releases are marked using tags, along with GitHub's "releases" page. More detailed information on the current (2017) release system can be found [here](https://github.com/supercollider/supercollider/wiki/git-workflow).
+
 ## Pull requests
 
 You can submit changes in the form of pull requests, gratefully accepted at [our GitHub repository](https://github.com/supercollider/supercollider).
