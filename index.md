@@ -7,7 +7,7 @@ group: index
 
 <div class="jumbotron">
 
-    <p>SuperCollider is a platform for audio synthesis and algorithmic composition, used by musicians, artists, and researchers working with sound. It is free and open source software available for Windows, Mac OS X, and Linux.</p>
+    <p>SuperCollider is a platform for audio synthesis and algorithmic composition, used by musicians, artists, and researchers working with sound. It is free and open source software available for Windows, macOS, and Linux.</p>
 
     <p>SuperCollider features three major components:
       <ul>
