@@ -6,3 +6,4 @@ Gemfile.lock
 .bundle/
 .DS_Store
 gh-pages/
+rtzu
