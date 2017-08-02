@@ -30,4 +30,5 @@ category: tutorials
 <ul>
 <li><a href="http://www.dewdrop-world.net/sc3/tutorials/index.php">dewdrop_world’s SC tutorials</a> - making good use of the dewdrop extensions.</li>
 <li><a href="http://plus1plus1plus.org/Resources/SC/SC3PluginTutorial.php">Compiling SC and SC plugins</a> - a tutorial on getting your hands dirty with the source code</li>
+<li><a href="http://daniel-mayer.at/software_en.htm">miSCellaneous lib</a> - tutorials for miSCellaneous lib and general SuperCollider, with a focus on Patterns.</li>
 </ul>
