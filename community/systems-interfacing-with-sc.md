@@ -33,8 +33,8 @@ Clients Using SC Server
 -   Python
     -   scosc, python OSC for supercollider:
         [<http://www.patrickkidd.com/>][]
-    -   SC 0.2, python client for SuperCollider
-        [<http://pypi.python.org/pypi/SC>][]
+    -   SC 0.3.1, python client for SuperCollider
+        [<https://pypi.python.org/pypi/SC/0.3.1>][]
     -   [Supriya][]
 -   Q
     -   Albert Graef lets his Q functional programming language for
@@ -78,7 +78,7 @@ Clients Using SC Server
   [“Hacking Perl in Nightclubs”]: http://www.perl.com/pub/a/2004/08/31/livecode.html
   [Impromptu Libraries]: http://impromptu.moso.com.au/libs.html
   [<http://www.patrickkidd.com/>]: http://www.patrickkidd.com/
-  [<http://pypi.python.org/pypi/SC/0.2>]: http://pypi.python.org/pypi/SC/0.2
+  [<https://pypi.python.org/pypi/SC/0.3.1>]: http://pypi.python.org/pypi/SC/0.2
   [here]: http://jonathansaggau.com/sc/sclangEmacsPySCLang.rtf
   [implemented]: http://code.google.com/p/pure-lang/wiki/Addons#pure-liblo
   [Q]: http://q-lang.sourceforge.net/addons.html
