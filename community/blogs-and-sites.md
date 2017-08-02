@@ -33,6 +33,7 @@ List all here. Feel free to edit on github and add yourself.
 * <http://subnaught.org/supercollider>
 * <http://eyeballsun.blogspot.de>
 * <http://nova.deviator.si/tag/supercollider>
+* <http://daniel-mayer.at/software_en.htm>
 
 ## video tutorials
 
