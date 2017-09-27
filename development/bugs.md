@@ -71,7 +71,7 @@ Milestone indicates the release that the bug should be fixed for. In general, ne
 # Fixing a bug
 Bug fixes should be done in a separate branch - either one in the SuperCollider repo with a "topic/" prefix, or on a fork in your own repo - and then submitted via a pull request.
 
-1. **Branch from master** (see [pull request suggested workflow](/contributing/index.html#pull-request-suggested-workflow) and [git cheat sheet](/development/git-cheat-sheet.html)). Keep that branch free from changes unrelated to the bug. It's MUCH easier to merge small branches than it is to tease heterogeneous changes apart from each other.
+1. **Branch from develop** (see [pull request suggested workflow](/contributing/index.html#pull-request-suggested-workflow) and [git cheat sheet](/development/git-cheat-sheet.html)). Keep that branch free from changes unrelated to the bug. It's MUCH easier to merge small branches than it is to tease heterogeneous changes apart from each other.
 2. **Assign yourself to the issue if you're working on it** - this prevents duplicate work. You can do this from the issue page on github.
 4. **Write detailed commit messages** - Please review the [commit message guidelines](/development/commit-message.html). Leave *detailed* commit descriptions. It takes time to investigate and gather context on a bug, so it's worth spending a few minutes capturing that information in the commit message - for others and for yourself.
 5. **If you have code you've been using to test, consider making a unit test**. You probably have sclang code you've been using to test your change already - create a new unit test with that code. New unit tests should be added to the [CommonTests](https://github.com/supercollider-quarks/CommonTests) quark for now.
@@ -95,7 +95,7 @@ Pull requests are generally merged by core SC developers, when it's travis-ci bu
 6. **Don't be afraid to ask for changes to a PR**, whether the change is major or very minor. It should be assumed that *every* PR will require at least one or two revisions before merge. Be positive and helpful. Even simple changes can represent a large investment on the part of the requester - it's important to be respectful of that.
 
 ## Closing a bug
-After a bugfix pull request has been merged, a bug should only be closed when it has been verified against a build produced from master.
+After a bugfix pull request has been merged, a bug should only be closed when it has been verified against a build produced from `develop`.
 
 1. **Comment on the bug, and include a link to the travis build that contains the fix**.
 2. **It is best practice to allow the person who submitted the bug a chance to close it** - this is especially critical for bugs that are complex to reproduce, intermittent, or configuration-specific. This is not always possible, so use your best judgement.
