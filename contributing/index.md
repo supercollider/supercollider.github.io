@@ -27,7 +27,7 @@ If you aren't familiar with Git, GitHub has [tutorials](https://guides.github.co
 
 ## Release cycle
 
-SuperCollider uses an unstable master branch. Stable releases are marked using tags, along with GitHub's "releases" page. More detailed information on the current (2017) release system can be found [here](https://github.com/supercollider/supercollider/wiki/git-workflow).
+SuperCollider uses a stable master branch. Stable releases are marked using tags, along with GitHub's "Releases" page. More detailed information on the current release system can be found [here](https://github.com/supercollider/supercollider/wiki/git-workflow-and-guidelines).
 
 ## Pull requests
 
@@ -40,13 +40,13 @@ The first step to filing a PR is to get your git environment working. First, for
 
 For each pull request, you should first update your fork to match upstream (not needed, but it helps guard against conflicts):
 
-    git checkout master # switch to master branch
-    git pull upstream master # download the latest and the greatest
-    git push origin master # update your fork on GitHub
+    git checkout develop # switch to develop branch
+    git pull upstream develop # download the latest and the greatest
+    git push origin develop # update your fork on GitHub
 
 To start a new branch:
 
-    git checkout master # make sure your new branch is based off master, not something else!
+    git checkout develop # make sure your new branch is based off develop, not something else!
     git checkout -b topic/my-great-improvement
     # add and commit your changes
     git push origin topic/my-great-improvement
