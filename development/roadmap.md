@@ -5,10 +5,6 @@ title: Development Roadmap
 sort_order: 8
 ---
 
-### Version 3.6.4
+### Version 3.9
 
-Target date: 18 April
-
-### Version 3.7
-
-Target date: early summer
+Target date: Fall 2017
