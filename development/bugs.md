@@ -126,7 +126,6 @@ Please be judicious about creating new labels - it's always better to find an ex
 
 
 # Milestones and versions
-The current SuperCollider milestone is 3.7.0. 
 
 SuperCollider milestones should follow the [semantic versioning standard](http://semver.org): **major.minor.patch**
 
