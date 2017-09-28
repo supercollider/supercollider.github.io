@@ -11,7 +11,7 @@ You are here, because you wish to contribute. Welcome!
 
 However, you may be wondering how so many people can smoothly collaborate on such a complex project such as SuperCollider (SC) and how contributions can get properly synced among the many participating contributors. Tools are needed, which allow version control and support collaboration.
 
-This is where git comes in handy. There are [two basic approaches](https://help.github.com/articles/types-of-collaborative-development-models/) for using git. With SuperCollider we use the "Fork & pull" model. This means for you working typically with a copy of the master project files, a so-called [fork](https://help.github.com/articles/about-forks/), which may confuse or irritate you, notably when coming from svn. 
+This is where git comes in handy. There are two basic approaches for using git. With SuperCollider we use the "Fork & pull" model. This means for you working typically with a copy of the master project files, a so-called [fork](https://help.github.com/articles/about-forks/), which may confuse or irritate you, notably when coming from svn. 
 
 In general understanding for any tool how things work in principle means having a clear user model. It does not mean to understand every technical detail and should not require you to become a guru before being able to use a tool. A good user model allows to deduce tool behavior merely by logic and should be fully consistent throughout. Unfortunately, this is not necessarily the case with git. Therefore following may be helpful to you.
 

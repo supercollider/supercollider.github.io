@@ -19,7 +19,7 @@ For help with Git, see [Cheat Sheet for Git](git-cheat-sheet.html)
 
 ### The Master Branch
 
-SuperCollider's `master` branch is its stable branch. This branch contains only SuperCollider releases. The `master` branch can be considered as stable production-ready code.
+SuperCollider's `master` branch is its stable branch. This branch contains only SuperCollider releases. The `master` branch can be considered stable production-ready code.
 
 ### The Development Branch
 
@@ -29,9 +29,9 @@ Main development is happening on the `develop` branch. Here, we develop everythi
 
 Shortly before the release of a new *minor version*, a branch with the name of the version is created (e.g. `3.6`). Here, we only commit changes that **fix bugs**, not new features, and that are well tested to not cause any *regressions* (retrigger already fixed bugs or create new ones). In general, all commits should first go to the `develop` branch, and then be *cherry-picked* to release branches.
 
-Before a new *hotfix version* (e.g. 3.6.x) is released, a branch with the name of the version is also created (e.g. `3.6.4`).
+Before a new *patch version* (e.g. 3.6.x) is released, a branch with the name of the version is also created (e.g. `3.6.4`).
 
-When a new *minor version* is released, it's release branch is merged into `master`. When a new *hotfix version* is released, it's branch is merged into `develop` and `master`.
+When a new *minor version* is released, its release branch is merged into `master`. When a new *patch version* is released, its branch is merged into `develop` and `master`.
 
 ### Topic Branches
 
