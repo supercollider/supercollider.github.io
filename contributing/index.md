@@ -27,7 +27,7 @@ If you aren't familiar with Git, GitHub has [tutorials](https://guides.github.co
 
 ## Release cycle
 
-SuperCollider uses a stable master branch. Stable releases are marked using tags, along with GitHub's "Releases" page. More detailed information on the current release system can be found [here](https://github.com/supercollider/supercollider/wiki/git-workflow-and-guidelines).
+SuperCollider uses a stable `master` branch. Stable releases are marked using tags, along with GitHub's "Releases" page. More detailed information on the current release system can be found [here](https://github.com/supercollider/supercollider/wiki/git-workflow-and-guidelines).
 
 ## Pull requests
 
@@ -51,7 +51,7 @@ To start a new branch:
     # add and commit your changes
     git push origin topic/my-great-improvement
 
-Your changes are at the "topic/my-great-improvement" branch on your fork of SuperCollider. Now point your browser to your SuperCollider fork and file a PR. (The "topic/" prefix is a Git convention used to mark a "topic branch," which is a branch created for short-term development use. It helps organize the list of branches in your fork, but it's also fine to leave it out.)
+Your changes are at the `topic/my-great-improvement` branch on your fork of SuperCollider. Now point your browser to your SuperCollider fork and file a PR. (The `topic/` prefix is a Git convention used to mark a topic branch, which is a branch created for short-term development use. It helps organize the list of branches in your fork, but it's also fine to leave it out.)
 
 Here are some important guidelines for making pull requests:
 
