@@ -19,19 +19,25 @@ For help with Git, see [Cheat Sheet for Git](git-cheat-sheet.html)
 
 ### The Master Branch
 
+SuperCollider's `master` branch is its stable branch. This branch contains only SuperCollider releases. The `master` branch can be considered as stable production-ready code.
+
+### The Development Branch
+
 Main development is happening on the `develop` branch. Here, we develop everything that goes into the next *minor version* (e.g. 3.x) and beyond.
 
-### Bugfix Branches
+### Release Branches
 
-Shortly before the release of a new *minor version*, a branch with the name of the version is created (e.g. `3.6`). Here, we only commit changes that **fix bugs**, not new features, and that are well tested to not cause any *regressions* (retrigger already fixed bugs or create new ones). In general, all commits should first go to the `develop` branch, and then be *cherry-picked* to bugfix branches
+Shortly before the release of a new *minor version*, a branch with the name of the version is created (e.g. `3.6`). Here, we only commit changes that **fix bugs**, not new features, and that are well tested to not cause any *regressions* (retrigger already fixed bugs or create new ones). In general, all commits should first go to the `develop` branch, and then be *cherry-picked* to release branches.
 
-When a *bugfix version* (e.g. 3.6.x) is released, its point on the bugfix branch is *tagged* (e.g. `Version-3.6.4`);
+Before a new *hotfix version* (e.g. 3.6.x) is released, a branch with the name of the version is also created (e.g. `3.6.4`).
+
+When a new *minor version* is released, it's release branch is merged into `master`. When a new *hotfix version* is released, it's branch is merged into `develop` and `master`.
 
 ### Topic Branches
 
 These are branches dedicated to development of specific features. The names of such branches start with 'topic/' followed by the topic description (where words are usually separated with '-' or '_'). For example, the `topic/supernova_osx` branch is dedicated to development of support for Mac OS X in *supernova*.
 
-The topic branches are useful for experimental development, where it is not sure whether the development will be successful and useful enough to include it in the master branch. However, when the goal is approached successfully enough, the topic branch is *merged* into the master branch.
+The topic branches are useful for experimental development, where it is not sure whether the development will be successful and useful enough to include it in the `develop` branch. However, when the goal is approached successfully enough, the topic branch is *merged* into the `develop` branch.
 
 [sc-github]: https://github.com/supercollider/supercollider
 [git]: http://git-scm.com/
