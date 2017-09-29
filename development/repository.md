@@ -37,7 +37,7 @@ When a new *minor version* is released, its release branch is merged into `maste
 
 These are branches dedicated to development of specific features. The names of such branches start with 'topic/' followed by the topic description (where words are usually separated with '-' or '_'). For example, the `topic/supernova_osx` branch is dedicated to development of support for Mac OS X in *supernova*.
 
-The topic branches are useful for experimental development, where it is not sure whether the development will be successful and useful enough to include it in the `develop` branch. However, when the goal is approached successfully enough, the topic branch is *merged* into the `develop` branch.
+The topic branches are meant as a way for others to test and review your work. A topic branch should be clean, free of any changes unrelated to the topic at hand. When work contained in a topic branch is considered ready for review, a pull request is created against the `develop` branch. After successful reviewing and testing by the community, the topic branch is *merged* into `develop`.
 
 [sc-github]: https://github.com/supercollider/supercollider
 [git]: http://git-scm.com/
