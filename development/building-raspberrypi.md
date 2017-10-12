@@ -186,6 +186,8 @@ these are rough benchmark tests. the server should be booted and jackd running w
 also set cpu scaling to performance with...
 * `echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor`
 
+testing.
+
 start sclang or scide and type...
         
         s.boot
