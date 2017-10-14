@@ -7,11 +7,11 @@ sort_order: 3
 
 Compiling SCIDE natively on Raspberry Pi Raspbian
 ==
-note: this is for building the full version of supercollider 3.9 including the ide under **raspbian stretch with desktop**. it is the easiest way to compile sc and this version can also run headless. see below for building non-qt, non scide under **raspbian stretch lite**.
+note: this is for building the full version of supercollider 3.9 including the ide under **raspbian stretch with desktop**. it is the easiest way to compile sc and this version can also run headless. see below for building non-qt, non scide under **raspbian stretch lite** (more advanced).
 
 requirements
 --
-* raspberry pi 2 or 3
+* raspberry pi 2 or 3 (also rpi0 and rpi1 but note that compiling will take a _long_ time)
 * sd card with [2017-09-07-raspbian-stretch](https://www.raspberrypi.org/downloads/raspbian) or newer (note: not stretch lite)
 * router with ethernet internet connection for the rpi
 * screen, mouse and keyboard (although you can also do it all via ssh)
@@ -46,12 +46,13 @@ step3 (compile and install supercollider)
 
 step4 (set up jack)
 --
-the `-dhw:0` below is the internal soundcard. change this to `-dhw:1` for usb soundcards. `aplay -l` will list available devices.
 1. `nano ~/.jackdrc`  #edit to look like this...
         
         /usr/bin/jackd -P75 -dalsa -dhw:0 -r44100 -p1024 -n3
         
 2. press ctrl+o to save and ctrl+x to exit
+
+the `-dhw:0` above is the internal soundcard. change this to `-dhw:1` for usb soundcards. `aplay -l` will list available devices.
 
 another way to set up and start jack is to open a terminal and type `qjackctl`. click 'setup' to select soundcard and set periods to 3 (recommended). then start jack before scide by clicking the play icon.
 
@@ -78,7 +79,7 @@ note: this section is for more advanced users that want to compile and run super
 
 requirements
 --
-* raspberry pi 2 or 3 (see notes for rpi 1)
+* raspberry pi 2 or 3 (also rpi0 and rpi1 but note that compiling will take a _long_ time)
 * sd card with [2017-09-07-raspbian-stretch-lite](https://www.raspberrypi.org/downloads/raspbian) or newer
 * an empty dummy file called `ssh` on the root level of the sd card (to enable ssh)
 * router with ethernet internet connection for the rpi
@@ -122,7 +123,7 @@ step3 (compile & install jackd (no d-bus) )
         
 the `-dhw:0` above is the internal soundcard. change this to `-dhw:1` for usb soundcards. `aplay -l` will list available devices.
 
-step4 (compile & install sc master)
+step4 (compile & install supercollider)
 --
 1. `git clone --recursive git://github.com/supercollider/supercollider`
 2. `cd supercollider`
@@ -145,7 +146,11 @@ startup
 --
 * `sclang`
 
+when you boot the server jack should start automatically with the settings in `~/.jackdrc`
+
 **done!** see below for sc3-plugins, autostart, benchmarks and notes
+
+- - -
 
 sc3-plugins
 ==
@@ -165,7 +170,7 @@ how to automatically run supercollider code at system boot. this applies to both
         #!/bin/bash
         PATH=$PATH:/usr/local/bin:/usr/bin
         export DISPLAY=:0.0
-        sleep 5
+        sleep 10  #can be lower (5) for rpi3
         sclang mycode.scd
         
 2. `chmod +x ~/autostart.sh`
@@ -182,27 +187,28 @@ how to automatically run supercollider code at system boot. this applies to both
 
 benchmarks
 ==
-these are rough benchmark tests. the server should be booted and jackd running with settings: `-P75 -p1024 -n3 -s -r44100`
-also set cpu scaling to performance with...
+these are rough benchmark tests. the server should be booted and jackd running with settings: `-P75 -p1024 -n3 -r44100`
+also for comparison it is important to set cpu scaling to 'performance' with...
 * `echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor`
 
 start sclang or scide and type...
         
         s.boot
-        {1000000.do{2.5.sqrt}}.bench  //benchmark: ~0.65 for rpi3 headless, ~0.7 for rpi3 scide
+        {1000000.do{2.5.sqrt}}.bench //~0.65 for rpi3 headless, ~0.7 for rpi3 scide, ~3.1 for rpi1 headless, ~2.3 for rpi0 headless, ~2.5 for rpi0 scide
         a= {Mix(50.collect{RLPF.ar(SinOsc.ar)});DC.ar(0)}.play
-        s.avgCPU  //run a few times. should show ~12% for rpi3
+        s.avgCPU //run a few times. ~12% for rpi3, ~48% for rpi1, ~39% for rpi0
         a.free
 
-note: with the default cpu scaling ondemand these benchmarks perform much worse (double % cpu for the scsynth test for example). but ondemand also saves battery life so depending on your application this might be the preferred mode.
-to set performance permanently see under gotcha [here](https://raspberrypi.stackexchange.com/questions/9034/how-to-change-the-default-governor#9048)
+note: with the default cpu scaling (ondemand) these benchmarks perform much worse. but 'ondemand' also saves battery life so depending on your application this might be the preferred mode.
+to set 'performance' scaling mode permanently see under gotcha [here](https://raspberrypi.stackexchange.com/questions/9034/how-to-change-the-default-governor#9048)
 
 notes
 ==
 additional information. this applies to both the scide and lite versions above.
 * an easy way to burn the zip file (no need to unpack) to a sd card is to use [etcher](http://etcher.io).
-* the internal soundcard volume is by default set low. type `alsamixer` in terminal and adjust the pcm volume to 85 with the arrow keys, esc key exits.
-* if the `make -j 4` build step stops or returns an error the compiler might just have run out of memory. try to reboot and run the command again without `-j 4` or decrease the gpu memory in raspi-config under advanced (set it to 16).
+* the internal soundcard volume is by default set low (40). type `alsamixer` in terminal and adjust the pcm volume to 85 with the arrow keys, esc key exits.
+* the audio quality of rpi's built-in sound is terrible. dithering helps a bit so add `-zs` to the jackd command if you are using the built-in sound.
+* if the `make -j 4` build step stops or returns an error the compiler might just have run out of memory. try to reboot and run the make command again without `-j 4` or decrease the gpu memory in raspi-config under advanced (set it to 16).
 * if you get `WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!` when trying to ssh in, type `ssh-keygen -R raspberrypi` to reset.
 * for lower latency, set a lower blocksize for jackd. try for example `-p512` or `-p128`. tune downwards until you get dropouts and xruns (also watch cpu%).
 * usb soundcards i’ve tried include the cheap blue 3D sound (C-Media Electronics, Inc. Audio Adapter (Planet UP-100, Genius G-Talk)) and the aureon dual usb (TerraTec Electronic GmbH Aureon Dual USB). there are also some [audio codec modules](http://www.fredrikolofsson.com/f0blog/?q=node/656) that work.
