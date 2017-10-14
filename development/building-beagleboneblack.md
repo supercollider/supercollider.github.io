@@ -5,18 +5,17 @@ title: Building From Source on BeagleBone Black
 sort_order: 3
 ---
 
-Compiling SC master natively on Beaglebone Black Debian Jessie
+Compiling SC natively on Beaglebone Black Debian Stretch
 ==
-
-NOTE: the whole process takes about 1.5h.
+note: this is for compiling and running supercollider 3.9 (sclang+scsynth) including the sc3-plugins under **debian stretch**. it does not include qt nor the ide. for compiling the full scide adapt the instructions found [here](http://supercollider.github.io/development/building-raspberrypi).
 
 requirements
 --
-* beaglebone black
-* sd card with [bone-debian-8.4-console-armhf-2016-05-01-2gb.img](http://elinux.org/Beagleboard:BeagleBoneBlack_Debian) or newer jessie
+* beaglebone black (or any of the variants green, blue, industrial, pocket...)
+* sd card with [stretch iot](http://beagleboard.org/latest-images) or [stretch console](https://elinux.org/Beagleboard:BeagleBoneBlack_Debian). the console version is minimal and recommended. the instructions also work under the [stretch lxqt](http://beagleboard.org/latest-images) desktop version.
 * router with ethernet internet connection for the bbb
 * laptop connected to same network as the bbb
-* optional: usb soundcard with headphones or speakers connected
+* usb soundcard with headphones or speakers connected
 
 step1 (hardware setup)
 --
@@ -24,138 +23,122 @@ step1 (hardware setup)
 2. insert the sd card and usb soundcard
 3. last connect usb power from a 5V@1A power supply
 
-step2 (login & preparations)
+step2 (update the system, install required libraries)
 --
 1. `ssh debian@beaglebone`  #from your laptop, default password is temppwd
 2. `sudo passwd debian`  #change password
-3. `sudo /opt/scripts/tools/grow_partition.sh`  #expand file system
+3. `sudo /opt/scripts/tools/grow_partition.sh`  #expand file system. skip if you are running on the emmc
 4. `sudo reboot`  #and log in again with ssh
+5. `sudo apt-get update`
+6. `sudo apt-get upgrade`
+7. `sudo apt-get dist-upgrade`
+8. `sudo apt-get install libsamplerate0-dev libjack-jackd2-dev libsndfile1-dev libasound2-dev libavahi-client-dev libicu-dev libreadline-dev libfftw3-dev libxt-dev libudev-dev libcwiid-dev cmake git build-essential python-dev alsa-utils cpufrequtils`
 
-step3 (update the system, install required libraries & compilers)
+step3 (compile & install jackd (no d-bus) )
 --
-1. `sudo apt-get update`
-2. `sudo apt-get upgrade`
-3. `sudo apt-get install python-dev alsa-base alsa-utils libicu-dev libasound2-dev libsamplerate0-dev libsndfile1-dev libreadline-dev libxt-dev libudev-dev libavahi-client-dev libfftw3-dev cmake git gcc-4.8 g++-4.8`
-
-step4 (compile & install jackd (no d-bus) )
---
-1. `git clone git://github.com/jackaudio/jack2.git --depth 1`
+1. `git clone git://github.com/jackaudio/jack2 --depth 1`
 2. `cd jack2`
-3. `export CC=/usr/bin/gcc-4.8`
-4. `export CXX=/usr/bin/g++-4.8`
-5. `./waf configure --alsa`
-6. `./waf build`
-7. `sudo ./waf install`
-8. `sudo ldconfig`
-9. `cd ..`
-10. `rm -rf jack2`
-11. `sudo nano /etc/security/limits.conf`  #and add the following two lines at the end
-  * `@audio - memlock 256000`
-  * `@audio - rtprio 75`
-12. `sudo nano /etc/ssh/sshd_config`  #at the bottom change to UsePAM yes
-13. `sudo reboot`  #and log in again to make the limits and sshd settings work
+3. `./waf configure --alsa --libdir=/usr/lib/arm-linux-gnueabihf/`
+4. `./waf build`
+5. `sudo ./waf install`
+6. `sudo ldconfig`
+7. `cd ..`
+8. `rm -rf jack2`
+9. `sudo nano /etc/security/limits.conf`  #and add the following lines at the end...
+        
+        @audio - memlock 256000
+        @audio - rtprio 75
+        
+10. `exit`  #and ssh in again to make the limits.conf settings work
+11. `nano ~/.jackdrc`  #edit to look like this...
+        
+        /usr/local/bin/jackd -P75 -dalsa -dhw:1 -r44100 -p1024 -n3
+        
+the `-dhw:1` above is normally the usb soundcard. `aplay -l` will list available devices.
 
-step5 (compile & install sc master)
+step4 (compile & install supercollider)
 --
-1. `git clone --recursive git://github.com/supercollider/supercollider.git supercollider`
+1. `git clone --recursive git://github.com/supercollider/supercollider`
 2. `cd supercollider`
-3. `git submodule init && git submodule update`
-4. `mkdir build && cd build`
-5. `export CC=/usr/bin/gcc-4.8`
-6. `export CXX=/usr/bin/g++-4.8`
-7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-mfloat-abi=hard -mfpu=neon" ..`
+3. `git checkout 3.9`
+4. `git submodule init && git submodule update`
+5. `nano lang/LangSource/SC_TerminalClient.cpp`  #TEMP FIX for 100% sclang issue - find the first line and comment it out, add the 2nd right after
+        
+        //mTimer.cancel();
+        if (error==boost::system::errc::success) {mTimer.cancel();} else {return;}
+        
+6. `mkdir build && cd build`
+7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSUPERNOVA=OFF -DNATIVE=ON -DSC_WII=ON -DSC_IDE=OFF -DSC_QT=OFF -DSC_ED=OFF -DSC_EL=OFF -DSC_VIM=ON ..`
 8. `make`
 9. `sudo make install`
 10. `sudo ldconfig`
-11. `cd ../..`
-12. `rm -r supercollider`
-13. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/GUI`
-14. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/JITLib/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/JITLibGUI`
+11. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/GUI`
+12. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/JITLib/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/JITLibGUI`
 
-step6 (start jack & sclang & test)
+startup
 --
-1. `jackd -P75 -dalsa -dhw:1 -p1024 -n3 -s -r44100 &`  #edit -dhw:1 to match your soundcard. usually it is 1 for usb
-2. `sclang`  #should start sc and compile the class library with only 3 harmless class overwrites warnings
-  * `s.boot`  #should boot the server
-  * `a= {SinOsc.ar([400, 404])}.play`  #should play sound in both channels
-  * `a.free`
-  * `{1000000.do{2.5.sqrt}}.bench`  #benchmark: ~0.55 for bbb
-  * `a= {Mix(50.collect{RLPF.ar(SinOsc.ar)});DC.ar(0)}.play`  #benchmark
-  * `s.avgCPU`  #should show ~46%
-  * `a.free`
-  * `0.exit`  #quit sclang
-4. `pkill jackd`  #quit jackd
+* `sclang`
 
-notes
---
-* if you get `WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!` when trying to ssh, type `ssh-keygen -R beaglebone` to reset
-* if you get `perl: warning: Setting locale failed`. either ignore it or run the commands: `sudo apt-get install locales` and `sudo dpkg-reconfigure locales` and set en_US.UTF-8 UTF-8 twice
-* we need to use gcc 4.8.4 instead of the default 4.9.2. something with gcc-4.9 triggers sc to generate the dreaded atIdentityHash error at startup.
-* for lower latency, try with lower blocksizes when you start jackd.try for example `-p512` and `-p128`. tune downwards until you get dropouts and xruns (also watch cpu%)
-* soundcards i’ve tried include a cheap blue 3D sound (C-Media Electronics, Inc. Audio Adapter (Planet UP-100, Genius G-Talk)) and the aureon dual usb (TerraTec Electronic GmbH Aureon Dual USB).
-* if sound is loud and distorts you may need to turn down the alsa volume. here we turn it down to 60% for the usb device.
-  * `amixer -c 1 controls`  #look for name='Speaker Playback Volume' and copy the numid - here it was 6. -c is device
-  * `amixer -c 1 cset numid=6 60%`  #edit numid to match what you got from the previous command
-* if you want to use the sc3.7 branch instead of sc master, the process is the same except for the following additions: in step5, after #2 `git checkout 3.7`, in step5, after #12 `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI/Base/Model.sc /usr/local/share/SuperCollider/SCClassLibrary/Common/Core/`
+when you boot the server jack should start automatically with the settings in ~/.jackdrc
 
-autostart (run sc at system boot)
---
-1. `nano ~/autostart.sh`  #and add the following three lines...
-  * `#!/bin/bash`
-  * `/usr/local/bin/jackd -P75 -dalsa -dhw:1 -p1024 -n3 -s -r44100 &`
-  * `su root -c "sclang -D /home/debian/mycode.scd"`
-2. `chmod +x ~/autostart.sh`
-3. `sudo crontab -e`  #and add the following line to the end...
-  * `@reboot /bin/bash /home/debian/autostart.sh`
-4. `nano ~/mycode.scd`  #and add your code inside a s.waitForBoot. for example...
-  * `s.waitForBoot{ {SinOsc.ar([400, 404], 0, 0.5)}.play }`
-5. `sudo reboot`  #and the sound should start after a few seconds. log in with ssh and `sudo pkill jackd && sudo pkill sclang` to stop it.
-
-
+**done!** see below for sc3-plugins, autostart, benchmarks and notes
 
 - - -
 
-wheezy (older system)
+sc3-plugins
 ==
+how to compile and install [sc3-plugins](https://github.com/supercollider/sc3-plugins).
+1. `git clone --recursive https://github.com/supercollider/sc3-plugins.git --depth 1`
+2. `cd sc3-plugins`
+3. `mkdir build && cd build`
+4. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DSUPERNOVA=OFF -DNATIVE=ON -DSC_PATH=../../supercollider/ ..`
+5. `make`
+6. `sudo make install`
 
-here we use [bone-debian-7.9-console-armhf-2015-11-03-2gb.img](http://elinux.org/Beagleboard:BeagleBoneBlack_Debian)
+autostart
+==
+how to automatically run supercollider code at system boot.
+1. `nano ~/autostart.sh`  #and add the following lines (ctrl+o, ctrl+x to save and exit)...
+        
+        #!/bin/bash
+        PATH=$PATH:/usr/local/bin
+        sleep 5
+        sclang mycode.scd
+        
+2. `chmod +x ~/autostart.sh`
+3. `crontab -e`  #and add the following line to the end...
+        
+        @reboot cd /home/debian && ./autostart.sh
+        
+4. `nano ~/mycode.scd`  #and add your code inside a waitForBoot. for example...
+        
+        s.waitForBoot{ {SinOsc.ar([400, 404])}.play }
+        
+5. `sudo reboot`  #the sound should start after a few seconds
+6. log in with ssh and `pkill jackd; pkill sclang; pkill scsynth` to stop the sound
 
-for older debian wheezy the process is similar except you will need to install gcc-4.7, cmake 2.8.12 and build the 3.7 branch instead of master.
+benchmarks
+==
+these are rough benchmark tests. the server should be booted and jackd running with settings: `-P75 -p1024 -n3 -r44100`
+also make sure to power the bbb through the barrel jack (else the cpu is capped at 300mhz - check with `cpufreq-info`). also for comparison it is important to set cpu scaling to 'performance' with...
+* `sudo cpufreq-set --governor performance`
 
-so for wheezy step3 and step5 are different and there are minor changes in step4. the rest is the same as for jessie above.
+start sclang and type...
+        
+        s.boot
+        {1000000.do{2.5.sqrt}}.bench //~2.0 on a bb-black, ~2.6 with lxqt on a bb-black
+        a= {Mix(50.collect{RLPF.ar(SinOsc.ar)});DC.ar(0)}.play
+        s.avgCPU //run a few times. ~47% on a bb-black
+        a.free
 
-step3 (update the system, install required libraries & compilers for wheezy)
---
-1. `sudo apt-get update`
-2. `sudo apt-get upgrade`
-3. `sudo apt-get install python-dev alsa-base libicu-dev libasound2-dev libsamplerate0-dev libsndfile1-dev libreadline-dev libxt-dev libudev-dev libavahi-client-dev libfftw3-dev cmake git gcc-4.7 g++-4.7 build-essential`
-4. `wget http://www.cmake.org/files/v2.8/cmake-2.8.12.1.tar.gz`
-5. `tar xvf cmake-2.8.12.1.tar.gz`
-6. `cd cmake-2.8.12.1`
-7. `export CC=/usr/bin/gcc-4.7`
-8. `export CXX=/usr/bin/g++-4.7`
-9. `cmake . && make`
+note: the cpu scaling mode 'ondemand' seem to work quite good on the bbb and will save battery without loosing much in performance.
 
-then in step4, #3 and #4 should read...
-
-* `export CC=/usr/bin/gcc-4.7`
-* `export CXX=/usr/bin/g++-4.7`
-
-step5 (compile & install sc 3.7)
---
-1. `git clone --recursive git://github.com/supercollider/supercollider.git supercollider`
-2. `cd supercollider`
-3. `git checkout 3.7`
-4. `git submodule init && git submodule update`
-5. `mkdir build && cd build`
-6. `export CC=/usr/bin/gcc-4.7`
-7. `export CXX=/usr/bin/g++-4.7`
-8. `~/cmake-2.8.12.1/bin/cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSUPERNOVA=OFF -DNOVA_SIMD=ON -DNATIVE=OFF -DSC_ED=OFF -DSC_WII=OFF -DSC_IDE=OFF -DSC_QT=OFF -DSC_EL=OFF -DSC_VIM=OFF -DCMAKE_C_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon" -DCMAKE_CXX_FLAGS="-march=armv7-a -mtune=cortex-a8 -mfloat-abi=hard -mfpu=neon" ..`
-9. `make`
-10. `sudo make install`
-11. `sudo ldconfig`
-12. `cd ../..`
-13. `rm -r supercollider`
-14. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI/Base/Model.sc /usr/local/share/SuperCollider/SCClassLibrary/Common/Core/`
-15. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/GUI`
-16. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/JITLib/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/JITLibGUI`
+notes
+==
+additional information.
+* an easy way to burn the img.xy file (no need to unpack) to a sd card is to use [etcher](http://etcher.io).
+* type `alsamixer` in terminal and then F6. adjust the mic and speaker volume with the arrow keys, esc key exits.
+* if you get `WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!` when trying to ssh in, type `ssh-keygen -R beaglebone` to reset.
+* for lower latency, set a lower blocksize for jackd. try for example `-p512` or `-p128`. tune downwards until you get dropouts and xruns (also watch cpu%).
+* usb soundcards i’ve tried include the cheap blue 3D sound (C-Media Electronics, Inc. Audio Adapter (Planet UP-100, Genius G-Talk)) and the aureon dual usb (TerraTec Electronic GmbH Aureon Dual USB).
+* to avoid sd card corruption one should always shut down the system properly and not just pull out the 5v power. when running headless you can either ssh in and type `sudo halt -p`, use a gpio pin with a button + python script, or set up an osc command from within sc that turns off the bbb. see [here](https://github.com/blacksound/VTM/wiki/Raspberry-Pi-Instructions#shutdown-for-raspberry-pi)
