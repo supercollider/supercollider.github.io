@@ -123,7 +123,7 @@ step3 (compile & install jackd (no d-bus) )
         
 the `-dhw:0` above is the internal soundcard. change this to `-dhw:1` for usb soundcards. `aplay -l` will list available devices.
 
-step4 (compile & install sc master)
+step4 (compile & install supercollider)
 --
 1. `git clone --recursive git://github.com/supercollider/supercollider`
 2. `cd supercollider`
@@ -187,16 +187,16 @@ how to automatically run supercollider code at system boot. this applies to both
 
 benchmarks
 ==
-these are rough benchmark tests. the server should be booted and jackd running with settings: `-P75 -p1024 -n3 -s -r44100`
+these are rough benchmark tests. the server should be booted and jackd running with settings: `-P75 -p1024 -n3 -r44100`
 also for comparison it is important to set cpu scaling to 'performance' with...
 * `echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor`
 
 start sclang or scide and type...
         
         s.boot
-        {1000000.do{2.5.sqrt}}.bench //~0.65 for rpi3 headless, ~0.7 for rpi3 scide, ~2.3 for rpi0 headless, ~2.5 for rpi0 scide
+        {1000000.do{2.5.sqrt}}.bench //~0.65 for rpi3 headless, ~0.7 for rpi3 scide, ~3.1 for rpi1 headless, ~2.3 for rpi0 headless, ~2.5 for rpi0 scide
         a= {Mix(50.collect{RLPF.ar(SinOsc.ar)});DC.ar(0)}.play
-        s.avgCPU //run a few times. ~12% for rpi3, ~39% for rpi0
+        s.avgCPU //run a few times. ~12% for rpi3, ~48% for rpi1, ~39% for rpi0
         a.free
 
 note: with the default cpu scaling (ondemand) these benchmarks perform much worse. but 'ondemand' also saves battery life so depending on your application this might be the preferred mode.
