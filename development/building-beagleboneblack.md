@@ -12,7 +12,7 @@ note: this is for compiling and running supercollider 3.9 (sclang+scsynth) inclu
 requirements
 --
 * beaglebone black (or any of the variants green, blue, industrial, pocket...)
-* sd card with [stretch iot](http://beagleboard.org/latest-images) or [stretch console](https://elinux.org/Beagleboard:BeagleBoneBlack_Debian). the console version is minimal and recommended. the instructions also work under the [stretch lxqt](http://beagleboard.org/latest-images) desktop version.
+* sd card with [stretch iot](http://beagleboard.org/latest-images) or [stretch console](https://elinux.org/Beagleboard:BeagleBoneBlack_Debian#Stretch_Snapshot_console). the console version is minimal and recommended. the instructions also work under the [stretch lxqt](http://beagleboard.org/latest-images) desktop version.
 * router with ethernet internet connection for the bbb
 * laptop connected to same network as the bbb
 * usb soundcard with headphones or speakers connected
@@ -25,14 +25,14 @@ step1 (hardware setup)
 
 step2 (update the system, install required libraries)
 --
-1. `ssh debian@beaglebone`  #from your laptop, default password is temppwd
+1. `ssh debian@beaglebone`  #from your laptop, default password is `temppwd`
 2. `sudo passwd debian`  #change password
 3. `sudo /opt/scripts/tools/grow_partition.sh`  #expand file system. skip if you are running on the emmc
 4. `sudo reboot`  #and log in again with ssh
 5. `sudo apt-get update`
 6. `sudo apt-get upgrade`
 7. `sudo apt-get dist-upgrade`
-8. `sudo apt-get install libsamplerate0-dev libjack-jackd2-dev libsndfile1-dev libasound2-dev libavahi-client-dev libicu-dev libreadline-dev libfftw3-dev libxt-dev libudev-dev libcwiid-dev cmake git build-essential python-dev alsa-utils cpufrequtils`
+8. `sudo apt-get install libsamplerate0-dev libsndfile1-dev libasound2-dev libavahi-client-dev libicu-dev libreadline-dev libfftw3-dev libxt-dev libudev-dev libcwiid-dev cmake git build-essential python-dev alsa-utils cpufrequtils`
 
 step3 (compile & install jackd (no d-bus) )
 --
@@ -88,12 +88,13 @@ when you boot the server jack should start automatically with the settings in ~/
 sc3-plugins
 ==
 how to compile and install [sc3-plugins](https://github.com/supercollider/sc3-plugins).
-1. `git clone --recursive https://github.com/supercollider/sc3-plugins.git --depth 1`
-2. `cd sc3-plugins`
-3. `mkdir build && cd build`
-4. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DSUPERNOVA=OFF -DNATIVE=ON -DSC_PATH=../../supercollider/ ..`
-5. `make`
-6. `sudo make install`
+1. `cd ~`
+2. `git clone --recursive https://github.com/supercollider/sc3-plugins.git --depth 1`
+3. `cd sc3-plugins`
+4. `mkdir build && cd build`
+5. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DSUPERNOVA=OFF -DNATIVE=ON -DSC_PATH=../../supercollider/ ..`
+6. `make`
+7. `sudo make install`
 
 autostart
 ==
