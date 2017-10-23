@@ -7,10 +7,11 @@ category: tutorials
 ## Recommended introductory tutorials:
 
 <ul>
-<li><a href="http://doc.sccode.org/Tutorials/Getting-Started/00-Getting-Started-With-SC.html">Getting started tutorial</a> - comes bundled within SC help, and here are some older <a href="http://supercollider.svn.sourceforge.net/viewvc/supercollider/trunk/common/build/Help/Tutorials/">more tutorials</a><br>
-<em>(…plus here’s a <a href="http://jahya.net/blog/?2012-06-quickref-for-supercollider">quick reference based on Scott’s tutorial</a> by Andrew McWilliams)</em></li>
+<li><a href="http://doc.sccode.org/Tutorials/Getting-Started/00-Getting-Started-With-SC.html">Getting started with SC</a> by Scott Wilson and James Harkins. This tutorial, as well as a <a href="http://doc.sccode.org/Browse.html#Tutorials">few others</a>, come bundled with SuperCollider's help system.</br><em>(there’s a <a href="http://jahya.net/blog/?2012-06-quickref-for-supercollider">quick reference</a> by Andrew McWilliams based on this tutorial)</em></li>
+<li><a href="https://ccrma.stanford.edu/~ruviaro/texts/A_Gentle_Introduction_To_SuperCollider.pdf">A Gentle Introduction to SuperCollider</a> by Bruno Ruviaro</li>
 <li><a href="http://composerprogrammer.com/teaching/supercollider/sctutorial/tutorial.html">Nick Collins’ &nbsp;SuperCollider tutorial</a> has a 12 week course of tutorial files as browseable HTML, and is also available in a downloadable zip</li>
-<li><a href="http://www.mat.ucsb.edu/275/CottleSC3.pdf">David Cottle’s SC tutorial</a></li>
+<li><a href="http://camil.music.illinois.edu/Classes/404A3/Documents/CottleSC3.pdf">Computer Music with examples in SuperCollider 3</a> by David Cottle</li>
+<li><a href="https://www.youtube.com/playlist?list=PLPYzvS8A_rTaNDweXe6PX4CXSGq4iEWYC">SuperCollider Tutorials</a> on YouTube by Eli Fieldsteel
 </ul>
 <p>Other introductory tutorials:</p>
 <ul>
