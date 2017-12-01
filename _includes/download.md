@@ -3,7 +3,6 @@
         <tr>
             <td width="32%" valign="top">
                 <h2>
-                    <img src="/images/platform_mac_os_x.gif" alt="" />
                     Mac
                 </h2>
                 <h4>Current Version</h4>
@@ -37,9 +36,9 @@
             </td>
             <td width="32%" valign="top">
                 <h2>
-                    <img src="/images/platform_linux.gif" alt="" />
                     Linux
                 </h2>
+                 <h4>Current Version</h4>
                 <ul class="nodot">
                     <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.8.0/SuperCollider-3.8.0-Source-linux.tar.bz2">Linux complete source code</a>
@@ -61,7 +60,6 @@
             </td>
             <td width="32%" valign="top">
                 <h2>
-                    <img src="/images/platform_windows.gif" alt="" />
                     Windows
                 </h2>
                 <h4>Current Version</h4>
