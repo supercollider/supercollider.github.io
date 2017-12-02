@@ -100,7 +100,7 @@
 <br />
 
 <h2 id="beta-releases">Beta Releases</h2>
-<ul class="nodot"><li><a href="https://github.com/supercollider/supercollider/releases"><i class="icon-download-alt">&middot;</i>All Releases, Including Beta Releases</a></li></ul>
+<ul class="nodot"><li><a href="https://github.com/supercollider/supercollider/releases"><i class="icon-download-alt">&middot;</i>All Releases, including Beta Releases</a></li></ul>
 
 <h2 id="building-from-source">Building from source</h2>
 <ul class="nodot"><li><a href="https://github.com/supercollider/supercollider"><i class="icon-download-alt">&middot;</i>Source Code</a></li></ul>
