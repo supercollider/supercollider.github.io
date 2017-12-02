@@ -99,9 +99,11 @@
 <br />
 <br />
 
+<h2 id="beta-releases">Beta Releases</h2>
+<ul class="nodot"><li><a href="https://github.com/supercollider/supercollider/releases"><i class="icon-download-alt">&middot;</i>All Releases, including Beta Releases</a></li></ul>
 
 <h2 id="building-from-source">Building from source</h2>
-<ul class="nodot"><li><a href="https://github.com/supercollider/supercollider/releases"><i class="icon-download-alt">&middot;</i>Source Code (various releases)</a></li></ul>
+<ul class="nodot"><li><a href="https://github.com/supercollider/supercollider"><i class="icon-download-alt">&middot;</i>Source Code</a></li></ul>
 <p>Build instructions are included with the source code. For more tips and trouble shooting check <a href="/development/building.html">this page</a>.</p>
 
 <h4>Plugins and Extensions</h4>
