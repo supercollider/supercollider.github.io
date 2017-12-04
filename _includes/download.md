@@ -61,10 +61,10 @@
 		Linux Installation and Build Guides
 		<ul>
 			<li>
-				<a href="https://github.com/supercollider/supercollider/wiki/Installing-SuperCollider-on-Fedora"><strong>Installing SuperCollider on Fedora</strong></a>
+				<a href="https://github.com/supercollider/supercollider/wiki/Installing-SuperCollider-on-Fedora">Installing SuperCollider on Fedora</a>
 			</li>
 			<li>
-				<a href="https://github.com/supercollider/supercollider/wiki/Installing-SuperCollider-from-source-on-Ubuntu"><strong>Building SuperCollider from Source on Ubuntu</strong></a>
+				<a href="https://github.com/supercollider/supercollider/wiki/Installing-SuperCollider-from-source-on-Ubuntu">Building SuperCollider from Source on Ubuntu</a>
 			</li>
 		</ul>
             </td>
