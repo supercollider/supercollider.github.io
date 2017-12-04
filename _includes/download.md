@@ -58,7 +58,7 @@
                         provided by PlanetCCRMA
                     </li>
                 </ul>
-		Linux Installation and Build Guides
+		Installation and Build Guides
 		<ul>
 			<li>
 				<a href="https://github.com/supercollider/supercollider/wiki/Installing-SuperCollider-on-Fedora">Installing SuperCollider on Fedora</a>
