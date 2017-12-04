@@ -45,7 +45,7 @@
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.8.0/SuperCollider-3.8.0-Source-linux.tar.bz2">Linux complete source code</a>
                         </li>
                 </ul>
-                 PPA and package distributions:
+                PPA and package distributions:
                 <ul>
                     <li>
                         <a href="http://launchpad.net/~supercollider/+archive/ppa"><strong>Ubuntu</strong> </a>
@@ -60,12 +60,12 @@
                 </ul>
 		Installation and Build Guides
 		<ul>
-			<li>
-				<a href="https://github.com/supercollider/supercollider/wiki/Installing-SuperCollider-on-Fedora">Installing SuperCollider on Fedora</a>
-			</li>
-			<li>
-				<a href="https://github.com/supercollider/supercollider/wiki/Installing-SuperCollider-from-source-on-Ubuntu">Building SuperCollider from Source on Ubuntu</a>
-			</li>
+		    <li>
+			<a href="https://github.com/supercollider/supercollider/wiki/Installing-SuperCollider-on-Fedora">Installing SuperCollider on Fedora</a>
+		    </li>
+		    <li>
+			<a href="https://github.com/supercollider/supercollider/wiki/Installing-SuperCollider-from-source-on-Ubuntu">Building SuperCollider from Source on Ubuntu</a>
+		    </li>
 		</ul>
             </td>
             <td width="32%" valign="top">
