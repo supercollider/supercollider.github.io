@@ -58,15 +58,15 @@
                         provided by PlanetCCRMA
                     </li>
                 </ul>
-		Installation and Build Guides
-		<ul>
-		    <li>
-			<a href="https://github.com/supercollider/supercollider/wiki/Installing-SuperCollider-on-Fedora">Installing SuperCollider on Fedora</a>
-		    </li>
-		    <li>
-			<a href="https://github.com/supercollider/supercollider/wiki/Installing-SuperCollider-from-source-on-Ubuntu">Building SuperCollider from Source on Ubuntu</a>
-		    </li>
-		</ul>
+                Installation and Build Guides:
+                <ul>
+                    <li>
+                        <a href="https://github.com/supercollider/supercollider/wiki/Installing-SuperCollider-on-Fedora">Installing SuperCollider on Fedora</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/supercollider/supercollider/wiki/Installing-SuperCollider-from-source-on-Ubuntu">Building SuperCollider from Source on Ubuntu</a>
+                    </li>
+                </ul>
             </td>
             <td width="32%" valign="top">
                 <h2>
