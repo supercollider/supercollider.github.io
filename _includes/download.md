@@ -57,6 +57,9 @@
                         <a href="http://ccrma.stanford.edu/planetccrma/software/"><strong>RedHat</strong> or <strong>Fedora</strong> packages</a>
                         provided by PlanetCCRMA
                     </li>
+                    <li>
+                        <a href="https://software.opensuse.org/package/supercollider"><strong>openSUSE</strong> </a>
+                    </li>
                 </ul>
             </td>
             <td width="32%" valign="top">
