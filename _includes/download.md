@@ -139,7 +139,7 @@
 <ul>
     <li>
         <a href="https://github.com/supercollider/sc3-plugins">sc3-plugins</a>
-        <p>Extension plugins for the SuperCollider3 audio synthesis server. These third-party plugins provide additional synthesis, analysis, and other capabilities for the sound server.</p>
+        <p>Extension plugins for the SuperCollider audio synthesis server. These third-party plugins provide additional synthesis, analysis, and other capabilities for the sound server.</p>
     </li>
     <li>
         <a href="https://github.com/supercollider-quarks/quarks">Quarks</a>
