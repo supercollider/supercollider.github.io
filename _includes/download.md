@@ -40,25 +40,42 @@
                     <img src="/images/platform_linux.gif" alt="" />
                     Linux
                 </h2>
+                <h4>
+                    Current Version
+                </h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.8.0/SuperCollider-3.8.0-Source-linux.tar.bz2">Linux complete source code</a>
-                        </li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.8.0/SuperCollider-3.8.0-Source-linux.tar.bz2">3.8.0 source tarball</a>
+                    </li>
                 </ul>
-                 PPA and package distributions:
+                <h4>
+                    Official Linux Packages
+                </h4>
+                <ul class="nodot">
+                    <li>
+                        <a href="http://packages.debian.org/sid/supercollider">Debian packages</a>
+                    </li>
+                    <li>
+                        <a href="https://packages.ubuntu.com/search?keywords=supercollider&searchon=names">Ubuntu packages</a>
+                    </li>                    
+                </ul>
+                <h4>
+                    Community packages and repositories
+                </h4>
                 <ul>
                     <li>
-                        <a href="http://launchpad.net/~supercollider/+archive/ppa"><strong>Ubuntu</strong> </a>
+                        <a href="https://aur.archlinux.org/packages/supercollider-git/">Arch Linux AUR</a>
                     </li>
                     <li>
-                        <a href="http://packages.debian.org/sid/supercollider"><strong>Debian</strong> </a>
+                        <a href="http://launchpad.net/~supercollider/+archive/ppa">Ubuntu PPA</a>
                     </li>
                     <li>
-                        <a href="http://ccrma.stanford.edu/planetccrma/software/"><strong>RedHat</strong> or <strong>Fedora</strong> packages</a>
-                        provided by PlanetCCRMA
+                        <a href="http://ccrma.stanford.edu/planetccrma/software/">Fedora</a>
+                        (PlanetCCRMA)
                     </li>
                     <li>
-                        <a href="https://software.opensuse.org/package/supercollider"><strong>openSUSE</strong> </a>
+                        <a href="https://software.opensuse.org/package/supercollider">openSUSE</a>
+                        (Open Build Service)
                     </li>
                 </ul>
             </td>
@@ -100,40 +117,35 @@
     </tbody>
 </table>
 <br />
-<br />
 
-<h2 id="beta-releases">Beta Releases</h2>
+<h2 id="beta-releases">Releases</h2>
 <ul>
     <li>
-        <a href="https://github.com/supercollider/supercollider/releases">
-            All Releases, including Beta Releases
-        </a>
+        <a href="https://github.com/supercollider/supercollider/releases">SuperCollider Releases</a>
+        (including Stable Releases, Betas, and Release Candidates)
     </li>
 </ul>
 
 <h2 id="building-from-source">Building from source</h2>
 <ul>
     <li>
-        <a href="https://github.com/supercollider/supercollider">
-            Source Code
-        </a>
+        <a href="https://github.com/supercollider/supercollider">SuperCollider source on GitHub</a>
     </li>
 </ul>
 
-<p>Build instructions are included with the source code. For more tips and trouble shooting check <a href="/development/building.html">this page</a>.</p>
+<p>Build instructions are included in the source code, and can be found in the README corresponding to your system. These instructions, as well as some platform specific build guides, can also be found on the <a href="/development/building.html">Building from source</a> page.</p>
 
-<h4>Plugins and Extensions</h4>
+<h2>Plugins and Extensions</h2>
 <ul>
     <li>
-        <a href="https://github.com/supercollider/sc3-plugins">
-            Synthesis Plugins and Extensions
-        </a>
+        <a href="https://github.com/supercollider/sc3-plugins">sc3-plugins</a>
+        <p>Extension plugins for the SuperCollider audio synthesis server. These third-party plugins provide additional synthesis, analysis, and other capabilities for the sound server.</p>
+    </li>
+    <li>
+        <a href="https://github.com/supercollider-quarks/quarks">Quarks</a>
+        <p>Quarks are packages containing classes, extension methods, documentation and UGens. The integrated Quarks package system is used to download and manage these packages on your system.</p>
+        <p>On SuperCollider 3.7.0 or later, Quarks can be installed by graphical user interface, by GitHub URL, or by manually placing files in SuperCollider's Extensions folder. For more information, see the <a href="https://github.com/supercollider-quarks/quarks">SuperCollider-Quarks</a> project page.</p>
+        <h5 id="supercollider-3-6-and-earlier">NOTE: SuperCollider 3.6.6 and earlier</h5>
+        <p>See the old <a href="http://sourceforge.net/p/quarks/code/HEAD/tree/">SVN Quarks repository</a> and consult the help file included with your version of SuperCollider.</p>
     </li>
 </ul>
-
-<h4>Quarks</h4>
-<p>Quarks is the package system and extends SuperCollider with lots of interesting things for math, graphics, machine learning, networking, interface and compositional frameworks.</p>
-<p>SuperCollider 3.7 and later versions come with a new implementation that lets you install Quarks using a gui, from github URLs or by installing any packages that you have downloaded. <a href="https://github.com/supercollider-quarks/quarks">Read more...</a></p>
-
-<h5 id="supercollider-3-6-and-earlier">Quarks for SuperCollider 3.6 and earlier</h5>
-<p>See the old <a href="http://sourceforge.net/p/quarks/code/HEAD/tree/">SVN Quarks repository</a> and consult the help file that came with your 3.6 SuperCollider.</p>
