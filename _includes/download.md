@@ -30,7 +30,7 @@
                 <h4>Bleeding Edge</h4>
                 <ul class="nodot">
                     <li>
-                        <a href="http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/osx/master-latest.html"><i class="icon-download-alt">.</i> Latest build</a><br />
+                        <a href="http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/osx/develop-latest.html"><i class="icon-download-alt">.</i> Latest build</a><br />
                         This is the latest build of the development branch.
                     </li>
                 </ul>
