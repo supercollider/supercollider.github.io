@@ -135,7 +135,7 @@ Pbind(
     <h4>Mailing list</h4>
     <p>The community is very active and helpful, the center of activity.  Please do drop by.</p>
     <p><a href="http://www.birmingham.ac.uk/facilities/BEAST/research/supercollider/mailinglist.aspx">mailing list info</a></p>
-    <p><a href="https://slackin-apxbmqnfui.now.sh"><img src="https://slackin-apxbmqnfui.now.sh/badge.svg" /></a></p>
+    <p><a href="https://join.slack.com/t/scsynth/shared_invite/enQtMjk0MzA0NzgyOTkyLTYwNjdmYjFmNWY4NGIyZWM2YWY1NzZhMjM3MWQ0MmEwZTZkZDExOTRjMWI2NjBiMGQ1NTg1NDQyZjExNWFjZGM">Join us on Slack</a></p>
     <h4><a href="/contributing/index.html">Contributing</a></h4>
     <ul>
       <li><a href="https://github.com/supercollider/supercollider/issues">Github issue tracker</a></li>
