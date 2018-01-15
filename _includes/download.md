@@ -15,7 +15,7 @@
                 <h4>Previous Releases</h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.8.1/SuperCollider-3.8.1-OSX.zip"><i class="icon-download-alt">.</i> 3.8.1</a>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.8.1/SuperCollider-3.8.1-MacOS.zip"><i class="icon-download-alt">.</i> 3.8.1</a>
                     </li>
                     <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.7.2/SuperCollider-OSX-3.7.2.zip"><i class="icon-download-alt">.</i> 3.7.2</a>
