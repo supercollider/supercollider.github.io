@@ -98,7 +98,7 @@
                 <h5>32-bit</h5>
                 <ul class="nodot">
                     <li>
-                        <a href="hhttps://github.com/supercollider/supercollider/releases/download/Version-3.9.0/SuperCollider-3.9.0-Windows-x86-VS.exe"><i class="icon-download-alt">.</i> 3.9.0</a> (no SuperNova)<br />
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.9.0/SuperCollider-3.9.0-Windows-x86-VS.exe"><i class="icon-download-alt">.</i> 3.9.0</a> (no SuperNova)<br />
                         <a href="https://github.com/supercollider/sc3-plugins/releases/download/Version-3.9.0/sc3-plugins-3.9.0-Windows-x86-VS.zip"><i class="icon-download-alt">.</i> sc3-plugins</a>
                     </li>
                 </ul>
