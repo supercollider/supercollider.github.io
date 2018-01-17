@@ -19,4 +19,4 @@ Building on embedded linux platforms (arm)
 
 For building on [Raspberry Pi](http://www.raspberrypi.org) (raspbian) see [Bulding From Source on Raspberry Pi](building-raspberrypi.html).
 
-For building on [BeagleBone Black](http://beagleboard.org/Products/BeagleBone%20Black) (ubuntu/debian) see [Bulding From Source on BeagleBone Black](building-beagleboneblack.html).
+For building on [BeagleBone Black](http://beagleboard.org/Products/BeagleBone%20Black) (debian) see [Bulding From Source on BeagleBone Black](building-beagleboneblack.html).
