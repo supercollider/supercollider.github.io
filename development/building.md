@@ -14,7 +14,7 @@ For build instructions specific to your platform, see one of the following files
 
 ### Community provided build guides  
 
-For building on **Ubuntu** see [Installing SuperCollider from source on Ubunut](https://github.com/supercollider/supercollider/wiki/Installing-SuperCollider-from-source-on-Ubuntu).
+For building on **Ubuntu** see [Installing SuperCollider from source on Ubuntu](https://github.com/supercollider/supercollider/wiki/Installing-SuperCollider-from-source-on-Ubuntu).
 
 For building on **Fedora** see [Installing SuperCollider on Fedora](https://github.com/supercollider/supercollider/wiki/Installing-SuperCollider-on-Fedora).
 
