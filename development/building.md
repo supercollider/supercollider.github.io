@@ -11,8 +11,6 @@ For build instructions specific to your platform, see one of the following files
 * [README_OS_X.md](https://raw.github.com/supercollider/supercollider/master/README_OS_X.md)
 * [README_LINUX.md](https://raw.github.com/supercollider/supercollider/master/README_LINUX.md)
 * [README_WINDOWS.md](https://raw.github.com/supercollider/supercollider/master/README_WINDOWS.md)
-* [README_IPHONE.md](https://raw.github.com/supercollider/supercollider/master/README_IPHONE.md)
-* etc...
 
 Building on embedded linux platforms (arm)
 ------------------------------------------
