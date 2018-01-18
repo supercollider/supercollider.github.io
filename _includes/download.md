@@ -123,6 +123,16 @@
                         <a href="http://sourceforge.net/projects/supercollider/files/Windows/3.6/SuperCollider-3.6.6-win32.exe/download"><i class="icon-download-alt">.</i> 3.6.6</a> (Win 2000)
                     </li>
                 </ul>
+                <h4>Bleeding Edge</h4>
+                <p>These are the latest builds of the development branch.
+                <ul class="nodot">
+                    <li>
+                        <a href="http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/win64/develop-latest.html"><i class="icon-download-alt">.</i> Latest build (x64)</a>
+                    </li>
+                    <li>
+                        <a href="http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/win32/develop-latest.html"><i class="icon-download-alt">.</i> Latest build (x86)</a>
+                    </li>
+                </ul>
             </td>
         </tr>
     </tbody>
