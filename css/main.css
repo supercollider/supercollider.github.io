@@ -153,6 +153,12 @@ code span.comment {
 	font-style: normal;
 }
 
+
+.main-page-examples code {
+    max-height: 20em;
+    overflow: auto;
+}
+
 /* responsive */
 @media (max-width: 1150px) {
 	.navbar .container-narrow {
