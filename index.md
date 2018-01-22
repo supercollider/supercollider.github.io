@@ -82,7 +82,7 @@ durations = [1, 1, 1, 1, 3/4, 1/4, 1/2, 3/4, 1/4, 1/2];
 Ppar([
     Pbind(*[
         instrument: \gabberkick,
-        amp: -15.dbamp,
+        amp: -22.dbamp,
         freq: 60,
         legato: 0.8,
         ffreq: Pseq((0..(durations.size * 4 - 1)).normalize, inf).linexp(0, 1, 100, 4000),
@@ -91,7 +91,7 @@ Ppar([
     ]),
     Pbind(*[
         instrument: \hoover,
-        amp: -12.dbamp,
+        amp: -20.dbamp,
         midinote: 74,
         dur: durations.sum * 2,
         sustain: 7,
