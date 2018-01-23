@@ -5,13 +5,13 @@ title: Development Roadmap
 sort_order: 8
 ---
 
-### Version 3.9
+### Version 3.10
 
-Target date: Fall 2017
+Target date: Fall 2018
 
-See [top priority issues for 3.9](https://github.com/supercollider/supercollider/projects/1)
+See [Milestones for upcoming SuperCollider releases](https://github.com/supercollider/supercollider/milestones)
 
 
 ### Future projects
 
-Please have a look at the [project boards](https://github.com/supercollider/supercollider/projects) to get an overview of future SuperCollider development. Feel free to discuss these projects and ideas with the community on the [mailing list](/community/mailing-lists).
+Please have a look at the [project boards](https://github.com/supercollider/supercollider/projects) to get an overview of potential future SuperCollider development. Feel free to discuss these projects and ideas with the community on the [mailing list](/community/mailing-lists).
