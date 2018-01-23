@@ -12,7 +12,9 @@ Feel free to edit this page to add new pieces to it (you will need a github acco
 
 Composers are listed alphabetically by last name.
 
-### Mark Ballora
+Mark Ballora
+------
+
 **Singularity** (2004), flute and electronics
 
 [https://soundcloud.com/mark-ballora/singularity-for-flute-and-live](https://soundcloud.com/mark-ballora/singularity-for-flute-and-live)
@@ -21,8 +23,8 @@ Composers are listed alphabetically by last name.
 
 
 
-### Bo is burning
-**Electronic Music-Theatre Duo**
+Bo is burning - Electronic Music-Theatre Duo
+------
 
 A duo by [Sarah Jeffery](http://www.sarahjeffery.com) and [Felipe Ignacio Noriega](http://felipeignacio.info).
 
