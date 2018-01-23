@@ -265,11 +265,10 @@ Michael Musick
 
 
 ### Off<>zz
-**Piano + sc**
 
-Off<>zz is a laptop and piano/toypiano duo ([Anne Veinberg](http://www.anneveinberg.com) and [Felipe Ignacio Noriega] (http://felipeignacio.info) ) exploring electro-acoustic music via improvisation, live coding, and transformation of their classical-music influences into a more collective experience. They regularly present new work via their SoundCloud: [https://soundcloud.com/offzz](https://soundcloud.com/offzz)
+Off<>zz is a laptop and piano/toypiano duo ([Anne Veinberg](http://www.anneveinberg.com) and [Felipe Ignacio Noriega](http://felipeignacio.info)) exploring electro-acoustic music via improvisation, live coding, and transformation of their classical-music influences into a more collective experience. They regularly present new work via their SoundCloud: [https://soundcloud.com/offzz](https://soundcloud.com/offzz)
 
-A 20 min. video of their performance on the Sonic Arts Festival 2014 (Bilbao) is available on [youtube] (https://youtu.be/XK19gan3IoA).
+A 20 min. video of their performance on the Sonic Arts Festival 2014 (Bilbao) is available on [youtube](https://youtu.be/XK19gan3IoA).
 
 [Off<>zz website](http://felipeignacio.info/offzz/)
 
