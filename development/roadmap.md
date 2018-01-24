@@ -7,7 +7,7 @@ sort_order: 8
 
 ### Version 3.10
 
-Target date: Fall 2018
+Target date: Summer 2018
 
 See [Milestones for upcoming SuperCollider releases](https://github.com/supercollider/supercollider/milestones)
 
