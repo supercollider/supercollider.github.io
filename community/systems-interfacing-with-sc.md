@@ -22,7 +22,7 @@ Clients Using SC Server
     -   [hsc3][] is a [haskell][] supercollider client.
     -   [Vivid][] is a haskell supercollider client.
     -   [TidalCycles][] is a pattern live coding language built on Haskell, controlling a backend written in SuperCollider.
--   SmallTalk
+-   Smalltalk
     -   A squeak OSC-Client by Marcus Gälli, which works with SC:
         [OSC-Client][]
 -   Perl
