@@ -4,16 +4,18 @@ title: "Tutorials"
 category: tutorials
 ---
 
-## Recommended introductory tutorials:
+### Recommended tutorials
 
 <ul>
-<li><a href="http://doc.sccode.org/Tutorials/Getting-Started/00-Getting-Started-With-SC.html">Getting started with SC</a> by Scott Wilson and James Harkins. This tutorial, as well as a <a href="http://doc.sccode.org/Browse.html#Tutorials">few others</a>, come bundled with SuperCollider's help system.</br><em>(there’s a <a href="http://jahya.net/blog/?2012-06-quickref-for-supercollider">quick reference</a> by Andrew McWilliams based on this tutorial)</em></li>
+<li><a href="http://doc.sccode.org/Tutorials/Getting-Started/00-Getting-Started-With-SC.html">Getting started with SC</a> by Scott Wilson and James Harkins. This tutorial, as well as a <a href="http://doc.sccode.org/Browse.html#Tutorials">few others</a>, come bundled with SuperCollider's help system. <em>(there’s a <a href="http://jahya.net/blog/?2012-06-quickref-for-supercollider">quick reference</a> by Andrew McWilliams based on this tutorial)</em></li>
 <li><a href="https://ccrma.stanford.edu/~ruviaro/texts/A_Gentle_Introduction_To_SuperCollider.pdf">A Gentle Introduction to SuperCollider</a> by Bruno Ruviaro</li>
 <li><a href="http://composerprogrammer.com/teaching/supercollider/sctutorial/tutorial.html">Nick Collins’ &nbsp;SuperCollider tutorial</a> has a 12 week course of tutorial files as browseable HTML, and is also available in a downloadable zip</li>
 <li><a href="http://camil.music.illinois.edu/Classes/404A3/Documents/CottleSC3.pdf">Computer Music with examples in SuperCollider 3</a> by David Cottle</li>
-<li><a href="https://www.youtube.com/playlist?list=PLPYzvS8A_rTaNDweXe6PX4CXSGq4iEWYC">SuperCollider Tutorials</a> on YouTube by Eli Fieldsteel
+<li><a href="https://www.youtube.com/playlist?list=PLPYzvS8A_rTaNDweXe6PX4CXSGq4iEWYC">SuperCollider Tutorials</a> on YouTube by Eli Fieldsteel</li>
 </ul>
-<p>Other introductory tutorials:</p>
+
+### Other tutorials
+
 <ul>
 <li><strong><a href="http://www.oscilador.org/descargas/supercollider/">Spanish</a></strong><a href="http://www.oscilador.org/descargas/supercollider/">-language tutorial translations</a> by Federico Reuben</li>
 <li><a href="http://gonzo.uni-weimar.de/~haru8822/supercollider/"><strong>German</strong>-language</a> tutorials</li>
@@ -27,9 +29,10 @@ category: tutorials
 <li><a href="http://en.wikibooks.org/wiki/Designing_Sound_in_SuperCollider">Designing Sound in SuperCollider</a> (how to create sound effects)</li>
 <li><a href="https://github.com/acarabott/roundhouse-synth-design-course-2014">Seven part tutorial, aimed at first time programmers</a> by Arthur Carabott</li>
 </ul>
-<p>Tutorials covering more advanced techniques and/or third-party libraries:</p>
+
+### Tutorials covering more advanced techniques and/or third-party libraries
+
 <ul>
 <li><a href="http://www.dewdrop-world.net/sc3/tutorials/index.php">dewdrop_world’s SC tutorials</a> - making good use of the dewdrop extensions.</li>
-<li><a href="http://plus1plus1plus.org/Resources/SC/SC3PluginTutorial.php">Compiling SC and SC plugins</a> - a tutorial on getting your hands dirty with the source code</li>
 <li><a href="http://daniel-mayer.at/software_en.htm">miSCellaneous lib</a> - tutorials for miSCellaneous lib and general SuperCollider, with a focus on Patterns.</li>
 </ul>
