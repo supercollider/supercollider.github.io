@@ -21,7 +21,7 @@ The sc-users mailing list is very active and helpful.
 
 ## sc-dev
 
-The sc-devel mailing list provides the main forum for discussion about SuperCollider development.
+The sc-dev mailing list provides the main forum for discussion about SuperCollider development.
 
 <ul>
 	<li><a href="http://www.listarc.bham.ac.uk/marchives/sc-dev/">browse archives</a></li>
