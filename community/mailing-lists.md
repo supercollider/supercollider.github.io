@@ -19,7 +19,7 @@ The sc-users mailing list is very active and helpful.
 </ul>
 
 
-## sc-devel
+## sc-dev
 
 The sc-devel mailing list provides the main forum for discussion about SuperCollider development.
 
