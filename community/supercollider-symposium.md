@@ -5,7 +5,7 @@ description: ""
 category: "community"
 sort_order: 2
 ---
-The **SuperCollider Symposium** is an international gathering of SuperCollider users. It happens every one or two years in different places around the world. If it hasn't happened in a town near you... maybe you'd like to host one?
+The **SuperCollider Symposium** is an international gathering of SuperCollider users and developers. The symposium happens on an irregular basis in different cities around the world. The following is a complete list of the symposia that have taken place.
 
 * [Boulder (CO, USA) 2013](#boulder_co_usa_2013)
 * [London (UK) 2012](#london_uk_2012)
