@@ -37,7 +37,7 @@ List all here. Feel free to edit on github and add yourself.
 
 ## video tutorials
 
-* <a href="http://www.youtube.com/playlist?list=PLPYzvS8A_rTaNDweXe6PX4CXSGq4iEWYC">SuperCollider Tutorials by Eli Fieldsteel</a>
+* [SuperCollider Tutorials by Eli Fieldsteel](http://www.youtube.com/playlist?list=PLPYzvS8A_rTaNDweXe6PX4CXSGq4iEWYC)
 * <http://www.funprogramming.org>
 
 ## other resources
