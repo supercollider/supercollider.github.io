@@ -12,7 +12,7 @@ note: this is for building the full version of supercollider 3.9 including the i
 requirements
 --
 * raspberry pi 2 or 3 (also rpi0 and rpi1 but note that compiling will take a _long_ time)
-* sd card with [2017-09-07-raspbian-stretch](https://www.raspberrypi.org/downloads/raspbian) or newer (note: not stretch lite)
+* sd card with [raspbian-stretch](https://www.raspberrypi.org/downloads/raspbian) (note: not stretch lite)
 * router with ethernet internet connection for the rpi
 * screen, mouse and keyboard (although you can also do it all via ssh)
 * optional: usb soundcard with headphones or speakers connected
@@ -30,7 +30,7 @@ from raspbian desktop open a terminal window and type...
 2. `sudo apt-get update`
 3. `sudo apt-get upgrade`
 4. `sudo apt-get dist-upgrade`
-5. `sudo apt-get install libjack-jackd2-dev libsndfile1-dev libasound2-dev libavahi-client-dev libicu-dev libreadline-dev libfftw3-dev libxt-dev libudev-dev libcwiid-dev cmake qt5-default qt5-qmake qttools5-dev qttools5-dev-tools qtdeclarative5-dev libqt5webkit5-dev qtpositioning5-dev libqt5sensors5-dev`
+5. `sudo apt-get install libjack-jackd2-dev libsndfile1-dev libasound2-dev libavahi-client-dev libreadline6-dev libfftw3-dev libxt-dev libudev-dev libcwiid-dev cmake qttools5-dev-tools libqt5webkit5-dev qtpositioning5-dev libqt5sensors5-dev`
 
 step3 (compile and install supercollider)
 --
@@ -80,7 +80,7 @@ note: this section is for more advanced users that want to compile and run super
 requirements
 --
 * raspberry pi 2 or 3 (also rpi0 and rpi1 but note that compiling will take a _long_ time)
-* sd card with [2017-09-07-raspbian-stretch-lite](https://www.raspberrypi.org/downloads/raspbian) or newer
+* sd card with [raspbian-stretch-lite](https://www.raspberrypi.org/downloads/raspbian)
 * an empty dummy file called `ssh` on the root level of the sd card (to enable ssh)
 * router with ethernet internet connection for the rpi
 * laptop connected to same network as the rpi
@@ -99,7 +99,7 @@ step2 (update the system, install required libraries)
 3. `sudo apt-get update`
 4. `sudo apt-get upgrade`
 5. `sudo apt-get dist-upgrade`
-6. `sudo apt-get install libsamplerate0-dev libjack-jackd2-dev libsndfile1-dev libasound2-dev libavahi-client-dev libicu-dev libreadline-dev libfftw3-dev libxt-dev libudev-dev libcwiid-dev cmake git`
+6. `sudo apt-get install libsamplerate0-dev libsndfile1-dev libasound2-dev libavahi-client-dev libreadline6-dev libfftw3-dev libxt-dev libudev-dev libcwiid-dev cmake git`
 
 step3 (compile & install jackd (no d-bus) )
 --
@@ -139,8 +139,6 @@ step4 (compile & install supercollider)
 8. `make -j 4`  #use -j4 flag only for rpi3 (quadcore)
 9. `sudo make install`
 10. `sudo ldconfig`
-11. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/GUI`
-12. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/JITLib/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/JITLibGUI`
 
 startup
 --
@@ -168,7 +166,7 @@ how to automatically run supercollider code at system boot. this applies to both
 1. `nano ~/autostart.sh`  #and add the following lines (ctrl+o, ctrl+x to save and exit)...
         
         #!/bin/bash
-        PATH=$PATH:/usr/local/bin:/usr/bin
+        PATH=/usr/local/bin:$PATH
         export DISPLAY=:0.0
         sleep 10  #can be lower (5) for rpi3
         sclang mycode.scd
@@ -200,7 +198,7 @@ start sclang or scide and type...
         a.free
 
 note: with the default cpu scaling (ondemand) these benchmarks perform much worse. but 'ondemand' also saves battery life so depending on your application this might be the preferred mode.
-to set 'performance' scaling mode permanently see under gotcha [here](https://raspberrypi.stackexchange.com/questions/9034/how-to-change-the-default-governor#9048)
+to set 'performance' scaling mode permanently see under "Gotcha..." [here](https://raspberrypi.stackexchange.com/questions/9034/how-to-change-the-default-governor#9048)
 
 notes
 ==
@@ -214,3 +212,4 @@ additional information. this applies to both the scide and lite versions above.
 * usb soundcards i’ve tried include the cheap blue 3D sound (C-Media Electronics, Inc. Audio Adapter (Planet UP-100, Genius G-Talk)) and the aureon dual usb (TerraTec Electronic GmbH Aureon Dual USB). there are also some [audio codec modules](http://www.fredrikolofsson.com/f0blog/?q=node/656) that work.
 * to avoid sd card corruption one should always shut down the system properly and not just pull out the 5v power. when running headless you can either ssh in and type `sudo halt -p`, use a gpio pin with a button + python script, or set up an osc command from within sc that turns off the rpi. see [here](https://github.com/blacksound/VTM/wiki/Raspberry-Pi-Instructions#shutdown-for-raspberry-pi)
 * for the older Raspbian Jessie system use a [previous](https://github.com/supercollider/supercollider.github.io/blob/1f578b5fa71e1acae0ce40d14bc0ef116062093d/development/building-raspberrypi.md) version of these instructions.
+* to quit sclang after starting via the commandline use `0.exit`
