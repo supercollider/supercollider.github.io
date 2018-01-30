@@ -43,7 +43,7 @@ step3 (compile and install supercollider)
 7. `make -j 4`  #use -j4 flag only for rpi3 (quadcore)
 8. `sudo make install`
 9. `sudo ldconfig`
-10. `mkdir -p .config/SuperCollider`
+10. `mkdir -p ~/.config/SuperCollider`
 
 step4 (set up jack)
 --
@@ -140,7 +140,7 @@ step4 (compile & install supercollider)
 8. `make -j 4`  #use -j4 flag only for rpi3 (quadcore)
 9. `sudo make install`
 10. `sudo ldconfig`
-11. `mkdir -p .config/SuperCollider`
+11. `mkdir -p ~/.config/SuperCollider`
 
 startup
 --
