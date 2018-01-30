@@ -36,7 +36,7 @@ step3 (compile and install supercollider)
 --
 1. `git clone --recursive git://github.com/supercollider/supercollider`
 2. `cd supercollider`
-3. `git checkout 3.9`
+3. `git checkout 3.9`  #use latest version 3.9.x on branch 3.9
 4. `git submodule init && git submodule update`
 5. `mkdir build && cd build`
 6. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSUPERNOVA=OFF -DNATIVE=ON -DSC_WII=ON -DSC_IDE=ON -DSC_QT=ON -DSC_ED=OFF -DSC_EL=OFF -DSC_VIM=ON ..`
@@ -127,7 +127,7 @@ step4 (compile & install supercollider)
 --
 1. `git clone --recursive git://github.com/supercollider/supercollider`
 2. `cd supercollider`
-3. `git checkout 3.9`
+3. `git checkout 3.9`  #use latest version 3.9.x on branch 3.9
 4. `git submodule init && git submodule update`
 5. `nano lang/LangSource/SC_TerminalClient.cpp`  #TEMP FIX for 100% sclang issue - find the first line and comment it out, add the 2nd right after
         
