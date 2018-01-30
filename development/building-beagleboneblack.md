@@ -72,7 +72,7 @@ step4 (compile & install supercollider)
 8. `make`
 9. `sudo make install`
 10. `sudo ldconfig`
-11. `mkdir -p .config/SuperCollider`
+11. `mkdir -p ~/.config/SuperCollider`
 
 startup
 --
