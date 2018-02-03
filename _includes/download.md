@@ -38,7 +38,7 @@
                 <h2>
                     Linux
                 </h2>
-                 <h4>Current Version</h4>
+                <h4>Current Version</h4>
                 <ul class="nodot">
                     <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.8.0/SuperCollider-3.8.0-Source-linux.tar.bz2">Linux complete source code</a>
