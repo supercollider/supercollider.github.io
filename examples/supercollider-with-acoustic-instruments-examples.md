@@ -12,7 +12,11 @@ Feel free to edit this page to add new pieces to it (you will need a github acco
 
 Composers are listed alphabetically by last name.
 
-####Mark Ballora
+
+
+Mark Ballora
+------
+
 **Singularity** (2004), flute and electronics
 
 [https://soundcloud.com/mark-ballora/singularity-for-flute-and-live](https://soundcloud.com/mark-ballora/singularity-for-flute-and-live)
@@ -20,9 +24,8 @@ Composers are listed alphabetically by last name.
 
 
 
-
-####Bo is burning
-**Electronic Music-Theatre Duo**
+Bo is burning - Electronic Music-Theatre Duo
+------
 
 A duo by [Sarah Jeffery](http://www.sarahjeffery.com) and [Felipe Ignacio Noriega](http://felipeignacio.info).
 
@@ -36,22 +39,26 @@ A short video with teasers from The Mill Song and Bo is Burning is available on 
 
 
 
+Chris Brown
+------
 
-####Chris Brown
 **Branches** (2001-5), piano and interactive computer
 
 [http://www.cbmuse.com/listen/index.html ](http://www.cbmuse.com/listen/index.html )
 
 
 
+Jeremy Van Buskirk
+------
 
-####Jeremy Van Buskirk
 **A Sigh Felt Across The Earth** (2014), alto saxophone and electronics
 
 [https://soundcloud.com/jeremyvanb/a-sigh-felt-across-the-earth](https://soundcloud.com/jeremyvanb/a-sigh-felt-across-the-earth)
 
 
-####Marko Ciciliani
+
+Marko Ciciliani
+------
 
 **Time Machine** (2013), for sensor-equipped bass-clarinet (SABRe), live-electronics and live-video
 
@@ -62,7 +69,9 @@ A short video with teasers from The Mill Song and Bo is Burning is available on 
 [http://www.ciciliani.com/](http://www.ciciliani.com/)
 
 
-####Nick Collins
+
+Nick Collins
+------
 
 **Onto Panic** Core (2009-2013), piano and computer concerto
 
@@ -86,7 +95,10 @@ Info on the above and more here:
 
 [http://composerprogrammer.com/music.html](http://composerprogrammer.com/music.html)
 
-####John Drumheller
+
+
+John Drumheller
+------
 
 **The View From Dead Horse Point**, solo viola and electronics
 
@@ -98,8 +110,8 @@ Info on the above and more here:
 
 
 
-
-####Eli Fieldsteel
+Eli Fieldsteel
+------
 
 **"Fractus" series**, for solo instrument and SuperCollider (I: trumpet; III: flute; IV: trombone)
 
@@ -113,8 +125,8 @@ Performance of Fractus III (flute):
 
 
 
-
-####Krzysztof Gawlas
+Krzysztof Gawlas
+------
 
 **Strings in the Clouds**, piano and electronics
 
@@ -126,17 +138,15 @@ Performance of Fractus III (flute):
 
 
 
-
-####Kosmas Giannoutakis
+Kosmas Giannoutakis
+------
 
 **Metabionta** (2012), acoustic guitar and tape
 
 
 
-
-
-
-####Rael Gimenes
+Rael Gimenes
+------
 
 **Mutazione** (2008) for Acoustic Guitar and Live-Electronics
 
@@ -152,16 +162,18 @@ recording: [https://soundcloud.com/rael-gimenes-toffolo/traverser-la-r-seau](htt
 
 
 
+David Stephen Grant
+------
 
-####David Stephen Grant
 **Bånsull (lullaby)** (2014), viola and electronics
 
 [http://www.davidgrant.no](http://www.davidgrant.no)
 
 
 
+H. James Harkins
+------
 
-####H. James Harkins
 **You are already on the far shore** (2009), solo violin and real-time SuperCollider
 
 **Shangha Flower**, xiao flute and computer
@@ -169,7 +181,10 @@ recording: [https://soundcloud.com/rael-gimenes-toffolo/traverser-la-r-seau](htt
 [http://www.dewdrop-world.net/audio/index.php](http://www.dewdrop-world.net/audio/index.php)
 
 
-####Elliot Kermit-Canfield
+
+Elliot Kermit-Canfield
+------
+
 **Koan for Cello and Live Electronics** (2013), solo cello and live SuperCollider processing
 
 [https://www.youtube.com/watch?v=Ye-zLa1vmJo#t=25m45s](https://www.youtube.com/watch?v=Ye-zLa1vmJo#t=25m45s)
@@ -178,12 +193,18 @@ recording: [https://soundcloud.com/rael-gimenes-toffolo/traverser-la-r-seau](htt
 
 [https://soundcloud.com/elforr/nono](https://soundcloud.com/elforr/nono)
 
-####Derek Kwan
+
+
+Derek Kwan
+------
+
 **shoebox memories** (2014), kalimba and SuperCollider
 [http://youtu.be/vKdRV97tpkc](http://youtu.be/vKdRV97tpkc)
 
 
-####Stelios Manousakis
+
+Stelios Manousakis
+------
 
 **What is the current that makes machinery** (2013), female voice and ambisonic live electronics (text by Gertrude Stein)
 
@@ -199,22 +220,25 @@ recording: [https://soundcloud.com/rael-gimenes-toffolo/traverser-la-r-seau](htt
 
 
 
+Daniel Mayer
+------
 
-####Daniel Mayer
 Several pieces for solo instrument and tape made with SuperCollider: [http://daniel-mayer.at/werkliste_en.htm](http://daniel-mayer.at/werkliste_en.htm)
 
 
 
+Fabrice Mogini
+------
 
-####Fabrice Mogini
 **Choices** (1999), flute and live-electronics (with SuperCollider 2)
 
 [http://fabricemogini.com/Choices.html](http://fabricemogini.com/Choices.html)
 
 
 
+Ted Moore
+------
 
-####Ted Moore
 **Eclipse** (2014), improvising instrumentalist and electronics (audiovisual)
 
 [http://www.tedmooremusic.com/eclipse/](http://www.tedmooremusic.com/eclipse/)
@@ -229,7 +253,9 @@ Several pieces for solo instrument and tape made with SuperCollider: [http://dan
 
 
 
-####Michael Musick
+Michael Musick
+------
+
 **Late Night Nap** (2007), tuba and electronics
 
 [http://michaelmusick.bandcamp.com/track/a-late-night-nap](http://michaelmusick.bandcamp.com/track/a-late-night-nap)
@@ -238,20 +264,19 @@ Several pieces for solo instrument and tape made with SuperCollider: [http://dan
 
 
 
+### Off<>zz
 
-####Off<>zz
-**Piano + sc**
+Off<>zz is a laptop and piano/toypiano duo ([Anne Veinberg](http://www.anneveinberg.com) and [Felipe Ignacio Noriega](http://felipeignacio.info)) exploring electro-acoustic music via improvisation, live coding, and transformation of their classical-music influences into a more collective experience. They regularly present new work via their SoundCloud: [https://soundcloud.com/offzz](https://soundcloud.com/offzz)
 
-Off<>zz is a laptop and piano/toypiano duo ([Anne Veinberg](http://www.anneveinberg.com) and [Felipe Ignacio Noriega] (http://felipeignacio.info) ) exploring electro-acoustic music via improvisation, live coding, and transformation of their classical-music influences into a more collective experience. They regularly present new work via their SoundCloud: [https://soundcloud.com/offzz](https://soundcloud.com/offzz)
-
-A 20 min. video of their performance on the Sonic Arts Festival 2014 (Bilbao) is available on [youtube] (https://youtu.be/XK19gan3IoA).
+A 20 min. video of their performance on the Sonic Arts Festival 2014 (Bilbao) is available on [youtube](https://youtu.be/XK19gan3IoA).
 
 [Off<>zz website](http://felipeignacio.info/offzz/)
 
 
 
+Fredrik Olofsson
+------
 
-####Fredrik Olofsson
 **redeem**, french horn and live SuperCollider (plus graphics in Processing), commissioned by Sören Hermansson.
 
 [http://www.fredrikolofsson.com/pages/music.html#redeem](http://www.fredrikolofsson.com/pages/music.html#redeem)
@@ -262,7 +287,9 @@ A 20 min. video of their performance on the Sonic Arts Festival 2014 (Bilbao) is
 
 
 
-####Joo Won Park
+Joo Won Park
+------
+
 **Toccata** (2009), for found objects and computer
 
 [www.joowonpark.net/Toccata.pdf](www.joowonpark.net/Toccata.pdf)
@@ -275,9 +302,9 @@ A 20 min. video of their performance on the Sonic Arts Festival 2014 (Bilbao) is
 
 
 
+Joshua Parmenter
+------
 
-
-####Joshua Parmenter
 **d'Amore** (2011), violin and live electronics
 
 **Contracantus I** (2007-9), flute and / or recorder and live electronics
@@ -292,8 +319,9 @@ More info on these and other pieces here: [http://www.realizedsound.net/josh/Mus
 
 
 
+Federico Reuben
+------
 
-####Federico Reuben
 **On Violence** (2009-2012), for piano, live elec­tron­ics, com­puter dis­play and sensors
 
 [http://www.federicoreuben.com/research/onviolence/](http://www.federicoreuben.com/research/onviolence/)
@@ -302,8 +330,8 @@ More info on these and other pieces here: [http://www.realizedsound.net/josh/Mus
 
 
 
-
-####Egor Sanin
+Egor Sanin
+------
 
 **Processed Poetry**, voice and SuperCollider
 
@@ -311,7 +339,8 @@ More info on these and other pieces here: [http://www.realizedsound.net/josh/Mus
 
 
 
-####Wouter Snoei
+Wouter Snoei
+------
 
 **The Game** (2011), for Yamaha Disklavier and computer (interactive piece, midi only)
 
@@ -331,9 +360,9 @@ More info on these and other pieces here: [http://www.realizedsound.net/josh/Mus
 
 
 
+Carl Testa
+------
 
-
-####Carl Testa
 **Sⁿ**, album for prepared electric guitar and SuperCollider
 
 [http://sn.carltesta.net/](http://sn.carltesta.net/)
@@ -348,9 +377,9 @@ More info on these and other pieces here: [http://www.realizedsound.net/josh/Mus
 
 
 
+Rachel Devorah Trapp
+------
 
-
-####Rachel Devorah Trapp
 **Alloy** (2013), horn and electronics
 
 [http://racheldevorahtrapp.com/works/](http://racheldevorahtrapp.com/works/)
@@ -361,8 +390,8 @@ More info on these and other pieces here: [http://www.realizedsound.net/josh/Mus
 
 
 
-
-####Scott Worthington
+Scott Worthington
+------
 
 **Reflections** (2012), double bass and electronics
 
@@ -380,8 +409,9 @@ More info on these and other pieces here: [http://www.realizedsound.net/josh/Mus
 
 
 
+Jonathan Zorn
+------
 
-####Jonathan Zorn
 **violin + sc**
 
 [http://jonathanzorn-net.weirdweatherproductions.com/index.php?/interactive/violin-and-computer-3/](http://jonathanzorn-net.weirdweatherproductions.com/index.php?/interactive/violin-and-computer-3/)
@@ -395,7 +425,6 @@ More info on these and other pieces here: [http://www.realizedsound.net/josh/Mus
 [http://www.ubu.com/sound/zorn.html](http://www.ubu.com/sound/zorn.html)
 
 
+
 ---
-
-
 *To add a piece to this list, send the info to bruviaro at scu dot edu or feel free to edit the page yourself.*

@@ -37,13 +37,12 @@ List all here. Feel free to edit on github and add yourself.
 
 ## video tutorials
 
-* <http://www.youtube.com/playlist?list=PLPYzvS8A_rTaNDweXe6PX4CXSGq4iEWYC>
+* [SuperCollider Tutorials by Eli Fieldsteel](http://www.youtube.com/playlist?list=PLPYzvS8A_rTaNDweXe6PX4CXSGq4iEWYC)
 * <http://www.funprogramming.org>
 
 ## other resources
 
 * <http://sccode.org>
 * <http://sctweets.tumblr.com>
-* <http://supercollider.tsd.net.au>
 * <http://electro-music.com/forum/forum-139.html>
 * <http://scplanet.tuxfamily.org/>

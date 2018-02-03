@@ -5,7 +5,7 @@ category: community
 sort_order: 1
 ---
 
-[Mailing list info at www.birmingham.ac.uk/facilities/BEAST/research/supercollider/mailinglist.aspx](http://www.birmingham.ac.uk/facilities/BEAST/research/supercollider/mailinglist.aspx)
+Mailing list info at [www.birmingham.ac.uk/facilities/BEAST/research/supercollider/mailinglist.aspx](http://www.birmingham.ac.uk/facilities/BEAST/research/supercollider/mailinglist.aspx)
 
 
 ## sc-users
@@ -19,9 +19,9 @@ The sc-users mailing list is very active and helpful.
 </ul>
 
 
-## sc-devel
+## sc-dev
 
-The sc-devel mailing list provides the main forum for discussion about SuperCollider development.
+The sc-dev mailing list provides the main forum for discussion about SuperCollider development.
 
 <ul>
 	<li><a href="http://www.listarc.bham.ac.uk/marchives/sc-dev/">browse archives</a></li>
