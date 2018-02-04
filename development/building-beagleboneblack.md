@@ -32,7 +32,7 @@ step2 (update the system, install required libraries)
 5. `sudo apt-get update`
 6. `sudo apt-get upgrade`
 7. `sudo apt-get dist-upgrade`
-8. `sudo apt-get install libsamplerate0-dev libsndfile1-dev libasound2-dev libavahi-client-dev libicu-dev libreadline-dev libfftw3-dev libxt-dev libudev-dev libcwiid-dev cmake git build-essential python-dev alsa-utils cpufrequtils`
+8. `sudo apt-get install libsamplerate0-dev libsndfile1-dev libasound2-dev libavahi-client-dev libreadline6-dev libfftw3-dev libxt-dev libudev-dev libcwiid-dev cmake git build-essential python-dev alsa-utils cpufrequtils`
 
 step3 (compile & install jackd (no d-bus) )
 --
@@ -60,7 +60,7 @@ step4 (compile & install supercollider)
 --
 1. `git clone --recursive git://github.com/supercollider/supercollider`
 2. `cd supercollider`
-3. `git checkout 3.9`
+3. `git checkout 3.9`  #use latest version 3.9.x on branch 3.9
 4. `git submodule init && git submodule update`
 5. `nano lang/LangSource/SC_TerminalClient.cpp`  #TEMP FIX for 100% sclang issue - find the first line and comment it out, add the 2nd right after
         
@@ -72,8 +72,7 @@ step4 (compile & install supercollider)
 8. `make`
 9. `sudo make install`
 10. `sudo ldconfig`
-11. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/Common/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/GUI`
-12. `sudo mv /usr/local/share/SuperCollider/SCClassLibrary/JITLib/GUI /usr/local/share/SuperCollider/SCClassLibrary/scide_scqt/JITLibGUI`
+11. `mkdir -p ~/.config/SuperCollider`
 
 startup
 --
@@ -102,7 +101,7 @@ how to automatically run supercollider code at system boot.
 1. `nano ~/autostart.sh`  #and add the following lines (ctrl+o, ctrl+x to save and exit)...
         
         #!/bin/bash
-        PATH=$PATH:/usr/local/bin
+        PATH=/usr/local/bin:$PATH
         sleep 5
         sclang mycode.scd
         
@@ -143,3 +142,4 @@ additional information.
 * for lower latency, set a lower blocksize for jackd. try for example `-p512` or `-p128`. tune downwards until you get dropouts and xruns (also watch cpu%).
 * usb soundcards i’ve tried include the cheap blue 3D sound (C-Media Electronics, Inc. Audio Adapter (Planet UP-100, Genius G-Talk)) and the aureon dual usb (TerraTec Electronic GmbH Aureon Dual USB).
 * to avoid sd card corruption one should always shut down the system properly and not just pull out the 5v power. when running headless you can either ssh in and type `sudo halt -p`, use a gpio pin with a button + python script, or set up an osc command from within sc that turns off the bbb. see [here](https://github.com/blacksound/VTM/wiki/Raspberry-Pi-Instructions#shutdown-for-raspberry-pi)
+* to quit sclang after starting via the commandline use `0.exit`
