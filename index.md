@@ -100,8 +100,6 @@ Ppar([
 )
 {% endhighlight %}
 
-{% include screenshots.md %}
-
 <ul>
   <li><a href="/examples/supercollider-code-examples.html">More examples</a></li>
   <li><a href="/examples/screenshots.html">Screen shots</a></li>
