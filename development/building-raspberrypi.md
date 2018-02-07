@@ -7,7 +7,7 @@ sort_order: 3
 
 Compiling SCIDE natively on Raspberry Pi Raspbian
 ==
-note: this is for building the full version of supercollider 3.9 including the ide under **raspbian stretch with desktop**. it is the easiest way to compile sc and this version can also run headless. see below for building non-qt, non scide under **raspbian stretch lite** (more advanced).
+note: this is for building the latest version of supercollider including qt gui components and the ide under **raspbian stretch with desktop**. it is the easiest way to compile sc and this version can also run headless. see below for building non-qt, non scide under **raspbian stretch lite** (more advanced).
 
 requirements
 --
@@ -77,6 +77,8 @@ if you want to ssh in and start this sc version headless, run the following comm
 Compiling SC natively on Raspberry Pi Raspbian Lite
 ==
 note: this section is for more advanced users that want to compile and run supercollider (sclang+scsynth) under **raspbian stretch lite**. it does not include qt nor the ide.
+
+the instructions here are meant for supercollider version 3.9.1 and higher; for instructions on building previous versions please see older versions of this page or ask on the mailing list.
 
 requirements
 --
