@@ -9,6 +9,8 @@ Compiling SC natively on Beaglebone Black Debian Stretch
 ==
 note: this is for compiling and running supercollider 3.9 (sclang+scsynth) including the sc3-plugins under **debian stretch**. it does not include qt nor the ide. for compiling the full scide adapt the instructions found [here](http://supercollider.github.io/development/building-raspberrypi).
 
+the instructions here are meant for SuperCollider version 3.9.1 and higher; for instructions on building previous versions please see older versions of this page or ask on the mailing list.
+
 requirements
 --
 * beaglebone black (or any of the variants green, blue, industrial, pocket...)
