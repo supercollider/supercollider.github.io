@@ -102,7 +102,6 @@ Ppar([
 
 <ul>
   <li><a href="/examples/supercollider-code-examples.html">More examples</a></li>
-  <li><a href="/examples/screenshots.html">Screen shots</a></li>
   <li><a href="/examples/audio-examples.html">Music</a></li>
 </ul>
 
