@@ -22,15 +22,13 @@ SuperCollider was developed by James McCartney and originally released in 1996. 
 - <a href="/download.html">Download</a>
 - <a href="/examples/audio-examples.html">Listen to some sounds</a>
 
-
-<div class="row-fluid" class="main-page-examples">
-
 ## Examples
 
- - <a href="/examples/supercollider-code-examples.html">More examples</a>
- - <a href="/examples/screenshots.html">Screen shots</a>
- - <a href="/examples/audio-examples.html">Music</a>
+- [Audio Examples](/examples/audio-examples.html)
+- [Code examples](/examples/supercollider-code-examples.html)
+- [Screen shots](a href="/examples/screenshots.html)
 
+<div class="row-fluid" class="main-page-examples">
 
 {% highlight javascript %}
 // modulate a sine frequency and a noise amplitude with another sine
