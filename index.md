@@ -233,19 +233,6 @@ Ppar([
       <li><a href="https://lists.skylined.org/mailman/listinfo/supercollider">SuperCollider Slovenija mailing list</a></li>
     </ul>
   </div>
-
-  <div class="span6">
-    <h4>Other scsynth clients</h4>
-    <p>SuperCollider language is the reference spec, but there are many other client languages that use the scsynth server.</p>
-    <ul>
-    <li><a href="http://overtone.github.io/">Overtone</a> (Clojure)</li>
-    <li><a href="http://www.sciss.de/scalaCollider/">Scalacollider</a> (Scala)</li>
-    <li><a href="https://github.com/maca/scruby">scruby</a> (Ruby)</li>
-    <li><a href="http://hackage.haskell.org/package/hsc3">hsc3</a>,<a href="https://github.com/kaoskorobase/hsc3-server">hsc3-server</a>,<a href="https://hackage.haskell.org/package/vivid">vivid</a> (Haskell)</li>
-    <li><a href="https://github.com/crucialfelix/supercolliderjs">supercollider.js</a> (JavaScript)</li>
-    <li><a href="https://github.com/sonoro1234/Lua2SC">Lua2SC</a> (lua)</li>
-    </ul>
-  </div>
 </div>
 
 {% comment %}
