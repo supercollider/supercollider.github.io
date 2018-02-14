@@ -19,10 +19,6 @@ group: index
 
     <p>SuperCollider was developed by James McCartney and originally released in 1996. In 2002, he generously released it as free software under the GNU General Public License. It is now maintained and developed by an active and enthusiastic community.</p>
 
-    <ul class="callstoaction">
-        <li><a href="/download.html">Download it now</a></li>
-        <li><a href="/examples/audio-examples.html">Listen to some sounds</a></li>
-    </ul>
 </div>
 
 
@@ -102,7 +98,6 @@ Ppar([
 
 <ul>
   <li><a href="/examples/supercollider-code-examples.html">More examples</a></li>
-  <li><a href="/examples/audio-examples.html">Music</a></li>
 </ul>
 
 </div>
@@ -215,7 +210,6 @@ Ppar([
       <li><a href="http://sccode.org/">sccode.org</a> — collaborative coding</li>
       <li><a href="/community/blogs-and-sites.html">Blogs and sites</a></li>
       <li><a href="https://twitter.com/search?q=supercollider+play">SC tweets - tunes under 140 chars</a></li>
-      <li><a href="https://soundcloud.com/groups/supercollider">Soundcloud</a></li>
       <li><a href="http://rosettacode.org/wiki/Category:SuperCollider">Rosetta Code</a></li>
       <li> Facebook Groups
         <ul>
@@ -228,8 +222,6 @@ Ppar([
         </ul>
       </li>
       <li><a href="http://flickr.com/groups/supercollider/pool/">flickr</a></li>
-      <li><a href="http://www.vimeo.com/tag:supercollider">Vimeo</a></li>
-      <li><a href="http://www.youtube.com/view_play_list?p=B813D0BDF50705D9">YouTube</a></li>
       <li><a href="https://lists.skylined.org/mailman/listinfo/supercollider">SuperCollider Slovenija mailing list</a></li>
     </ul>
   </div>
