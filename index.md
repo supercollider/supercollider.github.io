@@ -203,7 +203,6 @@ The community is very active and helpful, the center of activity.  Please do dro
 - [Collaborative coding](http://sccode.org/">sccode.org
 - [Blogs and sites](/community/blogs-and-sites)
 - [SC tweets - tunes under 140 chars](https://twitter.com/search?q=supercollider+play)
-- [Soundcloud](https://soundcloud.com/groups/supercollider)
 - [Rosetta Code](http://rosettacode.org/wiki/Category:SuperCollider")
 -  Facebook Groups
     - [SuperCollider (english-spoken)](https://www.facebook.com/groups/supercollider/")
