@@ -173,7 +173,7 @@ The community is very active and helpful, the center of activity.  Please do dro
 ## Tutorials
 
 - [Getting started](http://doc.sccode.org/Tutorials/Getting-Started/00-Getting-Started-With-SC)
-- [Tutorials list](/tutorials/">
+- [Tutorials list](/tutorials/)
 
 ## Resources</h4>
 
