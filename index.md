@@ -8,7 +8,7 @@ group: index
 SuperCollider is a platform for audio synthesis and algorithmic composition, used by musicians, artists, and researchers working with sound. It is free and open source software available for Windows, macOS, and Linux.
 
 SuperCollider features three major components:
-      
+
 - **scsynth**, a real-time audio server, forms the core of the platform. It features 400+ unit generators ("UGens") for analysis, synthesis, and processing. Its granularity allows the fluid combination of many known and unknown audio techniques, moving between additive and subtractive synthesis, FM, granular synthesis, FFT, and physical modelling. You can write your own UGens in C++, and users have already contributed several hundred more to the sc3-plugins repository.
 
 - **sclang**, an interpreted programming language. It is focused on sound, but not limited to any specific domain. sclang controls scsynth via Open Sound Control. You can use it for algorithmic composition and sequencing, finding new sound synthesis methods, connecting your app to external hardware including MIDI controllers, network music, writing GUIs and visual displays, or for your daily programming experiments. It has a stock of user-contributed extensions called Quarks.
@@ -19,16 +19,16 @@ SuperCollider features three major components:
 SuperCollider was developed by James McCartney and originally released in 1996. In 2002, he generously released it as free software under the GNU General Public License. It is now maintained and developed by an active and enthusiastic community.
 
 
-- <a href="/download.html">Download</a>
-- <a href="/examples/audio-examples.html">Listen to some sounds</a>
+- [Download](/download)
+- [Listen to some sounds](/examples/audio-examples)
 
 ## Examples
 
 - [Audio Examples](/examples/audio-examples.html)
 - [Code examples](/examples/supercollider-code-examples.html)
-- [Screen shots](a href="/examples/screenshots.html)
+- [Screen shots](/examples/screenshots.html)
 
-<div class="row-fluid" class="main-page-examples">
+<div class="row-fluid" class=main-page-examples">
 
 {% highlight javascript %}
 // modulate a sine frequency and a noise amplitude with another sine
@@ -128,23 +128,23 @@ Ppar([
 
 
 ## Server - scsynth
-      
+
   - High quality accurate and efficient audio engine
   - Fully adjustable sample rate (192k+) and block size
   - 32 bit float signal chain
   - Sampling buffers use 64 bit float
   - Fast and fluid control rate modulation
-  - <a href="http://doc.sccode.org/Reference/Server-Command-Reference.html">Communicates via Open Sound Control</a> - TCP/UDP network communication
-  - <a href="http://doc.sccode.org/Browse.html#UGens">Hundreds of UGens (unit generators)</a>
+  - [Communicates via Open Sound Control](http://doc.sccode.org/Reference/Server-Command-Reference) - TCP/UDP network communication
+  - [Hundreds of UGens (unit generators)](http://doc.sccode.org/Browse.html#UGens")
   - Simple ANSI C plugin API
   - Hundreds more community contributed UGens
-  - Supports any number of input and output channels, ideal for <a href="http://www.beast.bham.ac.uk/">massively multichannel setups</a>
+  - Supports any number of input and output channels, ideal for [large multichannel setups](http://www.beast.bham.ac.uk/)
   - Multi-processor support using the Supernova server implementation
 
 
 
 ## IDE / Application
-  
+
 - Qt based cross platform Integrated Development Environment
 - REPL for "select and call" interactive programming
 - Qt powered GUI framework for building rich interfaces
@@ -155,39 +155,42 @@ Ppar([
 ## Mailing list
 The community is very active and helpful, the center of activity.  Please do drop by.
 
-<a href="http://www.birmingham.ac.uk/facilities/BEAST/research/supercollider/mailinglist.aspx">mailing list info</a>
+- [mailing lists](http://www.birmingham.ac.uk/facilities/BEAST/research/supercollider/mailinglist.aspx")
+- [Join us on Slack](https://join.slack.com/t/scsynth/shared_invite/enQtMjk0MzA0NzgyOTkyLTYwNjdmYjFmNWY4NGIyZWM2YWY1NzZhMjM3MWQ0MmEwZTZkZDExOTRjMWI2NjBiMGQ1NTg1NDQyZjExNWFjZGM")
 
-<a href="https://join.slack.com/t/scsynth/shared_invite/enQtMjk0MzA0NzgyOTkyLTYwNjdmYjFmNWY4NGIyZWM2YWY1NzZhMjM3MWQ0MmEwZTZkZDExOTRjMWI2NjBiMGQ1NTg1NDQyZjExNWFjZGM">Join us on Slack</a></p>
 
-## Contributing (see: <a href="/contributing/index.html">details</a>
+## Contributing (see: [details](/contributing/index))
 
-- <a href="https://github.com/supercollider/supercollider/issues">Github issue tracker</a>
-- <a href="/contributing/index.html">Contribution guidelines</a>
-- <a href="/community/code-of-conduct.html">Code of Conduct</a>
+- [Github issue tracker](https://github.com/supercollider/supercollider/issues")
+- [Contribution guidelines](/contributing/index)
+- [Code of Conduct](/community/code-of-conduct)Code of Conduct
 
 
 ## Developers
 
-<a href="/development/repository.html">Source Code</a></h4>
+[Source Code](/development/repository)Source Code</a>
 
 ## Tutorials
 
-- <a href="http://doc.sccode.org/Tutorials/Getting-Started/00-Getting-Started-With-SC.html">Getting started</a>
-- <a href="/tutorials/">Tutorials list</a>
+- [Getting started](http://doc.sccode.org/Tutorials/Getting-Started/00-Getting-Started-With-SC)
+- [Tutorials list](/tutorials/">
 
 ## Resources</h4>
 
-- <a href="/pages.html">Wiki</a>
-  - <a href="http://supercollider.sourceforge.net/wiki/">(old) wiki</a>
-- <a href="http://swiki.hfbk-hamburg.de/MusicTechnology/6">(really old) swiki</a>
+- [Wiki](/pages)
+- [(old) wiki](http://supercollider.sourceforge.net/wiki/)
+- [(really old) swiki](http://swiki.hfbk-hamburg.de/MusicTechnology/6)
 
 
 ## News and announcements
 
-<p>{% for post in site.posts limit: 7 %}
+<p>
+{% for post in site.posts limit: 7 %}
            <h6><a href="{{ post.url }}">{{ post.title }}</a></h6>
          {% endfor %}
-        <a href="/archive.html">more...</a></p>
+        <a href="/archive.html">more...</a>
+
+</p>
 
 
 ## The SuperCollider book on MIT Press
@@ -197,35 +200,35 @@ The community is very active and helpful, the center of activity.  Please do dro
 
 ## Online
 
-- <a href="http://sccode.org/">sccode.org</a> — collaborative coding
-- <a href="/community/blogs-and-sites.html">Blogs and sites</a>
-- <a href="https://twitter.com/search?q=supercollider+play">SC tweets - tunes under 140 chars</a>
-- <a href="https://soundcloud.com/groups/supercollider">Soundcloud</a>
-- <a href="http://rosettacode.org/wiki/Category:SuperCollider">Rosetta Code</a>
+- [Collaborative coding](http://sccode.org/">sccode.org
+- [Blogs and sites](/community/blogs-and-sites)
+- [SC tweets - tunes under 140 chars](https://twitter.com/search?q=supercollider+play)
+- [Soundcloud](https://soundcloud.com/groups/supercollider)
+- [Rosetta Code](http://rosettacode.org/wiki/Category:SuperCollider")
 -  Facebook Groups
-    - <a href="https://www.facebook.com/groups/supercollider/">SuperCollider (english-spoken)</a>
-    - <a href="https://www.facebook.com/groups/653670444775977/">SC Women</a>
-    - <a href="https://www.facebook.com/groups/770853403048489/">SuperCollider Italia</a>
-    - <a href="https://www.facebook.com/groups/109527502188/">SuperColliderMX</a>
-    - <a href="https://www.facebook.com/groups/630981953617449/">SuperColliderBR</a>
-    - <a href="https://www.facebook.com/groups/336468226443169/">SuperCollider Slovenija</a>
-
-      
-- <a href="http://flickr.com/groups/supercollider/pool/">flickr</a>
-- <a href="http://www.vimeo.com/tag:supercollider">Vimeo</a>
-- <a href="http://www.youtube.com/view_play_list?p=B813D0BDF50705D9">YouTube</a>
-- <a href="https://lists.skylined.org/mailman/listinfo/supercollider">SuperCollider Slovenija mailing list</a>
+    - [SuperCollider (english-spoken)](https://www.facebook.com/groups/supercollider/")
+    - [SC Women](https://www.facebook.com/groups/653670444775977/)
+    - [SuperCollider Italia](https://www.facebook.com/groups/770853403048489/)
+    - [SuperCollider Mexico](https://www.facebook.com/groups/109527502188/)
+    - [SuperColliderBR](https://www.facebook.com/groups/630981953617449/)
+    - [SuperCollider Slovenija](https://www.facebook.com/groups/336468226443169/)
+- [SuperCollider Slovenija mailing list](https://lists.skylined.org/mailman/listinfo/supercollider"></a>
+- [flickr](http://flickr.com/groups/supercollider/pool/)
+- [Vimeo](http://www.vimeo.com/tag:supercollider)
+- [YouTube](http://www.youtube.com/view_play_list?p=B813D0BDF50705D9)
 
 ## Other scsynth clients
 
 SuperCollider language is the reference spec, but there are many other client languages that use the scsynth server.
 
-- <a href="http://overtone.github.io/">Overtone</a> (Clojure)
-- <a href="http://www.sciss.de/scalaCollider/">Scalacollider</a> (Scala)
-- <a href="https://github.com/maca/scruby">scruby</a> (Ruby)
-- <a href="http://hackage.haskell.org/package/hsc3">hsc3</a>,<a href="https://github.com/kaoskorobase/hsc3-server">hsc3-server</a>,<a href="https://hackage.haskell.org/package/vivid">vivid</a> (Haskell)
-- <a href="https://github.com/crucialfelix/supercolliderjs">supercollider.js</a> (JavaScript)
-- <a href="https://github.com/sonoro1234/Lua2SC">Lua2SC</a> (lua)
+- [Overtone](http://overtone.github.io/) (Clojure)
+- [Scala](http://www.sciss.de/scalaCollider/) (Scala)
+- [Ruby](https://github.com/maca/scruby) (Ruby)
+- [hsc3](http://hackage.haskell.org/package/hsc3) (Haskell)
+- [hsc3-server](https://github.com/kaoskorobase/hsc3-server) (Haskell)
+- [vivid](https://hackage.haskell.org/package/vivid) (Haskell)
+- [supercollider.js](https://github.com/crucialfelix/supercolliderjs) (JavaScript)
+- [Lua2SC](https://github.com/sonoro1234/Lua2SC) (lua)
 
 
 {% comment %}
