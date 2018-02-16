@@ -212,7 +212,6 @@ The community is very active and helpful, the center of activity.  Please do dro
     - [SuperColliderBR](https://www.facebook.com/groups/630981953617449/)
     - [SuperCollider Slovenija](https://www.facebook.com/groups/336468226443169/)
 - [SuperCollider Slovenija mailing list](https://lists.skylined.org/mailman/listinfo/supercollider"></a>
-- [flickr](http://flickr.com/groups/supercollider/pool/)
 - [Vimeo](http://www.vimeo.com/tag:supercollider)
 - [YouTube](http://www.youtube.com/view_play_list?p=B813D0BDF50705D9)
 
