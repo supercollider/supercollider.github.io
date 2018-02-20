@@ -211,20 +211,8 @@ The community is very active and helpful, the center of activity.  Please do dro
     - [SuperColliderBR](https://www.facebook.com/groups/630981953617449/)
     - [SuperCollider Slovenija](https://www.facebook.com/groups/336468226443169/)
 - [SuperCollider Slovenija mailing list](https://lists.skylined.org/mailman/listinfo/supercollider"></a>
-
-
-## Other scsynth clients
-
-SuperCollider language is the reference spec, but there are many other client languages that use the scsynth server.
-
-- [Overtone](http://overtone.github.io/) (Clojure)
-- [Scala](http://www.sciss.de/scalaCollider/) (Scala)
-- [Ruby](https://github.com/maca/scruby) (Ruby)
-- [hsc3](http://hackage.haskell.org/package/hsc3) (Haskell)
-- [hsc3-server](https://github.com/kaoskorobase/hsc3-server) (Haskell)
-- [vivid](https://hackage.haskell.org/package/vivid) (Haskell)
-- [supercollider.js](https://github.com/crucialfelix/supercolliderjs) (JavaScript)
-- [Lua2SC](https://github.com/sonoro1234/Lua2SC) (lua)
+- [Vimeo](http://www.vimeo.com/tag:supercollider)
+- [YouTube](http://www.youtube.com/view_play_list?p=B813D0BDF50705D9)
 
 
 {% comment %}
