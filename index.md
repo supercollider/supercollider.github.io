@@ -26,7 +26,6 @@ SuperCollider was developed by James McCartney and originally released in 1996. 
 
 - [Audio Examples](/examples/audio-examples.html)
 - [Code examples](/examples/supercollider-code-examples.html)
-- [Screen shots](/examples/screenshots.html)
 
 <div class="row-fluid" class=main-page-examples">
 
@@ -185,7 +184,7 @@ The community is very active and helpful, the center of activity.  Please do dro
 ## News and announcements
 
 <p>
-{% for post in site.posts limit: 7 %}
+{% for post in site.posts limit: 4 %}
            <h6><a href="{{ post.url }}">{{ post.title }}</a></h6>
          {% endfor %}
         <a href="/archive.html">more...</a>
@@ -212,8 +211,7 @@ The community is very active and helpful, the center of activity.  Please do dro
     - [SuperColliderBR](https://www.facebook.com/groups/630981953617449/)
     - [SuperCollider Slovenija](https://www.facebook.com/groups/336468226443169/)
 - [SuperCollider Slovenija mailing list](https://lists.skylined.org/mailman/listinfo/supercollider"></a>
-- [Vimeo](http://www.vimeo.com/tag:supercollider)
-- [YouTube](http://www.youtube.com/view_play_list?p=B813D0BDF50705D9)
+
 
 ## Other scsynth clients
 
