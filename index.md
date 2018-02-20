@@ -104,10 +104,10 @@ Ppar([
 
 
 
-## Features
+# Features
 
 
-# Language - sclang
+## Language - sclang
 
   - Single inheritance object-oriented and functional language
   - Similar to Smalltalk or Ruby with syntax similar to C or Javascript
@@ -150,6 +150,12 @@ Ppar([
 
 <div id="download">{% include download.md %}</div>
 
+
+## External Systems
+- [Systems that interface with SuperCollider](community/systems-interfacing-with-sc.md)
+
+
+# Community
 
 ## Mailing list
 The community is very active and helpful, the center of activity.  Please do drop by.
