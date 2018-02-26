@@ -174,7 +174,7 @@ The community is very active and helpful, the center of activity.  Please do dro
 
 #### Developers
 
-[Source Code](/development/repository)
+- [Source Code](/development/repository)
 
 #### Tutorials
 
