@@ -19,11 +19,9 @@ SuperCollider features three major components:
 SuperCollider was developed by James McCartney and originally released in 1996. In 2002, he generously released it as free software under the GNU General Public License. It is now maintained and developed by an active and enthusiastic community.
 
 
-- [Listen to some sounds](/examples/audio-examples)
 
 ### Examples
 
-- [Audio Examples](/examples/audio-examples.html)
 - [Code examples](/examples/supercollider-code-examples.html)
 
 <div class="row-fluid main-page-examples">
@@ -218,9 +216,6 @@ The community is very active and helpful, the center of activity.  Please do dro
     - [SuperColliderBR](https://www.facebook.com/groups/630981953617449/)
     - [SuperCollider Slovenija](https://www.facebook.com/groups/336468226443169/)
 - [SuperCollider Slovenija mailing list](https://lists.skylined.org/mailman/listinfo/supercollider)
-- [Vimeo](http://www.vimeo.com/tag:supercollider)
-- [YouTube](http://www.youtube.com/view_play_list?p=B813D0BDF50705D9)
-
 
 {% comment %}
 the cliche fork me ribbon
