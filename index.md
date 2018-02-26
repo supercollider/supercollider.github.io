@@ -173,14 +173,14 @@ The community is very active and helpful, the center of activity.  Please do dro
 
 ## Developers
 
-[Source Code](/development/repository)Source Code</a>
+[Source Code](/development/repository)Source Code
 
 ## Tutorials
 
 - [Getting started](http://doc.sccode.org/Tutorials/Getting-Started/00-Getting-Started-With-SC)
 - [Tutorials list](/tutorials/)
 
-## Resources</h4>
+## Resources
 
 - [Wiki](/pages)
 - [(old) wiki](http://supercollider.sourceforge.net/wiki/)
