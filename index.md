@@ -205,18 +205,18 @@ The community is very active and helpful, the center of activity.  Please do dro
 
 ## Online
 
-- [Collaborative coding](http://sccode.org/">sccode.org
+- [sccode.org](http://sccode.org/)
 - [Blogs and sites](/community/blogs-and-sites)
 - [SC tweets - tunes under 140 chars](https://twitter.com/search?q=supercollider+play)
-- [Rosetta Code](http://rosettacode.org/wiki/Category:SuperCollider")
+- [Rosetta Code](http://rosettacode.org/wiki/Category:SuperCollider)
 -  Facebook Groups
-    - [SuperCollider (english-spoken)](https://www.facebook.com/groups/supercollider/")
+    - [SuperCollider (english-spoken)](https://www.facebook.com/groups/supercollider/)
     - [SC Women](https://www.facebook.com/groups/653670444775977/)
     - [SuperCollider Italia](https://www.facebook.com/groups/770853403048489/)
     - [SuperCollider Mexico](https://www.facebook.com/groups/109527502188/)
     - [SuperColliderBR](https://www.facebook.com/groups/630981953617449/)
     - [SuperCollider Slovenija](https://www.facebook.com/groups/336468226443169/)
-- [SuperCollider Slovenija mailing list](https://lists.skylined.org/mailman/listinfo/supercollider"></a>
+- [SuperCollider Slovenija mailing list](https://lists.skylined.org/mailman/listinfo/supercollider)
 - [Vimeo](http://www.vimeo.com/tag:supercollider)
 - [YouTube](http://www.youtube.com/view_play_list?p=B813D0BDF50705D9)
 
