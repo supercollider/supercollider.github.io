@@ -164,7 +164,7 @@ The community is very active and helpful, the center of activity.  Please do dro
 - [Join us on Slack](https://join.slack.com/t/scsynth/shared_invite/enQtMjk0MzA0NzgyOTkyLTYwNjdmYjFmNWY4NGIyZWM2YWY1NzZhMjM3MWQ0MmEwZTZkZDExOTRjMWI2NjBiMGQ1NTg1NDQyZjExNWFjZGM)
 
 
-#### Contributing (see: [details](/contributing/index))
+#### Contributing
 
 - [Github issue tracker](https://github.com/supercollider/supercollider/issues)
 - [Contribution guidelines](/contributing/index)
