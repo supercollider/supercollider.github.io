@@ -200,9 +200,10 @@ The community is very active and helpful, the center of activity.  Please do dro
 
 
 #### The SuperCollider book on MIT Press
-    <a href="https://mitpress.mit.edu/books/supercollider-book"><img src="/images/MIT-supercollider-book.jpg" alt="MIT SuperCollider Book" width="60%" height="auto"/></a>
-    <blockquote>The SuperCollider Book is the essential reference to this powerful and flexible language, offering students and professionals a collection of tutorials, essays, and projects. With contributions from top academics, artists, and technologists that cover topics at levels from the introductory to the specialized, it is a valuable sourcebook both for beginners and for advanced users.</blockquote>
-    <a href="http://supercolliderbook.net/">supercolliderbook.net</a>
+
+<a href="https://mitpress.mit.edu/books/supercollider-book"><img src="/images/MIT-supercollider-book.jpg" alt="MIT SuperCollider Book" width="60%" height="auto"/></a>
+<blockquote>The SuperCollider Book is the essential reference to this powerful and flexible language, offering students and professionals a collection of tutorials, essays, and projects. With contributions from top academics, artists, and technologists that cover topics at levels from the introductory to the specialized, it is a valuable sourcebook both for beginners and for advanced users.</blockquote>
+<a href="http://supercolliderbook.net/">supercolliderbook.net</a>
 
 #### Online
 
