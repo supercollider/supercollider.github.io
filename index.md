@@ -148,11 +148,12 @@ Ppar([
 - REPL for "select and call" interactive programming
 - Qt powered GUI framework for building rich interfaces
 
-<div id="download">{% include download.md %}</div>
-
 
 #### External Systems
 - [Systems that interface with SuperCollider](community/systems-interfacing-with-sc.md)
+
+
+<div id="download">{% include download.md %}</div>
 
 
 ### Community
