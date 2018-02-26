@@ -134,7 +134,7 @@ Ppar([
   - Sampling buffers use 64 bit float
   - Fast and fluid control rate modulation
   - [Communicates via Open Sound Control](http://doc.sccode.org/Reference/Server-Command-Reference) - TCP/UDP network communication
-  - [Hundreds of UGens (unit generators)](http://doc.sccode.org/Browse.html#UGens")
+  - [Hundreds of UGens (unit generators)](http://doc.sccode.org/Browse.html#UGens)
   - Simple ANSI C plugin API
   - Hundreds more community contributed UGens
   - Supports any number of input and output channels, ideal for [large multichannel setups](http://www.beast.bham.ac.uk/)
@@ -160,20 +160,20 @@ Ppar([
 ## Mailing list
 The community is very active and helpful, the center of activity.  Please do drop by.
 
-- [mailing lists](http://www.birmingham.ac.uk/facilities/BEAST/research/supercollider/mailinglist.aspx")
-- [Join us on Slack](https://join.slack.com/t/scsynth/shared_invite/enQtMjk0MzA0NzgyOTkyLTYwNjdmYjFmNWY4NGIyZWM2YWY1NzZhMjM3MWQ0MmEwZTZkZDExOTRjMWI2NjBiMGQ1NTg1NDQyZjExNWFjZGM")
+- [mailing lists](http://www.birmingham.ac.uk/facilities/BEAST/research/supercollider/mailinglist.aspx)
+- [Join us on Slack](https://join.slack.com/t/scsynth/shared_invite/enQtMjk0MzA0NzgyOTkyLTYwNjdmYjFmNWY4NGIyZWM2YWY1NzZhMjM3MWQ0MmEwZTZkZDExOTRjMWI2NjBiMGQ1NTg1NDQyZjExNWFjZGM)
 
 
 ## Contributing (see: [details](/contributing/index))
 
-- [Github issue tracker](https://github.com/supercollider/supercollider/issues")
+- [Github issue tracker](https://github.com/supercollider/supercollider/issues)
 - [Contribution guidelines](/contributing/index)
-- [Code of Conduct](/community/code-of-conduct)Code of Conduct
+- [Code of Conduct](/community/code-of-conduct)
 
 
 ## Developers
 
-[Source Code](/development/repository)Source Code
+[Source Code](/development/repository)
 
 ## Tutorials
 
