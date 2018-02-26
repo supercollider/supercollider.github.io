@@ -19,13 +19,12 @@ SuperCollider features three major components:
 SuperCollider was developed by James McCartney and originally released in 1996. In 2002, he generously released it as free software under the GNU General Public License. It is now maintained and developed by an active and enthusiastic community.
 
 
-- [Download](/download)
 
-## Examples
+### Examples
 
 - [Code examples](/examples/supercollider-code-examples.html)
 
-<div class="row-fluid" class=main-page-examples">
+<div class="row-fluid main-page-examples">
 
 {% highlight javascript %}
 // modulate a sine frequency and a noise amplitude with another sine
@@ -102,10 +101,10 @@ Ppar([
 
 
 
-# Features
+### Features
 
 
-## Language - sclang
+#### Language - sclang
 
   - Single inheritance object-oriented and functional language
   - Similar to Smalltalk or Ruby with syntax similar to C or Javascript
@@ -124,7 +123,7 @@ Ppar([
 
 
 
-## Server - scsynth
+#### Server - scsynth
 
   - High quality accurate and efficient audio engine
   - Fully adjustable sample rate (192k+) and block size
@@ -132,7 +131,7 @@ Ppar([
   - Sampling buffers use 64 bit float
   - Fast and fluid control rate modulation
   - [Communicates via Open Sound Control](http://doc.sccode.org/Reference/Server-Command-Reference) - TCP/UDP network communication
-  - [Hundreds of UGens (unit generators)](http://doc.sccode.org/Browse.html#UGens")
+  - [Hundreds of UGens (unit generators)](http://doc.sccode.org/Browse.html#UGens)
   - Simple ANSI C plugin API
   - Hundreds more community contributed UGens
   - Supports any number of input and output channels, ideal for [large multichannel setups](http://www.beast.bham.ac.uk/)
@@ -140,52 +139,53 @@ Ppar([
 
 
 
-## IDE / Application
+#### IDE / Application
 
 - Qt based cross platform Integrated Development Environment
 - REPL for "select and call" interactive programming
 - Qt powered GUI framework for building rich interfaces
 
-<div id="download">{% include download.md %}</div>
 
-
-## External Systems
+#### External Systems
 - [Systems that interface with SuperCollider](community/systems-interfacing-with-sc.md)
 
 
-# Community
+<div id="download">{% include download.md %}</div>
 
-## Mailing list
+
+### Community
+
+#### Mailing list
 The community is very active and helpful, the center of activity.  Please do drop by.
 
-- [mailing lists](http://www.birmingham.ac.uk/facilities/BEAST/research/supercollider/mailinglist.aspx")
-- [Join us on Slack](https://join.slack.com/t/scsynth/shared_invite/enQtMjk0MzA0NzgyOTkyLTYwNjdmYjFmNWY4NGIyZWM2YWY1NzZhMjM3MWQ0MmEwZTZkZDExOTRjMWI2NjBiMGQ1NTg1NDQyZjExNWFjZGM")
+- [mailing lists](http://www.birmingham.ac.uk/facilities/BEAST/research/supercollider/mailinglist.aspx)
+- [Join us on Slack](https://join.slack.com/t/scsynth/shared_invite/enQtMjk0MzA0NzgyOTkyLTYwNjdmYjFmNWY4NGIyZWM2YWY1NzZhMjM3MWQ0MmEwZTZkZDExOTRjMWI2NjBiMGQ1NTg1NDQyZjExNWFjZGM)
 
 
-## Contributing (see: [details](/contributing/index))
+#### Contributing
 
-- [Github issue tracker](https://github.com/supercollider/supercollider/issues")
+- [Github issue tracker](https://github.com/supercollider/supercollider/issues)
 - [Contribution guidelines](/contributing/index)
-- [Code of Conduct](/community/code-of-conduct)Code of Conduct
+- [Code of Conduct](/community/code-of-conduct)
 
 
-## Developers
+#### Developers
 
-[Source Code](/development/repository)Source Code</a>
+- [Source Code](/development/repository)
 
-## Tutorials
+#### Tutorials
 
 - [Getting started](http://doc.sccode.org/Tutorials/Getting-Started/00-Getting-Started-With-SC)
 - [Tutorials list](/tutorials/)
 
-## Resources</h4>
+#### Resources
 
 - [Wiki](/pages)
 - [(old) wiki](http://supercollider.sourceforge.net/wiki/)
 - [(really old) swiki](http://swiki.hfbk-hamburg.de/MusicTechnology/6)
 
 
-## News and announcements
+#### News and announcements
 
 <p>
 {% for post in site.posts limit: 4 %}
@@ -196,26 +196,26 @@ The community is very active and helpful, the center of activity.  Please do dro
 </p>
 
 
-## The SuperCollider book on MIT Press
-    <a href="https://mitpress.mit.edu/books/supercollider-book"><img src="/images/MIT-supercollider-book.jpg" alt="MIT SuperCollider Book" width="60%" height="auto"/></a>
-    <blockquote>The SuperCollider Book is the essential reference to this powerful and flexible language, offering students and professionals a collection of tutorials, essays, and projects. With contributions from top academics, artists, and technologists that cover topics at levels from the introductory to the specialized, it is a valuable sourcebook both for beginners and for advanced users.</blockquote>
-    <a href="http://supercolliderbook.net/">supercolliderbook.net</a>
+#### The SuperCollider book on MIT Press
 
-## Online
+<a href="https://mitpress.mit.edu/books/supercollider-book"><img src="/images/MIT-supercollider-book.jpg" alt="MIT SuperCollider Book" width="35%" height="auto"/></a>
+<blockquote>The SuperCollider Book is the essential reference to this powerful and flexible language, offering students and professionals a collection of tutorials, essays, and projects. With contributions from top academics, artists, and technologists that cover topics at levels from the introductory to the specialized, it is a valuable sourcebook both for beginners and for advanced users.</blockquote>
+<a href="http://supercolliderbook.net/">supercolliderbook.net</a>
 
-- [Collaborative coding](http://sccode.org/">sccode.org
+#### Online
+
+- [sccode.org](http://sccode.org/)
 - [Blogs and sites](/community/blogs-and-sites)
 - [SC tweets - tunes under 140 chars](https://twitter.com/search?q=supercollider+play)
-- [Rosetta Code](http://rosettacode.org/wiki/Category:SuperCollider")
+- [Rosetta Code](http://rosettacode.org/wiki/Category:SuperCollider)
 -  Facebook Groups
-    - [SuperCollider (english-spoken)](https://www.facebook.com/groups/supercollider/")
+    - [SuperCollider (english-spoken)](https://www.facebook.com/groups/supercollider/)
     - [SC Women](https://www.facebook.com/groups/653670444775977/)
     - [SuperCollider Italia](https://www.facebook.com/groups/770853403048489/)
     - [SuperCollider Mexico](https://www.facebook.com/groups/109527502188/)
     - [SuperColliderBR](https://www.facebook.com/groups/630981953617449/)
     - [SuperCollider Slovenija](https://www.facebook.com/groups/336468226443169/)
-- [SuperCollider Slovenija mailing list](https://lists.skylined.org/mailman/listinfo/supercollider"></a>
-
+- [SuperCollider Slovenija mailing list](https://lists.skylined.org/mailman/listinfo/supercollider)
 
 {% comment %}
 the cliche fork me ribbon
