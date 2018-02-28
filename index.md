@@ -150,7 +150,8 @@ Ppar([
 - [Systems that interface with SuperCollider](community/systems-interfacing-with-sc.md)
 
 
-<div id="download">{% include download.md %}</div>
+### Download
+{% include download.md %}
 
 
 ### Community

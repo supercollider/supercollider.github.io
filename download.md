@@ -4,4 +4,4 @@ title: Download
 group: navigation
 ---
 
-<div id="download">{% include download.md %}</div>
+{% include download.md %}
