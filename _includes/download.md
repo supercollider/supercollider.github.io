@@ -8,7 +8,7 @@
                 <h4>Current Version</h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.9.2/SuperCollider-3.9.2-macOS.zip"><i class="icon-download-alt">.</i> 3.9.2</a>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.9.3/SuperCollider-3.9.3-macOS.zip"><i class="icon-download-alt">.</i> 3.9.3</a>
                     </li>
                 </ul>
                 <h4>Previous Releases</h4>
@@ -46,7 +46,7 @@
                 </h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.9.2/SuperCollider-3.9.2-Source-linux.tar.bz2">3.9.2 source tarball</a>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.9.3/SuperCollider-3.9.3-Source-linux.tar.bz2">3.9.3 source tarball</a>
                     </li>
                 </ul>
                 <h4>
@@ -88,14 +88,14 @@
                 <h5>64-bit</h5>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.9.2/SuperCollider-3.9.2-Windows-x64-VS.exe"><i class="icon-download-alt">.</i> 3.9.2</a> (no SuperNova)<br />
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.9.3/SuperCollider-3.9.3-Windows-x64-VS.exe"><i class="icon-download-alt">.</i> 3.9.3</a> (no SuperNova)<br />
                         <a href="https://github.com/supercollider/sc3-plugins/releases/download/Version-3.9.0/sc3-plugins-3.9.0-Windows-x64-VS.zip"><i class="icon-download-alt">.</i> sc3-plugins 3.9.0</a>
                     </li>
                 </ul>
                 <h5>32-bit</h5>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.9.2/SuperCollider-3.9.2-Windows-x86-VS.exe"><i class="icon-download-alt">.</i> 3.9.2</a> (no SuperNova)<br />
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.9.3/SuperCollider-3.9.3-Windows-x86-VS.exe"><i class="icon-download-alt">.</i> 3.9.3</a> (no SuperNova)<br />
                         <a href="https://github.com/supercollider/sc3-plugins/releases/download/Version-3.9.0/sc3-plugins-3.9.0-Windows-x86-VS.zip"><i class="icon-download-alt">.</i> sc3-plugins 3.9.0</a>
                     </li>
                 </ul>
