@@ -1,21 +1,24 @@
----
-layout: page
-title: Wiki
-header: Wiki
-group: navigation
----
-
-{% assign pages_list = site.pages %}
-{% for category in site.ordered_categories %}
+--- 
+layout: page 
+title: Wiki 
+header: Wiki 
+group: navigation 
+--- 
+{%assign pages_list = site.pages %} 
+{% for category in site.ordered_categories%}
 <h4>{{ category }}</h4>
 <ul>
-	{% include category_pages_list %}
+    {% include category_pages_list %}
 </ul>
 {% endfor %}
 
 
 <h4>Old WIKIs in the process of moving content here</h4>
 <ul>
-	<li><a href="http://supercollider.sourceforge.net/wiki/">(old) sourceforge mediawiki</a></li>
-	<li><a href="http://swiki.hfbk-hamburg.de/MusicTechnology/6">(really old) hamburg swiki</a></li>
+    <li>
+        <a href="http://supercollider.sourceforge.net/wiki/">(old) sourceforge mediawiki</a>
+    </li>
+    <li>
+        <a href="http://swiki.hfbk-hamburg.de/MusicTechnology/6">(really old) hamburg swiki</a>
+    </li>
 </ul>
