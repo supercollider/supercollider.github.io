@@ -1,7 +1,7 @@
 ---
 layout: front
 title: SuperCollider
-tagline: Real time algorithmic music composition environment.
+tagline: Real-time algorithmic music composition environment.
 group: index
 ---
 
@@ -9,7 +9,7 @@ SuperCollider is a platform for audio synthesis and algorithmic composition, use
 
 SuperCollider features three major components:
 
-- **scsynth**, a real-time audio server, forms the core of the platform. It features 400+ unit generators ("UGens") for analysis, synthesis, and processing. Its granularity allows the fluid combination of many known and unknown audio techniques, moving between additive and subtractive synthesis, FM, granular synthesis, FFT, and physical modelling. You can write your own UGens in C++, and users have already contributed several hundred more to the sc3-plugins repository.
+- **scsynth**, a real-time audio server, forms the core of the platform. It features 400+ unit generators ("UGens") for analysis, synthesis, and processing. Its granularity allows the fluid combination of many known and unknown audio techniques, moving between additive and subtractive synthesis, FM, granular synthesis, FFT, and physical modeling. You can write your own UGens in C++, and users have already contributed several hundred more to the sc3-plugins repository.
 
 - **sclang**, an interpreted programming language. It is focused on sound, but not limited to any specific domain. sclang controls scsynth via Open Sound Control. You can use it for algorithmic composition and sequencing, finding new sound synthesis methods, connecting your app to external hardware including MIDI controllers, network music, writing GUIs and visual displays, or for your daily programming experiments. It has a stock of user-contributed extensions called Quarks.
 
@@ -112,11 +112,11 @@ Ppar([
   - Single inheritance object-oriented and functional language
   - Similar to Smalltalk or Ruby with syntax similar to C or Javascript
   - Dynamically typed
-  - Constant time message lookup and real time garbage collection
-  - Functions as first class objects
+  - Constant time message lookup and real-time garbage collection
+  - Functions as first-class objects
   - Closures are lexical, and scope is both lexical and dynamic
   - Coroutines
-  - List comprehensions
+  - List Comprehensions
   - Partial application (explicit currying)
   - Tail call optimization
   - Class extensions
@@ -130,8 +130,8 @@ Ppar([
 
   - High quality accurate and efficient audio engine
   - Fully adjustable sample rate (192k+) and block size
-  - 32 bit float signal chain
-  - Sampling buffers use 64 bit float
+  - 32-bit float signal chain
+  - Sampling buffers use 64-bit float
   - Fast and fluid control rate modulation
   - [Communicates via Open Sound Control](http://doc.sccode.org/Reference/Server-Command-Reference) - TCP/UDP network communication
   - [Hundreds of UGens (unit generators)](http://doc.sccode.org/Browse.html#UGens)
@@ -144,7 +144,7 @@ Ppar([
 
 #### IDE / Application
 
-- Qt based cross platform Integrated Development Environment
+- Qt-based cross-platform Integrated Development Environment
 - REPL for "select and call" interactive programming
 - Qt powered GUI framework for building rich interfaces
 
