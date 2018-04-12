@@ -4,12 +4,15 @@ title: Wiki
 header: Wiki 
 group: navigation 
 --- 
+
 {%assign pages_list = site.pages %} 
 {% for category in site.ordered_categories%}
+
 <h4>{{ category }}</h4>
 <ul>
     {% include category_pages_list %}
 </ul>
+
 {% endfor %}
 
 
