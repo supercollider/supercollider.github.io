@@ -11,7 +11,7 @@ Clone this repository:
     git clone git://github.com/supercollider/supercollider.github.io.git
     cd supercollider.github.io
 
-To view these pages locally, you must install `Jekyll` using the Ruby Gem package manager.  
+To view these pages locally, you must install `jekyll` using the Ruby Gem package manager.  
 You will need Ruby Gems of course.
 
 First, install the standard `bundler` gem which reads Gemfiles and installs isolated gems for a project:
