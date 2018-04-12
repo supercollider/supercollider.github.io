@@ -116,7 +116,7 @@ Ppar([
   - Functions as first-class objects
   - Closures are lexical, and scope is both lexical and dynamic
   - Coroutines
-  - List Comprehensions
+  - List comprehensions
   - Partial application (explicit currying)
   - Tail call optimization
   - Class extensions
