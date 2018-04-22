@@ -28,6 +28,7 @@ category: tutorials
 <li><a href="http://www.ixi-audio.net/content/download/tutorials/supercollider_tutorial.tar">ixi’s basic audio programming tutorial in SC (download)</a></li>
 <li><a href="http://en.wikibooks.org/wiki/Designing_Sound_in_SuperCollider">Designing Sound in SuperCollider</a> (how to create sound effects)</li>
 <li><a href="https://github.com/acarabott/roundhouse-synth-design-course-2014">Seven part tutorial, aimed at first time programmers</a> by Arthur Carabott</li>
+<li><a href="https://theseanco.github.io/howto_co34pt_liveCode/">howto_co34pt_liveCode, a guide on how to live code in SuperCollider</a>, with a <a href="https://github.com/theseanco/howto_co34pt_liveCode">companion GitHub repo of code, examples and samples</a> by co34pt</li>
 </ul>
 
 ### Tutorials covering more advanced techniques and/or third-party libraries
