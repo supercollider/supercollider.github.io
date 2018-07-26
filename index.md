@@ -156,6 +156,8 @@ Ppar([
 
 ### Community
 
+- [Code of Conduct](/community/code-of-conduct)
+
 #### Mailing list
 The community is very active and helpful, the center of activity.  Please do drop by.
 
@@ -167,7 +169,6 @@ The community is very active and helpful, the center of activity.  Please do dro
 
 - [Github issue tracker](https://github.com/supercollider/supercollider/issues)
 - [Contribution guidelines](/contributing/index)
-- [Code of Conduct](/community/code-of-conduct)
 
 
 #### Developers
