@@ -4,7 +4,6 @@ title: Contributing
 header: Contributing
 category: contributing
 sort_order: 1
-group: navigation
 ---
 
 Thank you for your interest in helping to develop SuperCollider! There are many ways you can help out:
