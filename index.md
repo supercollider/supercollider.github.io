@@ -175,11 +175,13 @@ To help you get familiar with our contribution process, we have a list of [good 
 
 ### Community
 
+- [Code of Conduct](/community/code-of-conduct)
+
 #### Mailing list
 The community is very active and helpful, the center of activity.  Please do drop by.
 
 - [mailing lists](http://www.birmingham.ac.uk/facilities/BEAST/research/supercollider/mailinglist.aspx)
-- [Join us on Slack](https://join.slack.com/t/scsynth/shared_invite/enQtMjk0MzA0NzgyOTkyLTYwNjdmYjFmNWY4NGIyZWM2YWY1NzZhMjM3MWQ0MmEwZTZkZDExOTRjMWI2NjBiMGQ1NTg1NDQyZjExNWFjZGM)
+- [Join us on Slack](https://join.slack.com/t/scsynth/shared_invite/enQtMzk3OTY3MzE0MTAyLWY1ZGE1MTJjYmI5NTRkZjFmNjZmNmYxOWI0NDZkNjdkMzdkNjgxNTJhZGVlOTEwYjdjMDY5OWM0ZTA4NWFiOGY)
 
 #### Developers
 
@@ -208,11 +210,11 @@ The community is very active and helpful, the center of activity.  Please do dro
 </p>
 
 
-#### The SuperCollider book on MIT Press
+#### The SuperCollider Book on MIT Press
 
 <a href="https://mitpress.mit.edu/books/supercollider-book"><img src="/images/MIT-supercollider-book.jpg" alt="MIT SuperCollider Book" width="35%" height="auto"/></a>
 <blockquote>The SuperCollider Book is the essential reference to this powerful and flexible language, offering students and professionals a collection of tutorials, essays, and projects. With contributions from top academics, artists, and technologists that cover topics at levels from the introductory to the specialized, it is a valuable sourcebook both for beginners and for advanced users.</blockquote>
-<a href="http://supercolliderbook.net/">supercolliderbook.net</a>
+<a href="https://mitpress.mit.edu/books/supercollider-book">The SuperCollider Book</a>
 
 #### Online
 

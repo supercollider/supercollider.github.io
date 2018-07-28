@@ -2,7 +2,7 @@
 layout: catpage
 title: Code of conduct
 category: community
-sort_order: 7
+sort_order: 1
 ---
 
 ## Purpose

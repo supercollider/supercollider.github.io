@@ -3,7 +3,7 @@ layout: catpage
 title: "SuperCollider Symposium"
 description: ""
 category: "community"
-sort_order: 2
+sort_order: 6
 ---
 The **SuperCollider Symposium** is an international gathering of SuperCollider users and developers. The symposium happens on an irregular basis in different cities around the world. The following is a complete list of the symposia that have taken place.
 
