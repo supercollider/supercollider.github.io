@@ -3,7 +3,7 @@ layout: catpage
 title: "Systems interfacing with SC"
 description: ""
 category: "community"
-sort_order: 5
+sort_order: 4
 ---
 
 
