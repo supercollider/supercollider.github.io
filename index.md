@@ -165,7 +165,7 @@ Ppar([
 
 ### Community
 
-- [Code of Conduct](/community/code-of-conduct)
+- [Code of Conduct](https://github.com/supercollider/supercollider/blob/develop/CODE_OF_CONDUCT.md)
 
 #### Mailing list
 The community is very active and helpful, the center of activity.  Please do drop by.
