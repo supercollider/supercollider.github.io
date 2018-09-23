@@ -31,6 +31,7 @@ Clients Using SC Server
     -   SCIMP, an SC Server library for Impromptu (Scheme) [Impromptu
         Libraries][]
 -   Python
+    -   [FoxDot][], "Live Coding with Python & SuperCollider"
     -   SC 0.3.1, python client for SuperCollider
         [<https://pypi.python.org/pypi/SC/0.3.1>][]
     -   [Supriya][]
@@ -90,6 +91,7 @@ Clients Using SC Server
   [TidalCycles]: http://tidalcycles.org/
   [Sonic Pi]: http://sonic-pi.net/
   [Supriya]: https://github.com/josiah-wolf-oberholtzer/supriya
+  [FoxDot]: https://foxdot.org/
 
 Editors
 -------
