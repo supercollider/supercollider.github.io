@@ -30,11 +30,11 @@
     <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
 
     <!-- fav and touch icons -->
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
-
+    <link rel="icon" href="/images/favicon.png">
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon.png">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- atom & rss feed -->
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -46,7 +46,10 @@
     <div class="navbar">
       <div class="navbar-inner">
         <div class="container-narrow">
-          <a class="brand" href="/"><img src="/images/sc_cube_32x32.png" alt="SuperCollider" /> {{ site.title }}</a>
+          <a class="brand" href="/">
+              <img src="/images/logo.svg" alt="SuperCollider" style="width: 32px; height: 32px">
+              {{ site.title }}
+          </a>
           <ul class="nav">
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
