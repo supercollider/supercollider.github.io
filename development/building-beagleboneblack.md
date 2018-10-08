@@ -48,7 +48,7 @@ step3 (compile & install jackd (no d-bus) )
 8. `rm -rf jack2`
 9. `sudo sh -c "echo @audio - memlock 256000 >> /etc/security/limits.conf"`
 10. `sudo sh -c "echo @audio - rtprio 75 >> /etc/security/limits.conf"`
-11. `echo jackd -P75 -p16 -dalsa -dhw:1 -r44100 -p1024 -n3 > ~/.jackdrc`
+11. `echo /usr/local/bin/jackd -P75 -p16 -dalsa -dhw:1 -r44100 -p1024 -n3 > ~/.jackdrc`
 12. `exit` #and ssh in again to make the limits.conf settings work
 
 the `-dhw:1` above is normally the usb soundcard. `sudo aplay -l` will list available devices. use `nano ~/.jackdrc` to edit jack settings.
@@ -95,7 +95,7 @@ how to automatically run supercollider code at system boot.
         
         #!/bin/bash
         export PATH=/usr/local/bin:$PATH
-        sleep 5
+        sleep 20
         sclang mycode.scd
         
 2. `chmod +x ~/autostart.sh`
