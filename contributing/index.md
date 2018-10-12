@@ -35,7 +35,7 @@ You can submit changes in the form of pull requests, gratefully accepted at [our
 The first step to filing a PR is to get your git environment working. First, fork supercollider/supercollider on GitHub. By convention, `origin` should point to your fork, and `upstream` to the main repository:
 
     git remote add origin git@github.com:YOUR_GITHUB_USERNAME/supercollider
-    git remote add upstream https://github.com/supercollider/supercollider
+    git remote add upstream https://github.com/supercollider/supercollider.git
 
 For each pull request, you should first update your fork to match upstream (not needed, but it helps guard against conflicts):
 
