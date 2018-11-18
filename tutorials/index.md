@@ -17,6 +17,7 @@ category: tutorials
 ### Other tutorials
 
 <ul>
+<li><strong><a href="https://www.coursera.org/learn/composicion-algoritmica-supercollider/">Spanish Coursera Course</a></strong> by Mauro Herrera and Cristian Bañuelos, Facultad de Música UNAM</li>
 <li><strong><a href="http://www.oscilador.org/descargas/supercollider/">Spanish</a></strong><a href="http://www.oscilador.org/descargas/supercollider/">-language tutorial translations</a> by Federico Reuben</li>
 <li><a href="http://gonzo.uni-weimar.de/~haru8822/supercollider/"><strong>German</strong>-language</a> tutorials</li>
 <li><strong><a href="http://www.simonblackmore.net/notes/doku.php?id=supercollider_screencasts">Spanish</a></strong><a href="http://www.simonblackmore.net/notes/doku.php?id=supercollider_screencasts">-language “screencast” video tutorials</a></li>
