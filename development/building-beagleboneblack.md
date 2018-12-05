@@ -57,7 +57,7 @@ step4 (compile & install supercollider)
 --
 1. `git clone --recursive git://github.com/supercollider/supercollider`
 2. `cd supercollider`
-3. `git checkout 3.10`  #use latest version 3.10.x on branch 3.10
+3. `git checkout master`  #use latest stable release (3.10 at the time of writing)
 4. `git submodule init && git submodule update`
 5. `mkdir build && cd build`
 6. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSUPERNOVA=OFF -DNATIVE=ON -DSC_IDE=OFF -DNO_X11=ON -DSC_QT=OFF -DSC_ED=OFF -DSC_EL=OFF -DSC_VIM=ON ..`
@@ -81,12 +81,10 @@ how to compile and install [sc3-plugins](https://github.com/supercollider/sc3-pl
 1. `cd ~`
 2. `git clone --recursive https://github.com/supercollider/sc3-plugins.git`
 3. `cd sc3-plugins`
-4. `git checkout 3.10`
-5. `git submodule init && git submodule update`
-6. `mkdir build && cd build`
-7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DSUPERNOVA=OFF -DNATIVE=ON -DSC_PATH=../../supercollider/ ..`
-8. `make`
-9. `sudo make install`
+4. `mkdir build && cd build`
+5. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DSUPERNOVA=OFF -DNATIVE=ON -DSC_PATH=../../supercollider/ ..`
+6. `make`
+7. `sudo make install`
 
 autostart
 ==
