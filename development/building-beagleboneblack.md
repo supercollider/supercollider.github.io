@@ -7,9 +7,9 @@ sort_order: 3
 
 Compiling SC natively on Beaglebone Black Debian Stretch
 ==
-note: this is for compiling and running supercollider 3.9 (sclang+scsynth) including the sc3-plugins under **debian stretch**. it does not include qt nor the ide. for compiling the full scide adapt the instructions found [here](http://supercollider.github.io/development/building-raspberrypi).
+note: this is for compiling and running supercollider (sclang+scsynth) including the sc3-plugins under **debian stretch**. it does not include qt nor the ide. for compiling the full scide adapt the instructions found [here](http://supercollider.github.io/development/building-raspberrypi).
 
-the instructions here are meant for SuperCollider version 3.9.1 and higher; for instructions on building previous versions please see older versions of this page or ask on the mailing list.
+the instructions here are meant for SuperCollider version 3.10 and higher; for instructions on building previous versions please see older versions of this page or ask on the mailing list.
 
 requirements
 --
@@ -34,7 +34,7 @@ step2 (update the system, install required libraries)
 5. `sudo apt-get update`
 6. `sudo apt-get upgrade`
 7. `sudo apt-get dist-upgrade`
-8. `sudo apt-get install libsamplerate0-dev libsndfile1-dev libasound2-dev libavahi-client-dev libreadline6-dev libfftw3-dev libxt-dev libudev-dev libcwiid-dev cmake git build-essential python-dev alsa-utils cpufrequtils`
+8. `sudo apt-get install libsamplerate0-dev libsndfile1-dev libasound2-dev libavahi-client-dev libreadline-dev libfftw3-dev libudev-dev cmake git build-essential python-dev alsa-utils cpufrequtils`
 
 step3 (compile & install jackd (no d-bus) )
 --
@@ -46,36 +46,24 @@ step3 (compile & install jackd (no d-bus) )
 6. `sudo ldconfig`
 7. `cd ..`
 8. `rm -rf jack2`
-9. `sudo nano /etc/security/limits.conf`  #and add the following lines at the end...
-        
-        @audio - memlock 256000
-        @audio - rtprio 75
-        
-10. `exit`  #and ssh in again to make the limits.conf settings work
-11. `nano ~/.jackdrc`  #edit to look like this...
-        
-        /usr/local/bin/jackd -P75 -dalsa -dhw:1 -r44100 -p1024 -n3
-        
-the `-dhw:1` above is normally the usb soundcard. `aplay -l` will list available devices.
+9. `sudo sh -c "echo @audio - memlock 256000 >> /etc/security/limits.conf"`
+10. `sudo sh -c "echo @audio - rtprio 75 >> /etc/security/limits.conf"`
+11. `echo /usr/local/bin/jackd -P75 -p16 -dalsa -dhw:1 -r44100 -p1024 -n3 > ~/.jackdrc`
+12. `exit` #and ssh in again to make the limits.conf settings work
+
+the `-dhw:1` above is normally the usb soundcard. `sudo aplay -l` will list available devices. use `nano ~/.jackdrc` to edit jack settings.
 
 step4 (compile & install supercollider)
 --
 1. `git clone --recursive git://github.com/supercollider/supercollider`
 2. `cd supercollider`
-3. `git checkout 3.9`  #use latest version 3.9.x on branch 3.9
+3. `git checkout master`  #use latest stable release (3.10 at the time of writing)
 4. `git submodule init && git submodule update`
-5. `nano lang/LangSource/SC_TerminalClient.cpp`  #TEMP FIX for 100% sclang issue - find the first line and comment it out, add the 2nd right after
-        
-        //mTimer.cancel();
-        if (error==boost::system::errc::success) {mTimer.cancel();} else {return;}
-        
-6. `mkdir build && cd build`
-7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSUPERNOVA=OFF -DNATIVE=ON -DSC_WII=ON -DSC_IDE=OFF -DSC_QT=OFF -DSC_ED=OFF -DSC_EL=OFF -DSC_VIM=ON ..`
-8. `make`
-9. `sudo make install`
-10. `sudo ldconfig`
-11. The following command can be skipped if using SC 3.9.2 and higher:  
-`mkdir -p ~/.config/SuperCollider`
+5. `mkdir build && cd build`
+6. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSUPERNOVA=OFF -DNATIVE=ON -DSC_IDE=OFF -DNO_X11=ON -DSC_QT=OFF -DSC_ED=OFF -DSC_EL=OFF -DSC_VIM=ON ..`
+7. `make`
+8. `sudo make install`
+9. `sudo ldconfig`
 
 startup
 --
@@ -91,7 +79,7 @@ sc3-plugins
 ==
 how to compile and install [sc3-plugins](https://github.com/supercollider/sc3-plugins).
 1. `cd ~`
-2. `git clone --recursive https://github.com/supercollider/sc3-plugins.git --depth 1`
+2. `git clone --recursive https://github.com/supercollider/sc3-plugins.git`
 3. `cd sc3-plugins`
 4. `mkdir build && cd build`
 5. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DSUPERNOVA=OFF -DNATIVE=ON -DSC_PATH=../../supercollider/ ..`
@@ -104,8 +92,8 @@ how to automatically run supercollider code at system boot.
 1. `nano ~/autostart.sh`  #and add the following lines (ctrl+o, ctrl+x to save and exit)...
         
         #!/bin/bash
-        PATH=/usr/local/bin:$PATH
-        sleep 5
+        export PATH=/usr/local/bin:$PATH
+        sleep 20
         sclang mycode.scd
         
 2. `chmod +x ~/autostart.sh`
