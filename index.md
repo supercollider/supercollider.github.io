@@ -133,7 +133,7 @@ Ppar([
   - 32-bit float signal chain
   - Sampling buffers use 64-bit float
   - Fast and fluid control rate modulation
-  - [Communicates via Open Sound Control](http://doc.sccode.org/Reference/Server-Command-Reference) - TCP/UDP network communication
+  - [Communicates via Open Sound Control](http://doc.sccode.org/Reference/Server-Command-Reference.html) - TCP/UDP network communication
   - [Hundreds of UGens (unit generators)](http://doc.sccode.org/Browse.html#UGens)
   - Simple ANSI C plugin API
   - Hundreds more community contributed UGens
