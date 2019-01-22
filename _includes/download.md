@@ -48,10 +48,13 @@
                 </h4>
                 <ul class="nodot">
                     <li>
-                        <a href="http://packages.debian.org/sid/supercollider">Debian packages</a>
+                        <a href="https://www.archlinux.org/packages/community/x86_64/supercollider/">Arch Linux</a>
                     </li>
                     <li>
-                        <a href="https://packages.ubuntu.com/search?keywords=supercollider&searchon=names">Ubuntu packages</a>
+                        <a href="https://packages.debian.org/search?suite=all&searchon=names&keywords=supercollider">Debian</a>
+                    </li>
+                    <li>
+                        <a href="https://packages.ubuntu.com/search?keywords=supercollider&searchon=names">Ubuntu</a>
                     </li>
                 </ul>
                 <h4>
@@ -71,6 +74,13 @@
                     <li>
                         <a href="https://software.opensuse.org/package/supercollider">openSUSE</a>
                         (Open Build Service)
+                    </li>
+                </ul>
+                <h4>Bleeding Edge</h4>
+                <p>These are the latest builds of the development branch.</p>
+                <ul>
+                    <li>
+                        <a href="https://aur.archlinux.org/packages/supercollider-git/">Arch User Repository (AUR)</a>
                     </li>
                 </ul>
             </td>
