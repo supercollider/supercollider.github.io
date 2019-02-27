@@ -38,6 +38,10 @@ Below, we present aggregated data for each survey question. In the next few week
 posts from some of the developers sharing their thoughts on the survey. We're very excited to see
 what the community thinks of these results!
 
+The individuals primarily responsible for creating the survey and reviewing the responses were Nathan Ho,
+Brian Heim, Patrick Dupuis, and Josh Parmenter, with help from several other developers in crafting the
+questions and wording.
+
 At the end of this post, you'll find the data in these charts presented as text tables for easy
 access.
 
