@@ -8,7 +8,7 @@
                 <h4>Current Version</h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.0/SuperCollider-3.10.0-macOS.zip"><i class="icon-download-alt">.</i> 3.10.0</a>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.2/SuperCollider-3.10.2-macOS.zip"><i class="icon-download-alt">.</i> 3.10.2</a>
                     </li>
                 </ul>
                 <h4>Previous Releases</h4>
@@ -40,7 +40,7 @@
                 </h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.0/SuperCollider-3.10.0-Source-linux.tar.bz2">3.10.0 source tarball</a>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.2/SuperCollider-3.10.2-Source-linux.tar.bz2">3.10.2 source tarball</a>
                     </li>
                 </ul>
                 <h4>
@@ -81,10 +81,10 @@
                 <h4>Current Version</h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.0/SuperCollider-3.10.0-Windows-x64-VS.exe"><i class="icon-download-alt">.</i> 3.10.0, 64-bit</a> (no SuperNova)<br />
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.2/SuperCollider-3.10.2-Windows-x64-VS.exe"><i class="icon-download-alt">.</i> 3.10.2, 64-bit</a> (no SuperNova)<br />
                     </li>
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.0/SuperCollider-3.10.0-Windows-x86-VS.exe"><i class="icon-download-alt">.</i> 3.10.0, 32-bit</a> (no SuperNova)<br />
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.2/SuperCollider-3.10.2-Windows-x86-VS.exe"><i class="icon-download-alt">.</i> 3.10.2, 32-bit</a> (no SuperNova)<br />
                     </li>
                 </ul>
                 <h4>Previous releases</h4>
