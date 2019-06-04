@@ -400,7 +400,7 @@ Just remember that merged branches will not be updated by pulling any more. So i
 
 - [Git Reference](http://gitref.org)
 - [Git Book](http://book.git-scm.com/)
-- [Pro Git Book](http://progit.org/book/)
+- [Pro Git Book](https://git-scm.com/book/en/v2)
 - [Visual Git Tutorial](http://www.ralfebert.de/blog/tools/visual_git_tutorial_1/)
 - [Rebasing](http://jbowes.wordpress.com/2007/01/26/git-rebase-keeping-your-branches-current/)
 - [My Git Workflow](http://osteele.com/archives/2008/05/my-git-workflow)
