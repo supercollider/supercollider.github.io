@@ -66,6 +66,9 @@ Clients Using SC Server
     - [Lua2SC][] is a Lua client with ide, debugging...
 -   Ruby
     - [Sonic Pi][] is a very popular live coding synth with SuperCollider as a server.
+-   JavaScript / TypeScript
+    - [supercollider.js][] is a full featured client for the server and the language
+    
 
   [sendOSC]: http://cnmat.org/OpenSoundControl/clients/sendOSC.html
   [rsc3]: http://slavepianos.org/rd/?t=rsc3
@@ -92,6 +95,7 @@ Clients Using SC Server
   [Sonic Pi]: http://sonic-pi.net/
   [Supriya]: https://github.com/josiah-wolf-oberholtzer/supriya
   [FoxDot]: https://foxdot.org/
+  [supercollider.js]: https://crucialfelix.github.io/supercolliderjs/
 
 Editors
 -------
