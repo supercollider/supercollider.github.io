@@ -30,7 +30,7 @@ from raspbian desktop open a terminal window and type...
 2. `sudo apt-get update`
 3. `sudo apt-get upgrade`
 4. `sudo apt-get dist-upgrade`
-5. `sudo apt-get install libjack-jackd2-dev libsndfile1-dev libasound2-dev libavahi-client-dev libreadline6-dev libfftw3-dev libxt-dev libudev-dev libcwiid-dev cmake qttools5-dev-tools libqt5webkit5-dev qtpositioning5-dev libqt5sensors5-dev qjackctl`
+5. `sudo apt-get install libjack-jackd2-dev libsndfile1-dev libasound2-dev libavahi-client-dev libreadline6-dev libfftw3-dev libxt-dev libudev-dev libcwiid-dev cmake qttools5-dev qttools5-dev-tools libqt5webkit5-dev qtpositioning5-dev libqt5sensors5-dev qjackctl`
 
 step3 (compile and install supercollider)
 --
