@@ -7,14 +7,14 @@ sort_order: 3
 
 Compiling SC natively on Beaglebone Black Debian Stretch
 ==
-note: this is for compiling and running supercollider (sclang+scsynth) including the sc3-plugins under **debian stretch**. it does not include qt nor the ide. for compiling the full scide adapt the instructions found [here](http://supercollider.github.io/development/building-raspberrypi).
+note: this is for compiling and running supercollider (sclang+scsynth) including the sc3-plugins under **debian**. it does not include qt nor the ide. for compiling the full scide adapt the instructions found [here](http://supercollider.github.io/development/building-raspberrypi).
 
 the instructions here are meant for SuperCollider version 3.10 and higher; for instructions on building previous versions please see older versions of this page or ask on the mailing list.
 
 requirements
 --
 * beaglebone black (or any of the variants green, blue, industrial, pocket...)
-* sd card with [stretch iot](http://beagleboard.org/latest-images) or [stretch console](https://elinux.org/Beagleboard:BeagleBoneBlack_Debian#Stretch_Snapshot_console). the console version is minimal and recommended. the instructions also work under the [stretch lxqt](http://beagleboard.org/latest-images) desktop version.
+* sd card with debian stretch or buster. [iot](http://beagleboard.org/latest-images), [lxqt](http://beagleboard.org/latest-images) or [console](https://elinux.org/Beagleboard:BeagleBoneBlack_Debian#Debian_Buster_Console_Snapshot). the console version is minimal and recommended.
 * router with ethernet internet connection for the bbb
 * laptop connected to same network as the bbb
 * usb soundcard with headphones or speakers connected
@@ -57,7 +57,7 @@ step4 (compile & install supercollider)
 --
 1. `git clone --recursive git://github.com/supercollider/supercollider`
 2. `cd supercollider`
-3. `git checkout master`  #use latest stable release (3.10 at the time of writing)
+3. `git checkout 3.10`
 4. `git submodule init && git submodule update`
 5. `mkdir build && cd build`
 6. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSUPERNOVA=OFF -DNATIVE=ON -DSC_IDE=OFF -DNO_X11=ON -DSC_QT=OFF -DSC_ED=OFF -DSC_EL=OFF -DSC_VIM=ON ..`
@@ -69,7 +69,7 @@ startup
 --
 * `sclang`
 
-when you boot the server jack should start automatically with the settings in ~/.jackdrc
+when you boot the server jack should start automatically with the settings in `~/.jackdrc`
 
 **done!** see below for sc3-plugins, autostart, benchmarks and notes
 
@@ -81,10 +81,12 @@ how to compile and install [sc3-plugins](https://github.com/supercollider/sc3-pl
 1. `cd ~`
 2. `git clone --recursive https://github.com/supercollider/sc3-plugins.git`
 3. `cd sc3-plugins`
-4. `mkdir build && cd build`
-5. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DSUPERNOVA=OFF -DNATIVE=ON -DSC_PATH=../../supercollider/ ..`
-6. `make`
-7. `sudo make install`
+4. `git checkout 3.10`
+5. `git submodule init && git submodule update`
+6. `mkdir build && cd build`
+7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DSUPERNOVA=OFF -DNATIVE=ON -DSC_PATH=../../supercollider/ ..`
+8. `make`
+9. `sudo make install`
 
 autostart
 ==
@@ -93,7 +95,7 @@ how to automatically run supercollider code at system boot.
         
         #!/bin/bash
         export PATH=/usr/local/bin:$PATH
-        sleep 20
+        sleep 10
         sclang mycode.scd
         
 2. `chmod +x ~/autostart.sh`
@@ -117,7 +119,7 @@ also make sure to power the bbb through the barrel jack (else the cpu is capped 
 start sclang and type...
         
         s.boot
-        {1000000.do{2.5.sqrt}}.bench //~2.0 on a bb-black, ~2.6 with lxqt on a bb-black
+        {1000000.do{2.5.sqrt}}.bench //~1.9 on a bb-black, ~2.6 with lxqt on a bb-black
         a= {Mix(50.collect{RLPF.ar(SinOsc.ar)});DC.ar(0)}.play
         s.avgCPU //run a few times. ~47% on a bb-black
         a.free
@@ -129,6 +131,7 @@ notes
 additional information.
 * an easy way to burn the img.xy file (no need to unpack) to a sd card is to use [etcher](http://etcher.io).
 * type `alsamixer` in terminal and then F6. adjust the mic and speaker volume with the arrow keys, esc key exits.
+* if the `make` build step stops or returns an error the compiler might just have run out of memory. try to reboot and run the make command again.
 * if you get `WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!` when trying to ssh in, type `ssh-keygen -R beaglebone` to reset.
 * for lower latency, set a lower blocksize for jackd. try for example `-p512` or `-p128`. tune downwards until you get dropouts and xruns (also watch cpu%).
 * usb soundcards i’ve tried include the cheap blue 3D sound (C-Media Electronics, Inc. Audio Adapter (Planet UP-100, Genius G-Talk)) and the aureon dual usb (TerraTec Electronic GmbH Aureon Dual USB).

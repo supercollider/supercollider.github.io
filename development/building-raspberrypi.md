@@ -7,12 +7,12 @@ sort_order: 3
 
 Compiling SCIDE natively on Raspberry Pi Raspbian
 ==
-note: this is for building the latest version of supercollider including qt gui components and the ide under **raspbian stretch with desktop**. it is the easiest way to compile sc and this version can also run headless. see below for building non-qt, non scide under **raspbian stretch lite** (more advanced).
+note: this is for building the latest version of supercollider including qt gui components and the ide under **raspbian with desktop**. it is the easiest way to compile sc and this version can also run headless. see below for building non-qt, non scide under **raspbian lite** (more advanced).
 
 requirements
 --
-* raspberry pi 2 or 3 (also rpi0 and rpi1 but note that compiling will take a _long_ time)
-* sd card with [raspbian-stretch](https://www.raspberrypi.org/downloads/raspbian) (note: not stretch lite)
+* raspberry pi 2, 3 or 4 (also rpi0 and rpi1 but note that compiling will take a _long_ time)
+* sd card with [raspbian desktop](https://www.raspberrypi.org/downloads/raspbian) stretch or buster. (note: not lite)
 * router with ethernet internet connection for the rpi
 * screen, mouse and keyboard (although you can also do it all via ssh)
 * optional: usb soundcard with headphones or speakers connected
@@ -30,21 +30,19 @@ from raspbian desktop open a terminal window and type...
 2. `sudo apt-get update`
 3. `sudo apt-get upgrade`
 4. `sudo apt-get dist-upgrade`
-5. `sudo apt-get install libjack-jackd2-dev libsndfile1-dev libasound2-dev libavahi-client-dev libreadline6-dev libfftw3-dev libxt-dev libudev-dev libcwiid-dev cmake qttools5-dev-tools libqt5webkit5-dev qtpositioning5-dev libqt5sensors5-dev qjackctl`
+5. `sudo apt-get install libjack-jackd2-dev libsndfile1-dev libasound2-dev libavahi-client-dev libreadline-dev libfftw3-dev libxt-dev libudev-dev cmake qttools5-dev qttools5-dev-tools qtdeclarative5-dev libqt5svg5-dev qjackctl`
 
 step3 (compile and install supercollider)
 --
 1. `git clone --recursive git://github.com/supercollider/supercollider`
 2. `cd supercollider`
-3. `git checkout Version-3.9.3`  #use 3.9.3 (NOTE 3.10 does not currently compile on stretch due to issue with Qt5WebEngine)
+3. `git checkout 3.10`
 4. `git submodule init && git submodule update`
 5. `mkdir build && cd build`
-6. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSUPERNOVA=OFF -DNATIVE=ON -DSC_WII=ON -DSC_IDE=ON -DSC_QT=ON -DSC_ED=OFF -DSC_EL=OFF -DSC_VIM=ON ..`
-7. `make -j 4`  #use -j4 flag only for rpi3 (quadcore)
+6. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSUPERNOVA=OFF -DNATIVE=ON -DSC_IDE=ON -DSC_QT=ON -DSC_USE_QTWEBENGINE:BOOL=OFF -DSC_ED=OFF -DSC_EL=OFF -DSC_VIM=ON ..`
+7. `make -j 3`  #use -j3 flag only for quadcore rpi models (rpi3 or newer)
 8. `sudo make install`
 9. `sudo ldconfig`
-10. The following command can be skipped if using SC 3.9.2 and higher:  
-`mkdir -p ~/.config/SuperCollider`
 
 step4 (set up jack)
 --
@@ -77,14 +75,14 @@ if you want to ssh in and start this sc version headless, run the following comm
 
 Compiling SC natively on Raspberry Pi Raspbian Lite
 ==
-note: this section is for more advanced users that want to compile and run supercollider (sclang+scsynth) under **raspbian stretch lite**. it does not include qt nor the ide.
+note: this section is for more advanced users that want to compile and run supercollider (sclang+scsynth) under **raspbian lite**. it does not include qt nor the ide.
 
 the instructions here are meant for supercollider version 3.10 and higher; for instructions on building previous versions please see older versions of this page or ask on the mailing list.
 
 requirements
 --
-* raspberry pi 2 or 3 (also rpi0 and rpi1 but note that compiling will take a _long_ time)
-* sd card with [raspbian-stretch-lite](https://www.raspberrypi.org/downloads/raspbian)
+* raspberry pi 2, 3 or 4 (also rpi0 and rpi1 but note that compiling will take a _long_ time)
+* sd card with [raspbian lite](https://www.raspberrypi.org/downloads/raspbian)
 * an empty dummy file called `ssh` on the root level of the sd card (to enable ssh)
 * router with ethernet internet connection for the rpi
 * laptop connected to same network as the rpi
@@ -126,11 +124,11 @@ step4 (compile & install supercollider)
 --
 1. `git clone --recursive git://github.com/supercollider/supercollider`
 2. `cd supercollider`
-3. `git checkout master`  #use latest stable release (3.10 at the time of writing)
+3. `git checkout 3.10`
 4. `git submodule init && git submodule update`
 5. `mkdir build && cd build`
 6. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DBUILD_TESTING=OFF -DSUPERNOVA=OFF -DNATIVE=ON -DSC_IDE=OFF -DNO_X11=ON -DSC_QT=OFF -DSC_ED=OFF -DSC_EL=OFF -DSC_VIM=ON ..`
-8. `make -j 4`  #use -j4 flag only for rpi3 (quadcore)
+8. `make -j 3`  #use -j3 flag only for quadcore rpi models (rpi3 or newer)
 9. `sudo make install`
 10. `sudo ldconfig`
 
@@ -150,10 +148,12 @@ how to compile and install [sc3-plugins](https://github.com/supercollider/sc3-pl
 1. `cd ~`
 2. `git clone --recursive https://github.com/supercollider/sc3-plugins.git`
 3. `cd sc3-plugins`
-4. `mkdir build && cd build`
-5. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DSUPERNOVA=OFF -DNATIVE=ON -DSC_PATH=../../supercollider/ ..`
-6. `make -j 4`  #use -j4 flag only for rpi3 (quadcore)
-7. `sudo make install`
+4. `git checkout 3.10`
+5. `git submodule init && git submodule update`
+6. `mkdir build && cd build`
+7. `cmake -L -DCMAKE_BUILD_TYPE="Release" -DSUPERNOVA=OFF -DNATIVE=ON -DSC_PATH=../../supercollider/ ..`
+8. `make -j 3`  #use -j3 flag only for quadcore rpi models (rpi3 or newer)
+9. `sudo make install`
 
 autostart
 ==
@@ -187,9 +187,9 @@ also for comparison it is important to set cpu scaling to 'performance' with...
 start sclang or scide and type...
         
         s.boot
-        {1000000.do{2.5.sqrt}}.bench //~0.65 for rpi3 headless, ~0.7 for rpi3 scide, ~3.1 for rpi1 headless, ~2.3 for rpi0 headless, ~2.5 for rpi0 scide
+        {1000000.do{2.5.sqrt}}.bench //~0.56 for rpi3 headless, ~0.7 for rpi3 scide, ~1.7 for rpi0 headless, ~3.8 for rpi0 scide
         a= {Mix(50.collect{RLPF.ar(SinOsc.ar)});DC.ar(0)}.play
-        s.avgCPU //run a few times. ~12% for rpi3, ~48% for rpi1, ~39% for rpi0
+        s.avgCPU //run a few times. ~12% for rpi3, ~18% for rpi2, ~79% for rpi1, ~50% for rpi0
         a.free
 
 note: with the default cpu scaling (ondemand) these benchmarks perform much worse. but 'ondemand' also saves battery life so depending on your application this might be the preferred mode.
