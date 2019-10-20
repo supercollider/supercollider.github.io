@@ -35,6 +35,7 @@ Clients Using SC Server
     -   SC 0.3.1, python client for SuperCollider
         [<https://pypi.python.org/pypi/SC/0.3.1>][]
     -   [Supriya][]
+    -   [python-supercollider][], a SuperCollider client for Python 3 
 -   Q
     -   Albert Graef lets his Q functional programming language for
         multimedia applications talk specially to SC3 through OSC:
@@ -96,6 +97,7 @@ Clients Using SC Server
   [Supriya]: https://github.com/josiah-wolf-oberholtzer/supriya
   [FoxDot]: https://foxdot.org/
   [supercollider.js]: https://crucialfelix.github.io/supercolliderjs/
+  [python-supercollider]: https://github.com/ideoforms/python-supercollider
 
 Editors
 -------
