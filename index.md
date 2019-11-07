@@ -170,6 +170,8 @@ You can find information on getting started as a contributor, such as how to pro
 
 To help you get familiar with our contribution process, we have a list of [good first issues](https://github.com/supercollider/supercollider/labels/good%20first%20issue) of relatively limited scope. This is a great place to get started! You can also ask about good first issues on the mailing list or Slack.
 
+SuperCollider uses a Requests for Comment (RFC) system to propose, design, and discuss 'big' changes. Submitting a new RFC or discussing an existing one is a great way to get involved, especially if you are looking for a way to contribute that doesn't involve writing code or using a terminal. You can learn more at the [RFC repository](https://github.com/supercollider/rfcs).
+
 ---
 
 
