@@ -166,7 +166,7 @@ Ppar([
 
 Development of SuperCollider happens on GitHub, and we are grateful to the community for contributing bugfixes and improvements. Before contributing, make sure to review our [code of conduct](https://github.com/supercollider/supercollider/blob/develop/CODE_OF_CONDUCT.md).
 
-You can find information on getting started as a contributor, such as how to propose bugfixes and improvements, how to test your changes, and an overview of our development process, in our [contributing guide](https://github.com/supercollider/supercollider/blob/develop/CONTRIBUTING.md).
+You can find information on getting started as a contributor, such as how to propose bugfixes and improvements, how to test your changes, and an overview of our development process, in our [contributing guide](https://github.com/supercollider/supercollider/wiki).
 
 To help you get familiar with our contribution process, we have a list of [good first issues](https://github.com/supercollider/supercollider/labels/good%20first%20issue) of relatively limited scope. This is a great place to get started! You can also ask about good first issues on the mailing list or Slack.
 
