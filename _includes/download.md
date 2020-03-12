@@ -8,17 +8,23 @@
                 <h4>Current Version (with Apple notarization)</h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.4/SuperCollider-3.10.4-macOS-signed.zip"><i class="icon-download-alt">.</i> 3.10.4 - signed</a>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-macOS-signed.zip"><i class="icon-download-alt">.</i> 3.11.0 - signed</a>
                     </li>
                 </ul>
                 <h4>Current Version</h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.4/SuperCollider-3.10.4-macOS.zip"><i class="icon-download-alt">.</i> 3.10.4</a>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-macOS.zip"><i class="icon-download-alt">.</i> 3.11.0</a>
                     </li>
                 </ul>
                 <h4>Previous Releases</h4>
                 <ul class="nodot">
+                    <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.4/SuperCollider-3.10.4-macOS-signed.zip"><i class="icon-download-alt">.</i> 3.10.4 - signed</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.4/SuperCollider-3.10.4-macOS.zip"><i class="icon-download-alt">.</i> 3.10.4</a>
+                    </li>
                     <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.9.3/SuperCollider-3.9.3-macOS.zip"><i class="icon-download-alt">.</i> 3.9.3</a>
                     </li>
@@ -46,7 +52,7 @@
                 </h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.4/SuperCollider-3.10.4-Source-linux.tar.bz2">3.10.4 source tarball</a>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-Source-linux.tar.bz2">3.11.0 source tarball</a>
                     </li>
                 </ul>
                 <h4>
@@ -97,14 +103,20 @@
                 <h4>Current Version</h4>
                 <ul class="nodot">
                     <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-RC1_Release-x64-VS-eceebbe.exe"><i class="icon-download-alt">.</i> 3.11.0, 64-bit</a> (no SuperNova)<br />
+                    </li>
+                    <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-RC1_Release-x86-VS-eceebbe.exe"><i class="icon-download-alt">.</i> 3.11.0, 32-bit</a> (no SuperNova)<br />
+                    </li>
+                </ul>
+                <h4>Previous releases</h4>
+                <ul class="nodot">
+                    <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.4/SuperCollider-3.10.4_Release-x64-VS-95e9507.exe"><i class="icon-download-alt">.</i> 3.10.4, 64-bit</a> (no SuperNova)<br />
                     </li>
                     <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.4/SuperCollider-3.10.4_Release-x86-VS-95e9507.exe"><i class="icon-download-alt">.</i> 3.10.4, 32-bit</a> (no SuperNova)<br />
                     </li>
-                </ul>
-                <h4>Previous releases</h4>
-                <ul class="nodot">
                     <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.9.3/SuperCollider-3.9.3-Windows-x64-VS.exe"><i class="icon-download-alt">.</i> 3.9.3, 64-bit</a> (no SuperNova)<br />
                     </li>
