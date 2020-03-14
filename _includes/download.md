@@ -103,10 +103,10 @@
                 <h4>Current Version</h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-RC1_Release-x64-VS-eceebbe.exe"><i class="icon-download-alt">.</i> 3.11.0, 64-bit</a> (no SuperNova)<br />
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0_Release-x64-VS-e341b49.exe"><i class="icon-download-alt">.</i> 3.11.0, 64-bit</a> (no SuperNova)<br />
                     </li>
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-RC1_Release-x86-VS-eceebbe.exe"><i class="icon-download-alt">.</i> 3.11.0, 32-bit</a> (no SuperNova)<br />
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0_Release-x86-VS-e341b49.exe"><i class="icon-download-alt">.</i> 3.11.0, 32-bit</a> (no SuperNova)<br />
                     </li>
                 </ul>
                 <h4>Previous releases</h4>
