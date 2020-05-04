@@ -5,18 +5,18 @@
                 <h2>
                     Mac
                 </h2>
-                <h4>Current Version (with Apple notarization)</h4>
+                <h4>Current Version</h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-macOS-signed.zip"><i class="icon-download-alt">.</i> 3.11.0 - signed</a>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-macOS-signed.zip"><i class="icon-download-alt">.</i> 3.11.0 - signed, notarized</a>
                     </li>
                 </ul>
-                <h4>Current Version</h4>
                 <ul class="nodot">
                     <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-macOS.zip"><i class="icon-download-alt">.</i> 3.11.0</a>
                     </li>
                 </ul>
+                <p>Supports macOS 10.13-10.15, earlier versions of macOS may work</p>
                 <h4>Previous Releases</h4>
                 <ul class="nodot">
                     <li>
@@ -55,6 +55,7 @@
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-Source-linux.tar.bz2">3.11.0 source tarball</a>
                     </li>
                 </ul>
+                <p>Builds with gcc >= 4.9</p>
                 <h4>
                     Official Linux Packages
                 </h4>
@@ -109,6 +110,7 @@
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0_Release-x86-VS-e341b49.exe"><i class="icon-download-alt">.</i> 3.11.0, 32-bit</a> (no SuperNova)<br />
                     </li>
                 </ul>
+                <p>Supports Windows 7, Vista, 8, 10</p>
                 <h4>Previous releases</h4>
                 <ul class="nodot">
                     <li>

@@ -6,6 +6,11 @@ group: navigation
 
 {% include download.md %}
 
+### Other platforms
+
+SuperCollider can be used on embedded platforms, including Raspberry Pi and Beagle Bone Black. See the [project
+READMEs](https://github.com/supercollider/supercollider) for more information.
+
 ### Releases
 <a href="https://github.com/supercollider/supercollider/releases" target="_blank">SuperCollider Releases</a> (including Stable Releases, Betas, and Release Candidates)
 
