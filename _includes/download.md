@@ -8,20 +8,20 @@
                 <h4>Current Version</h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-macOS-signed.zip"><i class="icon-download-alt">.</i> 3.11.0 - signed, notarized</a> (sn<a href="#footnoteMac">*</a>)
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-macOS-signed.zip"><i class="icon-download-alt">.</i> 3.11.0 - signed, notarized</a> (sn*)
                     </li>
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-macOS.zip"><i class="icon-download-alt">.</i> 3.11.0</a> (sn<a href="#footnoteMac">*</a>)
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-macOS.zip"><i class="icon-download-alt">.</i> 3.11.0</a> (sn*)
                     </li>
                 </ul>
                 <p>Supports macOS 10.13-10.15, earlier versions of macOS may work</p>
                 <h4>Previous Releases</h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.4/SuperCollider-3.10.4-macOS-signed.zip"><i class="icon-download-alt">.</i> 3.10.4 - signed</a> (sn<a href="#footnoteMac">*</a>)
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.4/SuperCollider-3.10.4-macOS-signed.zip"><i class="icon-download-alt">.</i> 3.10.4 - signed</a> (sn*)
                     </li>
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.4/SuperCollider-3.10.4-macOS.zip"><i class="icon-download-alt">.</i> 3.10.4</a> (sn<a href="#footnoteMac">*</a>)
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.4/SuperCollider-3.10.4-macOS.zip"><i class="icon-download-alt">.</i> 3.10.4</a> (sn*)
                     </li>
                     <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.9.3/SuperCollider-3.9.3-macOS.zip"><i class="icon-download-alt">.</i> 3.9.3</a>
@@ -36,12 +36,10 @@
                 <h4>Bleeding Edge</h4>
                 <ul class="nodot">
                     <li>
-                        <a href="http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/osx/develop-latest.html"><i class="icon-download-alt">.</i> Latest build</a> (sn<a href="#footnoteMac">*</a>)<br />
+                        <a href="http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/osx/develop-latest.html"><i class="icon-download-alt">.</i> Latest build</a> (sn*)<br />
                         This is the latest build of the development branch.
                     </li>
                 </ul>
-                <br />
-                <p id="footnoteMac">*) Builds marked "sn" include the supernova server.</p>
             </td>
             <td width="32%" valign="top">
                 <h2>
@@ -129,28 +127,27 @@
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.8.1/SuperCollider-3.8.1-Windows-x64-VS.exe"><i class="icon-download-alt">.</i> 3.8.1, 64-bit</a><br />
                     </li>
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.8.0/SuperCollider-3.8.0_Windows_32bits_MW_SuperNova_0947edd.exe"><i class="icon-download-alt">.</i> 3.8.0, 32-bit</a> (sn<a href="#footnoteWin">*</a>)<br />
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.8.0/SuperCollider-3.8.0_Windows_32bits_MW_SuperNova_0947edd.exe"><i class="icon-download-alt">.</i> 3.8.0, 32-bit</a> (sn*)<br />
                     </li>
                     <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.8.0/SuperCollider-3.8.0_Windows_32bits_VS_Sonic_Pi_0947edd.exe"><i class="icon-download-alt">.</i> 3.8.0, 32-bit</a> (Sonic Pi build)<br />
                     </li>
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.7.2/SuperCollider-3.7.2_Release-win32-MinGW-abfba5b.exe"><i class="icon-download-alt">.</i> 3.7.2</a> (sn<a href="#footnoteWin">*</a>, Win XP)<br />
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.7.2/SuperCollider-3.7.2_Release-win32-MinGW-abfba5b.exe"><i class="icon-download-alt">.</i> 3.7.2</a> (sn*, Win XP)<br />
                     </li>
                 </ul>
                 <h4>Bleeding Edge</h4>
                 <p>These are the latest builds of the development branch.</p>
                 <ul class="nodot">
                     <li>
-                        <a href="http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/win64/develop-latest.html"><i class="icon-download-alt">.</i> Latest build (x64)</a> (sn<a href="#footnoteWin">*</a>)
+                        <a href="http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/win64/develop-latest.html"><i class="icon-download-alt">.</i> Latest build (x64)</a> (sn*)
                     </li>
                     <li>
-                        <a href="http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/win32/develop-latest.html"><i class="icon-download-alt">.</i> Latest build (x86)</a> (sn<a href="#footnoteWin">*</a>)
+                        <a href="http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/win32/develop-latest.html"><i class="icon-download-alt">.</i> Latest build (x86)</a> (sn*)
                     </li>
                 </ul>
-                <br />
-                <p id="footnoteWin">*) Builds marked "sn" include the supernova server.</p>
             </td>
         </tr>
     </tbody>
 </table>
+<p>*) Builds marked "sn" include the supernova server.</p>
