@@ -50,7 +50,7 @@
                 </h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-Source-linux.tar.bz2">3.11.0 source tarball</a>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-Source.tar.bz2">3.11.0 source tarball</a>
                     </li>
                 </ul>
                 <p>Builds with gcc >= 4.9</p>
