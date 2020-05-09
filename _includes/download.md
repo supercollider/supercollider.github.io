@@ -108,7 +108,7 @@
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0_Release-x86-VS-e341b49.exe"><i class="icon-download-alt">.</i> 3.11.0, 32-bit</a><br />
                     </li>
                 </ul>
-                <p>Supports Windows 7, Vista, 8, 10</p>
+                <p>Supports Windows Vista, 7, 8, 10</p>
                 <h4>Previous releases</h4>
                 <ul class="nodot">
                     <li>
