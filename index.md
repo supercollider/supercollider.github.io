@@ -179,11 +179,11 @@ SuperCollider uses a Requests for Comment (RFC) system to propose, design, and d
 
 - [Code of Conduct](https://github.com/supercollider/supercollider/blob/develop/CODE_OF_CONDUCT.md)
 
-#### Mailing list
 The community is very active and helpful, the center of activity.  Please do drop by.
 
 - [mailing lists](http://www.birmingham.ac.uk/facilities/BEAST/research/supercollider/mailinglist.aspx)
 - [Join us on Slack](https://join.slack.com/t/scsynth/shared_invite/zt-ezoyz15j-SVM7JVul94pxtDiUDRnd0w)
+- [Discourse forum](https://scsynth.org)
 
 #### Developers
 
