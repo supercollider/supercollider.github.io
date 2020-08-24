@@ -8,10 +8,10 @@
                 <h4>Current Version</h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-macOS-signed.zip"><i class="icon-download-alt">.</i> 3.11.0 - signed, notarized</a> (sn*)
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.1/SuperCollider-3.11.1-macOS-signed.zip"><i class="icon-download-alt">.</i> 3.11.1 - signed, notarized</a> (sn*)
                     </li>
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-macOS.zip"><i class="icon-download-alt">.</i> 3.11.0</a> (sn*)
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.1/SuperCollider-3.11.1-macOS.zip"><i class="icon-download-alt">.</i> 3.11.1</a> (sn*)
                     </li>
                 </ul>
                 <p>Supports macOS 10.13-10.15, earlier versions of macOS may work</p>
@@ -20,6 +20,12 @@
                 </div>
                 <h4>Previous Releases</h4>
                 <ul class="nodot">
+                    <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-macOS-signed.zip"><i class="icon-download-alt">.</i> 3.11.0 - signed, notarized</a> (sn*)
+                    </li>
+                    <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-macOS.zip"><i class="icon-download-alt">.</i> 3.11.0</a> (sn*)
+                    </li>
                     <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.4/SuperCollider-3.10.4-macOS-signed.zip"><i class="icon-download-alt">.</i> 3.10.4 - signed</a> (sn*)
                     </li>
@@ -53,7 +59,10 @@
                 </h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0-Source.tar.bz2">3.11.0 source tarball</a>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.1/SuperCollider-3.11.1-Source.tar.bz2">3.11.1 source tarball</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.1/SuperCollider-3.11.1-Source.tar.bz2">3.11.1 GPG signature</a>
                     </li>
                 </ul>
                 <p>Builds with gcc >= 4.9</p>
@@ -105,15 +114,21 @@
                 <h4>Current Version</h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0_Release-x64-VS-e341b49.exe"><i class="icon-download-alt">.</i> 3.11.0, 64-bit</a><br />
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.1/SuperCollider-3.11.1-Windows-64bit-VS.exe"><i class="icon-download-alt">.</i> 3.11.1, 64-bit</a><br />
                     </li>
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0_Release-x86-VS-e341b49.exe"><i class="icon-download-alt">.</i> 3.11.0, 32-bit</a><br />
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.1/SuperCollider-3.11.1-Windows-32bit-VS.exe"><i class="icon-download-alt">.</i> 3.11.1, 32-bit</a><br />
                     </li>
                 </ul>
                 <p>Supports Windows Vista, 7, 8, 10</p>
                 <h4>Previous releases</h4>
                 <ul class="nodot">
+                    <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0_Release-x64-VS-e341b49.exe"><i class="icon-download-alt">.</i> 3.11.0, 64-bit</a><br />
+                    </li>
+                    <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.0/SuperCollider-3.11.0_Release-x86-VS-e341b49.exe"><i class="icon-download-alt">.</i> 3.11.0, 32-bit</a><br />
+                    </li>
                     <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.4/SuperCollider-3.10.4_Release-x64-VS-95e9507.exe"><i class="icon-download-alt">.</i> 3.10.4, 64-bit</a><br />
                     </li>
