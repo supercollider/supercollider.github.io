@@ -14,7 +14,7 @@
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.1/SuperCollider-3.11.1-macOS.zip"><i class="icon-download-alt">.</i> 3.11.1</a> (sn*)
                     </li>
                 </ul>
-                <p>Supports macOS 10.13-10.15, earlier versions of macOS may work</p>
+                <p>Supports macOS 10.13-10.15, earlier versions of macOS may work; macOS 11 (Big Sur) is currently <b>not</b> supported</p>
                 <div class="alert alert-warning" role="alert">
                     CAUTION: macOS system volume doesn’t effectively limit audio applications’ maximum volume. Extra care has to be put in working on this platform, especially with headphones, because programs can produce unexpectedly loud sounds regardless of system volume settings, potentially causing ear damage. As a safety measure, we highly recommend to install the <a href="" title="SafetyNet quark">SafetyNet</a> quark. See <a href="https://doc.sccode.org/Guides/UsingQuarks.html" title="Using Quarks">Using Quarks</a> for Quarks installation instruction.
                 </div>
