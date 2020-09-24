@@ -18,6 +18,8 @@ Clients Using SC Server
 
 -   Scheme
     -   [rsc3][] is an [r6rs scheme][] supercollider client.
+-   Common Lisp
+    -   [cl-collider][] is a Common Lisp supercollider client.
 -   Haskell
     -   [hsc3][] is a [haskell][] supercollider client.
     -   [Vivid][] is a haskell supercollider client.
@@ -74,6 +76,7 @@ Clients Using SC Server
   [sendOSC]: http://cnmat.org/OpenSoundControl/clients/sendOSC.html
   [rsc3]: http://slavepianos.org/rd/?t=rsc3
   [r6rs scheme]: http://www.r6rs.org/
+  [cl-collider]: https://github.com/byulparan/cl-collider
   [hsc3]: http://www.slavepianos.org/rd/?t=hsc3
   [haskell]: http://www.haskell.org
   [OSC-Client]: http://map1.squeakfoundation.org/sm/accountbyid/13fa7a75-1e76-471e-8f42-b676f4d8e373/package/61f807be-83a3-4944-bfa1-686ddac7153c
