@@ -5,6 +5,8 @@ Front pages for supercollider
 
 Usage
 --------
+You can use the below links for further information about this project.
+And every contribution will be very helpful for the project and make sure to use the below link to <b>Clone Repository</b> and make use of it.
 
 Clone this repository:
 
