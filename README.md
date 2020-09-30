@@ -1,6 +1,6 @@
 supercollider.github.io
 =======================
-
+SuperCollider is a platform for audio synthesis and algorithmic composition.
 Front pages for supercollider
 
 Usage
