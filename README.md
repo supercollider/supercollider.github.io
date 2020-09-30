@@ -1,7 +1,7 @@
 supercollider.github.io
 =======================
 
-Front pages for supercollider
+Front pages for supercollider an amazing project
 
 Usage
 --------
