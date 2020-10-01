@@ -1,4 +1,4 @@
-supercollider.github.io
+supercollider.an Amazing Product
 =======================
 
 Front pages for supercollider
