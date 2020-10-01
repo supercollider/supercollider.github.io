@@ -1,4 +1,4 @@
-supercollider.github.io
+supercollider.github.io - An SpellBounding Project
 =======================
 
 Front pages for supercollider
