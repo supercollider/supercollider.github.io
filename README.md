@@ -1,4 +1,4 @@
-supercollider.github.io
+SUPER_COLLIDER.Github.io
 =======================
 
 Front pages for supercollider
