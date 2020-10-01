@@ -1,7 +1,7 @@
 supercollider.github.io
 =======================
 
-Front pages for supercollider
+Front pages for supercollider - an environment and programming language originally released in 1996 by James McCartney for real-time audio synthesis and algorithmic composition.
 
 Usage
 --------
@@ -36,3 +36,5 @@ or:
 Then, in your browser:
 
     http://localhost:4000
+    
+That's all...You're good to go!!
