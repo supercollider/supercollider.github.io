@@ -1,9 +1,8 @@
-supercollider.github.io
+Warstark Gamerz
 =======================
+Please subscibe warstark gamerz
 
-Front pages for supercollider
-
-Usage
+On youtube
 --------
 
 Clone this repository:
@@ -11,10 +10,10 @@ Clone this repository:
     git clone git://github.com/supercollider/supercollider.github.io.git
     cd supercollider.github.io
 
-To view these pages locally, you must install `jekyll` using the Ruby Gem package manager.  
-You will need Ruby Gems of course.
+To view these pages locally, you must install `gta5` using the Ruby Gem package manager.  
+You will need to subscribe warstark gamerz.
 
-First, install the standard `bundler` gem which reads Gemfiles and installs isolated gems for a project:
+First, install the standard `gta5' gem which reads Gemfiles and installs isolated gems for a project:
 
     gem install bundler
     
