@@ -14,7 +14,7 @@ Clone this repository:
 To view these pages locally, you must install `jekyll` using the Ruby Gem package manager.  
 You will need Ruby Gems of course.
 
-First, install the standard `bundler` gem which reads Gemfiles and installs isolated gems for a project:
+First, INSTALL the standard `bundler` gem which reads Gemfiles and installs isolated gems for a project:
 
     gem install bundler
     
