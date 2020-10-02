@@ -8,7 +8,7 @@ Usage
 
 Clone this repository:
 
-    git clone git://github.com/supercollider/supercollider.github.io.git
+    git clone git://github.com/supercollider/supercollider.github.io.git - an amazing project
     cd supercollider.github.io
 
 To view these pages locally, you must install `jekyll` using the Ruby Gem package manager.  
