@@ -71,7 +71,8 @@ Clients Using SC Server
     - [Sonic Pi][] is a very popular live coding synth with SuperCollider as a server.
 -   JavaScript / TypeScript
     - [supercollider.js][] is a full featured client for the server and the language
-    
+-   Elixir
+    - [ExSCSoundServer][] Elixir libary to interact with scsynth/supernova
 
   [sendOSC]: http://cnmat.org/OpenSoundControl/clients/sendOSC.html
   [rsc3]: http://slavepianos.org/rd/?t=rsc3
@@ -101,6 +102,7 @@ Clients Using SC Server
   [FoxDot]: https://foxdot.org/
   [supercollider.js]: https://crucialfelix.github.io/supercolliderjs/
   [python-supercollider]: https://github.com/ideoforms/python-supercollider
+  [ExSCSoundServer]: https://github.com/olafklingt/sc_ex_scsoundserver
 
 Editors
 -------
