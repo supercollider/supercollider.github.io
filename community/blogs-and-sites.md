@@ -19,7 +19,7 @@ List all here. Feel free to edit on github and add yourself.
 * <http://chrisjeffs.com/blog/?tag=supercollider>
 * <http://www.kimri.org/blog/?cat=2>
 * <http://blog.carltesta.net>
-* <http://scinterviews.com>
+* <https://web.archive.org/web/20180824213728/http://scinterviews.com/rachel-devorah-trapp-interview/>
 * <http://jsimonvanderwalt.com/blog>
 * <http://sebastienclara.wordpress.com/category/articles>
 * <http://sam.aaron.name/blog.html>
@@ -32,7 +32,7 @@ List all here. Feel free to edit on github and add yourself.
 * <http://backtrace.blogspot.de/search/label/supercollider>
 * <http://subnaught.org/supercollider>
 * <http://eyeballsun.blogspot.de>
-* <http://nova.deviator.si/tag/supercollider>
+* <http://lukaprincic.si/tag/supercollider>
 * <http://daniel-mayer.at/software_en.htm>
 
 ## video tutorials
