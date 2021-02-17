@@ -13,8 +13,10 @@
                     <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.2/SuperCollider-3.11.2-macOS-legacy-signed.zip"><i class="icon-download-alt">.</i> 3.11.2 - legacy (macOS 10.10-10.12)</a> (sn*)
                     </li>
+                    <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.2/SuperCollider-3.11.2+BigSur.aed25fa.zip"><i class="icon-download-alt">.</i> 3.11.2+BigSur.aed25fa - signed, notarized (macOS 11)</a> (sn*)
+                    </li>
                 </ul>
-                <p>macOS 11 Big Sur is currently <b>not</b> supported</p>
                 <div class="alert alert-warning" role="alert">
                     CAUTION: macOS system volume doesn’t effectively limit audio applications’ maximum volume. Extra care has to be put in working on this platform, especially with headphones, because programs can produce unexpectedly loud sounds regardless of system volume settings, potentially causing ear damage. As a safety measure, we highly recommend to install the <a href="" title="SafetyNet quark">SafetyNet</a> quark. See <a href="https://doc.sccode.org/Guides/UsingQuarks.html" title="Using Quarks">Using Quarks</a> for Quarks installation instruction.
                 </div>
