@@ -116,7 +116,7 @@
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.2/SuperCollider-3.11.2-Windows-32bit-VS.exe"><i class="icon-download-alt">.</i> 3.11.2, 32-bit</a><br />
                     </li>
                 </ul>
-                <p>Supports Windows Vista, 7, 8, 10</p>
+                <p>Supports Windows 7, 8, 10</p>
                 <h4>Previous releases</h4>
                 <ul class="nodot">
                     <li>
