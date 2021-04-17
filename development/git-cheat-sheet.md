@@ -11,7 +11,7 @@ You are here, because you wish to contribute. Welcome!
 
 However, you may be wondering how so many people can smoothly collaborate on such a complex project such as SuperCollider (SC) and how contributions can get properly synced among the many participating contributors. Tools are needed, which allow version control and support collaboration.
 
-This is where git comes in handy. There are two basic approaches for using git. With SuperCollider we use the "Fork & pull" model. This means for you working typically with a copy of the master project files, a so-called [fork](https://help.github.com/articles/about-forks/), which may confuse or irritate you, notably when coming from svn. 
+This is where git comes in handy. There are two basic approaches for using git. With SuperCollider we use the "Fork & pull" model. This means for you working typically with a copy of the project files, a so-called [fork](https://help.github.com/articles/about-forks/), which may confuse or irritate you, notably when coming from svn. 
 
 In general understanding for any tool how things work in principle means having a clear user model. It does not mean to understand every technical detail and should not require you to become a guru before being able to use a tool. A good user model allows to deduce tool behavior merely by logic and should be fully consistent throughout. Unfortunately, this is not necessarily the case with git. Therefore following may be helpful to you.
 
@@ -21,13 +21,13 @@ Git uses its own terminology. A few key terms and concepts need to be understood
 
 First there are typically three so-called repositories (*repository* or short *repo*), data storing places:
 
-- **upstream repository** is the remote master project *repository*, reachable via URL [https://github.com/supercollider/supercollider](https://github.com/supercollider/supercollider), maintained by the community. It contains all project files. The *upstream repo* is hosted by [GitHub](http://GitHub.com).
+- **upstream repository** is the remote project *repository*, reachable via URL [https://github.com/supercollider/supercollider](https://github.com/supercollider/supercollider), maintained by the community. It contains all project files. The *upstream repo* is hosted by [GitHub](http://GitHub.com).
 
 - **origin** is also a *repository* and is your personal remote copy of the project, a so-called [fork](https://help.github.com/articles/about-forks/) at GitHub, reachable via URL https://github.com/*YOURGitHubUSERID*/supercollider. It is made once by clicking button ’fork’ at the *upstream repo* while you are logged in as GitHub user *YOURGitHubUSERID*. Note this can be done only using a browser, neither the command line tool '[git](http://gitref.org)' nor the application ‘[GitHub Desktop](https://desktop.github.com)’ can fork. Your fork has many advantages. E.g. it keeps all your contributions separate from the *upstream repo* and allows you to make freely changes without disturbing anyone. Your fork is not private, it is visible to everyone logged in to GitHub and may contain specific discussions. Note, despite being separate, the fork can be easily updated/synced to the latest development state. Again the *origin repo* is hosted by [GitHub](http://GitHub.com).
 
 - **local** is the local git *repository* stored anywhere on your machine, a directory, e.g. ../*MYGitHubProjects*/supercollider, containing all project files plus the hidden directory ‘.git’ and other auxiliary files needed therein for git to work. This local copy must be created by cloning once the remote origin, i.e. your personal fork *origin*, not the *upstream*, to the local machine. All files here can be freely edited with tools of your choice, git will take care of the rest, i.e. detect changes by watching all files residing in your *local* repo on your machine.
 
-In addition there are **branches** within above 3 repos. Each repo contains at least one branch, the **default branch**, called **Master**. Branches serve separate development from the main branch, e.g. to try new things out first before they are released (deployed) to others. Whether to create or not to create a branch depends on the given circumstances. Generally you make first a branch before you start editing. Only in case of a very small change, e.g. fix a typo, may be no need to create a branch and you would then make such a change directly within the master branch of the local repo. In most cases, for sure for any substantive change, e.g. an entire subproject such as a complex new feature, you should first create a branch (locally).
+In addition there are **branches** within above 3 repos. Each repo contains at least one branch, the **default branch**, called **develop**. Branches serve separate development from the develop branch, e.g. to try new things out first before they are released (deployed) to others. Whether to create or not to create a branch depends on the given circumstances. Generally you make first a branch before you start editing. Only in case of a very small change, e.g. fix a typo, may be no need to create a branch and you would then make such a change directly within the develop branch of the local repo. In most cases, for sure for any substantive change, e.g. an entire subproject such as a complex new feature, you should first create a branch (locally).
 
 Then it is important that local edits need to be committed locally to become effective, then pushed to the origin, not the upstream (!), and then be announced and proposed to the community by pull requests. The core team of the project will then revise the pull requests and eventually merge the edits from your fork origin (remember it is public) into the upstream. Once that is done and you have synced your local repo (fetched and merged all latest edits) you can then update your local files to the latest development and sync back to your fork origin. As a result all three repositories should then contain identical project files.
 
@@ -123,25 +123,25 @@ With git, it's also possible to pull changes from different clones of the same r
 
 The easy way:
 
-    git pull https://johnny.com/repo.git johnnys-branchname # get his changes
+    git pull https://example.com/repo.git their-branchname # get their changes
 
 check that everything is okay
 
-    git pull --rebase # update master from github
+    git pull --rebase # update main from github
     git push
 
 The hard way:
 
-    git checkout -b merge-johnnys-changes
-    git pull https://johnny.com/repo.git johnnys-branchname # get his changes
+    git checkout -b merge-their-changes
+    git pull https://example.com/repo.git their-branchname # get their changes
 
 check that everything is okay, then push changes back to github.
 
-    git checkout master
-    git pull --rebase # update master from github
-    git rebase master  merge-johnnys-changes # put johny’s changes on top of latest changes from github
-    git checkout master
-    git merge merge-johnnys-changes
+    git checkout main
+    git pull --rebase # update main from github
+    git rebase main merge-their-changes # put their changes on top of latest changes from github
+    git checkout main
+    git merge merge-their-changes
     git push
 
 taken from [here](http://people.gnome.org/~federico/misc/git-cheat-sheet.txt)
@@ -164,24 +164,24 @@ If you're using an older version of git, substitute "tracking" for "upstream."
     git config --global push.default tracking
 
 ## Branches ##
-Another really helpful way to save you from yourself is to work in a local branch that doesn't exist in the public repository. If you are new to git, you `will` make mistakes. If you make mistakes in a published branch, such as "master," and you accidentally push those mistakes, it may take some effort to clean up. But if you work in a branch that exists only on your local machine, you can do anything you want with it, and then selectively move specific commits into a public branch.
+Another really helpful way to save you from yourself is to work in a local branch that doesn't exist in the public repository. If you are new to git, you `will` make mistakes. If you make mistakes in a published branch, such as "main," and you accidentally push those mistakes, it may take some effort to clean up. But if you work in a branch that exists only on your local machine, you can do anything you want with it, and then selectively move specific commits into a public branch.
 
 With a local-only branch, the worst case (completely messing up the branch) is that you delete the local branch and re-create it, with no impact on the origin.
 
 The "-b" option to `git checkout` creates a new branch from an existing one.
 
-    git checkout master -b my_master # now you have your own disconnected branch of master
+    git checkout main -b my_main # now you have your own disconnected branch of main
 
 ... work work work, commit stuff, blah blah...
 
     git log # take note of the commit IDs, which are 32 digit hexadecimal strings
 
-    git checkout master # switch back to the real master branch
+    git checkout main # switch back to the real main branch
     git cherry-pick [ID] # repeat for each ID
     git cherry -v # doublecheck what will actually be pushed
-    git push origin master
+    git push origin main
 
-    git checkout my_master # safe again
+    git checkout my_main # safe again
 
 `git cherry-pick` is a bit inconvenient for large numbers of commits. In that case, it would be better to use a "topic branch." See below, "Using a separate branch for work on a feature."
 
@@ -189,13 +189,13 @@ The "-b" option to `git checkout` creates a new branch from an existing one.
 
 Make sure you've done the "git clone" stuff above, then...
 
-### Simple work on your main (master) branch ###
+### Simple work on your main branch ###
 
 Hack on existing files, create new files...
 
 Display and check uncommitted changes:
 
-    git diff master
+    git diff main
 
 Stage changed and new files (mark them for inclusion in the next commit):
 
@@ -218,7 +218,7 @@ Update your local repository with latest commits in the public repository:
 
 Check what you will be pushing:
 
-    git log origin/master..
+    git log origin/main..
 
 Push it:
 
@@ -226,7 +226,7 @@ Push it:
 
 ### Using a separate branch for work on a feature ###
 
-Sometimes you want to work on several unrelated features during the same period of time and you want to be able to switch between your work on one or another. You can do this by using several branches within your local repository. Each branch allows you to store your work on a feature in form of commits on top of the commit history at the time the branch was created. By default, each repository contains one branch named master, but you can create new ones (and even rename any of them later, including master).
+Sometimes you want to work on several unrelated features during the same period of time and you want to be able to switch between your work on one or another. You can do this by using several branches within your local repository. Each branch allows you to store your work on a feature in form of commits on top of the commit history at the time the branch was created. By default, each repository contains one branch named main, but you can create new ones (and even rename any of them later, including main).
 
 Create a new branch named "my_new_feature" containing all the commits in the current branch:
 
@@ -236,19 +236,19 @@ By the way `git checkout branch_name` switches between branches. 'git status' wi
 
 Now start coding your changes, and commit them into your feature branch with 'git add' and 'git commit' as explained in the previous section.
 
-While you are coding your new feature you might need to update the branch with latest changes from the remote (public) repository, to keep up with other developments. The safest way to do this is to update your master branch and then rebase commits introduced by your feature branch on top of the master. Be sure to have all local changes committed before doing this:
+While you are coding your new feature you might need to update the branch with latest changes from the remote (public) repository, to keep up with other developments. The safest way to do this is to update your main branch and then rebase commits introduced by your feature branch on top of the main. Be sure to have all local changes committed before doing this:
 
-	git checkout master
+	git checkout main
 	git pull --rebase
-	git rebase master my_new_feature
+	git rebase main my_new_feature
 
-When you are ready to push the work on the feature to the public repository, first do the above three steps to synchronize your local repository with the public one, then check what you are going to push with 'git log origin/master..' and do the following:
+When you are ready to push the work on the feature to the public repository, first do the above three steps to synchronize your local repository with the public one, then check what you are going to push with 'git log origin/main..' and do the following:
 
-    git checkout master
+    git checkout main
     git merge my_new_feature
     git push
 
-This will merge the additional commits of your feature branch into the master and push them public. For additional details about rebase, see (4).
+This will merge the additional commits of your feature branch into the main and push them public. For additional details about rebase, see (4).
 
 ##Common git commands##
 
@@ -274,7 +274,7 @@ get patch files for last N commits
 
 get patch files for all commits that are in your current branch but not in upstream:
 
-    git format-patch origin/master
+    git format-patch origin/main
 
 undo (delete) all current non-commited changes (Watch out !):
 
@@ -284,13 +284,13 @@ undo last commit, but leave the changes in the working tree
 
     git reset --soft HEAD^1
 
-undo (delete) all commits since last time one was pulled from upstream (Watch out !). This should be done while in the master branch:
+undo (delete) all commits since last time one was pulled from upstream (Watch out !). This should be done while in the main branch:
 
-    git reset --hard origin/master
+    git reset --hard origin/main
 
-undo all commits since the last time one was pulled from upstream but leave the changes in the working tree. This should be done while in the master branch:
+undo all commits since the last time one was pulled from upstream but leave the changes in the working tree. This should be done while in the main branch:
 
-    git reset --soft origin/master
+    git reset --soft origin/main
 
 show uncommited local changes:
 
@@ -310,15 +310,15 @@ To revert local commits, revert will create another commit that undoes the commi
 
 show changes compared to upstream:
 
-    git diff origin/master    # only diff
+    git diff origin/main    # only diff
 
-    git show origin/master..  # log and diff
+    git show origin/main..  # log and diff
 
-    git log origin/master..   # only log
+    git log origin/main..   # only log
 
 show latest log in upstream:
 
-    git log origin/master
+    git log origin/main
 
 see status of changes:
 
@@ -330,7 +330,7 @@ When switching branches and doing a submodule update (in SC: nova-simd and nova-
 
 It will post something like:
 
-    On branch master
+    On branch main
     Changes not staged for commit:
       (use "git add <file>..." to update what will be committed)
       (use "git checkout -- <file>..." to discard changes in working directory)

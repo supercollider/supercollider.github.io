@@ -26,7 +26,7 @@ If you aren't familiar with Git, GitHub has [tutorials](https://guides.github.co
 
 ## Release cycle
 
-SuperCollider uses a stable `master` branch. Stable releases are marked using tags, along with GitHub's "Releases" page. More detailed information on the current release system can be found [here](https://github.com/supercollider/supercollider/wiki/git-workflow-and-guidelines).
+SuperCollider uses a stable `main` branch. Stable releases are marked using tags, along with GitHub's "Releases" page. More detailed information on the current release system can be found [here](https://github.com/supercollider/supercollider/wiki/git-workflow-and-guidelines).
 
 ## Pull requests
 
