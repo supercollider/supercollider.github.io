@@ -17,9 +17,9 @@ SuperCollider source code is under [Git][git] source control management, and [ho
 
 For help with Git, see [Cheat Sheet for Git](git-cheat-sheet.html)
 
-### The Master Branch
+### The Main Branch
 
-SuperCollider's `master` branch is its stable branch. This branch contains only SuperCollider releases. The `master` branch can be considered stable production-ready code.
+SuperCollider's `main` branch is its stable branch. This branch contains only SuperCollider releases. The `main` branch can be considered stable production-ready code.
 
 ### The Development Branch
 
@@ -31,7 +31,7 @@ Shortly before the release of a new *minor version*, a branch with the name of t
 
 Before a new *patch version* (e.g. 3.6.x) is released, a branch with the name of the version is also created (e.g. `3.6.4`).
 
-When a new *minor version* is released, its release branch is merged into `master`. When a new *patch version* is released, its branch is merged into `develop` and `master`.
+When a new *minor version* is released, its release branch is merged into `main`. When a new *patch version* is released, its branch is merged into `develop` and `main`.
 
 ### Topic Branches
 
