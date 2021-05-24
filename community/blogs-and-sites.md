@@ -17,7 +17,7 @@ List all here. Feel free to edit on github and add yourself.
 * <https://www.fredrikolofsson.com/f0blog/?q=supercollider>
 * <http://www.kimri.org/blog/?cat=2>
 * <https://blog.carltesta.net>
-* <https://web.archive.org/web/20190513081123/http://scinterviews.com/>
+* <http://scinterviews.carltesta.net>
 * <https://jsimonvanderwalt.com/blog>
 * <https://sebastienclara.wordpress.com/category/supercollider/>
 * <http://sam.aaron.name/blog.html>
