@@ -8,13 +8,13 @@
                 <h4>Current Version</h4>
                 <ul class="nodot">
                     <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.2/SuperCollider-3.11.2+BigSur.aed25fa.zip"><i class="icon-download-alt">.</i> 3.11.2+BigSur.aed25fa - signed, notarized (macOS 11)</a> (sn*)
+                    </li>
+                    <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.2/SuperCollider-3.11.2-macOS-signed.zip"><i class="icon-download-alt">.</i> 3.11.2 - signed, notarized (macOS 10.13-10.15)</a> (sn*)
                     </li>
                     <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.2/SuperCollider-3.11.2-macOS-legacy-signed.zip"><i class="icon-download-alt">.</i> 3.11.2 - legacy (macOS 10.10-10.12)</a> (sn*)
-                    </li>
-                    <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.2/SuperCollider-3.11.2+BigSur.aed25fa.zip"><i class="icon-download-alt">.</i> 3.11.2+BigSur.aed25fa - signed, notarized (macOS 11)</a> (sn*)
                     </li>
                 </ul>
                 <div class="alert alert-warning" role="alert">
