@@ -2,7 +2,7 @@
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:year/:month/:day/:title
 
-exclude: ["README.md", "Rakefile"]
+exclude: ["README.md", "Rakefile", "vendor"]
 highlighter: rouge
 
 #
