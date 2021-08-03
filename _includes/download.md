@@ -8,6 +8,16 @@
                 <h4>Current Version</h4>
                 <ul class="nodot">
                     <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.12.0/SuperCollider-3.12.0-macOS.dmg"><i class="icon-download-alt">.</i> 3.12.0 (macOS 10.13-11.x)</a> (sn*)
+                    </li>
+                    <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.12.0/SuperCollider-3.12.0-macOS-legacy.dmg"><i class="icon-download-alt">.</i> 3.12.0 - legacy (macOS 10.10-10.12)</a> (sn*)
+                    </li>
+                </ul>
+                <p>macOS builds are signed and notarized</p>
+                <h4>Previous Releases</h4>
+                <ul class="nodot">
+                    <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.2/SuperCollider-3.11.2+BigSur.aed25fa.zip"><i class="icon-download-alt">.</i> 3.11.2+BigSur.aed25fa - signed, notarized (macOS 11)</a> (sn*)
                     </li>
                     <li>
@@ -16,12 +26,6 @@
                     <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.2/SuperCollider-3.11.2-macOS-legacy-signed.zip"><i class="icon-download-alt">.</i> 3.11.2 - legacy (macOS 10.10-10.12)</a> (sn*)
                     </li>
-                </ul>
-                <div class="alert alert-warning" role="alert">
-                    CAUTION: macOS system volume doesn’t effectively limit audio applications’ maximum volume. Extra care has to be put in working on this platform, especially with headphones, because programs can produce unexpectedly loud sounds regardless of system volume settings, potentially causing ear damage. As a safety measure, we highly recommend to install the <a href="" title="SafetyNet quark">SafetyNet</a> quark. See <a href="https://doc.sccode.org/Guides/UsingQuarks.html" title="Using Quarks">Using Quarks</a> for Quarks installation instruction.
-                </div>
-                <h4>Previous Releases</h4>
-                <ul class="nodot">
                     <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.4/SuperCollider-3.10.4-macOS-signed.zip"><i class="icon-download-alt">.</i> 3.10.4 - signed</a> (sn*)
                     </li>
@@ -55,13 +59,13 @@
                 </h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.2/SuperCollider-3.11.2-Source.tar.bz2">3.11.2 source tarball</a>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.12.0/SuperCollider-3.12.0-Source.tar.bz2">3.12.0 source tarball</a>
                     </li>
-                    <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.2/SuperCollider-3.11.2-Source.tar.bz2">3.11.2 GPG signature</a>
-                    </li>
+                    <!-- <li> -->
+                        <!-- <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.2/SuperCollider-3.11.2-Source.tar.bz2">3.11.2 GPG signature</a> -->
+                    <!-- </li> -->
                 </ul>
-                <p>Builds with gcc >= 4.9</p>
+                <p>Builds with gcc >= 6.3</p>
                 <h4>
                     Official Linux Packages
                 </h4>
@@ -110,15 +114,21 @@
                 <h4>Current Version</h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.2/SuperCollider-3.11.2-Windows-64bit-VS.exe"><i class="icon-download-alt">.</i> 3.11.2, 64-bit</a><br />
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.12.0/SuperCollider-3.12.0_Release-x64-VS-028ff1b.exe"><i class="icon-download-alt">.</i> 3.12.0, 64-bit</a> (sn*)
                     </li>
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.2/SuperCollider-3.11.2-Windows-32bit-VS.exe"><i class="icon-download-alt">.</i> 3.11.2, 32-bit</a><br />
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.12.0/SuperCollider-3.12.0_Release-x86-VS-028ff1b.exe"><i class="icon-download-alt">.</i> 3.12.0, 32-bit</a> (sn*)
                     </li>
                 </ul>
                 <p>Supports Windows 7, 8, 10</p>
                 <h4>Previous releases</h4>
                 <ul class="nodot">
+                    <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.2/SuperCollider-3.11.2-Windows-64bit-VS.exe"><i class="icon-download-alt">.</i> 3.11.2, 64-bit</a><br />
+                    </li>
+                    <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.2/SuperCollider-3.11.2-Windows-32bit-VS.exe"><i class="icon-download-alt">.</i> 3.11.2, 32-bit</a><br />
+                    </li>
                     <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.10.4/SuperCollider-3.10.4_Release-x64-VS-95e9507.exe"><i class="icon-download-alt">.</i> 3.10.4, 64-bit</a><br />
                     </li>
