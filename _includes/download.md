@@ -61,9 +61,9 @@
                     <li>
                         <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.12.0/SuperCollider-3.12.0-Source.tar.bz2">3.12.0 source tarball</a>
                     </li>
-                    <!-- <li> -->
-                        <!-- <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.2/SuperCollider-3.11.2-Source.tar.bz2">3.11.2 GPG signature</a> -->
-                    <!-- </li> -->
+                    <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.12.0/SuperCollider-3.12.0-Source.tar.bz2.asc">3.12.0 GPG signature</a>
+                    </li>
                 </ul>
                 <p>Builds with gcc >= 6.3</p>
                 <h4>
