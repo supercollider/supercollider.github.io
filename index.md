@@ -196,9 +196,7 @@ The community is very active and helpful, the center of activity.  Please do dro
 
 #### Resources
 
-- [Wiki](/pages)
-- [(old) wiki](http://supercollider.sourceforge.net/wiki/)
-- [(really old) swiki](http://swiki.hfbk-hamburg.de/MusicTechnology/6)
+- [Wiki](https://github.com/supercollider/supercollider/wiki)
 
 
 #### News and announcements
