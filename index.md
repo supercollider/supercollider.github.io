@@ -24,8 +24,6 @@ SuperCollider was developed by James McCartney and originally released in 1996. 
 
 ### Examples
 
-- [Code examples](/examples/supercollider-code-examples.html)
-
 <div class="row-fluid main-page-examples">
 
 {% highlight javascript %}
@@ -149,10 +147,6 @@ Ppar([
 - Qt powered GUI framework for building rich interfaces
 
 
-#### External Systems
-- [Systems that interface with SuperCollider](community/systems-interfacing-with-sc.md)
-
-
 ---
 
 
@@ -175,24 +169,14 @@ SuperCollider uses a Requests for Comment (RFC) system to propose, design, and d
 ---
 
 
-### Community
-
-- [Code of Conduct](https://github.com/supercollider/supercollider/blob/develop/CODE_OF_CONDUCT.md)
-
-The community is very active and helpful, the center of activity.  Please do drop by.
-
-- [mailing lists](http://www.birmingham.ac.uk/facilities/BEAST/research/supercollider/mailinglist.aspx)
-- [Join us on Slack](https://join.slack.com/t/scsynth/shared_invite/zt-ezoyz15j-SVM7JVul94pxtDiUDRnd0w)
-- [Discourse forum](https://scsynth.org)
-
 #### Developers
 
-- [Source Code](/development/repository)
+- [Source Code](https://github.com/supercollider/supercollider)
 
 #### Tutorials
 
 - [Getting started](http://doc.sccode.org/Tutorials/Getting-Started/00-Getting-Started-With-SC.html)
-- [Tutorials list](/tutorials/)
+- [Tutorials list](https://github.com/supercollider/supercollider/wiki/Tutorials)
 
 #### Resources
 
@@ -219,7 +203,6 @@ The community is very active and helpful, the center of activity.  Please do dro
 #### Online
 
 - [sccode.org](http://sccode.org/)
-- [Blogs and sites](/community/blogs-and-sites)
 - [SC tweets - tunes under 140 chars](https://twitter.com/search?q=supercollider+play)
 - [Rosetta Code](http://rosettacode.org/wiki/Category:SuperCollider)
 -  Facebook Groups
