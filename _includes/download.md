@@ -8,10 +8,10 @@
                 <h4>Current Version</h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.12.0/SuperCollider-3.12.0-macOS.dmg"><i class="icon-download-alt">.</i> 3.12.0 (macOS 10.13-11.x)</a> (sn*)
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.12.1/SuperCollider-3.12.1-macOS.dmg"><i class="icon-download-alt">.</i> 3.12.1 (macOS 10.13 and later)</a> (sn*)
                     </li>
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.12.0/SuperCollider-3.12.0-macOS-legacy.dmg"><i class="icon-download-alt">.</i> 3.12.0 - legacy (macOS 10.10-10.12)</a> (sn*)
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.12.1/SuperCollider-3.12.1-macOS-legacy.dmg"><i class="icon-download-alt">.</i> 3.12.1 - legacy (macOS 10.10-10.12)</a> (sn*)
                     </li>
                 </ul>
                 <p>macOS builds are signed and notarized</p>
@@ -59,11 +59,11 @@
                 </h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.12.0/SuperCollider-3.12.0-Source.tar.bz2">3.12.0 source tarball</a>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.12.1/SuperCollider-3.12.1-Source.tar.bz2">3.12.1 source tarball</a>
                     </li>
-                    <!-- <li> -->
-                        <!-- <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.11.2/SuperCollider-3.11.2-Source.tar.bz2">3.11.2 GPG signature</a> -->
-                    <!-- </li> -->
+                    <li>
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.12.1/SuperCollider-3.12.1-Source.tar.bz2.asc">3.12.1 GPG signature</a>
+                    </li>
                 </ul>
                 <p>Builds with gcc >= 6.3</p>
                 <h4>
@@ -114,10 +114,10 @@
                 <h4>Current Version</h4>
                 <ul class="nodot">
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.12.0/SuperCollider-3.12.0_Release-x64-VS-028ff1b.exe"><i class="icon-download-alt">.</i> 3.12.0, 64-bit</a> (sn*)
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.12.1/SuperCollider-3.12.1_Release-x64-VS-b678713.exe"><i class="icon-download-alt">.</i> 3.12.1, 64-bit</a> (sn*)
                     </li>
                     <li>
-                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.12.0/SuperCollider-3.12.0_Release-x86-VS-028ff1b.exe"><i class="icon-download-alt">.</i> 3.12.0, 32-bit</a> (sn*)
+                        <a href="https://github.com/supercollider/supercollider/releases/download/Version-3.12.1/SuperCollider-3.12.1_Release-x86-VS-b678713.exe"><i class="icon-download-alt">.</i> 3.12.1, 32-bit</a> (sn*)
                     </li>
                 </ul>
                 <p>Supports Windows 7, 8, 10</p>
