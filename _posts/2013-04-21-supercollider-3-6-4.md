@@ -5,7 +5,6 @@ description: ""
 category: Releases
 tags: []
 ---
-{% include JB/setup %}
 
 ## SuperCollider 3.6.4 is released!
 

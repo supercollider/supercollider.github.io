@@ -5,13 +5,10 @@ description: ""
 category: Releases
 tags: []
 ---
-{% include JB/setup %}
 
 SuperCollider 3.6.6 is now available!
 
 Since 3.6.5, there are many small bugfixes, so this is a recommended update. Notably, the Quarks system is updated to avoid a couple of recent issues. (Full changelog below.)
-
-{% include download.md %}
 
 {% comment %}
 when later versions come out then these historical links might be useful.
