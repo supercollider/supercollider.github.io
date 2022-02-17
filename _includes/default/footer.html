@@ -1,0 +1,27 @@
+<footer class="site-footer">
+  <ul class="social">
+    <p>Social</p>
+    {% for item in site.data.footer.social %}
+    <li>
+      <a href="{{ item.href }}">
+        <i class="{{ item.icon }}"></i>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <ul class="community">
+    <p>Community</p>
+    {% for item in site.data.footer.community %}
+    <li>
+      <a href="{{ item.href }}">
+        {{ item.name }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <hr />
+
+  <p>Edit this website on <a href="https://github.com/supercollider/supercollider.github.io">GitHub</a></p>
+</footer>

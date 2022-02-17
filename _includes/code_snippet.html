@@ -1,0 +1,13 @@
+<div class="snippet">
+  <h4 class="snippet-title">{{ snippet.name }}{% if snippet.author %}<span> – {{ snippet.author }}</span>{% endif %}</h4>
+
+  <div class="code">
+    {% highlight supercollider %}{{ snippet.code }}{% endhighlight %}
+  </div>
+
+  {% if snippet.audio %}
+  <audio controls {% if snippet.loop %}loop{% endif %}>
+    <source src="assets/audio/{{ snippet.audio }}" type="audio/mpeg">
+  </audio>
+  {% endif %}
+</div>

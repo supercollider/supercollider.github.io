@@ -1,0 +1,16 @@
+@function makeLongShadow($color, $steps, $negative) {
+  $val: 0px 0px $color;
+  @for $i from 1 through $steps {
+    $offset: #{$i}px;
+    @if $negative == true {
+      $offset: -#{$i}px;
+    }
+    $val: #{$val}, #{$offset} #{$offset} #{$color};
+  }
+  @return $val;
+}
+
+@mixin longShadow($color, $steps: 200, $negative: false) {
+  text-shadow: makeLongShadow($color, $steps, $negative);
+}
+

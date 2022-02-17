@@ -1,0 +1,20 @@
+<p>
+  The current version is <b>{{ site.current_version }}</b>:
+</p>
+<div class="row">
+  {% for download in site.data.downloads %}
+  <div class="col-md-4">
+    <div class="card">
+      <i class="{{ download.icon }}"></i>
+      <p>{{ download.version }}</p>
+      {% if download.extra %}
+      <p>{{ download.extra }}</p>
+      {% endif %}
+      <a href="{{ download.link }}" class="btn btn-info">Get SuperCollider for {{ download.os }}</a>
+    </div>
+  </div>
+  {% endfor %}
+  <p class="mt-5 pl-3">
+    Can't find your OS or version? See all available versions on the <a href="/download">Download</a> page.
+  </p>
+</div>

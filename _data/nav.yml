@@ -1,0 +1,8 @@
+- title: News
+  page: news
+- title: Download
+  page: download
+- title: Wiki
+  href: https://github.com/supercollider/supercollider/wiki
+- title: Help
+  href: https://doc.sccode.org

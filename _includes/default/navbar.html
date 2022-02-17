@@ -1,0 +1,50 @@
+<header class="site-header">
+
+  <!-- Toggle menu -->
+  <nav>
+    <!-- Logo and title -->
+    <div class="branding">
+      <a class="logo" href="{{ '/' | relative_url }}">
+        <img alt="logo img" src="{{ '/assets/img/logo.svg' | relative_url }}" />
+      </a>
+      {% unless page.title == 'index' %}
+      <a class="site-title" aria-label="{{ site.title }}" href="{{ '/' | relative_url }}">
+        {{ site.title }}
+      </a>
+      {% endunless %}
+    </div>
+
+    <a aria-label="pull" id="pull" class="toggle" href="#">
+      <i class="fas fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul class="hide">
+      {% for nav in site.data.nav %}
+      <li>
+        <a aria-label="{{ nav.page }}" href="{% if nav.page %}{{ nav.page | relative_url }}{% elsif nav.href %}{{ nav.href }}{% endif %}">
+          {{ nav.title | escape }}
+        </a>
+      </li>
+      {% endfor %}
+      <li>
+        <a aria-label="github" href="{{ site.github_url }}" class="icon">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a aria-label="rss" href="/feed.xml" class="icon">
+          <i class="fa fa-rss"></i>
+        </a>
+      </li>
+
+      {% if site.color_theme == 'auto' %}
+      <li class="separator"> | </li>
+      <li>
+        <a id="theme-toggle" aria-label="Theme Toggle" onclick="themeToggle()" title="Toggle between Light and Dark theme"></a>
+      </li>
+      {% endif %}
+    </ul>
+
+  </nav>
+</header>

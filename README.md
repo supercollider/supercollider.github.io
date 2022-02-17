@@ -1,10 +1,6 @@
-supercollider.github.io
-=======================
+# supercollider.github.io
 
-Front pages for supercollider
-
-Usage
---------
+## Local Usage
 
 Clone this repository:
 
@@ -12,27 +8,26 @@ Clone this repository:
     cd supercollider.github.io
 
 To view these pages locally, you must install `jekyll` using the Ruby Gem package manager.  
-You will need Ruby Gems of course.
+You will also need Ruby and Gems.
 
-First, install the standard `bundler` gem which reads Gemfiles and installs isolated gems for a project:
+First, install the standard `bundler` gem:
 
     gem install bundler
-    
+
 and then from the supercollider.github.io directory run:
 
     bundle install
-    
-which will use the Gemfile found in that directory and will install an isolated copy of github-pages in that directory.
 
 
 Now run `Jekyll`:
 
-    jekyll serve --watch
+    bundle exec jekyll serve
 
-or:
+And then, in your browser:
 
-    jekyll help
-    
-Then, in your browser:
+    http://127.0.0.1:4000
 
-    http://localhost:4000
+## Update This Website
+
+This should be straightforward.  
+For code snippets, download links and/or gallery/projects updates, check the `_data` folder.

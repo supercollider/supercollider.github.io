@@ -1,0 +1,7 @@
+<section class="main prose {{ include.css }}" markdown="{{ include.md | default: 0 }}">
+  {% if include.title %}
+  <h2>{{ include.title }}</h2>
+  {% endif %}
+
+  {% include {{ include.src }}%}
+</section>
