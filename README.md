@@ -38,7 +38,7 @@ If you wanna be sure that your CSS changes are going to be effective in the brow
 To edit the default download data **on the main page**:
 
 - edit `_data/downloads.yml`
-- edit `current_version` in `_config.yml`.
+- edit `current_version` in `_config.yml`
 
 To edit data from the dedicated download page, you'll have to edit `download/index.md`.
 
