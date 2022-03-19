@@ -8,6 +8,6 @@ bootstrap: true
 
 {% include section.html title="Download" src="download.html" css="download" %}
 
-{% include section.html title="Examples" src="examples.html" md=1 %}
+{% include section.html title="Examples" src="examples.md" md=1 %}
 
 {% include section.html title="Gallery" src="gallery.html" css="gallery" %}
