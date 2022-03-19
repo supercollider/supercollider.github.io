@@ -1,3 +1,4 @@
 Gemfile.lock
 _site/
 vendor/
+_config-dev.yml
