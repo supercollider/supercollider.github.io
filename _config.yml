@@ -1,8 +1,10 @@
 # Site settings
 title: SuperCollider
 description: >- # this means to ignore newlines in the following paragraph
-  An environment and programming language for real time audio synthesis and
-  algorithmic composition.
+  A platform for audio synthesis and algorithmic composition, used by musicians,
+  artists and researchers working with sound.
+description_bottom: >-
+  Free and <a href="https://github.com/supercollider/supercollider">open source</a> software for Windows, MacOS and Linux.
 favicon: assets/img/favicon.png
 
 baseurl: ""
