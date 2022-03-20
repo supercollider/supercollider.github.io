@@ -38,7 +38,6 @@ html[data-theme="dark"] {
     --width: 60rem;
   }
 
-  --angle: -11deg;
    // Magic Number: tan(8°) / 2
   --magic-number: 0.09719;
   --skew-padding: calc(var(--width) * var(--magic-number));
@@ -111,10 +110,10 @@ section.main {
     padding: 0;
     font-family: "Raleway", sans-serif;
     margin-bottom: .2em;
-    color: $green;
+    color: $title-color;
     max-width: var(--width);
     line-height: 1.2;
-    transform: skewY(var(--angle));
+    transform: $skew;
     text-transform: uppercase;
     font-weight: 900;
   }
@@ -136,7 +135,7 @@ section.main {
 .description {
   color: var(--text);
   font-size: 1rem;
-  transform: skewY(var(--angle));
+  transform: $skew;
   margin: 0em auto 0em;
   text-align: center;
   font-weight: 900;
@@ -228,8 +227,8 @@ nav {
 }
 
 .features em {
-  color: #e83e8c;
-  font-family: monospace;
+  color: $pink;
+  font-family: $font-monospace;
   font-size: 90%;
   font-weight: bold;
   font-style: normal;
@@ -256,7 +255,7 @@ header.site-header {
       margin: 0;
       float: unset;
       font-size: 2em;
-      color: $green;
+      color: $title-color;
     }
   }
 }
@@ -281,7 +280,7 @@ header.site-header {
 iframe {
   padding: 0;
   max-height: 12em;
-  background: black;
+  background: $black;
 }
 
 nav ul li a#theme-toggle:hover {
