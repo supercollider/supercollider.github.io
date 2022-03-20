@@ -305,21 +305,8 @@ footer.site-footer {
   background: var(--border);
   display: flex;
   justify-content: space-around;
-  ul {
-    text-align: left;
-    flex-basis: 30%;
-    list-style: none;
-    &.social {
-      display: flex;
-      flex-flow: row wrap;
-    }
-    p {
-      width: 100%;
-      font-weight: bold;
-    }
-  }
-  i {
-    margin-right: 2em;
+  p {
+    width: 100%;
   }
 }
 

@@ -6,14 +6,8 @@
   page: examples
 - title: Projects
   page: projects
-- title: Sccode
-  href: https://sccode.org
-- title: Wiki
-  href: https://github.com/supercollider/supercollider/wiki
-- title: Forum
-  href: https://scsynth.org
-- title: Documentation
-  href: https://doc.sccode.org
+- title: Links
+  page: links
 - title: github
   icon: fab fa-github
   href: https://github.com/supercollider/supercollider
