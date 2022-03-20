@@ -25,6 +25,7 @@
         <a
           aria-label="{{ nav.title | downcase }}"
           href="{% if nav.page %}{{ nav.page | relative_url }}{% elsif nav.href %}{{ nav.href }}{% endif %}"{% if nav.icon %} class="icon"{% endif %}
+          {% if nav.href %} target="_blank"{% endif %}
         >
           {% if nav.icon %}
           <i class="{{ nav.icon }}"></i>
