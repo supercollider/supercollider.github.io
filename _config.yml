@@ -11,7 +11,7 @@ baseurl: ""
 url: "https://supercollider.github.io"
 
 # Website version
-site_version: 0.1.3
+site_version: 0.1.4
 
 # Build settings
 sass:
