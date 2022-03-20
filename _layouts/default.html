@@ -7,7 +7,7 @@
 -->
 <html lang="en">
   {% include default/head.html %}
-  <body class={{ page.title }}>
+  <body class={{ page.title | downcase }}>
     {% include default/navbar.html %}
     {% if page.title == 'index' %}
       {% include section.html src="title_main.html" css="title" %}
