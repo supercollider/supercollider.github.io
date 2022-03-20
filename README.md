@@ -31,6 +31,9 @@ And then, in your browser:
 
 ### CSS Updates
 
+We use sass variables so changing colors can be done by editing `assets/css/_variables.scss`.
+Otherwise, the main sass file is `assets/css/main.scss`.
+
 If you wanna be sure that your CSS changes are going to be effective in the browsers you'll have to update `site_version` in `_config.yml` (css cache burst).
 
 ### Downloads
@@ -44,14 +47,36 @@ To edit data from the dedicated download page, you'll have to edit `download/ind
 
 ### Code Snippets
 
-Add a code snippet to the main page:
+To add a code snippet to the main page:
 
 - edit `_data/code_snippets.yml`
 - add the corresponding audio file in `assets/audio`
 
 ### Gallery
 
-Add a project to the Gallery/Projects page:
+To add a project to the Projects page:
 
-- edit `_data/gallery.yml`
-- add the corresponding image (1024x576 recommended) in `images/gallery`
+- edit `_data/gallery.yml` with your project data (see examples below)
+- if your project is represented by an image, add the corresponding image in `images/gallery`
+
+#### Image
+
+```yml
+- title: YOUR TITLE
+  type: image
+  image: YOUR IMAGE
+  link: YOUR LINK
+  author: YOUR AUTHOR NAME
+  text: |
+    YOUR TEXT
+```
+
+#### Vimeo or YouTube video
+
+```yml
+- title: YOUR VIDEO TITLE
+  type: vimeo (or youtube)
+  id: YOUR VIDEO ID
+  text: |
+    YOUR TEXT
+```
