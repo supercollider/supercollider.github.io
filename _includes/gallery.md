@@ -4,5 +4,6 @@
     {% include gallery_card.md %}
   </div>
   {% endfor %}
+  <hr />
   <p>Check out the whole gallery on the <a href="{{ 'projects' | relative_url }}">projects</a> page.</p>
 </div>

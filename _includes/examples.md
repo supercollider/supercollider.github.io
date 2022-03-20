@@ -7,6 +7,10 @@ You can find much more user examples on [sccode.org](https://sccode.org/){:targe
 Check out the amazing [sc-140](sc-140) album (with code examples!).
 {: .alert.alert-info}
 
-{% for snippet in site.data.code_snippets %}
+{% for snippet in site.data.code_snippets limit:2 %}
   {% include code_snippet.html snippet=snippet %}
 {% endfor %}
+
+------
+
+Check out all examples on the <a href="{{ 'examples' | relative_url }}">examples</a> page.
