@@ -2,7 +2,19 @@
   page: news
 - title: Download
   page: download
+- title: Examples
+  page: examples
+- title: Projects
+  page: projects
+- title: Sccode
+  href: https://sccode.org
 - title: Wiki
   href: https://github.com/supercollider/supercollider/wiki
-- title: Help
+- title: Documentation
   href: https://doc.sccode.org
+- title: github
+  icon: fab fa-github
+  href: https://github.com/supercollider/supercollider
+- title: rss
+  icon: fa fa-rss
+  page: /feed.xml

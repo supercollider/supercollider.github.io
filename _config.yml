@@ -32,5 +32,4 @@ color_theme: auto
 bootstrap: true
 
 # SC Version
-github_url: "https://github.com/supercollider/supercollider"
 current_version: 3.12.12
