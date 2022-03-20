@@ -30,6 +30,3 @@ remote_theme: sylhare/type-on-strap
 # Theme settings
 color_theme: auto
 bootstrap: true
-
-# SC Version
-current_version: 3.12.12

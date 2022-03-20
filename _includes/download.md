@@ -1,15 +1,17 @@
-The current version is **{{ site.current_version }}**:
+The current version is **{{ site.data.downloads.current_version }}**:
 
 <div class="row">
-  {% for download in site.data.downloads %}
+  {% for os in site.data.downloads.os %}
   <div class="col-md-4">
     <div class="card">
-      <h3 class="text-center">{{ download.os }}</h3>
-      <p>{{ download.version }}</p>
-      {% if download.extra %}
-      <p>{{ download.extra }}</p>
-      {% endif %}
-      <a href="{{ download.link }}" class="btn btn-info">Get SuperCollider for {{ download.os }}</a>
+      <h3 class="text-center">{{ os.slug }}</h3>
+      {% assign current = os.categories | where: 'key', 'current_version' | first %}
+      {% for download in current.downloads limit:1 %}
+        <p>{{ download.name }}</p>
+        <a href="{{ download.link }}" class="btn btn-info">
+          Get SuperCollider for {{ os.name }}
+        </a>
+      {% endfor %}
     </div>
   </div>
   {% endfor %}
