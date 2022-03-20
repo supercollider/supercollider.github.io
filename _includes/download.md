@@ -1,6 +1,5 @@
-<p>
-  The current version is <b>{{ site.current_version }}</b>:
-</p>
+The current version is **{{ site.current_version }}**:
+
 <div class="row">
   {% for download in site.data.downloads %}
   <div class="col-md-4">
