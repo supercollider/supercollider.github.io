@@ -278,6 +278,11 @@ header.site-header {
     }
   }
 }
+iframe {
+  padding: 0;
+  max-height: 12em;
+  background: black;
+}
 
 nav ul li a#theme-toggle:hover {
   cursor: pointer;
@@ -382,6 +387,9 @@ svg {
   .download div.card {
     margin: 1em auto;
   }
+  iframe {
+    max-height: 23em;
+  }
 }
 @media (min-width: 768px) {
   body.index div.branding a.logo img {
@@ -461,5 +469,8 @@ svg {
   }
   .code figure.highlight pre code {
     font-size: 1.125rem;
+  }
+  iframe {
+    max-height: 15em;
   }
 }
