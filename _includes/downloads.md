@@ -16,6 +16,6 @@ The current version is **{{ site.data.downloads.current_version }}**:
   </div>
   {% endfor %}
   <p class="mt-5 pl-3">
-    Can't find your OS or version? See all available versions on the <a href="{{ site.baseurl }}/download">Download</a> page.
+    Can't find your OS or version? See all available versions on the <a href="{{ site.baseurl }}/downloads">Downloads</a> page.
   </p>
 </div>
