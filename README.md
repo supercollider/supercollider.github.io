@@ -38,12 +38,10 @@ If you wanna be sure that your CSS changes are going to be effective in the brow
 
 ### Downloads
 
-To edit the default download data **on the main page**:
+To update download links, you'll have to dit `_data/downloads.yml`.
 
-- edit `_data/downloads.yml`
-- edit `current_version` in `_config.yml`
-
-To edit data from the dedicated download page, you'll have to edit `download/index.md`.
+Please keep in mind that **the *Download* section on the index page will display the first download
+for each OS in the `current_version` category (order matters)**.
 
 ### Code Snippets
 
