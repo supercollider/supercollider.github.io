@@ -21,8 +21,11 @@
     <!-- Menu -->
     <ul class="hide">
       {% for nav in site.data.nav %}
-      <li>
-        <a aria-label="{{ nav.title | downcase }}" href="{% if nav.page %}{{ nav.page | relative_url }}{% elsif nav.href %}{{ nav.href }}{% endif %}"{% if nav.icon %} class="icon"{% endif %}>
+      <li{% if nav.icon %} class="icon"{% endif %}>
+        <a
+          aria-label="{{ nav.title | downcase }}"
+          href="{% if nav.page %}{{ nav.page | relative_url }}{% elsif nav.href %}{{ nav.href }}{% endif %}"{% if nav.icon %} class="icon"{% endif %}
+        >
           {% if nav.icon %}
           <i class="{{ nav.icon }}"></i>
           {% else %}
