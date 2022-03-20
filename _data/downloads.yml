@@ -4,6 +4,7 @@ os:
   - name: macOS
     slug: Mac
     categories:
+      # The first download in this category will be shown on the index page
       - key: current_version
         name: Current Version
         end_text: macOS builds are signed and notarized
@@ -33,7 +34,7 @@ os:
             link: https://github.com/supercollider/supercollider/releases/download/Version-3.7.2/SuperCollider-OSX-3.7.2.zip
       - key: bleeding_edge
         name: Bleeding Edge
-        end_text: This is the latest build of the development branch
+        end_text: This is the latest build of the development branch.
         downloads:
           - name: Latest build
             link: http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/osx/develop-latest.html
@@ -41,6 +42,7 @@ os:
   - name: Linux
     slug: Linux
     categories:
+      # The first download in this category will be shown on the index page
       - key: current_version
         name: Current Version
         end_text: Build with gcc >= 6.3
@@ -79,6 +81,7 @@ os:
   - name: Windows
     slug: Windows
     categories:
+      # The first download in this category will be shown on the index page
       - key: current_version
         name: Current Version
         end_text: Supports Windows 7, 8, 10

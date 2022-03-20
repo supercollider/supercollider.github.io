@@ -38,7 +38,7 @@ If you wanna be sure that your CSS changes are going to be effective in the brow
 
 ### Downloads
 
-To update download links, you'll have to dit `_data/downloads.yml`.
+To update download links, you'll have to edit `_data/downloads.yml`.
 
 Please keep in mind that **the *Download* section on the index page will display the first download
 for each OS in the `current_version` category (order matters)**.
