@@ -1,8 +1,4 @@
-_site/
 Gemfile.lock
-*.gem
-*.swp
-*~
-.bundle/
-.DS_Store
-gh-pages/
+_site/
+vendor/
+_config-dev.yml

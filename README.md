@@ -1,10 +1,6 @@
-supercollider.github.io
-=======================
+# supercollider.github.io
 
-Front pages for supercollider
-
-Usage
---------
+## Local Usage
 
 Clone this repository:
 
@@ -12,27 +8,73 @@ Clone this repository:
     cd supercollider.github.io
 
 To view these pages locally, you must install `jekyll` using the Ruby Gem package manager.  
-You will need Ruby Gems of course.
+You will also need Ruby and Gems.
 
-First, install the standard `bundler` gem which reads Gemfiles and installs isolated gems for a project:
+First, install the standard `bundler` gem:
 
     gem install bundler
-    
+
 and then from the supercollider.github.io directory run:
 
     bundle install
-    
-which will use the Gemfile found in that directory and will install an isolated copy of github-pages in that directory.
 
 
 Now run `Jekyll`:
 
-    jekyll serve --watch
+    bundle exec jekyll serve
 
-or:
+And then, in your browser:
 
-    jekyll help
-    
-Then, in your browser:
+    http://127.0.0.1:4000
 
-    http://localhost:4000
+## Update This Website
+
+### CSS Updates
+
+We use sass variables so changing colors can be done by editing `assets/css/_variables.scss`.
+Otherwise, the main sass file is `assets/css/main.scss`.
+
+If you wanna be sure that your CSS changes are going to be effective in the browsers you'll have to update `site_version` in `_config.yml` (css cache burst).
+
+### Downloads
+
+To update download links, you'll have to edit `_data/downloads.yml`.
+
+Please keep in mind that **the *Download* section on the index page will display the first download
+for each OS in the `current_version` category (order matters)**.
+
+### Code Snippets
+
+To add a code snippet to the main page:
+
+- edit `_data/code_snippets.yml`
+- add the corresponding audio file in `assets/audio`
+
+### Gallery
+
+To add a project to the Projects page:
+
+- edit `_data/gallery.yml` with your project data (see examples below)
+- if your project is represented by an image, add the corresponding image in `images/gallery`
+
+#### Image
+
+```yml
+- title: YOUR TITLE
+  type: image
+  image: YOUR IMAGE
+  link: YOUR LINK
+  author: YOUR AUTHOR NAME
+  text: |
+    YOUR TEXT
+```
+
+#### Vimeo or YouTube video
+
+```yml
+- title: YOUR VIDEO TITLE
+  type: vimeo (or youtube)
+  id: YOUR VIDEO ID
+  text: |
+    YOUR TEXT
+```

@@ -1,83 +1,29 @@
 <!DOCTYPE html>
+<!--
+    Type on Strap jekyll theme v2.3.6
+    Copyright 2016-2021 Sylhare
+    Theme free for personal and commercial use under the MIT license
+    https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
+-->
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }} &raquo; SuperCollider</title>
-    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-    <meta name="author" content="{{ site.author.name }}">
-
-    <!-- Enable responsive viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- styles -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/bootstrap-responsive-2.3.0.min.css" rel="stylesheet">
-
-    <!-- highlight.js -->
-    <link rel="stylesheet" href="/css/highlight/github.css">
-    <script src="/js/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-
-    <!-- site custom -->
-    <link href="/css/main.css" rel="stylesheet" type="text/css" media="all">
-
-    <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
-
-    <!-- fav and touch icons -->
-    <link rel="icon" href="/images/favicon.png">
-    <link rel="apple-touch-icon" href="/images/favicon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon.png">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- atom & rss feed -->
-    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-
-  </head>
-
-  <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container-narrow">
-          <a class="brand" href="/">
-              <img src="/images/logo.svg" alt="SuperCollider" style="width: 32px; height: 32px">
-              {{ site.title }}
-          </a>
-          <ul class="nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
-            <li><a href="https://github.com/supercollider/supercollider/wiki">Wiki</a></li>
-            <li><a href="http://doc.sccode.org/">Docs</a></li>
-            <li class="badges"><iframe src="https://ghbtns.com/github-btn.html?user=supercollider&amp;repo=supercollider&amp;type=watch&amp;count=true&amp;size=small" allowtransparency="true" frameborder="0" scrolling="0" width="105px" height="30px">watch</iframe>
-            <iframe src="https://ghbtns.com/github-btn.html?user=supercollider&amp;repo=supercollider&amp;type=fork&amp;count=true&amp;size=small" allowtransparency="true" frameborder="0" scrolling="0" width="105px" height="30px">fork</iframe>
-            </li>
-          </ul>
-        </div>
+  {% include default/head.html %}
+  <body class={{ page.title | downcase }}>
+    {% include default/navbar.html %}
+    {% if page.title == 'index' %}
+      {% include section.html src="title_main.html" css="title" %}
+    {% endif %}
+    {% if page.bootstrap %}
+      <div class="bootstrap-iso">
+    {% endif %}
+      {{ content }}
+    {% if page.bootstrap %}
       </div>
-    </div>
-
-    <div class="main container-narrow">
-
-      <div class="content">
-        {{ content }}
-      </div>
-      <hr>
-      <footer>
-          <p>Licensed under the <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>.</p>
-
-          <a class="edit-link quiet" href="https://github.com/supercollider/supercollider.github.io/edit/main/{{ page.path }}"><i class="icon-edit"></i> edit this page</a>
-      </footer>
-
-    </div>
-
-    {% include JB/analytics %}
+    {% endif %}
+    {% include default/footer.html %}
+    <div id="main"></div>
+    {% if page.hasWave %}
+    <script defer src="{{ '/assets/js/wave.js' | relative_url }}"></script>
+    {% endif %}
   </body>
 </html>
+

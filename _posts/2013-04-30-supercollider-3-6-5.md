@@ -5,8 +5,6 @@ description: ""
 category: Releases
 tags: []
 ---
-{% include JB/setup %}
-
 
 Due to a silly but important bug that sneaked into SuperCollider 3.6.4 and made
 a simple "{SinOsc.ar}.scope" fail with an error, we have decided to do the next

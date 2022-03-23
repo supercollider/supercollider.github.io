@@ -1,0 +1,120 @@
+- name: Simple FM
+  code: |
+    { SinOsc.ar(SinOsc.kr([1, 3]).exprange(100, 2e3), 0, 0.2) }.play
+  audio: fm.mp3
+  loop: true
+
+- name: Drummer
+  author: 'Thor Magnusson, 2006'
+  code: |
+    {
+      var snare, bdrum, hihat;
+      var tempo = 4;
+
+      tempo = Impulse.ar(tempo); // for a drunk drummer replace Impulse with Dust !!!
+      snare = WhiteNoise.ar(Decay2.ar(PulseDivider.ar(tempo, 4, 2), 0.005, 0.5));
+      bdrum = SinOsc.ar(Line.ar(120,60, 1), 0, Decay2.ar(PulseDivider.ar(tempo, 4, 0), 0.005, 0.5));
+      hihat = HPF.ar(WhiteNoise.ar(1), 10000) * Decay2.ar(tempo, 0.005, 0.5);
+
+      Out.ar(0, (snare + bdrum + hihat) * 0.4 ! 2)
+    }.play
+  audio: drummer.mp3
+  loop: true
+
+- name: Chainsaw
+  author: 'Julian Rohrhuber, 2007'
+  code: |
+    (
+      var f, g;
+
+      f = { | saw |
+        var freq, u, amp, rate;
+
+        rate = ExpRand(0.1, 2);
+        freq = if (0.6.coin) {
+          LFNoise1.kr(rate.dup).exprange(0.01, 10)
+        } {
+          LFNoise1.kr(rate.dup).exprange(10, 50)
+        };
+        u = LFSaw.kr(LinExp.kr(saw, -1, 1, freq, freq * LFNoise1.kr(rate.dup).exprange(2, 10)));
+        u = if (0.5.coin) {
+          u * [1 - saw, saw.reverse].choose
+        } {
+          u * LFSaw.kr(freq * 0.1, 0, 0.1, 1)
+        };
+
+        u.clip2(1.0)
+
+      };
+
+      g = { | func, n = 5 |
+        n.do { func = func <> func };
+        func
+      };
+
+      {
+        var freq;
+        freq = g.(f, 4).value(LFSaw.kr(0.2 * [1, 1.1])).exprange(6, 11000);
+        BPF.ar(Saw.ar(freq).product, [70, 800, 9000, 5242], 0.2).sum.dup * 0.3
+      }.play
+    )
+  audio: chainsaw.mp3
+  loop: false
+
+- name: Gabber Rave
+  code: |
+    // 60Hz Gabber Rave 1995
+    (
+    SynthDef(\gabberkick, {
+        var snd, freq, high, lfo;
+        freq = \freq.kr(440) * (Env.perc(0.001, 0.08, curve: -1).ar * 48 * \bend.kr(1)).midiratio;
+        snd = Saw.ar(freq);
+        snd = (snd * 100).tanh + ((snd.sign - snd) * -8.dbamp);
+        high = HPF.ar(snd, 300);
+        lfo = SinOsc.ar(8, [0, 0.5pi]).range(0, 0.01);
+        high = high.dup(2) + (DelayC.ar(high, 0.01, lfo) * -2.dbamp);
+        snd = LPF.ar(snd, 100).dup(2) + high;
+        snd = RLPF.ar(snd, 7000, 2);
+        snd = BPeakEQ.ar(snd, \ffreq.kr(3000) * XLine.kr(1, 0.8, 0.3), 0.5, 15);
+        snd = snd * Env.asr(0.001, 1, 0.05).ar(2, \gate.kr(1));
+        Out.ar(\out.kr(0), snd * \amp.kr(0.1));
+    }).add;
+
+    SynthDef(\hoover, {
+        var snd, freq, bw, delay, decay;
+        freq = \freq.kr(440);
+        freq = freq * Env([-5, 6, 0], [0.1, 1.7], [\lin, -4]).kr.midiratio;
+        bw = 1.035;
+        snd = { DelayN.ar(Saw.ar(freq * ExpRand(bw, 1 / bw)) + Saw.ar(freq * 0.5 * ExpRand(bw, 1 / bw)), 0.01, Rand(0, 0.01)) }.dup(20);
+        snd = (Splay.ar(snd) * 3).atan;
+        snd = snd * Env.asr(0.01, 1.0, 1.0).kr(0, \gate.kr(1));
+        snd = FreeVerb2.ar(snd[0], snd[1], 0.3, 0.9);
+        snd = snd * Env.asr(0, 1.0, 4, 6).kr(2, \gate.kr(1));
+        Out.ar(\out.kr(0), snd * \amp.kr(0.1));
+    }).add;
+    )
+
+    (
+    var durations;
+    durations = [1, 1, 1, 1, 3/4, 1/4, 1/2, 3/4, 1/4, 1/2];
+    Ppar([
+        Pbind(*[
+            instrument: \gabberkick,
+            amp: -23.dbamp,
+            freq: 60,
+            legato: 0.8,
+            ffreq: Pseq((0..(durations.size * 4 - 1)).normalize, inf).linexp(0, 1, 100, 4000),
+            dur: Pseq(durations, inf),
+            bend: Pfuncn({ |x| if(x < (1/2), 0.4, 1) }, inf) <> Pkey(\dur),
+        ]),
+        Pbind(*[
+            instrument: \hoover,
+            amp: -20.dbamp,
+            midinote: 74,
+            dur: durations.sum * 2,
+            sustain: 7,
+        ])
+    ]).play(TempoClock(210 / 60));
+    )
+  audio: gabber.mp3
+  loop: true

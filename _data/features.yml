@@ -1,0 +1,34 @@
+- name: "Language - sclang"
+  features:
+    - Single inheritance object-oriented and functional language
+    - Similar to Smalltalk or Ruby with syntax similar to C or Javascript
+    - Dynamically typed
+    - Constant time message lookup and real-time garbage collection
+    - Functions as first-class objects
+    - Closures are lexical, and scope is both lexical and dynamic
+    - Coroutines
+    - List comprehensions
+    - Partial application (explicit currying)
+    - Tail call optimization
+    - Class extensions
+    - Embedded subsystems for composing patterns and signal graphs
+    - Quarks package manager for code sharing
+    - Interactive programming and Live Coding
+- name: "Server - scsynth"
+  features:
+    - High quality accurate and efficient audio engine
+    - Fully adjustable sample rate (192k+) and block size
+    - 32-bit float signal chain
+    - Sampling buffers use 64-bit float
+    - Fast and fluid control rate modulation
+    - "[Communicates via Open Sound Control](http://doc.sccode.org/Reference/Server-Command-Reference) - TCP/UDP network communication"
+    - "[Hundreds of UGens (unit generators)](http://doc.sccode.org/Browse.html#UGens)"
+    - Simple ANSI C plugin API
+    - Hundreds more community contributed UGens
+    - Supports any number of input and output channels, ideal for [large multichannel setups](http://www.beast.bham.ac.uk/)
+    - Multi-processor support using the Supernova server implementation
+- name: "IDE / Application"
+  features:
+    - Qt-based cross-platform Integrated Development Environment
+    - REPL for "select and call" interactive programming
+    - Qt powered GUI framework for building rich interfaces

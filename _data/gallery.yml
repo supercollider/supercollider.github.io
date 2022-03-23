@@ -1,0 +1,27 @@
+- title: Greenwashing
+  type: image
+  image: greenwashing.jpg
+  link: https://frerikolofsson.com/music
+  author: Fredrik Olofsson
+  text: |
+    An audiovisual piece in which we look at the invisible and listen to the inaudible.
+
+- title: Show Us Your Screens
+  type: vimeo
+  id: 20241649
+  text: |
+    A Documentary about live coding practices by Louis McCallum and Davy Smith.
+
+- title: SuperCollider Book
+  type: image
+  image: MIT-supercollider-book-sm.jpg
+  link: https://mitpress.mit.edu/books/supercollider-book
+  text: |
+    The essential reference to SuperCollider, a powerful, flexible, open-source, cross-platform audio programming language.
+
+- title: Audio Coding
+  type: youtube
+  id: 'wC-bj7Ajvhs'
+  author: Eli Fieldsteel
+  text: |
+    Introduction to Audio Coding with SuperCollider.

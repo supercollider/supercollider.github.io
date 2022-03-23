@@ -5,7 +5,6 @@ description: ""
 category: symposium
 tags: []
 ---
-{% include JB/setup %}
 
 EXTENDED AGAIN!
 

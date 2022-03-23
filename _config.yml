@@ -1,87 +1,32 @@
-# This is the default format.
-# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink: /:categories/:year/:month/:day/:title
-
-exclude: ["README.md", "Rakefile", "vendor"]
-highlighter: rouge
-
-#
+# Site settings
 title: SuperCollider
-tagline: An environment and programming language for real time audio synthesis and algorithmic composition
-author :
-  name: SuperCollider
-  email: supercollider@bham.co.uk
-  github: supercollider
-  twitter:
-  feedburner:
+description: >- # this means to ignore newlines in the following paragraph
+  A platform for audio synthesis and algorithmic composition, used by musicians,
+  artists and researchers working with sound.
+description_bottom: >-
+  Free and <a href="https://github.com/supercollider/supercollider">open source</a> software for Windows, MacOS and Linux.
+favicon: assets/img/favicon.png
 
-# The production_url is only used when full-domain names are needed
-# such as sitemap.txt
-# Most places will/should use BASE_PATH to make the urls
-#
-# If you have set a CNAME (pages.github.com) set your custom domain here.
-# Else if you are pushing to username.github.com, replace with your username.
-# Finally if you are pushing to a GitHub project page, include the project name at the end.
-#
-production_url : https://supercollider.github.io
+baseurl: ""
+url: "https://supercollider.github.io"
 
-JB:
-  # These paths are to the main pages Jekyll-Bootstrap ships with.
-  # Some JB helpers refer to these paths; change them here if needed.
-  #
-  archive_path: /archive.html
-  categories_path : /categories.html
-  tags_path : /tags.html
-  atom_path : /atom.xml
-  rss_path : /rss.xml
+# Website version
+site_version: 0.1.4
 
-  # Settings for comments helper
-  # Set 'provider' to the comment provider you want to use.
-  # Set 'provider' to false to turn commenting off globally.
-  #
-  comments :
-    provider : false
-    disqus :
-      short_name : supercollider
-    livefyre :
-      site_id : 123
-    intensedebate :
-      account : 123abc
-    facebook :
-      appid : 123
-      num_posts: 5
-      width: 580
-      colorscheme: light
+# Build settings
+sass:
+  load_paths:
+    - _sass
+    - assets/css
 
-  # Settings for analytics helper
-  # Set 'provider' to the analytics provider you want to use.
-  # Set 'provider' to false to turn analytics off globally.
-  #
-  analytics :
-    provider : false
-    google :
-        tracking_id : 'UA-123-12'
-    getclicky :
-      site_id :
-    mixpanel :
-        token : '_MIXPANEL_TOKEN_'
+# Plugins:
+whitelist: []
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
 
-  # Settings for sharing helper.
-  # Sharing is for things like tweet, plusone, like, reddit buttons etc.
-  # Set 'provider' to the sharing provider you want to use.
-  # Set 'provider' to false to turn sharing off globally.
-  #
-  sharing :
-    provider : false
+remote_theme: sylhare/type-on-strap
 
-  # Settings for all other include helpers can be defined by creating
-  # a hash with key named for the given helper. ex:
-  #
-  #   pages_list :
-  #     provider : "custom"
-  #
-  # Setting any helper's provider to 'custom' will bypass the helper code
-  # and include your custom code. Your custom file must be defined at:
-  #   ./_includes/custom/[HELPER]
-  # where [HELPER] is the name of the helper you are overriding.
-
+# Theme settings
+color_theme: auto
+bootstrap: true

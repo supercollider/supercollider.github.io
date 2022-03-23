@@ -1,0 +1,16 @@
+- title: News
+  page: news
+- title: Downloads
+  page: downloads
+- title: Examples
+  page: examples
+- title: Projects
+  page: projects
+- title: Links
+  page: links
+- title: github
+  icon: fab fa-github
+  href: https://github.com/supercollider/supercollider
+- title: rss
+  icon: fa fa-rss
+  page: /feed.xml
