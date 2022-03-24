@@ -337,6 +337,13 @@ svg {
   100% { transform: translate3d(-90px, 0, 0); }
 }
 
+/* Fix nav menu "jumping" down SC icon on these screen sizes */
+@media screen and (min-width: 768px) and (max-width: 830px) {
+  body:not(.index) nav ul.hide {
+    font-size: .9em;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header {
     .logo, .description {
