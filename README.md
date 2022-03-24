@@ -34,7 +34,7 @@ And then, in your browser:
 We use sass variables so changing colors can be done by editing `assets/css/_variables.scss`.
 Otherwise, the main sass file is `assets/css/main.scss`.
 
-If you wanna be sure that your CSS changes are going to be effective in the browsers you'll have to update `site_version` in `_config.yml` (css cache burst).
+If you wanna be sure that your CSS changes are going to be effective in the browsers you'll have to update `site_version` in `_config.yml` (css cache bust).
 
 ### Downloads
 
