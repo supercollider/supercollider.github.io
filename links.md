@@ -7,6 +7,7 @@ bootstrap: true
 - [Sccode](https://sccode.org)
 - [Wiki](https://github.com/supercollider/supercollider/wiki)
 - [Forum](https://scsynth.org)
+- [Slack](https://scsynth.slack.com)
 - [Documentation](https://doc.sccode.org)
 - [sccode.org](https://sccode.org)
 - [SC tweets - tunes under 140 characters](https://twitter.com/search?q=supercollider+play)
