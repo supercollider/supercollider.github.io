@@ -68,6 +68,17 @@ h1, h2, h3, h4, h5 {
 .highlight .nc {
   color: $light-blue;
 }
+#main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  footer {
+    margin-top: auto;
+    p {
+      margin: 0;
+    }
+  }
+}
 
 .card {
   transition: transform 200ms;
