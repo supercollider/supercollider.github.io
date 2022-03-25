@@ -68,6 +68,17 @@ h1, h2, h3, h4, h5 {
 .highlight .nc {
   color: $light-blue;
 }
+#main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  footer {
+    margin-top: auto;
+    p {
+      margin: 0;
+    }
+  }
+}
 
 .card {
   transition: transform 200ms;
@@ -335,6 +346,13 @@ svg {
 @keyframes moveTheWave {
   0% { transform: translate3d(0, 0, 0);}
   100% { transform: translate3d(-90px, 0, 0); }
+}
+
+/* Fix nav menu "jumping" down SC icon on these screen sizes */
+@media screen and (min-width: 768px) and (max-width: 830px) {
+  body:not(.index) nav ul.hide {
+    font-size: .9em;
+  }
 }
 
 @media screen and (max-width: 768px) {

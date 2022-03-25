@@ -11,7 +11,7 @@ baseurl: ""
 url: "https://supercollider.github.io"
 
 # Website version
-site_version: 0.1.4
+site_version: 0.2
 
 # Build settings
 sass:
@@ -29,4 +29,3 @@ remote_theme: sylhare/type-on-strap
 
 # Theme settings
 color_theme: auto
-bootstrap: true

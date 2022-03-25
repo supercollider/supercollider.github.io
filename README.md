@@ -4,28 +4,36 @@
 
 Clone this repository:
 
-    git clone git://github.com/supercollider/supercollider.github.io.git
-    cd supercollider.github.io
+```sh
+git clone https://github.com/supercollider/supercollider.github.io.git
+cd supercollider.github.io
+```
 
-To view these pages locally, you must install `jekyll` using the Ruby Gem package manager.  
-You will also need Ruby and Gems.
+This website is powered by `jekyll` so in order to view it locally you'll need
+to have [Ruby](https://ruby-lang.org) and [Gems](https://rubygems.org) installed
+on your computer.
 
-First, install the standard `bundler` gem:
+Then, install `jekyll` and `bundler` gems:
 
-    gem install bundler
+```sh
+gem install jekyll bundler
+```
 
-and then from the supercollider.github.io directory run:
+Install dependencies:
 
-    bundle install
+```sh
+bundle install
+```
 
+Now you can run `jekyll` server:
 
-Now run `Jekyll`:
-
-    bundle exec jekyll serve
+```sh
+bundle exec jekyll serve
+```
 
 And then, in your browser:
 
-    http://127.0.0.1:4000
+http://127.0.0.1:4000
 
 ## Update This Website
 
@@ -34,7 +42,7 @@ And then, in your browser:
 We use sass variables so changing colors can be done by editing `assets/css/_variables.scss`.
 Otherwise, the main sass file is `assets/css/main.scss`.
 
-If you wanna be sure that your CSS changes are going to be effective in the browsers you'll have to update `site_version` in `_config.yml` (css cache burst).
+If you wanna be sure that your CSS changes are going to be effective in the browsers you'll have to update `site_version` in `_config.yml` (css cache bust).
 
 ### Downloads
 

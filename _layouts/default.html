@@ -8,19 +8,20 @@
 <html lang="en">
   {% include default/head.html %}
   <body class={{ page.title | downcase }}>
-    {% include default/navbar.html %}
-    {% if page.title == 'index' %}
-      {% include section.html src="title_main.html" css="title" %}
-    {% endif %}
-    {% if page.bootstrap %}
-      <div class="bootstrap-iso">
-    {% endif %}
-      {{ content }}
-    {% if page.bootstrap %}
-      </div>
-    {% endif %}
-    {% include default/footer.html %}
-    <div id="main"></div>
+    <div id="main">
+      {% include default/navbar.html %}
+      {% if page.title == 'index' %}
+        {% include section.html src="title_main.html" css="title" %}
+      {% endif %}
+      {% if page.bootstrap %}
+        <div class="bootstrap-iso">
+      {% endif %}
+        {{ content }}
+      {% if page.bootstrap %}
+        </div>
+      {% endif %}
+      {% include default/footer.html %}
+    </div>
     {% if page.hasWave %}
     <script defer src="{{ '/assets/js/wave.js' | relative_url }}"></script>
     {% endif %}
