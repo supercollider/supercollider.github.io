@@ -30,20 +30,6 @@ html[data-theme="dark"] {
   }
 }
 
-:root {
-  --width: 100vw;
-  --full-width: 100vw;
-
-  @media (min-width: 60em) {
-    --width: 60rem;
-  }
-
-   // Magic Number: tan(8°) / 2
-  --magic-number: 0.09719;
-  --skew-padding: calc(var(--width) * var(--magic-number));
-
-}
-
 body {
   font-family: $font-main;
   line-height: 1.5;
@@ -68,6 +54,12 @@ h1, h2, h3, h4, h5 {
 .highlight .nc {
   color: $light-blue;
 }
+.slanted {
+  transform: $skew;
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 3.4em;
+}
 #main {
   display: flex;
   flex-direction: column;
@@ -79,14 +71,12 @@ h1, h2, h3, h4, h5 {
     }
   }
 }
-
 .card {
   transition: transform 200ms;
   &:hover {
     transform: scale(1.05);
   }
 }
-
 .downloads {
   div.card {
     background: transparent;
@@ -118,22 +108,28 @@ section.main {
   h1.shadow {
     font-size: 9.8vw;
     text-align: center;
-    padding: 0;
     font-family: "Raleway", sans-serif;
-    margin-bottom: .2em;
     color: $title-color;
-    max-width: var(--width);
+    padding: 0;
+    margin: 0;
     line-height: 1.2;
-    transform: $skew;
     text-transform: uppercase;
     font-weight: 900;
   }
 
+  .logo-wrapper, .header-wrapper {
+    display: flex;
+    align-items: center;
+    padding-bottom: .8em;
+  }
+  .logo-wrapper {
+    width: 17%;
+  }
+  .header-wrapper {
+    width: 83%;
+  }
   img.logo {
     display: none;
-    position: absolute;
-    top: 4.2em;
-    left: 1.4em;
   }
 
   > h2 {
@@ -146,7 +142,6 @@ section.main {
 .description {
   color: var(--text);
   font-size: 1rem;
-  transform: $skew;
   margin: 0em auto 0em;
   text-align: center;
   font-weight: 900;
@@ -395,6 +390,18 @@ svg {
       }
     }
   }
+  section.main {
+    .slanted {
+      padding-top: 2em;
+      .logo-wrapper {
+        display: none;
+      }
+      .header-wrapper {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
   .downloads div.card {
     margin: 1em auto;
   }
@@ -410,22 +417,22 @@ svg {
     display: none;
   }
   section.main {
-    margin: 6rem auto;
+    margin: 4em auto;
     padding-left: 2rem;
     padding-right: 2rem;
     &.title {
       margin-top: 4rem;
     }
+    .slanted {
+      padding-top: 2em;
+    }
     img.logo {
       display: inline;
-      width: 4.4rem;
-      top: 3rem;
-      left: 2.4rem;
+      width: 3.6em;
     }
     h1.shadow {
       font-size: 4rem;
       text-align: right;
-      padding-right: 2rem;
     }
     > h2 {
       font-size: 2rem;
@@ -452,14 +459,12 @@ svg {
   section.main {
     padding-left: 0;
     padding-right: 0;
-    &.title {
-      margin-top: 5rem;
+    .slanted {
+      padding-top: 3.4em;
     }
     img.logo {
       display: inline;
-      width: 5.4rem;
-      top: 4.4rem;
-      left: 1.2rem;
+      width: 5em;
     }
     h1.shadow {
       font-size: 5.2rem;
