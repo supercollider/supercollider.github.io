@@ -269,6 +269,7 @@ header.site-header {
       float: unset;
       font-size: 2em;
       color: $title-color;
+      text-shadow: -1px -1px 1px var(--base03);
     }
   }
 }
