@@ -157,7 +157,7 @@ section.main {
     color: var(--text);
     background-image: linear-gradient(transparent 90%, 0, #003 100%);
     background-image: none;
-    border-bottom: 4px solid;
+    border-bottom: 3px dotted var(--base03);
     transition: none;
 
     &:hover {
