@@ -45,7 +45,7 @@ These third-party plugins provide additional synthesis, analysis, and other capa
 
 #### Quarks
 
-[https://github.com/supercollider/quarks](https://github.com/supercollider/quarks)
+[https://github.com/supercollider-quarks/quarks](https://github.com/supercollider-quarks/quarks)
 
 Quarks are packages containing classes, extension methods, documentation and UGens.  
 The integrated Quarks package system is used to download and manage these packages on your system.
