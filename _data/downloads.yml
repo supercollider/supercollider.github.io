@@ -9,12 +9,10 @@ os:
         name: Current Version
         end_text: macOS builds are signed and notarized
         downloads:
-          - name: 3.13.0-rc1 x64, macOS 10.14 and later
-            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0-rc1/SuperCollider-3.13.0-rc1-macOS-x64.dmg
-          - name: 3.13.0-rc1 arm64, macOS 11 and later
-            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0-rc1/SuperCollider-3.13.0-rc1-macOS-arm64.dmg
-          - name: 3.13.0-rc1 "legacy" x64, macOS 10.10-10.13
-            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0-rc1/SuperCollider-3.13.0-rc1-macOS-x64-legacy.dmg
+          - name: 3.13.0-rc2 universal binary, macOS 10.14 and later
+            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0-rc2/SuperCollider-3.13.0-rc2-macOS-universal.dmg
+          - name: 3.13.0-rc2 "legacy" x64, macOS 10.10-10.13
+            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0-rc2/SuperCollider-3.13.0-rc2-macOS-x64-legacy.dmg
       - key: previous_releases
         name: Previous Releases
         downloads:
@@ -53,10 +51,10 @@ os:
         name: Current Version
         end_text: Build with gcc >= 6.3
         downloads:
-          - name: 3.13.0-rc1 source tarball for Linux
-            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0-rc1/SuperCollider-3.13.0-rc1-Source.tar.bz2
-          - name: 3.13.0-rc1 GPG signature
-            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0-rc1/SuperCollider-3.13.0-rc1-Source.tar.bz2.asc
+          - name: 3.13.0-rc2 source tarball for Linux
+            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0-rc2/SuperCollider-3.13.0-rc2-Source.tar.bz2
+          - name: 3.13.0-rc2 GPG signature
+            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0-rc2/SuperCollider-3.13.0-rc2-Source.tar.bz2.asc
             # remove the links below after the final 3.13.0 release
           - name: 3.12.2 source tarball for Linux
             link: https://github.com/supercollider/supercollider/releases/download/Version-3.12.2/SuperCollider-3.12.2-Source.tar.bz2
@@ -97,10 +95,10 @@ os:
         name: Current Version
         end_text: Supports Windows 7, 8, 10
         downloads:
-          - name: 3.13.0-rc1 for Windows 64-bit
-            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0-rc1/SuperCollider-3.13.0-rc1_Release-x64-VS-94c8d3a.exe
-          - name: 3.13.0-rc1 for Windows 32-bit
-            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0-rc1/SuperCollider-3.13.0-rc1_Release-x86-VS-94c8d3a.exe
+          - name: 3.13.0-rc2 for Windows 64-bit
+            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0-rc2/SuperCollider-3.13.0-rc2_Release-x64-VS-0156cbb.exe
+          - name: 3.13.0-rc2 for Windows 32-bit
+            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0-rc2/SuperCollider-3.13.0-rc2_Release-x86-VS-0156cbb.exe
       - key: previous_releases
         name: Previous Releases
         downloads:
