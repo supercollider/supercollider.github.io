@@ -59,7 +59,7 @@ os:
         name: Official Linux Packages
         downloads:
           - name: Arch Linux
-            link: https://www.archlinux.org/packages/community/x86_64/supercollider
+            link: https://archlinux.org/packages/extra/x86_64/supercollider/
           - name: Debian
             link: https://packages.debian.org/search?suite=all&searchon=names&keywords=supercollider
           - name: Ubuntu
