@@ -8,7 +8,7 @@ bootstrap: true
 - [Wiki](https://github.com/supercollider/supercollider/wiki)
 - [Forum](https://scsynth.org)
 - [Slack](https://scsynth.slack.com)
-- [Documentation](https://doc.sccode.org)
+- [Documentation](https://docs.supercollider.online)
 - [SC tweets - tunes under 140 characters](https://twitter.com/search?q=supercollider+play)
 - [Rosetta Code](http://rosettacode.org/wiki/Category:SuperCollider)
 
