@@ -15,4 +15,4 @@ jobs:
           uses: actions/upload-artifact@v4
           with:
             path: ./_site
-            name: supercollider_website_{{ env.GITHUB_REF_NAME }}_{{ env.GITHUB_SHA }}
+            name: supercollider_website_${{ github.ref_name }}_${{ github.sha }}
