@@ -6,6 +6,8 @@
   page: examples
 - title: Projects
   page: projects
+- title: Documentation
+  href: https://docs.supercollider.online
 - title: Links
   page: links
 - title: github
