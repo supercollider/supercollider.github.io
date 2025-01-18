@@ -127,5 +127,3 @@ os:
         downloads:
           - name: Latest build (x64)
             link: http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/win64/develop-latest.html
-          - name: Latest build (x86)
-            link: http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/win32/develop-latest.html
