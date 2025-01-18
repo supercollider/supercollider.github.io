@@ -2,6 +2,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
 
+    <script>
+        function toggleMenu() {
+            let menu = document.querySelector("nav ul");
+            if(menu.classList.contains("hide")) {
+                menu.classList.remove("hide");
+            } else {
+                menu.classList.add("hide");
+            }
+        }
+    </script>
+
     <!-- Theme Mode-->
     {% if site.color_theme == 'auto' %}
     <script>
