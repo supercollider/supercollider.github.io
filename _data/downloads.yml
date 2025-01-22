@@ -41,9 +41,9 @@ os:
         end_text: This is the latest build of the development branch.
         downloads:
           - name: Latest x64 build
-            link: http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/osx-x64/develop-latest.html
+            link: http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/macos-x64/develop-latest.html
           - name: Latest arm build
-            link: http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/osx-arm64/develop-latest.html
+            link: http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/macos-arm64/develop-latest.html
 
   - name: Linux
     slug: Linux
