@@ -53,10 +53,10 @@ os:
         name: Current Version
         end_text: Build with gcc >= 6.3
         downloads:
-          - name: 3.13.0 source tarball for Linux
-            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0/SuperCollider-3.13.0-Source.tar.bz2
-          - name: 3.13.0 GPG signature
-            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0/SuperCollider-3.13.0-Source.tar.bz2.asc
+          - name: 3.13.1 source tarball for Linux
+            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.1/SuperCollider-3.13.1-Source.tar.bz2
+          - name: 3.13.1 GPG signature
+            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.1/SuperCollider-3.13.1-Source.tar.bz2.asc
       - key: official_linux_packages
         name: Official Linux Packages
         downloads:
