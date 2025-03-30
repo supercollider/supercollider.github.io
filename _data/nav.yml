@@ -2,14 +2,14 @@
   page: news
 - title: Downloads
   page: downloads
+- title: Community
+  page: community
 - title: Examples
   page: examples
 - title: Projects
   page: projects
 - title: Documentation
   href: https://docs.supercollider.online
-- title: Links
-  page: links
 - title: github
   icon: fab fa-github
   href: https://github.com/supercollider/supercollider
