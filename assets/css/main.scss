@@ -30,10 +30,16 @@ html[data-theme="dark"] {
   }
 }
 
+html {
+  min-height: 100vh;
+}
+
 body {
   font-family: $font-main;
   line-height: 1.5;
   font-size: 20px;
+  min-height: 100vh;
+  display: flex;
 }
 .prose {
   max-width: 54ch;
@@ -63,7 +69,9 @@ h1, h2, h3, h4, h5 {
 #main {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  flex-grow: 1;
+  align-items: stretch;
+  max-width: 100%;
   footer {
     margin-top: auto;
     p {
