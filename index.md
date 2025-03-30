@@ -4,7 +4,7 @@ title: index
 bootstrap: true
 ---
 
-{% include section.html title="Features" src="features.md" md=1 %}
+{% include section.html src="features.md" md=1 %}
 
 {% include section.html title="Downloads" src="downloads.md" md=1 css="downloads" %}
 
