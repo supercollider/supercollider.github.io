@@ -9,11 +9,20 @@ If you are interested in getting help, sharing results, getting inspired, or par
 
 > Please respect our [Code of Conduct](https://github.com/supercollider/supercollider/blob/develop/CODE_OF_CONDUCT.md) in all SuperCollider affiliated communities
 
+## Main communities
+
+These communities are managed and moderated by a team that works closely with the development team and is also used for all official communications such as new releases.
+
 [sccode.org](https:://sccode.org) | The forum - this is the as _official_ as it gets in regards to SuperCollider community. It also offers multiple chat channels once you are registered.
-[sccode.org](https://sccode.org) | Share SuperCollider code snippets
+[sccode.org](https://sccode.org) | A community around sharing SuperCollider code snippets
+[github.com/supercollider](https://github.com/supercollider) | GitHub organization where SuperCollider is developed
+
+## Other communities
+
+Owned and managed by people in the community.
+
 [scsynth.slack.com](https://scsynth.slack.com) | The SuperCollider Slack channel
 [Discord server](https://discord.gg/PVUmDyx7p8) | Discord channel about SuperCollider
-[github.com/supercollider](https://github.com/supercollider) | GitHub organization where SuperCollider is developed
 
 ## Facebook groups
 
