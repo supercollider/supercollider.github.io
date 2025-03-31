@@ -13,7 +13,7 @@ If you are interested in getting help, sharing results, getting inspired, or par
 
 These communities are managed and moderated by a team that works closely with the development team and is also used for all official communications such as new releases.
 
-[sccode.org](https:://sccode.org) | The forum - this is the as _official_ as it gets in regards to SuperCollider community. It also offers multiple chat channels once you are registered.
+[scsynth.org](https://scsynth.org) | The forum - this is the as _official_ as it gets in regards to SuperCollider community. It also offers multiple chat channels once you are registered.
 [sccode.org](https://sccode.org) | A community around sharing SuperCollider code snippets
 [github.com/supercollider](https://github.com/supercollider) | GitHub organization where SuperCollider is developed
 
