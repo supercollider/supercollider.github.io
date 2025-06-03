@@ -16,6 +16,7 @@ These communities are managed and moderated by a team that works closely with th
 [scsynth.org](https://scsynth.org) | The forum - this is the as _official_ as it gets in regards to SuperCollider community. It also offers multiple chat channels once you are registered.
 [sccode.org](https://sccode.org) | A community around sharing SuperCollider code snippets
 [github.com/supercollider](https://github.com/supercollider) | GitHub organization where SuperCollider is developed
+[social.toplap.org/@supercollider](https://social.toplap.org/@supercollider/) | Official Mastodon account
 
 ## Other communities
 
