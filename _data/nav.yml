@@ -13,6 +13,9 @@
 - title: github
   icon: fab fa-github
   href: https://github.com/supercollider/supercollider
+- title: mastodon
+  icon: fab fa-mastodon
+  href: https://social.toplap.org/@supercollider
 - title: rss
   icon: fa fa-rss
   page: /feed.xml
