@@ -22,7 +22,7 @@ These communities are managed and moderated by a team that works closely with th
 Owned and managed by people in the community.
 
 [scsynth.slack.com](https://scsynth.slack.com) | The SuperCollider Slack channel
-[Discord server](https://discord.gg/PVUmDyx7p8) | Discord channel about SuperCollider
+[Discord server](https://discord.gg/43U8JRJz3B) | Discord channel about SuperCollider
 
 ## Facebook groups
 
