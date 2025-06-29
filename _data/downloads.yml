@@ -40,10 +40,8 @@ os:
         name: Bleeding Edge
         end_text: This is the latest build of the development branch.
         downloads:
-          - name: Latest x64 build
-            link: http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/macos-x64/develop-latest.html
-          - name: Latest arm build
-            link: http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/macos-arm64/develop-latest.html
+          - name: Latest universal x64 arm64 build
+            link: http://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/macos-universal/develop-latest.html
 
   - name: Linux
     slug: Linux
