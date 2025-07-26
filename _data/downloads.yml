@@ -9,13 +9,17 @@ os:
         name: Current Version
         end_text: macOS builds are signed and notarized
         downloads:
+          - name: 3.14.0 universal binary, macOS 11+
+            link: https://github.com/supercollider/supercollider/releases/download/Version-3.14.0/SuperCollider-3.14.0-macOS-universal.dmg
+          - name: 3.14.0 "legacy" x64, macOS 10.15+
+            link: https://github.com/supercollider/supercollider/releases/download/Version-3.14.0/SuperCollider-3.14.0-macOS-x64-legacy.dmg
+      - key: previous_releases
+        name: Previous Releases
+        downloads:
           - name: 3.13.0 universal binary, macOS 10.14 and later
             link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0/SuperCollider-3.13.0-macOS-universal.dmg
           - name: 3.13.0 "legacy" x64, macOS 10.10-10.13
             link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0/SuperCollider-3.13.0-macOS-x64-legacy.dmg
-      - key: previous_releases
-        name: Previous Releases
-        downloads:
           - name: 3.12.2 for macOS 10.13 and later
             link: https://github.com/supercollider/supercollider/releases/download/Version-3.12.2/SuperCollider-3.12.2-macOS.dmg
           - name: 3.12.2 - legacy (macOS 10.10-10.12)
@@ -49,12 +53,12 @@ os:
       # The first download in this category will be shown on the index page
       - key: current_version
         name: Current Version
-        end_text: Build with gcc >= 6.3
+        end_text: Build with gcc >= 9
         downloads:
-          - name: 3.13.1 source tarball for Linux
-            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.1/SuperCollider-3.13.1-Source.tar.bz2
-          - name: 3.13.1 GPG signature
-            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.1/SuperCollider-3.13.1-Source.tar.bz2.asc
+          - name: 3.14.0 source tarball for Linux
+            link: https://github.com/supercollider/supercollider/releases/download/Version-3.14.0/SuperCollider-3.14.0-Source.tar.bz2
+          - name: 3.14.0 GPG signature
+            link: https://github.com/supercollider/supercollider/releases/download/Version-3.14.0/SuperCollider-3.14.0-Source.tar.bz2.asc
       - key: official_linux_packages
         name: Official Linux Packages
         downloads:
@@ -88,18 +92,20 @@ os:
       # The first download in this category will be shown on the index page
       - key: current_version
         name: Current Version
-        end_text: Supports Windows 7, 8, 10
+        end_text: Supports Windows 10, 11
         downloads:
-          - name: 3.13.0 for Windows 64-bit
-            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0/SuperCollider-3.13.0_Release-x64-VS-3188503.exe
-          - name: 3.13.0 for Windows 32-bit
-            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0/SuperCollider-3.13.0_Release-x86-VS-3188503.exe
+          - name: 3.14.0, x64
+            link: https://github.com/supercollider/supercollider/releases/download/Version-3.14.0/SuperCollider-3.14.0_Release-x64-VS-d263b8c.exe
       - key: previous_releases
         name: Previous Releases
         downloads:
-          - name: 3.12.2 for Windows 64-bit
+          - name: 3.13.0, 64-bit
+            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0/SuperCollider-3.13.0_Release-x64-VS-3188503.exe
+          - name: 3.13.0, 32-bit
+            link: https://github.com/supercollider/supercollider/releases/download/Version-3.13.0/SuperCollider-3.13.0_Release-x86-VS-3188503.exe
+          - name: 3.12.2, 64-bit
             link: https://github.com/supercollider/supercollider/releases/download/Version-3.12.2/SuperCollider-3.12.2_Release-x64-VS-7c4c983.exe
-          - name: 3.12.2 for Windows 32-bit
+          - name: 3.12.2, 32-bit
             link: https://github.com/supercollider/supercollider/releases/download/Version-3.12.2/SuperCollider-3.12.2_Release-x86-VS-7c4c983.exe
           - name: 3.11.2, 64-bit
             link: https://github.com/supercollider/supercollider/releases/download/Version-3.11.2/SuperCollider-3.11.2-Windows-64bit-VS.exe
