@@ -13,6 +13,9 @@
 - title: github
   icon: fab fa-github
   href: https://github.com/supercollider/supercollider
+- title: youtube
+  icon: fab fa-youtube
+  href: https://www.youtube.com/@SuperColliderOnline
 - title: mastodon
   icon: fab fa-mastodon
   href: https://social.toplap.org/@supercollider
