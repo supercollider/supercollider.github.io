@@ -9,7 +9,7 @@ tags: []
 
 There is now an "official" SuperCollider YouTube channel.
 
-<https://www.youtube.com/@SuperCollideOnline>
+<https://www.youtube.com/@SuperColliderOnline>
 
 It currently contains the recordings of the [recent symposium](https://scsynth.org/t/supercollider-symposium-2025/9911>) and of the [release party](https://scsynth.org/t/supercollider-3-14-release-party/11893).
 
