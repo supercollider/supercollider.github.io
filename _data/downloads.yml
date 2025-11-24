@@ -1,4 +1,4 @@
-current_version: 3.14.0
+current_version: 3.14.1
 
 os:
   - name: macOS
@@ -9,10 +9,10 @@ os:
         name: Current Version
         end_text: macOS builds are signed and notarized
         downloads:
-          - name: 3.14.0 universal binary, macOS 11+
-            link: https://github.com/supercollider/supercollider/releases/download/Version-3.14.0/SuperCollider-3.14.0-macOS-universal.dmg
-          - name: 3.14.0 "legacy" x64, macOS 10.15+
-            link: https://github.com/supercollider/supercollider/releases/download/Version-3.14.0/SuperCollider-3.14.0-macOS-x64-legacy.dmg
+          - name: 3.14.1 universal binary, macOS 11+
+            link: https://github.com/supercollider/supercollider/releases/download/Version-3.14.1/SuperCollider-3.14.1-macOS-universal.dmg
+          - name: 3.14.1 "legacy" x64, macOS 10.15+
+            link: https://github.com/supercollider/supercollider/releases/download/Version-3.14.1/SuperCollider-3.14.1-macOS-x64-legacy.dmg
       - key: previous_releases
         name: Previous Releases
         downloads:
@@ -55,10 +55,10 @@ os:
         name: Current Version
         end_text: Build with gcc >= 9
         downloads:
-          - name: 3.14.0 source tarball for Linux
-            link: https://github.com/supercollider/supercollider/releases/download/Version-3.14.0/SuperCollider-3.14.0-Source.tar.bz2
-          - name: 3.14.0 GPG signature
-            link: https://github.com/supercollider/supercollider/releases/download/Version-3.14.0/SuperCollider-3.14.0-Source.tar.bz2.asc
+          - name: 3.14.1 source tarball for Linux
+            link: https://github.com/supercollider/supercollider/releases/download/Version-3.14.1/SuperCollider-3.14.1-Source.tar.bz2
+          - name: 3.14.1 GPG signature
+            link: https://github.com/supercollider/supercollider/releases/download/Version-3.14.1/SuperCollider-3.14.1-Source.tar.bz2.asc
       - key: official_linux_packages
         name: Official Linux Packages
         downloads:
@@ -94,8 +94,8 @@ os:
         name: Current Version
         end_text: Supports Windows 10, 11
         downloads:
-          - name: 3.14.0, x64
-            link: https://github.com/supercollider/supercollider/releases/download/Version-3.14.0/SuperCollider-3.14.0_Release-x64-VS-d263b8c.exe
+          - name: 3.14.1, x64
+            link: https://github.com/supercollider/supercollider/releases/download/Version-3.14.1/SuperCollider-3.14.1_Release-x64-VS-426edf6.exe
       - key: previous_releases
         name: Previous Releases
         downloads:
