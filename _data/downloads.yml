@@ -85,6 +85,10 @@ os:
         downloads:
           - name: Arch User Repository (AUR)
             link: https://aur.archlinux.org/packages/supercollider-git
+          - name: Flatpak (x86 64bit)
+            link: https://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/Linux-Flatpak-x86_64/develop-latest.html
+          - name: Flatpak (arm64)
+            link: https://supercollider.s3.amazonaws.com/builds/supercollider/supercollider/Linux-Flatpak-arm64/develop-latest.html
 
   - name: Windows
     slug: Windows
