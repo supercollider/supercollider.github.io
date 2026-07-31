@@ -36,6 +36,7 @@
 
     {% if site.bootstrap %}
     <!-- Bootstrap 4.6.2 CSS CDN - loaded in a @layer so theme styles always take precedence -->
+    <style>@layer reset, bootstrap;</style>
     <style>@import url("https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css") layer(bootstrap);</style>
     {% endif %}
 
