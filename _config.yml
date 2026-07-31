@@ -25,11 +25,7 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 
-# keep below 2.5.0 b/c 2.5.1 removed bootstrap iso css
-# which either breaks the tabs from the download section
-# or the dark mode, see
-# https://github.com/sylhare/Type-on-Strap/pull/549
-remote_theme: sylhare/type-on-strap@v2.5.0
+remote_theme: sylhare/type-on-strap
 
 # Theme settings
 color_theme: auto
